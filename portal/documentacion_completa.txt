@@ -1,0 +1,1587 @@
+   
+ 
+   
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Sistema de diseño  
+Fecha: 19 de enero, 2026
+
+   
+ 
+   
+ Índice  
+¿Qué es el Sistema de Diseño Hornero? ................................ ...............  4 
+Estilos globales  ................................ ................................ ................  7 
+Colores  ................................ ................................ ..............................  7 
+Espaciados, Sombras y Bordes  ................................ .............................  10 
+Espaciados  ................................ ................................ ................................ . 10 
+Sombras  ................................ ................................ ................................ .... 11 
+Bordes  ................................ ................................ ................................ ....... 11 
+Tipografías ................................ ................................ ........................  12 
+*** Estructura y layout  ................................ ................................ ...... 15 
+Componentes  ................................ ................................ .................  15 
+Íconos  ................................ ................................ .............................  15 
+Texto  ................................ ................................ ...............................  18 
+Títulos  ................................ ................................ ................................ ....... 18 
+Párrafos  ................................ ................................ ................................ ..... 20 
+Listados  ................................ ................................ ................................ ..... 21 
+*** Navegación  ................................ ................................ .................  23 
+Cabezales  ................................ ................................ ................................ ... 23 
+** Pie  ................................ ................................ ................................ ........  30 
+** Menú de navegación ................................ ................................ ................  30 
+Breadcrumb  ................................ ................................ ................................  32 
+Paginador  ................................ ................................ ................................ ... 33 
+Estructura del componente  ................................ ................................ ...........  33 
+Recomendaciones de uso  ................................ ................................ .............  34 
+Variantes ................................ ................................ ................................ .... 34 
+Accesibilidad  ................................ ................................ ...............................  35 
+Menú de pasos  ................................ ................................ ............................  35 
+** Pestañas  ................................ ................................ ................................  37 
+**** Mensajes y diálogos  ................................ ................................ ... 37 
+Alertas  ................................ ................................ ................................ ....... 37 
+** Modales  ................................ ................................ ................................ . 37 
+** Tooltips  ................................ ................................ ................................ . 37 
+** Indicadores de estado  ................................ ................................ .............  37 
+Tags ................................ ................................ ................................ ..........  37 
+ 
+ 
+3 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+*** Formularios  ................................ ................................ ................  39 
+** Campos  ................................ ................................ ................................ . 39 
+** Fieldset  ................................ ................................ ................................ . 39 
+** Tablas  ................................ ................................ ................................ ... 39 
+Acciones  ................................ ................................ ...........................  39 
+Botones  ................................ ................................ ................................ ..... 39 
+Enlaces  ................................ ................................ ................................ ...... 43 
+Grupo de botones  ................................ ................................ ........................  46 
+** Botón con desplegable  ................................ ................................ .............  47 
+*** Contenedores gub.uy  ................................ ................................ ... 48 
+** Accesos  ................................ ................................ ................................ . 48 
+** Bloques de contenido destacado  ................................ ...............................  48 
+** Hero ................................ ................................ ................................ ...... 48 
+** Bloques de listado  ................................ ................................ ...................  48 
+** Bloques multimedia  ................................ ................................ .................  48 
+** Bloques de agenda  ................................ ................................ ..................  48 
+** Otros  ................................ ................................ ................................ ..... 48 
+*** Visualización de datos  ................................ ................................ .. 48 
+** Tablas  ................................ ................................ ................................ ... 48 
+** Gráficos  ................................ ................................ ................................ . 48 
+Backlog  ................................ ................................ .........................  48 
+Borradores ................................ ................................ .....................  49 
+ 
+   
+ 
+   
+ ¿Qué es el Sistema  de Diseño  
+Hornero ? 
+El Sistema de Diseño Hornero  es una herramienta colaborativa  para el diseño y 
+construcción de interfaces digitales, que tienen como finalidad construir servicios 
+digitales consistentes, con foco en las personas , accesibles y concebido para  dispositivos 
+móviles.  
+Es una estrategia transversal que promueve la calidad, coherencia y eficiencia en el 
+diseño de servicios y productos digitales. Está pensado como un ecosistema vivo que 
+articula herramientas, estándares y acompañamiento para fortalecer las capacidades de 
+diseño centrado en las personas paras proyectos digitales.  
+Objetivos y alcance  
+El objetivo principal del sistema es proveer a las personas  un lenguaje de interacción 
+unificado y coherente para los distintos puntos de contacto digital con el Estado, lo que 
+se traduce en una experiencia más clara, accesible y predecible para las personas.  
+La adopción de  un sistema de diseño permite que los servicios digitales sean más fáciles 
+de entender y usar, independientemente del organismo que los ofrezca. Promueve  la 
+inclusión, al aplicar de forma transversal  principios que contemplan las necesidades de 
+distintos perfiles de usuarios.  
+El sistema de diseño contribuye  a fortalec er la confianza de la s personas  en los servicios 
+digitales del Estado y favorece una relación más simple, transparente y eficiente. El  
+sistema de diseño incluye:  
+✓ Estilos:  Lineamientos visuales de diseño como tipografía, paleta de colores, 
+bordes, fondos, íconos y elementos decorativos, que hacen que los servicios se 
+perciban como parte de un todo por parte de la ciudadanía.  
+✓ Comportamientos:  Definiciones de lenguaje de interacción orientadas a que los 
+entornos digitales sean intuitivos, sencillos y sobre todo consistentes.  
+✓ Componentes:  Piezas reutilizables, creadas con una visión transversal que 
+contempla las buenas prácticas y lineamientos sobre Diseño de interacción y 
+Accesibilidad. Ahorran tiempo de diseño y desarrollo, reutilizando bloques pre 
+creados como navegación, botones, campo s, tablas, y tarjetas.  
+Principios rectores del sistema  
+Todos los elementos que componen el sistema de diseño fueron creados teniendo como 
+punto de partida las buenas prácticas de diseño usable y accesible, documentado en las 
+guías de creación de portales de Agesic, publicado hace más de una década. A partir de  
+ese documento original, y sumando la experiencia recogida a lo largo de más de 15 años 
+en experiencia de usuario, se definieron los principios rectores para la creación de este 
+sistema.  
+✓ Mobile first : Como respuesta al aumento en las estadísticas de tráfico móvil 
+globales, el sistema de diseño concibe el diseño desde la perspectiva de “primero 
+ 
+ 
+5 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+el móvil”; diseña ndo primero la solución para dispositivos móviles y, a partir de 
+ahí, escalar el diseño y las funcionalidades para pantallas más grandes 
+(escritorio). Priorizando el contenido esencial, la rapidez de carga y la usabilidad 
+en móviles, asegurando una mejor experiencia para la m ayoría de los usuarios.  
+✓ Accesibilidad : La accesibilidad digital es el resultado de diseñar y desarrollar 
+servicios y productos digitales para que el mayor número de personas puedan 
+usarlos, independientemente de sus condiciones personales y de su entorno. El 
+objetivo del sistema de diseño es co ntemplar desde el diseño los requisitos que 
+deben cumplir los servicios y productos digitales para ser considerados accesibles, 
+tal como se establece en el Artículo 88 de la Ley N°.19.924 de presupuesto 
+nacional 2020 - 2025.  
+✓ Diseño atómico : Un sistema de diseño construido bajo el principio de diseño 
+atómico se fundamenta en la idea de descomponer la interfaz en unidades 
+pequeñas, reutilizables y coherentes, que escalan de forma ordenada hasta formar 
+experiencias completas. Este enfoque permit e definir primero los elementos más 
+básicos (colores, tipografías, iconos o botones) para luego, al combinarlos,  se 
+asegure una mayor consistencia visual, funcional y técnica en todo el producto.  
+✓ Variantes de diseño asociadas a los componentes : Cada componente que forma 
+parte del sistema cuenta con un conjunto definido de variantes que permiten, sin 
+necesidad de conocimientos específicos de diseño, explorar distintas 
+configuraciones hasta identificar la opción que mejor se ajusta al problema a 
+resolver. De este modo, al seleccionar un tipo de componente se accede 
+automáticamente a una amplia gama de alternativas visuales y funcionales, 
+facilitando su adaptación a diferentes contextos y casos de uso,  sin comprometer 
+la coherencia ni la calidad del sistema en su conjunto.  
+✓ Comunidad : La participación activa de la comunidad, en especial de los equipos de 
+comunicación y desarrollo, es una condición clave para la evolución del sistema. 
+Su retroalimentación constante permite identificar oportunidades de mejora, 
+detectar necesidades reales y validar las soluciones existentes, logrando así que el 
+sistema crezca de manera orgánica, se perfeccione continuamente y se vuelva 
+cada vez más robusto y útil para todos los equipos que lo utilizan.  
+FIGMA + HTML/CSS  
+El sistema de diseño tiene dos herramientas para su aplicación:  
+✓ Figma: Estándar de la industria del diseño digital, que permite alinear de forma 
+directa el diseño con su implementación real, facilita la colaboración, la 
+exploración visual y el uso consistente de componentes por parte de perfiles no 
+técnicos  
+✓ HTML/CSS: asegura que los componentes estén fielmente representados en 
+código, para acercar el diseño a las herramientas de desarrollo. Reduciendo 
+fricciones entre diseño y desarrollo, mejora la coherencia entre lo diseñado y lo 
+construido, y garantiza un sistema accesible, escalable y fácil de mantener.  
+Especificaciones técnicas  
+Acceso al Git: Sistema de diseño en GitLab  
+ 
+ 
+6 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+Idioma  del código  
+Utilizamos español para todos los términos salvo cuando usar inglés aporte a la mejor 
+comprensión del concepto a transmitir.  
+Variables  
+Variables primitivas  
+Son valores básicos, sin semántica ni contexto específico, que definen las propiedades 
+fundamentales del diseño. Funcionan como el punto de partida neutro y reutilizable del 
+sistema, estableciendo una base sólida sobre la cual construir portales, formulari os, 
+aplicaciones web y cualquier otro componente digital.  
+Centralizar estos estilos garantiza coherencia visual, facilita su mantenimiento y permite 
+adaptarse a cambios globales con eficiencia.  
+Estas variables contemplan diversas categorías, como colores, tipografías (familias, 
+pesos, tamaños, interlineados), bordes (grosores y radios), espaciados (para márgenes y 
+paddings) y sombras.  
+Variables semánticas  
+Las variables semánticas otorgan significado y contexto a los valores de diseño. A 
+diferencia de las variables primitivas, que son valores neutrales, las semánticas se usan 
+para nombrar estilos según su función o intención dentro de la interfaz.  
+Estas variables permiten traducir decisiones abstractas en elecciones de diseño 
+concretas:  
+✓ En lugar de usar “#FF0000” , usamos la variable semántica “color-error (rojo -
+error)” ; separando la intención del diseño de su valor específico.  
+✓ En lugar de “radio-8px (8px)” , usamos “radio-s (radio -8px)”;  referenciando a 
+un valor semántico del sistema y no directamente al valor numérico.  
+Esto mejora la legibilidad del código, facilita la colaboración entre equipos y permite 
+realizar cambios globales sin afectar la coherencia visual del sistema.  
+En conjunto, las variables semánticas permiten construir componentes y patrones que se 
+adaptan a diferentes contextos (como modo claro/oscuro, pantallas móviles o de 
+escritorio, además de distintas marcas o productos) sin perder consistencia.  
+Las variables semánticas se organizan según su propósito y definición del sistema de 
+diseño y están asociadas a variables primitivas u otras variables semánticas ya definidas. 
+Por ejemplo:  
+✓ Colores:  color-primario, color -secundario, color -neutral, color -exito, color -error.  
+✓ Tipografía: fuente -marca, fuente -texto, tamano -titulo-xl, tamano -cuerpo -m, 
+altura -linea-cuerpo.  
+✓ Espaciado: espaciado -4, espaciado -8, separacion -columnas, separacion -listado.  
+✓ Bordes y radio: border -radius -sm, border -radius -boton, border -radius -tarjeta.  
+ 
+ 
+7 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+✓ Sombras: sombra -xs, sombra -s, sombra -boton, sombra -tarjeta.  
+Nombr e de las variables  
+Los atributos se separan con “ -” y las palabras con “_”. Por ejemplo: titulo_tarjeta -titulo-
+xxl-bold. 
+Estilos globales  
+Los estilos globales definen las reglas visuales base del sistema de diseño . Establecen 
+criterios compartidos de tipografía, color , espacia do, grosores de borde, radios y 
+sombras  que aseguran consistencia, accesibilidad y coherencia visual en todos los 
+productos digitales . 
+Colores  
+El sistema de colores establece cómo se utilizan los colores para comunicar estados, 
+jerarquías e interacción de forma consistente y accesible.  
+La paleta fue diseñada para ser amplia y flexible, contemplando una variedad de matices 
+que permiten cubrir distintos contextos de uso sin perder coherencia visual. Cada color 
+se define a través de una escala tonal que va desde valores claros a oscuros, lo  que 
+facilita su aplicación en fondos, textos  o bordes  según el contexto . 
+Paleta de colores  
+La paleta se organiza en cuatro grandes  grupos, según su función dentro de la interfaz : 
+✓ Colores institucionales  
+✓ Colores funcionales  
+✓ Colores neutros  
+✓ Colores decorativos  
+Colores institucionales  
+Incluyen los colores principales de identidad visual de gub.uy.  Se utilizan para destacar 
+elementos relevantes de la interfaz y reforzar la presencia institucional de forma 
+consistente.  
+Estos colores se aplican en componentes clave como botones, cabezales y otros 
+elementos de alto peso visual o funcional. Su uso no es decorativo, sino que responde a 
+la necesidad de jerarquizar acciones, secciones y contenidos importantes dentro de la 
+interfaz. 
+  
+
+ 
+ 
+8 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+Colores funcionales  
+Se utilizan para comunicar estados y dar feedback al usuario.  Incluyen colores asociados 
+a éxito, advertencia, error, notificación y foco.  
+Estos colores deben utilizarse exclusivamente con el significado definido por el sistema y 
+no con fines decorativos.  
+ 
+Color de foco  
+Dentro de los colores funcionales, el sistema define un color específico destinado a 
+representar el estado de foco.  
+Este color se utiliza exclusivamente para indicar visualmente qué elemento de la interfaz 
+se encuentra enfocado, ya sea en campos de formulario o durante la navegación 
+mediante teclado.  
+ 
+Colores neutros  
+Los colores neutros se utilizan principalmente para fondos, textos, bordes y separadores, 
+permitiendo que los otros colores  destaquen correctamente.  
+Blanco  y negro  
+ 
+Grises  
+ 
+Colores decorativos  
+Los colores decorativos amplían la paleta y permiten resolver necesidades visuales 
+específicas, como gráficos, ilustraciones o elementos de apoyo visual.  
+Su uso no debe interferir con la jerarquía ni con los colores funcionales definidos por el 
+sistema.  
+
+ 
+ 
+9 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+Rojo 
+ 
+Naranja  
+ 
+Verde  
+ 
+Verde agua  
+ 
+Celeste  
+ 
+Violeta  
+ 
+Fucsia  
+ 
+Matices  
+La paleta se compone de escalas tonales que van desde el valor 25 hasta el 950, donde 
+los tonos más claros se utilizan principalmente para fondos y superficies,  y los más 
+oscuros para texto s. 
+Cada escala permite:  
+✓ Mantener consistencia visual entre componentes.  
+✓ Adaptar el color según el contexto (fondo, texto, estado).  
+
+ 
+ 
+10 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+✓ Garantizar combinaciones con contraste adecuado.  
+Ejemplo:  
+ 
+Accesibilidad y contraste  
+Los colores del sistema fueron definidos teniendo en cuenta el contraste entre texto y 
+fondo para asegurar la legibilidad de los contenidos.  
+No todas las combinaciones posibles entre matices están permitidas. El uso correcto del 
+color implica respetar los roles definidos por el sistema y evitar combinaciones que 
+reduzcan el contraste o dificulten la lectura.  
+Espaciados , Sombras  y Bordes  
+Los espaciados, las sombras y los bordes definen cómo se organiza n y agrupa n 
+visualmente  los contenidos en  la interfaz. Estos estilos ayudan a ordenar el contenido, 
+separar elementos y establecer jerarquías visuales claras . 
+Espaciados  
+Los espaciados definen las medidas de separación entre los elementos de la interfaz, 
+tanto en el espacio interno de los componentes como en el espacio externo entre 
+componentes.  
+El sistema utiliza una serie de valores fijos en píxeles, que permiten resolver desde 
+separaciones pequeñas hasta separaciones más amplias , manteniendo consistencia 
+visual  en toda la interfaz.  
+ 
+Casos típicos de uso  
+✓ Definir el espacio interno entre el contenido y el borde dentro de un componente 
+(padding).  
+✓ Establecer la distancia entre componentes, secciones y bloques de contenido 
+(margin).  
+
+ 
+ 
+11 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+✓ Organizar la información de forma clara y legible en la pantalla  para que los 
+diferentes contenidos estén bien diferenciados entre sí. 
+Buenas prácticas  
+✓ Utilizar siempre las medidas de espaciado definidas por el sistema.  
+✓ Mantener el mismo espaciado en componentes y layouts similares.  
+✓ Priorizar el uso del espacio para jerarquizar y ordenar la información antes que 
+recurrir a otros recursos visuales.  
+Sombras  
+Las sombras permiten representar distintos niveles de profundidad dentro de la interfaz, 
+ayudando a diferenciar elementos superpuestos o a destacar componentes sobre el 
+fondo.  
+El sistema define distintos niveles de sombra, que van desde sombras muy sutiles hasta 
+sombras más marcadas, según la jerarquía y el contexto del componente.  
+Tipos de sombras  
+Sombras difuminadas  
+Las sombras difuminadas tienen bordes suaves y transiciones graduales. Generan una 
+separación visual leve entre un elemento y su entorno.  
+ 
+Sombras duras  
+Las sombras duras tienen  bordes definidos y sin difuminado , lo que produce un contraste 
+más marcado con el fondo.  
+ 
+Buenas prácticas  
+✓ Evitar el uso de sombras con fines decorativos.  
+✓ Mantener el mismo nivel de sombra en componentes del mismo tipo o jerarquía.  
+✓ Priorizar siempre la claridad y la legibilidad sobre el impacto visual.  
+Bordes  
+Los bordes se utilizan para delimitar, separar o enfatizar elementos dentro de la interfaz . 
+Los estilos de borde se dividen en dos grupos; grosores y radios.  
+
+ 
+ 
+12 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+Grosores  
+El sistema define distintos grosores de borde, expresados en valores fijos en píxeles.  
+Estos grosores permiten adaptarse a diferentes tipos de componentes, desde 
+separaciones sutiles hasta delimitaciones más visibles . 
+ 
+Radios  
+Los radios definen el nivel de redondeo de las esquinas de contenedores y componentes.  
+El sistema contempla desde esquinas completamente rectas hasta esquinas totalmente 
+redondeadas. El valor máximo de redondeo permite que ciertos elementos adopten una 
+forma de “pastilla” o circular, según su proporción.  
+ 
+Buenas prácticas  
+✓ Utilizar el mismo radio en componentes similares.  
+✓ Evitar combinar distintos radios dentro de un mismo componente.  
+✓ Usar bordes sutiles cuando el contenido ya está claramente separado por 
+espaciado.  
+Tipografías  
+La tipografía es uno de los pilares fundamentales del sistema de diseñ o, ya que d efine la 
+jerarquía de la información, asegura la legibilidad de los  contenidos  en todos los 
+productos digitales.  
+Familias tipográficas  
+El sistema utiliza dos familias tipográficas, cada una con un propósito específico:  
+✓ Open Sans:  Es la t ipografía principal del sistema. Se utiliza para títulos, párrafos 
+y la mayoría de los textos de la interfaz por su alta legibilidad en entornos 
+digitales.  
+✓ Sora:  Se utiliza exclusivamente para el texto identificatorio del organismo en el 
+cabezal.  El uso de Sora fuera de este contexto no está contemplado dentro del 
+sistema.  
+Estilos  
+Se definen estilos tipográficos para títulos, párrafos y textos especiales , que permiten 
+establecer jerarquías claras entre contenidos.  
+
+ 
+ 
+13 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+Composición  
+Cada estilo se define por:  
+✓ Familia tipográfica  
+✓ Tamaño de fuente  
+✓ Peso 
+✓ Altura de línea  (Las alturas de línea más ajustadas se utilizan en textos grandes, 
+mientras que los de tamaño más pequeño requieren mayor aire para mantener la 
+legibilidad.)  
+Títulos  
+Los títulos se utilizan para estructurar el contenido y guiar la lectura dentro de una 
+pantalla.  
+ 
+Estilo  Familia tipográfica  Tamaño  de la fuente  Peso  Altura de línea  
+Título XXL  Open Sans  40px Light, Regular, 
+Semibold, Bold  48px – 120%  
+Título XL  Open Sans  32px Light, Regular, 
+Semibold, Bold  38px - 120%  
+Título L  Open Sans  28px Light, Regular, 
+Semibold, Bold  34px – 130%  
+Título M  Open Sans  24px Light, Regular, 
+Semibold, Bold  31px – 140%  
+Título S  Open Sans  20px Light, Regular, 
+Semibold, Bold  28px – 140% 
+Título XS  Open Sans  16px Light, Regular, 
+Semibold, Bold  24px – 150%  
+El uso de cada nivel debe responder a la jerarquía del contenido y no a decisiones 
+visuales aisladas.  
+Párrafos  
+Los estilos de párrafos se utilizan para el contenido principal y textos descriptivos.  
+
+ 
+ 
+14 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+ 
+Estilo  Familia tipográfica  Tamaño de la fuente  Peso  Altura de línea  
+Párrafo  XL Open Sans  20px Regular, 
+Semibold, Bold  28px - 140% 
+Párrafo  L Open Sans  18px Regular, 
+Semibold, Bold  25px – 140% 
+Párrafo  M Open Sans  16px Regular, 
+Semibold, Bold  24px – 150% 
+Párrafo  S Open Sans  14px Regular, 
+Semibold, Bold  21px – 150% 
+Párrafo  XS Open Sans  12px Regular, 
+Semibold, Bold  18px – 150%  
+El tamaño M se considera el tamaño base recomendado para párrafos . 
+Estilos de texto  especiales  
+Los estilos de texto especiales corresponden a usos tipográficos específicos que no 
+forman parte del flujo general de lectura.  
+Actualmente, el sistema contempla un único caso de texto especial.  
+Texto identificatorio del organismo  
+Este estilo se utiliza exclusivamente en los cabezales para identificar el organismo y no 
+debe utilizarse  en otros contextos.  
+ 
+Estilo  Familia tipográfica  Tamaño de la fuente  Peso  Altura de línea  
+Organismo cabezal  Sora 16px Regular, 
+Semibold, Bold  21px - 130% 
+Uso responsivo  de tipografías  
+El sistema tipográfico está diseñado para adaptarse a d istintos tamaños de pantalla.  Las 
+jerarquías se mantienen entre escritorio y móvil , ajustándose los tamaños para adaptase 
+a las pequeñas pantallas.  
+Esta diferencia de tamaños se aplica a títulos, los párrafos mantienen los mismos valores 
+tanto en móvil como en escritorio.  
+
+ 
+ 
+15 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+ 
+Buenas prácticas  
+✓ Utilizar siempre los estilos tipográficos definidos por el sistema.  
+✓ Evitar combinaciones personalizadas de tamaño, peso y altura de línea.  
+✓ Priorizar la jerarquía por tamaño antes que por peso.  
+✓ Mantener consistencia entre pantallas similares.  
+Enlace a componentes de texto  
+*** Estructura  y layout  
+✓ Formato de página según tipo de solución  y grilla para estructurar los contenidos . 
+✓ Uso de la grilla a nivel de código.  
+Componentes  
+Íconos  
+Los íconos permiten comunicar acciones, estados o conceptos de forma visual y 
+sintética. Se utilizan para reforzar el significado de textos, optimizar el espacio en la 
+interfaz y /o facilitar el reconocimiento rápido de acciones o información.  
+Dentro del sistema de diseño, los íconos se utilizan siempre como elementos de apoyo, 
+ya sea acompañando texto o como  parte de otros componentes.  
+
+ 
+ 
+16 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+Variantes  
+Tamaño  
+Existen  distintos tamaños predefinidos que permiten adaptar  los íconos  al contexto de 
+uso sin perder legibilidad . 
+Referencia  Nombre  de la variante  Tamaño en pixeles  
+ XXL 48px 
+ XL 40px 
+ L 32px 
+ M 24px 
+ S 20px 
+ XS 16px 
+ XXS 12px 
+Formato  
+Lineales  
+ 
+Íconos de trazo simple, recomendados para la mayoría de los usos.  
+Rellenos  
+ 
+
+ 
+ 
+17 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+Íconos  forma sólida, utilizados cuando se necesita mayor presencia visual  o para indicar 
+estado de activo . 
+Íconos especiales  
+Avatar  de usuario  
+ 
+El Avatar de usuario es un ícono específico, construido mediante CSS, que se utiliza 
+como indicador de usuario autenticado dentro de la interfaz , y puede aparecer, por 
+ejemplo, en el cabezal o en contextos asociados al perfil del usuario.  
+Este ícono se comporta de la misma forma que el resto de los iconos del sistema , 
+teniendo de variantes los mismos tamaños disponibles.  
+Su uso está limitado a contextos relacionados con la identidad del usuario y no debe 
+utilizarse con fines decorativos ni como reemplazo de otros iconos funcionales.  
+Accesibilidad  
+Recomendaciones para no perder la accesibilidad  
+✓ No utilizar íconos como único medio para transmitir información.  
+✓ Asegurar contraste suficiente entre el ícono y el fondo.  
+✓ Acompañar los íconos con texto cuando representen acciones.  
+✓ Proveer textos alternativos o etiquetas accesibles cuando el ícono sea interactivo.  
+Criterios de diseño  y uso  en figma  
+Uso de íconos  
+Para insertar un ícono, arrastrar una instancia del componente padre desde “Recursos ” y 
+luego : 
+1. Seleccionar en las propiedades del componente:  
+▪ Tamaño  
+▪ Formato  
+▪ Vector del ícono 
+2. Para cambiar el color, aplicar una variable semántica de color en el relleno de la 
+instancia.  
+Construcción de un nuevo ícono 
+Para agregar un nuevo ícono a l kit de iconos en figm a, debe hacerse desde el grupo de 
+variantes “icono_vecto r” siguiendo los siguientes criterios:  
+
+ 
+ 
+18 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+✓ Todos los vectores de iconos deben llamarse “icono”.  
+✓ Cada vector debe estar contenido dentro de un frame sin auto layout de 24px × 
+24px, con relación de aspecto bloqueada.  
+✓ El vector debe:  
+▪ Estar centrado horizontalmente.  
+▪ Escalar verticalmente dentro del frame.  
+✓ Constraints:  
+▪ Horizontal: center  
+▪ Vertical: scale  
+✓ El color de relleno del vector debe ser siempre el color semántico “neutro -0” 
+(blanco), para permitir que los cambios de variables funcionen correctamente en 
+las instancias.  
+Texto  
+Los componentes de texto definen cómo se presenta y estructura la información escrita 
+dentro de la interfaz, asegurando claridad, consistencia y la correcta jerarquía de 
+contenidos.  
+Esta sección documenta los distintos tipos de texto utilizados en la interfaz  desde una 
+perspectiva de uso como componentes, complementando las definiciones de estilo  
+establecidas en la sección de Estilos globales . 
+Títulos  
+Los títulos son componentes de texto que se utilizan para organizar y jerarquizar el 
+contenido dentro de la interfaz. Permiten estructurar la información, guiar la lectura y 
+facilitar la comprensión del contenido en distintos niveles.  
+Además de su función visual, cumplen un rol semántico fundamental, ya que definen la 
+estructura lógica del contenido.  
+ 
+Recomendaciones de uso  
+Casos típicos de uso  
+✓ Encabezado principal de una página o pantalla.  
+✓ Títulos de secciones y subsecciones.  
+
+ 
+ 
+19 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+✓ Encabezados de bloques de contenido dentro de una vista.  
+Cuándo no usarlo s 
+✓ Para destacar texto que no representa una jerarquía.  
+✓ Para párrafos de texto.  
+Buenas prácticas  
+✓ Utilizar un único Encabezado 1 por pantalla.  
+✓ Respetar el orden jerárquico de los encabezados, evitando saltos entre niveles.  
+✓ Redactar títulos claros, breves y descriptivos.  
+✓ Utilizar títulos para estructurar el contenido, no para estilizarlo.  
+Variantes  
+Los títulos se organizan en seis niveles jerárquicos, que deben utilizarse de acuerdo con 
+la estructura del contenido.  
+Componente  Estilo tipográfico  Peso  Uso 
+H1 Título XXL  Semibold  Título de la página o pantalla. Máxima 
+jerarquía visual . Uno solo por página  
+H2 Título XL  Semibold  Secciones principales dentro de la pantalla. 
+Puede repetirse varias veces si la página lo 
+requiere  
+H3 Título L  Semibold  Subsecciones o títulos de bloques 
+importantes  
+H4 Título M  Semibold  Subsubsecciones o t ítulos dentro de 
+contenedores  
+H5 Título S  Semibold  Títulos  en contextos con menor jerarquía  
+después de un H4.  
+H6 Título XS  Semibold  Títulos de elementos muy secundarios  o 
+títulos dentro de microcomponentes.  
+Accesibilidad  
+Recomendaciones para no perder la accesibilidad  
+✓ Utilizar cada nivel de título según la jerarquía real del contenido.  
+✓ Mantener un orden lógico de encabezados, evitando saltos innecesarios entre 
+niveles.  
+✓ Asegurar que el texto del título sea claro y comprensible por sí mismo.  
+✓ Evitar reemplazar títulos por texto común con estilos visuales similares.  
+✓ Asegurar contraste suficiente entre el texto y el fondo.  
+ 
+ 
+20 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+Párrafos  
+Los párrafos son componentes de texto encargados de  presentar el contenido principal y 
+los textos de apoyo dentro de la interfaz. Se utilizan para  desarrolla r los contenidos 
+introducidos por los títulos.  
+ 
+Recomendaciones de uso  
+Casos típicos de uso  
+✓ Texto principal de una página o sección.  
+✓ Descripciones de contenidos, funcionalidades o procesos.  
+✓ Textos explicativos asociados a otros componentes.  
+Cuándo no usarlos  
+✓ Para títulos o encabezados (usar el componente de Títulos).  
+Buenas prácticas  
+✓ Mantener la alineación del texto en bandera a la izquierda para facilitar la lectura.  
+✓ Separar los párrafos utilizando el espaciado definido por el sistema.  
+✓ Evitar bloques de texto extensos sin divisiones visuales.  
+✓ Evitar utilizar párrafos completos en peso semibold . Utilizar este recurso solo para 
+resaltar información importante.  
+Variantes  
+Los párrafos cuentan con tres variantes, que deben utilizarse según la jerarquía del 
+contenido.  
+Componente  Estilo tipográfico  Peso  Uso 
+Párrafo principal  Párrafo  XL Regular, 
+Semibold  Contenido  descriptivo principal de la 
+pantalla. Generalmente se ubica 
+inmediatamente debajo del Encabezado 1 y 
+funciona como introducción o síntesis del 
+contenido.  
+Párrafo 
+secundario  Párrafo M  Regular, 
+Semibold  Desarrollo del contenido. Aplica a la 
+mayoría de los textos que continúan al 
+párrafo principal dentro de una misma 
+pantalla o sección.  
+
+ 
+ 
+21 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+Párrafo de apoyo  Párrafo S  Regular, 
+Semibold  Información secundaria, aclaraciones o 
+textos de apoyo. Debe aplicarse 
+únicamente en contextos de menor 
+jerarquía visual y semántica.  
+Accesibilidad  
+Recomendaciones para no perder la accesibilidad  
+✓ Asegurar contraste suficiente entre el texto y el fondo.  
+✓ Evitar textos demasiado largos sin separación en párrafos.  
+✓ Utilizar un lenguaje claro y comprensible.  
+Listados  
+Los listados son componentes de texto que permiten organizar información relacionada 
+en forma de ítems, facilitando la lectura, y el escaneo del contenido.  
+Se utilizan para presentar punteos , pasos, o características de manera clara y 
+estructurada.  
+Recomendaciones de uso  
+Casos típicos de uso  
+✓ Enumerar pasos dentro de un proceso.  
+✓ Presentar características, requisitos o condiciones.  
+✓ Agrupar información relacionada dentro de una sección.  
+✓ Detallar contenidos de forma más clara que un párrafo continuo.  
+Cuándo no usarlos  
+✓ Para contenidos que requieren desarrollo (usar párrafos).  
+Buenas prácticas  
+✓ Mantener los ítems breves y claros.  
+✓ Utilizar la misma estructura gramatical en todos los ítems de un mismo listado.  
+✓ Evitar listados excesivamente largos; dividirlos en bloques si es necesario.  
+✓ Respetar el espaciado definido por el sistema entre ítems.  
+Variantes  
+Formato  
+Listado con viñetas  
+ 
+ 
+22 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+ 
+Se utiliza cuando el orden de los ítems no es relevante.  
+Listado numérico  
+ 
+Se utiliza cuando los ítems deben seguir un orden específico, como pasos de un proceso, 
+instrucciones o secuencias.  
+Nivel 
+Nivel 1  
+ 
+Corresponde al nivel principal del listado.  Se utiliza para los ítems principales dentro de 
+una sección o bloque de contenido.  
+Nivel 2  
+ 
+Corresponde a un nivel hijo del  Nivel 1.  Se utiliza para ampliar, detallar o desglosar un 
+ítem principal.  
+Accesibilidad  
+Recomendaciones para no perder la accesibilidad  
+✓ Utilizar el tipo de listado adecuado según el significado del contenido (viñetas o 
+numeración).  
+✓ Mantener una estructura lógica y coherente entre niveles.  
+✓ Evitar listados anidados en exceso, ya que dificultan la lectura.  
+
+ 
+ 
+23 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+✓ Asegurar suficiente contraste entre el texto y el fondo.  
+*** Navegación  
+Componentes que guían al usuario dentro de la aplicación . 
+Cabezal es 
+El cabezal es un  component e de navegación y contexto ubicado en la parte superior de 
+la interfaz. En él se encuentran  la identidad del sitio o aplicación, y el acceso a acciones  
+o secciones  clave según el tipo de producto.  
+Cabezal de aplicación  
+Este cabezal se utiliza únicamente en aplicaciones web. Su función principal es brindar 
+contexto sobre la aplicación y ofrecer acceso a las acciones relacionadas con la sesión 
+del usuario y las notificaciones . 
+ 
+Estructura del componente  
+Elementos que lo componen  
+✓ Iconos  
+✓ Texto  
+✓ Fondo  
+✓ Bordes  
+✓ Identidad (isotipo y nombre)  
+✓ Accesos  
+✓ Menú ( versión móvil)  
+Recomendaciones de uso  
+Casos típicos  
+✓ Aplicaciones web, donde el foco está puesto en la realización de tareas que 
+requieren interacción con un sistema y no meramente el consumo de informacón 
+estática.  
+Cuándo no usarlo  
+✓ En portale s institucionales  o sitios web  de carácter  informativo.  
+
+ 
+ 
+24 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+Buenas prácticas  
+✓ Mantener el color propuesto por el sistema  salvo que haya una razón de fuerza 
+mayor que requiera una presencia de otro color por el contexto de navegacón de 
+la aplicación.  
+✓ Evitar agregar accesos o funcionalidades nuevas  
+✓ Evitar el uso del cabezal móvil en pantallas de escritorio  
+Comportamiento responsive  
+Escritorio  
+ 
+ 
+ 
+✓ Se presenta en una única fila horizontal.  
+✓ La identidad de la aplicación se ubica a la izquierda.  
+✓ Los accesos de usuario y notificaciones se ubican a la derecha.  
+✓ Está separado del menú de navegación.  
+Móvil 
+ 
+
+ 
+ 
+25 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+ 
+ 
+ 
+✓ Se adapta para ocupar menos espacio.  
+
+ 
+ 
+26 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+✓ La identidad se presenta en formato reducido  en la parte superior, en una única 
+fila. 
+✓ Se accede a la  navegación principal mediante un botón de menú  hamburguesa . 
+✓ Los accesos de usuario y notificaciones se representan solo con íconos.  
+Accesibilidad  
+WCAG Nivel AAA  
+Recomendaciones para no perder la accesibilidad  
+✓ Permitir la navegación por teclado a todos los elementos interactivos.  
+✓ Proveer etiquetas accesibles para íconos sin texto visible.  
+✓ Mantener un orden lógico de lectura para el lector de pantallas  
+Cabezal de portal web  
+El cabezal de portal web se utiliza en sitios web y portales institucionales de gub.uy. Su 
+objetivo es iden tificar el portal o sitio,  y facilitar el acceso a la navegación principal . 
+Estructura del componente  
+ 
+Elementos que lo componen  
+✓ Iconos  
+✓ Texto  
+✓ Fondo  
+✓ Bordes  
+✓ Identidad (isotipo y nombre)  
+✓ Menú de n avegación principal  
+✓ Buscador  
+Variantes  
+✓ Portal gub.uy  
+✓ Portal de organismo  
+
+ 
+ 
+27 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+Recomendaciones de uso  
+Casos típicos  
+✓ Sitios web institucionales.  
+Cuándo no usarlo  
+✓ En aplicaciones web. 
+Buenas prácticas  
+✓ Utilizar la variante adecuada según el tipo de sitio  
+✓ Usar nomenclaturas alineadas con la arquitectura del sitio  
+✓ Evitar duplicar información  
+✓ Evitar agregar accesos o funcionalidades nuevas  
+✓ Evitar el uso del cabezal móvil en pantallas de escritorio  
+Variantes  
+Portal gub.uy  
+ 
+El cabezal del portal gub.uy actúa como punto de entrada principal a los contenidos, 
+servicios y trámites, reforzando la identidad institucional y facilitando la navegación 
+global entre secciones.  
+Portal organismo  
+ 
+La variante de organismo se utiliza para identificar y contextualizar los contenidos 
+propios de cada organismo. Permite al usuario reconocer rápidamente en qué organismo 
+se encuentra, acceder a su navegación específica y mantener coherencia visual con el 
+portal principal sin perder identidad propia , así como también regresar a gub.uy 
+fácilmente.  
+
+ 
+ 
+28 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+Comportamiento responsive  
+Escritorio  
+ 
+ 
+ 
+✓ Se el menú de navegación desplegado por defecto.  
+✓ La identidad del sitio se ubica a la izquierda.  
+✓ el buscador y el login se ubican a la derecha.  
+Móvil 
+ 
+ 
+
+ 
+ 
+29 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+ 
+ 
+✓ Se adapta para ocupar menos espacio.  
+✓ El login pasa a estar en la parte superior.  
+✓ Se accede a la navegación principal mediante un botón de menú hamburguesa.  
+✓ El buscador se representa como un botón de solo icono.  
+Accesibilidad  
+WCAG Nivel AAA  
+Recomendaciones para no perder la accesibilidad  
+✓ Permitir la navegación por teclado a todos los elementos interactivos.  
+✓ Proveer etiquetas accesibles para íconos sin texto visible.  
+✓ Mantener un orden lógico de lectura para el lector de pantallas  
+
+ 
+ 
+30 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+** Pie 
+** Menú de navegación  
+Barra lateral  
+Submenú  
+La barra lateral es el primer nivel de navegación de la aplicación y facilita el acceso 
+rápido a las secciones principales. Cuando una sección tiene subsecciones, se despliega 
+un subnivel con las opciones relacionadas.  
+Comportamiento  
+Escritorio:  
+✓ La barra de navegación principal está siempre visible en pantalla (posición fija a la 
+izquierda).  
+✓ Si una sección tiene subnivel, ese subnivel aparece como una solapa colapsable 
+junto a la barra lateral  
+✓ La solapa de subnivel está cerrada por defecto y se abre cuando el usuario activa 
+la sección correspondiente.  
+✓ Al seleccionar una subsección dentro de la solapa, la solapa se cierra 
+automáticamente, pero la barra lateral principal permanece visible.  
+ 
+ 
+31 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+ 
+Móvil:  
+✓ La navegación principal se sustituye por un menú hamburguesa en el cabezal.  
+✓ Al tocar el menú hamburguesa aparece un desplegable en el lateral izquierdo. 
+Dentro del desplegable se muestran los niveles principales con colapsables, si se 
+requiere, para mostrar los subniveles.  
+✓ Al elegir una sección o subsección en móvil, el menú hamburguesa se cierra 
+automáticamente y el foco se devuelve al contenido principal.  
+
+ 
+ 
+32 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+ 
+Breadcrumb  
+El breadcrumb es un componente de navegación secundaria que indica al usuario la 
+ubicación actual dentro de la estructura del sitio o aplicación.  
+Permite comprender el contexto de navegación y facilita el regreso a niveles anteriores 
+de forma rápida y predecible.  
+Estructura del componente  
+ 
+Elementos que lo componen  
+✓ Texto  (Solo lectura)  
+✓ Separador entre niveles  (Ícono)  
+✓ Enlace s 
+
+ 
+ 
+33 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+Recomendaciones de uso  
+Casos típicos de uso  
+✓ Navegación entre  secciones  de más de un nivel.  
+✓ Páginas internas que no se acceden directamente desde la navegación principal.  
+✓ Flujos donde es importante que el usuario comprenda en qué sección se 
+encuentra.  
+Cuándo no usarlo  
+✓ En pantallas de nivel único.  
+✓ Como reemplazo de la navegación principal.  
+Buenas prácticas  
+✓ Mostrar siempre la ruta desde el nivel principal de la sección, sin incluir la página 
+de inicio (home) . 
+✓ El último nivel visible debe ser el nivel anterior al contenido actual.  
+✓ Mantener consistencia en la nomenclatura , los nombres deben coincidir con los 
+títulos de las secciones o páginas.  
+Accesibilidad  
+WCAG Nivel AAA  
+Recomendaciones para no perder la accesibilidad  
+✓ Mantener un orden lógico y secuencial de los niveles.  
+✓ Asegurar que los enlaces sean claramente identificables.  
+✓ Garantizar contraste suficiente entre texto y fondo.  
+Paginador  
+El paginador es un componente de navegación que permite al usuario recorrer contenido 
+dividido en múltiples páginas. Facilita la navegación por  grandes volúmenes de 
+información de forma ordenada y controlada.  
+Estructura del componente  
+ 
+Elementos que lo componen  
+✓ Botones  
+
+ 
+ 
+34 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+✓ Texto  
+✓ Colores  
+✓ Números  
+✓ Íconos  
+Variantes  
+✓ Estándar  
+✓ Compacto  
+Recomendaciones de uso  
+Casos típicos de uso  
+✓ Contenidos extensos que requieren división en múltiples páginas.  
+✓ Listados donde es necesario controlar la cantidad de información visible.  
+Cuándo no usarlo  
+✓ En contenidos breves que pueden mostrarse completos.  
+✓ En formularios o procesos paso a paso (usar menú de pasos).  
+Buenas prácticas  
+✓ Utilizar la variante  estándar a menos que sea necesario usar la otra  por la 
+disponibilidad del espacio en pantalla o el contexto.  Utilizar el paginador compacto 
+solo en tablas o vistas densas.  
+✓ Mantener consistencia en su ubicación, generalmente al pie del contenido.  
+✓ En tablas o vistas extensas, puede repetirse arriba y abajo.  
+✓ Incluir información contextual cuando aporte claridad, por ejemplo:  
+ “Mostrando X de Y resultados”.  
+Variantes  
+Estándar  
+ 
+Se utiliza para listados extensos de contenido donde el usuario puede necesitar navegar 
+rápidamente a otras páginas.  
+
+ 
+ 
+35 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+Compacto  
+ 
+Diseñado para usarse en tablas, aplicaciones, o en  contextos  donde el espacio es 
+limitado.  
+Accesibilidad  
+WCAG Nivel AAA  
+Recomendaciones para no perder la accesibilidad  
+✓ Permitir la navegación por teclado entre los controles del paginador.  
+✓ Indicar de forma explícita la página actual.  
+✓ No cambiar textos de botones, ni colores del componente.  
+Menú de pasos  
+El menú de pasos es un componente de navegación progresiva que organiza un flujo en 
+etapas consecutivas.  Permite al usuario comprender en qué paso se encuentra, cuáles ya 
+completó y cuántos faltan  para finalizar el proceso.  
+Estructura del componente  
+ 
+Elementos que lo componen  
+✓ Texto (Nombre del paso)  
+✓ Separador visual entre pasos  
+✓ Indicador de estado del paso.  
+✓ Enlace (En móvil)  
+Variantes de estado de los pasos  
+✓ Activo 
+✓ Completado  
+✓ Pendiente  
+Variantes  
+Referencia  Estado  Descripción  
+
+ 
+ 
+36 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+ Activo  Paso en el que se 
+encuentra el usuario  
+ Completado  Paso ya finalizado . Se 
+permite la navegación 
+entre pasos ya 
+completados.  
+ Pendiente  Paso aún no alcanzado 
+dentro del flujo.  
+Recomendaciones de uso  
+Casos típicos de uso  
+✓ Procesos largos o complejos divididos en múltiples pasos.  
+✓ Formularios extensos.  
+✓ Flujos donde es necesario validar información antes de avanzar.  
+Cuándo no usarlo  
+✓ En procesos de un solo paso  o flujos simples . 
+✓ Como reemplazo de la navegación principal.  
+Buenas prácticas  
+✓ Utilizar nombres de pasos breves, claros y descriptivos.  
+✓ Evitar flujos excesivamente largos; en esos casos, agrupar pasos o dividir el 
+proceso en secciones.  
+Comportamiento r esponsive  
+Escritorio  
+ 
+✓ Se visualizan todos los pasos del flujo.  
+✓ El indicador de paso muestra el número correspondiente.  
+✓ Al completarse un paso, el número se reemplaza por un ícono de confirmación.  
+✓ Solo el paso activo muestra su nombre visible.  
+Móvil 
+ 
+✓ El menú de pasos se simplifica para ocupar menos espacio.  
+
+ 
+ 
+37 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+✓ Se muestra un título indicador con el paso actual y la cantidad total de pasos.  
+✓ Existe un enlace de “mostrar detalle” que permite visualizar el flujo completo en 
+un modal.  
+Accesibilidad  
+Recomendaciones para no perder la accesibilidad  
+✓ Mantener una lectura clara y secuencial del flujo.  
+✓ Proveer textos comprensibles para cada paso.  
+✓ Permitir la navegación por teclado entre los pasos ya completados.  
+** Pestañas  
+**** Mensajes y diálogos  
+Alertas  
+Ya está  en el sitio  
+ 
+** Modales  
+** Tooltips  
+** Indicadores  de estado  
+Tags 
+Las tags son etiquetas visuales que permiten clasificar información o comunicar el estado 
+de un elemento dentro de la interfaz. Se utilizan para aportar contexto de forma breve y 
+clara, sin competir con el contenido principal ni interrumpir el flujo de lec tura. 
+Pueden utilizarse en listados, tablas  o tarjetas  para facilitar el escaneo de la información.  
+Estructura del componente  
+ 
+Elementos que lo componen:  
+✓ Fondo  
+✓ Etiqueta  
+✓ Estado  (Opcional)  
+
+ 
+ 
+38 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+✓ Radio  
+Variantes : 
+✓ Tipo: Tag de clasificación , Tag de estado.  
+✓ Tamaño: L, M, S . 
+Recomendaciones de uso  
+Casos típicos:  
+✓ Clasificar contenidos.  
+✓ Comunicar el estado de un elemento dentro de un flujo o proceso.  
+Cuándo no usarlo:  
+✓ Para comunicar información compleja o extens a. 
+Buenas prácticas:  
+✓ Utilizar textos claros y concisos . Máximo 2 palabras.  
+✓ Mantener consistencia entre el tipo de tag y su uso en la interfaz.  No mezclar tags 
+de clasificación con tags de estado para comunicar un mismo concepto . 
+Variantes  
+Tipo: 
+Clasificación  
+Se utilizan para categorizar contenidos.  Identifican temáticas, tipos o atributos de un 
+elemento.  
+ 
+Estado  
+Se utilizan para comunicar el estado actual de un elemento dentro de un flujo o proceso.  
+Los estados pueden ser:  
+ Activo / Completado  
+ Error / Cancelado  
+ Inactivo / Abandonado  
+ Pendiente / En espera  
+
+ 
+ 
+39 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+Tamaño:  
+ L 
+ M 
+ S 
+Accesibilidad  
+WCAG Nivel AAA  
+Recomendaciones para no perder la accesibilidad:  
+✓ Utilizar los colores propuestos por el sistema para garantizar legibilidad y 
+contraste entre texto y fondo.  
+✓ Evitar abreviaturas o siglas poco claras.  
+*** Formularios  
+** Campos  
+** Fieldset  
+** Tablas  
+Acciones  
+Componentes con los que el usuario interactúa para ejecutar algo . 
+Botones  
+Los botones permiten al usuario ejecutar acciones dentro de una interfaz.  Según su 
+jerarquía visual y funcional, los botones se utilizan para destacar la acción principal de 
+una pantalla, ofrecer acciones alternativas o accesos secundarios, manteniendo siempre 
+una clara diferenciación  entre ell os. 
+Estructura del componente  
+ 
+Elementos que lo componen : 
+✓ Fondo  
+✓ Borde  
+
+ 
+ 
+40 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+✓ Texto  
+✓ Icono  
+✓ Sombra  
+Variantes:  
+✓ Jerarquía:  Botón primario, Botón secundario, Botón enlace  
+✓ Formato:  Solo texto, Texto + ícono izquierda, Texto + ícono derecha , Solo icono  
+✓ Tamaño:  L, M, S  
+Recomendaciones de uso  
+Buenas prácticas:  
+✓ Utilizar textos claros, directos y concisos.  Máximo recomendado de 3 palabras.  
+✓ Texto corto, claro y en voz activa, preferiblemente usar verbos.  (Ej: “Enviar”, 
+“Guardar”, “Descargar”).  
+✓ Acciones concretas y autodescriptivas (Ej: Enviar formulario). Evitar términos 
+genéricos sin contexto.  
+Variantes  
+Jerarquía : 
+Botón primario  
+ 
+Representa la acción principal dentro de una pantalla. Se utiliza para guiar al usuario 
+hacia el paso más importante del flujo.  
+Casos típicos de uso : 
+✓ Enviar formulario o avanzar al siguiente paso del formulario.  
+✓ Confirmar una decisión en un modal.  
+✓ Acción que marca una acción destacada. (Ej: Publicar, Eliminar).  
+✓ Acción principal en una pantalla o bloque donde hay una clara jerarquía de 
+acciones.  
+Cuándo no usarlo:  
+✓ Para acciones secundarias o de menor importancia.  
+✓ Cuando ya existe otro botón primario en la misma vista (solo debe haber uno).  
+Estados interactivos : 
+ Por defecto  
+
+ 
+ 
+41 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+ Hover  
+ Presionado  
+ Deshabilitado (Solo cuando la acción no 
+esté disponible)  
+Botón secundario  
+ 
+Complementa al botón primario y permite ejecutar acciones de apoyo o alternativas, sin 
+competir visualmente con la acción principal.  
+Casos típicos de uso : 
+✓ Cuando existe una acción secundaria que acompaña a la principal (Ej: “Cancelar”, 
+“Volver”).  
+✓ En diálogos o modales junto al botón primario.  
+✓ En flujos donde hay más de una opción, pero solo una es prioritaria.  
+Cuándo no usarlo:  
+✓ Como reemplazo del botón primario en acciones principales, salvo que se requiera 
+intencionalmente una menor jerarquía visual  y no exista otro botón principal en la 
+pantalla . 
+✓ Para demasiadas acciones al mismo nivel.  
+Estados interactivos:  
+ Por defecto  
+ Hover  
+ Presionado  
+ Deshabilitado (Solo cuando la acción no 
+esté disponible)  
+ 
+
+ 
+ 
+42 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+Botón enlace  
+ 
+Funciona como la acción de menor jerarquía. Se utiliza cuando la acción no debe 
+competir visualmente con botones primarios o secundarios.  
+Casos típicos de uso : 
+✓ Para acciones de bajo peso dentro de un flujo (Ej: “Compartir”).  
+✓ Para accesos a información complementaria o configuraciones secundarias.  
+Cuándo no usarlo:  
+✓ Como acción principal de una pantalla.  
+✓ Para tareas críticas o irreversibles.  
+Estados interactivos:  
+ Por defecto  
+ Hover  
+ Presionado  
+ Deshabilitado (Solo cuando la acción no 
+esté disponible)  
+ 
+Formato:  
+Solo texto  
+ 
+Texto + ícono a la izquierda  
+ 
+Texto + ícono a la derecha  
+ 
+
+ 
+ 
+43 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+Se utiliza solo cuando el ícono refuerza la dirección o consecuencia de la acción 
+(Ej:“Siguiente” o “Ir a”).  
+Solo icono  
+ 
+Únicamente cuando la acción sea universalmente reconocible.  
+Tamaño:  
+ L 
+ M 
+ S 
+Accesibilidad  
+WCAG Nivel AAA  
+Recomendaciones para no perder la accesibilidad:  
+✓ No utilizar botones de solo ícono sin proporcionar un texto alternativo descriptivo.  
+✓ Evitar el uso de textos genéricos o usar referencias visuales en la redacción. (Ej: 
+Evitar textos como “ver más”, “clic aquí”).  
+✓ Evitar textos completamente en mayúsculas.  
+Enlace s 
+Los enlaces  permite n al usuario acceder a información, secciones o acciones de baja 
+jerarquía dentro de una interfaz. Se utiliza n para ofrecer caminos complementarios o 
+alternativos sin competir visualmente con los botones, manteniendo un peso visual 
+mínimo.  
+Estructura del componente  
+ 
+Elementos que lo componen:  
+✓ Texto subrayado  
+✓ icono  
+
+ 
+ 
+44 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+Variantes:  
+✓ Formato:  Solo texto, Texto  + icono  izquierda, Texto + ícono derecha , Enlace 
+externo  
+✓ Tamaño:  L, M y S  
+Recomendaciones de uso  
+Casos típicos:  
+✓ Para acciones de bajo peso dentro de un flujo . 
+✓ Cuando se quiere ofrecer un camino alternativo, pero sin distraer de la acción 
+principal.  
+✓ Como enlace a información adicional, configuraciones o secciones no críticas.  
+Cuándo no usarlo:  
+✓ Como acción principal de una pantalla.  
+✓ Para tareas críticas (guardar, confirmar, enviar), ya que puede pasar 
+desapercibido.  
+✓ En contextos donde varios enlaces seguidos puedan confundir al usuario.  
+Buenas prácticas:  
+✓ Mantener el texto breve, claro y siempre relacionado a una acción o destino.  
+✓ Colocar el ícono solo cuando refuerce la acción (Ej: flecha para “Ir a”, descarga 
+para “Descargar”).  
+Variantes  
+Formato:  
+Solo texto  
+ 
+Se presenta únicamente como texto interactivo y se utiliza para la mayoría de los casos 
+de navegación o acceso a información dentro del sistema.  Es el formato recomendado 
+cuando el contexto ya es claro y no se requiere reforzar visualmente la acción o el 
+destino.  
+Texto  + icono  a la izquierda  
+ 
+Este formato combina el texto del enlace con un ícono alineado horizontalmente. El ícono 
+puede ubicarse a la izquierda o a la derecha del texto, siguiendo el mismo criterio de uso 
+que en los botones.  
+
+ 
+ 
+45 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+Se utiliza cuando el ícono aporta información adicional sobre la acción o el destino del 
+enlace ( Ej: navegación, descarga), sin modificar la jerarquía del componente.  
+Texto + icono a la derecha  
+ 
+Se utiliza solo cuando el ícono refuerza la dirección o consecuencia de la acción 
+(Ej:“Siguiente” o “Ir a”).  
+Enlace externo  
+ 
+Formato específico para enlaces que dirigen al usuario fuera del dominio o sistema 
+actual. Su función es comunicar de forma explícita que la acción implica abandonar el 
+entorno en el que se encuentra . Debe utilizarse exclusivamente para enlaces externos y 
+no para navegación interna.  
+Estado interactivo:  
+ Por defecto  
+ Hover  
+ Deshabilitado (Solo cuando la acción no 
+esté disponible)  
+ 
+Tamaño:  
+ L 
+ M 
+ S 
+Accesibilidad  
+WCAG Nivel AAA  
+Recomendaciones para no perder la accesibilidad:  
+✓ No utilizar enlaces de solo ícono sin proporcionar un texto alternativo descriptivo.  
+✓ Evitar el uso de textos genéricos o usar referencias visuales en la redacción. (Ej: 
+Evitar textos como “ver más”, “clic aquí”).  
+
+ 
+ 
+46 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+✓ Evitar textos completamente en mayúsculas.  
+Grupo de botones  
+El grupo de botones es un componente de acción que agrupa botones de solo ícono para 
+presentar acciones de igual jerarquía dentro de un mismo contexto. Se utiliza 
+principalmente en vistas donde el espacio es reducido o donde las acciones deben 
+mantenerse v isualmente neutras, como tablas o listados.  
+El grupo de botones solo existe con el estilo de botón secundario, evitando competir con 
+acciones principales del flujo.  
+Estructura del componente  
+Elementos que lo componen  
+ 
+Cuándo usarl o: 
+✓ Cuando se necesita mostrar varias acciones de manera paralela y con el mismo 
+nivel jerárquico.  
+✓ Para agrupar funciones similares o relacionadas (Ej: acciones de edición, 
+descargas, vista de lista/cuadrícula).  
+✓ En contextos donde la interfaz requiere ahorrar espacio y organizar opciones.  
+Cuándo no usarl o: 
+✓ Cuando las acciones no tienen relación entre sí.  
+✓ Para mostrar más de cinco opciones.  
+✓ Como reemplazo de un menú si las acciones no son frecuentes.  
+Variantes:  
+✓ Iconográfica: cada acción está representada únicamente por un ícono. 
+Recomendable cuando las acciones son universales y reconocibles (Ej: descargar, 
+compartir, editar).  
+✓ Con texto: cada ítem incluye un label textual que explica la acción. Adecuado 
+cuando el ícono no es suficiente o se busca mayor claridad.  
+✓ Mixta: texto acompañado de ícono para reforzar la acción.  
+Buenas prácticas:  
+✓ Mantener entre 2 y 5 botones como máximo.  
+✓ Elegir íconos reconocibles y con el mismo estilo visual.  
+✓ Si es solo ícono, acompañar con tooltip para mejorar la accesibilidad.¿?  
+Estados:  Ídem al botón de acción secundaria.  
+ 
+ 
+47 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+** Botón con desplegable  
+El botombo es un botón que combina una acción principal con un menú colapsable de 
+opciones adicionales. Incluye una flecha indicadora que abre el desplegable, permitiendo 
+al usuario cambiar o seleccionar una acción alternativa sin perder el acceso rápido a  la 
+acción principal. Puede tener estilo de botón primario  o botón secundario , según la 
+jerarquía de la acción que representa.  
+Cuándo usarlo:  
+✓ Cuando existe una acción principal clara, pero también es necesario ofrecer 
+variantes relacionadas (Ej: “Descargar” con opciones de formato: PDF, Excel, 
+Word).  
+✓ En flujos donde se quiere evitar saturar la interfaz con varios botones separados.  
+✓ Cuando la acción principal debe ser inmediata, pero se mantienen opciones de 
+personalización.  
+Cuándo no usarlo:  
+✓ Si no hay una acción destacada que deba estar siempre visible (en ese caso 
+conviene usar un menú común).  
+Buenas prácticas:  
+✓ Asegurarse de que la acción principal sea siempre la más usada.  
+✓ Mantener las opciones del menú breves y claras.  
+✓ Usar íconos en las opciones del desplegable solo si ayudan a distinguir 
+rápidamente las acciones.  
+Variantes:  
+✓ Primario  
+✓ Secundario  
+ 
+Estados:  
+✓ Botón por defecto  
+✓ Hover  
+✓ Presionado  
+✓ Deshabilitado  
+✓ Menú desplegado (lista de opciones visibles).  
+
+ 
+ 
+48 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+  
+*** Contenedores gub.uy  
+Definir si van en el sistema , y con qué nombre  
+** Accesos  
+** Bloques de contenido destacado  
+** Hero 
+** Bloques de listado  
+** Bloques multimedia  
+** Bloques de agenda  
+** Otros  
+*** Visualización de datos  
+** Tablas  
+** Gráficos  
+Backlog  
+✓ Formato carpet a 
+
+ 
+ 
+49 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+✓ Valoración (estrellitas)  
+✓ Dibujar componentes de paginador en el sistema  
+✓ Incorporar diseño para llamadores (pantallas en oficinas)  
+✓ Sección de calidad de la UX. Velocidad de carga, HTML, CSS Estándares  
+Borradores  
+Subcomponentes  
+Login:  
+✓ Abre un desplegable superpuesto.  
+✓ Si no hay sesión iniciada, permite el inicio de sesión con usuario gub.uy.  
+✓ Si la sesión está iniciada, da acceso a administrar el usuario o cerrar sesión.  
+ 
+
+ 
+ 
+50 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+ 
+Notificaciones  
+Las notificaciones abren un panel como el del login que muestra las notificaciones 
+más recientes.  
+Funcionamiento:  
+✓ Las cuando hay notificaciones nuevas sin ver, sobre el icono del cabezal aparece 
+un círculo (color advertencia -acento ) que indica que hay notificaciones nuevas.  
+ 
+✓ El listado de notificaciones puede tener un máximo de 6 ítems con un botón enlace 
+que permite ingresar al panel de notificaciones para ver el historial completo.  
+✓ Las notificaciones nuevas se distinguen por icono relleno, mientras que las 
+anteriores se muestran con el icono lineal.  
+
+ 
+ 
+51 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+✓  
+ 

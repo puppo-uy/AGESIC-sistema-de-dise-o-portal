@@ -1,0 +1,135 @@
+/**
+ * Estilos exclusivos del Portal
+*/
+
+@media screen and (max-width: 992px) {
+	.Header--openSearch {
+		margin-bottom: 90px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	/*
+	.Header--slim.Header--openSearch .NavSearch-wrapper .Header-search .navButtonWrap-md, 
+	.Header--slim.Header--openSearch .NavSearch-wrapper .Nav--flex>ul {
+    display: none;
+	}
+	
+	.Header--slim.Header--openSearch .NavSearch-wrapper {
+    overflow: visible;
+    visibility: visible;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    background-color: #fff;
+	}
+	
+	.Header--slim.Header--openSearch .NavSearch-wrapper .Header-search {
+		display: block;
+		left: 0;
+		opacity: 1;
+		width: 100%;
+		position: relative;
+		border-bottom: none;
+		visibility: visible;
+	}
+	*/
+}
+
+/* -----------------------------------------------
+   Componente: Modal
+----------------------------------------------- */
+
+/* Overlay */
+.Modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1050;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  box-sizing: border-box;
+}
+
+/* Contenedor del diálogo */
+.Modal-dialog {
+  position: relative;
+  width: 90%;
+  max-width: 620px;
+  margin: 0;
+}
+
+/* Contenido */
+.Modal-content {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+}
+
+/* Encabezado */
+.Modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1.5rem 1.5rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  gap: 1rem;
+}
+
+/* Título */
+.Modal-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.3;
+}
+
+/* Botón de cierre */
+.Modal-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: .25rem;
+  line-height: 1;
+  color: #003DA5;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  margin-top: .125rem;
+  transition: opacity .15s ease;
+}
+
+.Modal-close:hover {
+  opacity: .7;
+}
+
+/* Cuerpo */
+.Modal-body {
+  padding: 1.5rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Pie */
+.Modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: .75rem;
+  padding: 1rem 1.5rem 1.5rem;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Bloqueo de scroll al abrir */
+body.modal-open {
+  overflow: hidden;
+}
+

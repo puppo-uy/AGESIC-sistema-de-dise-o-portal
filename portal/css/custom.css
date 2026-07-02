@@ -1,0 +1,237 @@
+/**
+ * Estilos exclusivos del Portal
+*/
+
+/* =======================================================
+   Correcciones para Formulario Tipo 1.2 (Campos y Fieldset)
+   Este CSS debe ir DESPUES de formulario-tipo-1.2.css
+   ======================================================= */
+
+/* Label-wrap: columna izquierda con ancho fijo para alinear todos los campos */
+.Form--tipo .Form-group .Form-label-wrap {
+    display: table-cell;
+    vertical-align: top;
+    width: 35%;
+    min-width: 12rem;
+    max-width: 18rem;
+    padding-top: 0.75rem;
+    padding-right: 0.75rem;
+    text-align: right;
+    white-space: normal;
+}
+.Form--tipo .Form-group .Form-label-wrap .Form-label {
+    width: auto;
+    display: block;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+/* Object-wrap: columna derecha (ocupa el ancho restante) */
+.Form--tipo .Form-group .Form-object-wrap {
+    display: table-cell;
+    vertical-align: top;
+    width: 100%;
+    padding-top: 0;
+    padding-right: 0;
+}
+.Form--tipo .Form-group .Form-object-wrap .Form-label {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0 0 4px 0;
+}
+.Form--tipo .Form-group .Form-hint {
+    display: block;
+    font-size: 0.875rem;
+    margin-top: 4px;
+    text-align: left;
+    color: #666;
+}
+.Form--tipo .Form-group .Form-status {
+    display: flex;
+    font-size: 0.875rem;
+    margin-top: 4px;
+    text-align: left;
+    align-items: flex-start;
+    gap: 4px;
+}
+.Form--tipo .Form-group .Form-widget {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.Form--tipo .Form-group .Form-widget--medium {
+    max-width: 20rem;
+}
+.Form--tipo .Form-group .Form-widget--small {
+    max-width: 10rem;
+}
+
+/* En mobile: apilar label encima del campo */
+@media screen and (max-width: 991px) {
+    .Form--tipo .Form-group .Form-label-wrap,
+    .Form--tipo .Form-group .Form-object-wrap {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding-right: 0;
+        white-space: normal;
+    }
+    .Form--tipo .Form-group .Form-label-wrap .Form-label {
+        text-align: left;
+    }
+}
+
+/* Buscador: boton superpuesto sobre el input */
+.Form--tipo .Form-group--search .Form-object-wrap {
+    position: relative;
+}
+.Form--tipo .Form-group--search button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 48px;
+    width: 48px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.Form--tipo .Form-group--search .Form-widget {
+    padding-right: 48px;
+}
+
+/* Label oculto: accesibilidad */
+.Form--tipo .Form-group--search--label-hide label {
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Ocultar texto del boton buscador (el icono SVG se carga por sprite) */
+.Form--tipo .Form-group--search button span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    padding: 0;
+}
+
+/* Mensajes de error/exito/advertencia: directamente bajo el campo */
+.Form--tipo .Form-group .Form-status {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+    text-align: left;
+    margin-top: 4px;
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+/* Ocultar el svg del icono cuando no hay sprite cargado */
+.Form--tipo .Form-group .Form-status > svg {
+    display: none;
+}
+
+/* =======================================================
+   Formulario APILADO: etiquetas encima de los campos
+   ======================================================= */
+.Form--stacked.Form--tipo .Form-group .Form-label-wrap,
+.Form--stacked.Form--tipo .Form-group .Form-object-wrap {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding-right: 0;
+    white-space: normal;
+    padding-top: 0;
+}
+.Form--stacked.Form--tipo .Form-group .Form-label-wrap .Form-label {
+    text-align: left;
+    padding-bottom: 0.25rem;
+}
+.Form--stacked.Form--tipo .Form-group .Form-widget {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* =======================================================
+   Área de acciones del formulario (Volver / Continuar)
+   ======================================================= */
+.Form-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+.Form-actions-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+.Form-actions-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* =======================================================
+   Estilos de botones del sistema de diseño (Button)
+   Aplica tanto dentro como fuera de .Form--tipo
+   ======================================================= */
+.Button,
+.Form--tipo .Button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    min-height: 48px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    line-height: 1.25;
+    box-sizing: border-box;
+    width: auto;
+    vertical-align: middle;
+}
+
+/* Alineación de iconos dentro de botones */
+.Button svg,
+.Form--tipo .Button svg {
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+/* Tamaños de iconos estándar */
+.icono {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: currentColor;
+    vertical-align: middle;
+}
+.icono--s { width: 1.125rem; height: 1.125rem; }
+.icono--m { width: 1.5rem; height: 1.5rem; }
+.icono--l { width: 2rem; height: 2rem; }
+
+/* NOTA: Los colores (.Button--primary, .Button--inverse, etc.) 
+   se toman nativamente de portal-unificado.css para coincidir 
+   con el sistema de diseño actual. */
+
+
