@@ -28,7 +28,7 @@
             <div class="Header-logo">
 
                 <!-- Logo -->
-                <a href="sist-que-es.php">
+                <a href="index.php">
 									<div class="Logo">
 										<img class="Logo-image" src="../recursos/assets/iso-agesic.png" alt=""><!---->
 										<div class="Logo-text">
@@ -49,7 +49,7 @@
 								<nav class="Nav--flex js-navDropdown show" id="menu">
 									<ul>
 										<li>
-											<a href="sist-que-es.php" id="item-1">Sobre este Sistema de diseño</a>
+											<a href="index.php" id="item-1">Sobre este Sistema de diseño</a>
 										</li>
 										<li>
 											<a href="#" id="item-2" class="NavToggle-item">Estilos globales</a>

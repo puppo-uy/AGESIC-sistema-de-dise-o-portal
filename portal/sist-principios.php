@@ -10,7 +10,7 @@
   <div class="Breadcrumb">
     <div class="Container">
       <ul>
-        <li><a href="sist-que-es.php">Inicio</a></li>
+        <li><a href="index.php">Inicio</a></li>
         <li>Principios rectores</li>
       </ul>
     </div>
