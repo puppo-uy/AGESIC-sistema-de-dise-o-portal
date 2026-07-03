@@ -27,11 +27,11 @@
 
   <!-- meta -->
   <meta name="theme-color" content="#003da5">
-  <meta name="description" content="[Resumen de la página/contenido o información cargada al momento de crear subhome]">
+  <meta name="description" content="Sistema de diseño del Estado Uruguayo">
 
-  <meta property="og:title" content="[Titulo de la página/contenido/subhome]">
-  <meta property="og:description" content="[Resumen de la página/contenido o información cargada al momento de crear subhome]">
-  <meta property="og:image" content="[Logo de gubuy por defecto en todas las páginas (./assets/logo-gubuy.png) o imagen cargada al momento de crear subhome]">
+  <meta property="og:title" content="<?php echo $title; ?> | Sistema de Diseño">
+  <meta property="og:description" content="Sistema de diseño del Estado Uruguayo">
+  <meta property="og:image" content="../recursos/assets/iso-agesic.png">
 
   <!--[if lt IE 9]>
     <script src="../recursos/js/vendor/polyfills.js"></script>
