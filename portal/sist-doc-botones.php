@@ -127,7 +127,7 @@
             log: false, 
             checkOrigin: false,
             heightCalculationMethod: 'lowestElement',
-            heightOffset: 16
+            heightOffset: 30
         }, '.component-preview');
     });
   </script>
