@@ -85,10 +85,11 @@
                                 <p class="u-mb4">Se utiliza para acciones opcionales o de menor importancia. Tiene menor prominencia visual.</p>
 
                                 <h4 class="u-mt4 u-mb3">Tamaño</h4>
+                                <iframe src="../git/iframe-preview.php?comp=botones/boton-tamanos" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                                 <ul class="List-text">
-                                    <li>Grande</li>
-                                    <li>Medio</li>
-                                    <li>Chico</li>
+                                    <li>Grande (L)</li>
+                                    <li>Medio (M)</li>
+                                    <li>Chico (S)</li>
                                 </ul>
 
                                 <h3 class="u-mt4">Accesibilidad</h3>
