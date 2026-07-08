@@ -145,7 +145,7 @@
             log: false, 
             checkOrigin: false,
             heightCalculationMethod: 'lowestElement',
-            heightOffset: 30
+            heightOffset: 50
         }, '.component-preview');
     });
   </script>
