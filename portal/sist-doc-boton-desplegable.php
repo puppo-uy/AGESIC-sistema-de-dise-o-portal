@@ -82,11 +82,21 @@
                 </ul>
 
                 <h3 class="u-mt4">Variantes</h3>
-                <h4 class="u-mt3 u-mb3">Tamaño</h4>
+                
+                <h4 class="u-mt3 u-mb2">Jerarquía</h4>
+                
+                <h5 class="u-mb2">Primario</h5>
+                <iframe src="../git/iframe-preview.php?comp=botones/boton-desplegable-primario" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                
+                <h5 class="u-mb2">Secundario</h5>
+                <iframe src="../git/iframe-preview.php?comp=botones/boton-desplegable-secundario" class="component-preview u-mb4" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
 
+                <h4 class="u-mt4 u-mb2">Tamaño</h4>
+                <iframe src="../git/iframe-preview.php?comp=botones/boton-desplegable-tamanos" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                
                 <ul class="List-text">
-                    <li>M</li>
-                    <li>S</li>
+                    <li>Mediano (M)</li>
+                    <li>Chico (S)</li>
                 </ul>
 
                 <h3 class="u-mt4">Comportamiento responsive</h3>
