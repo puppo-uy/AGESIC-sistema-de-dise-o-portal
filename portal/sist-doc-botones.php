@@ -126,7 +126,8 @@
         iFrameResize({ 
             log: false, 
             checkOrigin: false,
-            heightCalculationMethod: 'lowestElement'
+            heightCalculationMethod: 'lowestElement',
+            heightOffset: 16
         }, '.component-preview');
     });
   </script>
