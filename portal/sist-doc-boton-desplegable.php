@@ -52,7 +52,7 @@
                 <p class="Page-description">Un botón con desplegable combina la acción de un botón tradicional con la capacidad de revelar un menú de opciones secundarias o relacionadas con la acción principal.</p>
 
                 <h3 class="u-mt4">Estructura del componente</h3>
-                <img src="img/ejemplos_documentacion/botombo.png" alt="Estructura de Botón con desplegable" class="u-mb3" style="max-width: 100%;">
+                <iframe src="../git/iframe-preview.php?comp=botones/boton-desplegable" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                 <h5 class="u-mt3">Elementos que lo componen:</h5>
                 <ul class="List-text">
                     <li>Botón</li>
@@ -91,7 +91,6 @@
 
                 <h3 class="u-mt4">Comportamiento responsive</h3>
                 <h4 class="u-mt3">Escritorio</h4>
-                <img src="img/ejemplos_documentacion/botombo_abierto.png" alt="Botón desplegable en escritorio" class="u-mb2 u-mt2" style="max-width: 100%;">
                 <ul class="List-text">
                     <li>El menú se despliega justo debajo del botón.</li>
                     <li>El ancho del menú se adapta al contenido, con un ancho mínimo que suele ser igual al del botón.</li>
@@ -128,5 +127,12 @@
 
   <!-- Footer -->
   <?php include "inc/footer.php"; ?>
+
+  <script src="../recursos/js/vendor/iframeResizer.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        iFrameResize({ log: false, checkOrigin: false }, '.component-preview');
+    });
+  </script>
 
 <?php include "inc/foot.php"; ?>

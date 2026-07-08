@@ -38,5 +38,7 @@
 
     <!-- Script para comunicar la altura al portal -->
     <script src="recursos/scripts/iframeResizer.contentWindow.min.js"></script>
+    <!-- Entry point del sistema de componentes JS -->
+    <script type="module" src="scripts/main.js"></script>
 </body>
 </html>
