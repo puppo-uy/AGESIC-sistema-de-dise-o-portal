@@ -84,7 +84,7 @@
                             <li>Estados, tags y botones de acción: Centrados o alineados a la derecha.</li>
                         </ul>
                     </li>
-                    <li><strong>Diseño responsivo</strong>: Envolver la tabla en un contenedor con desborde horizontal para evitar que se rompa la grilla en pantallas móviles (ej: `overflow-x: auto`).</li>
+                    <li><strong>Diseño responsivo</strong>: Envolver la tabla en un contenedor con desborde horizontal para evitar que se rompa la grilla en pantallas móviles (ej: <code>overflow-x: auto</code>).</li>
                     <li><strong>Cabezales fijos</strong>: En tablas muy extensas, fijar la primera fila (Cabezal) al hacer scroll.</li>
                 </ul>
 
@@ -101,8 +101,8 @@
                 <h3 class="u-mt4">Accesibilidad</h3>
                 <h4 class="u-mt3">WCAG y Estándares WAI-ARIA</h4>
                 <ul class="List-text">
-                    <li><strong>Etiquetado semántico</strong>: Utilizar siempre `<table>`, `<thead>`, `<tbody>`, `<th>` y `<td>` correctamente para que los lectores de pantalla puedan anunciar las coordenadas de cada celda.</li>
-                    <li><strong>Estructura jerárquica</strong>: Para tablas TreeGrid, utilizar los atributos `role="treegrid"`, `role="row"`, `aria-level`, `aria-expanded` y asociar los eventos de teclado W3C para navegación (flechas arriba/abajo para navegar filas, izquierda/derecha para colapsar/expandir).</li>
+                    <li><strong>Etiquetado semántico</strong>: Utilizar siempre <code>&lt;table&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;th&gt;</code> y <code>&lt;td&gt;</code> correctamente para que los lectores de pantalla puedan anunciar las coordenadas de cada celda.</li>
+                    <li><strong>Estructura jerárquica</strong>: Para tablas TreeGrid, utilizar los atributos <code>role="treegrid"</code>, <code>role="row"</code>, <code>aria-level</code>, <code>aria-expanded</code> y asociar los eventos de teclado W3C para navegación (flechas arriba/abajo para navegar filas, izquierda/derecha para colapsar/expandir).</li>
                 </ul>
 
                 <h3 class="u-mt4">Componentes relacionados</h3>
