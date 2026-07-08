@@ -50,37 +50,66 @@
                 
                 <p class="Page-description">Las tablas organizan información en filas y columnas, permitiendo al usuario comparar datos y encontrar información específica de manera eficiente.</p>
 
-                <h3 class="u-mt4">Recomendaciones de uso</h3>
+                <h3 class="u-mt4">Estructura del componente</h3>
+                <iframe src="../git/iframe-preview.php?comp=tablas/tabla-estandar" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                <h5 class="u-mt3">Elementos que lo componen:</h5>
                 <ul class="List-text">
-                    <li><strong>Encabezados claros</strong>: Utilizá siempre la etiqueta <code>&lt;th&gt;</code> para los títulos de las columnas, asegurando que sean breves y descriptivos.</li>
-                    <li><strong>Diseño responsivo</strong>: Para pantallas pequeñas, implementá el desplazamiento horizontal o transformá la tabla en tarjetas de datos.</li>
-                    <li><strong>Simplicidad</strong>: Evitá saturar la tabla con demasiadas columnas. Si la información es muy densa, considerá el uso de filtros o paginación.</li>
+                    <li><strong>Cabezal de tabla (thead)</strong>: Contiene los títulos de las columnas (th).</li>
+                    <li><strong>Cuerpo de tabla (tbody)</strong>: Contiene las filas de datos (tr) y celdas individuales (td).</li>
+                    <li><strong>Celdas de cabecera (th)</strong>: Identifican el tipo de datos de cada columna.</li>
+                    <li><strong>Celdas de datos (td)</strong>: Contienen la información o acciones del componente.</li>
                 </ul>
+
+                <h3 class="u-mt4">Recomendaciones de uso</h3>
+                <h4 class="u-mt3">Casos típicos de uso</h4>
+                <ul class="List-text">
+                    <li>Visualizar listados de elementos con múltiples atributos comparables.</li>
+                    <li>Tabular datos numéricos, financieros o cronológicos.</li>
+                    <li>Mostrar listados dinámicos que soporten acciones (ej: editar, borrar, cambiar estado).</li>
+                </ul>
+
+                <h4 class="u-mt3">Cuándo no usarlo</h4>
+                <ul class="List-text">
+                    <li>Para maquetar layouts o estructuras de página (usar Flexbox o CSS Grid en su lugar).</li>
+                    <li>Cuando la información es muy simple y se puede representar mejor mediante listas de texto.</li>
+                    <li>Cuando el volumen de datos es inmenso y no se acompaña de filtros o paginadores.</li>
+                </ul>
+
+                <h3 class="u-mt4">Buenas prácticas</h3>
+                <ul class="List-text">
+                    <li><strong>Alineación del contenido</strong>: 
+                        <ul>
+                            <li>Textos y datos generales: Alineados a la izquierda.</li>
+                            <li>Valores numéricos, montos y fechas: Alineados a la derecha (para facilitar la comparación).</li>
+                            <li>Estados, tags y botones de acción: Centrados o alineados a la derecha.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Diseño responsivo</strong>: Envolver la tabla en un contenedor con desborde horizontal para evitar que se rompa la grilla en pantallas móviles (ej: `overflow-x: auto`).</li>
+                    <li><strong>Cabezales fijos</strong>: En tablas muy extensas, fijar la primera fila (Cabezal) al hacer scroll.</li>
+                </ul>
+
+                <h3 class="u-mt4">Variantes</h3>
                 
-                <h3>Estructura del componente</h3>
-                <p>Información sin definir</p>
+                <h4 class="u-mt3 u-mb2">Tabla Estándar</h4>
+                <p class="u-mb3">Disposición de datos plana clásica, con diseño responsivo y efectos hover para facilitar la lectura de registros.</p>
+                <iframe src="../git/iframe-preview.php?comp=tablas/tabla-estandar" class="component-preview u-mb4" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
 
-                <h3>Recomendaciones de uso</h3>
-                <h4>Casos típicos</h4>
-                <p>Información sin definir</p>
+                <h4 class="u-mt4 u-mb2">Tabla Jerárquica (TreeGrid)</h4>
+                <p class="u-mb3">Permite mostrar datos estructurados de forma jerárquica con filas que se expanden o colapsan interactivamente.</p>
+                <iframe src="../git/iframe-preview.php?comp=tablas/treegrid" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 200px;" scrolling="no"></iframe>
 
-                <h4>Cuando no usarlo</h4>
-                <p>Información sin definir</p>
+                <h3 class="u-mt4">Accesibilidad</h3>
+                <h4 class="u-mt3">WCAG y Estándares WAI-ARIA</h4>
+                <ul class="List-text">
+                    <li><strong>Etiquetado semántico</strong>: Utilizar siempre `<table>`, `<thead>`, `<tbody>`, `<th>` y `<td>` correctamente para que los lectores de pantalla puedan anunciar las coordenadas de cada celda.</li>
+                    <li><strong>Estructura jerárquica</strong>: Para tablas TreeGrid, utilizar los atributos `role="treegrid"`, `role="row"`, `aria-level`, `aria-expanded` y asociar los eventos de teclado W3C para navegación (flechas arriba/abajo para navegar filas, izquierda/derecha para colapsar/expandir).</li>
+                </ul>
 
-                <h3>Buenas prácticas</h3>
-                <p>Información sin definir</p>
-
-                <h3>Variantes</h3>
-                <p>Información sin definir</p>
-
-                <h3>Accesibilidad</h3>
-                <p>Información sin definir</p>
-
-                <h3>Recursos</h3>
-                <p>Información sin definir</p>
-
-                <h3>Componentes relacionados</h3>
-                <p>Información sin definir</p>
+                <h3 class="u-mt4">Componentes relacionados</h3>
+                <ul class="List-text">
+                    <li><a href="sist-doc-botones.php">Botones</a></li>
+                    <li><a href="sist-doc-boton-desplegable.php">Botón con desplegable</a></li>
+                </ul>
 
               </div>
             </div>
@@ -92,5 +121,17 @@
 
   <!-- Footer -->
   <?php include "inc/footer.php"; ?>
+
+  <script src="../recursos/js/vendor/iframeResizer.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        iFrameResize({ 
+            log: false, 
+            checkOrigin: false,
+            heightCalculationMethod: 'lowestElement',
+            heightOffset: 50
+        }, '.component-preview');
+    });
+  </script>
 
 <?php include "inc/foot.php"; ?>
