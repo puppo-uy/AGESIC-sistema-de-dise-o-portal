@@ -12,6 +12,7 @@
             background: transparent;
             margin: 0;
             padding: 16px; /* Un poco de padding para que los estados focus/box-shadow no se corten */
+            padding-bottom: 60px; /* Margen inferior de seguridad para dar espacio a los desplegables */
             overflow: hidden; /* iframe-resizer se encarga de mostrar todo */
         }
     </style>
