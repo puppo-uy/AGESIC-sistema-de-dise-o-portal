@@ -116,14 +116,17 @@
     </div>
   </div>
 
-
   <!-- Footer -->
   <?php include "inc/footer.php"; ?>
 
   <script src="../recursos/js/vendor/iframeResizer.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-        iFrameResize({ log: false, checkOrigin: false }, '.component-preview');
+        iFrameResize({ 
+            log: false, 
+            checkOrigin: false,
+            heightCalculationMethod: 'lowestElement'
+        }, '.component-preview');
     });
   </script>
 
