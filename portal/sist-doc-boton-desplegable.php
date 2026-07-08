@@ -10,7 +10,7 @@
   <div class="Breadcrumb">
     <div class="Container">
       <ul>
-        <li><a href="index.php">Inicio</a></li>
+        <li><a href="sist-que-es.php">Inicio</a></li>
         <li>Componentes</li>
         <li><a href="sist-doc-acciones.php">Acciones</a></li>
         <li>Botón con desplegable</li>

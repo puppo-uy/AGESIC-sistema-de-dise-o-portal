@@ -1,5 +1,5 @@
 <?php
-  $title = 'Herramientas';
+  $title = '¿Qué es el sistema de diseño de gub.uy?';
 ?>
 <?php include "inc/head.php"; ?>
 
@@ -11,7 +11,7 @@
     <div class="Container">
       <ul>
         <li><a href="sist-que-es.php">Inicio</a></li>
-        <li>Herramientas</li>
+        <li>¿Qué es el Sistema de Diseño del Estado Uruguayo? </li>
       </ul>
     </div>
   </div>
@@ -26,7 +26,7 @@
 						
 						<!-- Menú lateral -->
 						<?php 
-							$activeItem = 'herramientas';
+							$activeItem = 'que-es';
 							include "inc/nav-inicio.php"; 
 						?>
 						
@@ -37,8 +37,8 @@
 
               <div class="Page-document">
 
-                <span class="Page-subtitle">Sobre este Sistema de diseño</span>
-                <h2 class="Page-title">Herramientas</h2>
+                <!--<span class="Page-subtitle">Mensajes y diálogos</span>-->
+                <h2 class="Page-title">¿Qué es el Sistema de Diseño del Estado Uruguayo? </h2>
 								
 								 <div class="Page-info">
 									<div class="Bar">
@@ -49,15 +49,11 @@
 									</div>
 								</div>
 								
-								<p>El sistema de diseño tiene dos herramientas para su aplicación:</p>
+								<p>El sistema de diseño del Estado es un conjunto de herramientas para el diseño y construcción de interfaces digitales, que tienen como finalidad construir servicios digitales consistentes, con foco en la ciudadanía, accesibles y optimizados para dispositivos móviles.</p>
+
+
+								<p>Es una estrategia transversal que promueve la calidad, coherencia y eficiencia en el diseño de servicios y productos digitales. Está pensado como un ecosistema vivo que articula herramientas, estándares y acompañamiento para fortalecer las capacidades de diseño centrado en las personas en los proyectos públicos.</p>
 								
-								<ul class="List-text">
-									<li><b>Figma:</b> Estándar de la industria del diseño digital, que permite alinear de forma directa el diseño con su implementación real, facilita la colaboración, la exploración visual y el uso consistente de componentes por parte de perfiles no técnicos.</li>
-									<li><b>HTML/CSS:</b> asegura que los componentes estén fielmente representados en código, para acercar el diseño a las herramientas de desarrollo. Reduciendo fricciones entre diseño y desarrollo, mejora la coherencia entre lo diseñado y lo construido, y garantiza un sistema accesible, escalable y fácil de mantener.</li>
-								</ul>
-							
-
-
               </div>
             </div>
           </div>

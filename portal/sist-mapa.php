@@ -10,7 +10,7 @@
   <div class="Breadcrumb">
     <div class="Container">
       <ul>
-        <li><a href="index.php">Inicio</a></li>
+        <li><a href="sist-que-es.php">Inicio</a></li>
         <li>Mapa del sitio</li>
       </ul>
     </div>
@@ -36,7 +36,7 @@
                     <li>
                       <strong>Sobre este Sistema de diseño</strong>
                       <ul>
-                        <li><a href="index.php">¿Qué es el Sistema de Diseño?</a></li>
+                        <li><a href="sist-que-es.php">¿Qué es el Sistema de Diseño?</a></li>
                         <li><a href="sist-objetivos.php">Objetivos y alcance</a></li>
                         <li><a href="sist-principios.php">Principios rectores</a></li>
                         <li><a href="sist-herramientas.php">Herramientas</a></li>
