@@ -1,0 +1,25 @@
+{
+  "name": "sistema-de-diseno-agesic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/main.scss recursos/css/main.css",
+    "sass:watch": "sass --watch scss/main.scss recursos/css/main.css",
+    "build:css": "postcss recursos/css/*.css --use autoprefixer -d recursos/css/",
+    "sprite": "node recursos/scripts/build-sprite.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.1.1",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "sass": "^1.93.2",
+    "svgo": "^4.0.0",
+    "svgstore": "^3.0.1"
+  }
+}

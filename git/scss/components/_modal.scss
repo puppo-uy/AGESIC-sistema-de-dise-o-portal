@@ -1,0 +1,82 @@
+@use "../tokens" as *;
+
+/**
+ * Ventanas Modales (requiere modal.js)
+ */
+
+:root {
+	--modal-shadow: var(--sombra-difuminada-m);
+	--modal-radius: var(--borde-radio-s);
+	
+	--modal-margin: auto; 
+	--modal-padding: var(--espaciado-48) var(--espaciado-56);
+	
+	--modal-margin-sm: auto var(--espaciado-16);
+	--modal-padding-sm: var(--espaciado-32) var(--espaciado-24);
+}
+
+dialog,
+.modal {
+	margin: var(--modal-margin);
+	padding: var(--modal-padding);
+	border: solid 1px transparent;
+	border-radius: var(--modal-radius);
+	background: var(--neutro-0);
+	box-shadow: var(--modal-shadow);
+	max-width: 690px;
+	
+	&::backdrop {
+	}
+	
+	&[open] {
+		animation: modal-in 150ms ease-out;
+		
+		&::backdrop {
+ 	  	animation: backdrop-fade 150ms ease-out;
+			background-color: rgba(0, 0, 0, 0.6);
+		}
+	}
+	
+	button.modal-cerrar[data-modal-close] {
+		position: absolute;
+		top: var(--espaciado-8);
+		right: var(--espaciado-8);
+	}
+	
+	@include media(sm, down) {
+		padding: var(--modal-padding-sm);
+		margin: var(--modal-margin-sm);
+		
+		.modal-titulo {
+			font-size: var(--tipo-tamano-titulo-m);
+		}
+	}
+}
+
+/* Animación aparición de modal */
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(1rem) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Animación backdrop modal */
+@keyframes backdrop-fade {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+/* Ajuste para congelar lo que sucede detrás */
+html.modal-open,
+body.modal-open {
+  overflow: hidden;
+}

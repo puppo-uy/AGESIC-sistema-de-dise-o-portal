@@ -1,0 +1,27 @@
+@use "../tokens" as *;
+
+/* Formtato base para listas de texto o numéricas: List-text */
+/*ul, 
+ol,*/
+.lista-texto {
+	li {
+		margin-top: var(--espaciado-8);
+		
+		&:first-child { 
+			margin-top: var(--espaciado-0);
+		}
+		
+		ul, ol {
+			margin-top: var(--espaciado-4);
+			padding-top: var(--espaciado-2);
+			
+			li {
+				margin-top: var(--espaciado-4);
+
+				&:first-child { 
+					margin-top: var(--espaciado-0);
+				}
+			}
+		}
+	}
+}

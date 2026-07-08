@@ -1,0 +1,64 @@
+@use "../tokens" as *;
+
+:root {
+	--breadcrumb-gutter: var(--espaciado-12);
+	--breadcrumb-gutter-s: var(--espaciado-8);
+}
+
+.Breadcrumb {
+	font-family: var(--tipo-familia-base);
+	font-size: var(--tipo-tamano-parrafo-m);
+  font-weight: var(--tipo-peso-regular);
+  color: var(--texto-principal);
+  padding: var(--espaciado-8) 0;
+	margin-bottom: var(--espaciado-8);
+
+	/*
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+	*/
+
+  > ul {
+		
+		display: flex;
+    @include reset-list;
+		
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-left: 0;
+
+    li {
+			list-style: none;
+      display: inline-block;
+      margin-left: var(--breadcrumb-gutter);
+			
+				/*@include md(down) {
+					margin-left: var(--breadcrumb-gutter-s);
+				}*/
+
+      &:before {
+        padding-right: var(--breadcrumb-gutter);
+        color: var(--texto-info_adicional);
+        content: '\00bb';
+				
+				/*@include md(down) {
+					padding-right: var(--breadcrumb-gutter-s);
+				}*/
+      }
+
+      &:first-child:before {
+        display: none;
+      }
+
+      &:first-child {
+        padding-left: 0;
+        margin-left: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+@use "../tokens" as *;
+@use "icons" as *;
+@use "paragraphs" as *;
+
+header,
+.header--app {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: var(--z-header);
+	padding: var(--espaciado-12) var(--espaciado-20);
+	background-color: var(--neutro-0);
+	border-bottom: solid 1px var(--neutro-50);
+	box-shadow: var(--sombra-difuminada-m);
+	position: sticky;
+	top: 0;
+
+
+	.Header-logo {
+		display: flex;
+		align-items: center;
+		gap: var(--espaciado-8);
+
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+		
+		.icono {
+			@include icon-size(xl);
+		}
+	}
+
+	.Logo-nombre {
+		font-family: var(--tipo-familia-marca);
+		font-size:  var(--tipo-tamano-titulo-xs);
+		font-weight: var(--tipo-peso-bold);
+		color: var(--primario-principal);
+	}
+
+	.Header-acciones {
+		display: flex;
+
+		// Ajustes en botones
+		/*.boton {
+			padding: var(--espaciado-8);
+		}
+		*/
+		// Ajustes en botones directos del cabezal (evitando heredar a los submenús)
+		> .boton .icono,
+		.Header-usuario > .desplegable-wrapper > .boton .icono {
+			@include icon-size(m);
+		}
+		
+		@include media(sm) {
+			> button {
+				display: none;
+			}
+		}
+	}
+
+	.Header-usuario {
+		display: flex;
+		gap: var(--espaciado-8);
+	}
+	
+	@include media(sm, down) {
+	  flex-direction: column;
+		padding: var(--espaciado-0);
+		border-bottom: solid 2px var(--neutro-0);
+		
+		.Header-logo {
+			width: 100%;
+			justify-content: center;
+			padding: var(--espaciado-4) var(--espaciado-16);
+			font-size: var(--tipo-tamano-parrafo-s);
+			border-bottom: solid 1px var(--neutro-50);
+			
+			.Logo-nombre {
+				font-size:  var(--tipo-tamano-parrafo-s);
+			}
+			
+			.icono {
+				@include icon-size(s);
+			}
+		}
+		
+		.Header-acciones {
+		  width: 100%;
+    	justify-content: space-between;
+			padding: var(--espaciado-2) var(--espaciado-16) var(--espaciado-0);
+		}
+		
+		.Header-usuario {
+			gap: var(--espaciado-16);
+		}
+		
+		#boton-usuario {
+			padding: var(--espaciado-8);
+			aspect-ratio: 1;
+			
+			.etiqueta {
+				height: 1px;
+				margin: -1px;
+				overflow: hidden;
+				padding: 0;
+				position: absolute;
+				width: 1px;
+				clip: rect(0, 0, 0, 0);
+				border: 0;
+			}
+		}
+	}
+}
+
+.menu-movil-abierto {
+	.header--app {
+		// Evita cambio de altura, revisar
+		border-bottom: solid 2px var(--neutro-500);
+	}
+}

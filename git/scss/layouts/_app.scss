@@ -1,0 +1,59 @@
+@use "../tokens" as *;
+
+
+:root {
+
+    --padding-main-app: var(--espaciado-32) var(--espaciado-64) var(--espaciado-40) var(--espaciado-64);
+    
+      @include media(sm, down){
+        --padding-main-app: var(--espaciado-24) var(--espaciado-16);
+     }
+}
+
+.app {
+
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+    
+    .layout{
+
+        &--app {
+
+            flex: 1 1 auto;
+            display: grid;
+            grid-template-columns: auto 1fr;
+
+            main {
+                background-color: var(--neutro-25);
+                padding: var(--padding-main-app);
+
+            }
+
+            @include media(sm, down){
+
+                position: relative;
+                top: 0;
+
+            }
+
+
+        }
+    }
+}
+/*
+
+.layout{
+
+    &--app{
+
+        display: grid;
+        grid-template-columns: auto 1fr;
+       
+
+    }
+
+}
+  */

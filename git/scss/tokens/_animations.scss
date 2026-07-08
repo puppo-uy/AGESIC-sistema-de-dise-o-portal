@@ -1,0 +1,13 @@
+@use "primitives" as *;
+
+// Variables de animaciones
+
+:root {
+
+    --animacion-base: all #{$transition-duration-normal} #{$transition-ease};
+    --animacion-rapida: all #{$transition-duration-fast} #{$transition-ease};
+    --animacion-fade: opacity #{$transition-duration-normal} #{$transition-ease-in-out};
+    --animacion-slide: transform #{$transition-duration-normal} #{$transition-ease};
+    
+
+}
