@@ -1126,6 +1126,7 @@
   flex-shrink: 0;
   cursor: pointer;
   vertical-align: middle;
+  margin-top: 5px;
 }
 
 #treegrid tr[aria-expanded] .treegrid-expando {
@@ -1174,11 +1175,11 @@
 #treegrid {
     table-layout: fixed;
 }
-#treegrid-col1 { width: 32%; }
-#treegrid-col2 { width: 12%; }
-#treegrid-col3 { width: 28%; }
+#treegrid-col1 { width: 34%; }
+#treegrid-col2 { width: 10%; }
+#treegrid-col3 { width: 20%; }
 #treegrid-col4 { width: 12%; }
-#treegrid-col5 { width: 16%; }
+#treegrid-col5 { width: 24%; }
 
 #treegrid td {
     vertical-align: top;
@@ -1187,18 +1188,21 @@
     border-bottom: 1px solid var(--neutro-50, #f2f2f2);
 }
 .cell-title-line {
-    display: inline-flex;
-    align-items: center;
+    display: flex;
+    align-items: flex-start;
     gap: 8px;
-    vertical-align: middle;
+    width: 100%;
 }
 .cell-title-line .form-checkbox {
     margin: 0;
+    margin-top: 3px;
     cursor: pointer;
+    flex-shrink: 0;
 }
 .cell-main-content {
     font-size: 14px;
     color: var(--neutro-900, #333);
+    flex-grow: 1;
 }
 .cell-content {
     display: flex;
@@ -1272,68 +1276,104 @@
 }
 
 /* Alternancia de fondos en el árbol (aplicado a las celdas td) */
-/* Nivel 1 cerrado/sin hijos: fondo blanco */
-#treegrid tr[aria-level="1"]:not([aria-expanded="true"]) td {
+/* Nivel 1 cerrado: fondo blanco */
+#treegrid tr[aria-level="1"][aria-expanded="false"] td {
     background-color: #ffffff !important;
 }
-/* Nivel 1 expandido: fondo light blue */
+/* Nivel 1 abierto: fondo celeste claro */
 #treegrid tr[aria-level="1"][aria-expanded="true"] td {
     background-color: #f3faff !important;
 }
-/* Nivel 2 cerrado: fondo light blue */
-#treegrid tr[aria-level="2"]:not([aria-expanded="true"]) td {
+/* Nivel 1 sin hijos: fondo blanco */
+#treegrid tr[aria-level="1"]:not([aria-expanded]) td {
+    background-color: #ffffff !important;
+}
+
+/* Nivel 2 cerrado: fondo celeste claro */
+#treegrid tr[aria-level="2"][aria-expanded="false"] td {
     background-color: #f3faff !important;
 }
-/* Nivel 2 expandido: fondo blanco */
+/* Nivel 2 abierto: fondo blanco */
 #treegrid tr[aria-level="2"][aria-expanded="true"] td {
     background-color: #ffffff !important;
 }
+/* Nivel 2 sin hijos: fondo celeste claro */
+#treegrid tr[aria-level="2"]:not([aria-expanded]) td {
+    background-color: #f3faff !important;
+}
+
 /* Nivel 3 cerrado: fondo blanco */
-#treegrid tr[aria-level="3"]:not([aria-expanded="true"]) td {
+#treegrid tr[aria-level="3"][aria-expanded="false"] td {
     background-color: #ffffff !important;
 }
-/* Nivel 3 expandido: fondo light blue */
+/* Nivel 3 abierto: fondo celeste claro */
 #treegrid tr[aria-level="3"][aria-expanded="true"] td {
     background-color: #f3faff !important;
 }
-/* Nivel 4 cerrado: fondo light blue */
-#treegrid tr[aria-level="4"]:not([aria-expanded="true"]) td {
+/* Nivel 3 sin hijos: fondo blanco */
+#treegrid tr[aria-level="3"]:not([aria-expanded]) td {
+    background-color: #ffffff !important;
+}
+
+/* Nivel 4 cerrado: fondo celeste claro */
+#treegrid tr[aria-level="4"][aria-expanded="false"] td {
     background-color: #f3faff !important;
 }
-/* Nivel 4 expandido: fondo blanco */
+/* Nivel 4 abierto: fondo blanco */
 #treegrid tr[aria-level="4"][aria-expanded="true"] td {
     background-color: #ffffff !important;
 }
+/* Nivel 4 sin hijos: fondo celeste claro */
+#treegrid tr[aria-level="4"]:not([aria-expanded]) td {
+    background-color: #f3faff !important;
+}
+
 /* Nivel 5: fondo blanco */
 #treegrid tr[aria-level="5"] td {
     background-color: #ffffff !important;
 }
 
 /* Efectos de hover respetando el color del grupo */
-#treegrid tr[aria-level="1"]:not([aria-expanded="true"]):hover td {
+#treegrid tr[aria-level="1"][aria-expanded="false"]:hover td {
     background-color: #f5f5f5 !important;
 }
 #treegrid tr[aria-level="1"][aria-expanded="true"]:hover td {
     background-color: #e8f4ff !important;
 }
-#treegrid tr[aria-level="2"]:not([aria-expanded="true"]):hover td {
+#treegrid tr[aria-level="1"]:not([aria-expanded]):hover td {
+    background-color: #f5f5f5 !important;
+}
+
+#treegrid tr[aria-level="2"][aria-expanded="false"]:hover td {
     background-color: #e8f4ff !important;
 }
 #treegrid tr[aria-level="2"][aria-expanded="true"]:hover td {
     background-color: #f5f5f5 !important;
 }
-#treegrid tr[aria-level="3"]:not([aria-expanded="true"]):hover td {
+#treegrid tr[aria-level="2"]:not([aria-expanded]):hover td {
+    background-color: #e8f4ff !important;
+}
+
+#treegrid tr[aria-level="3"][aria-expanded="false"]:hover td {
     background-color: #f5f5f5 !important;
 }
 #treegrid tr[aria-level="3"][aria-expanded="true"]:hover td {
     background-color: #e8f4ff !important;
 }
-#treegrid tr[aria-level="4"]:not([aria-expanded="true"]):hover td {
+#treegrid tr[aria-level="3"]:not([aria-expanded]):hover td {
+    background-color: #f5f5f5 !important;
+}
+
+#treegrid tr[aria-level="4"][aria-expanded="false"]:hover td {
     background-color: #e8f4ff !important;
 }
 #treegrid tr[aria-level="4"][aria-expanded="true"]:hover td {
     background-color: #f5f5f5 !important;
 }
+#treegrid tr[aria-level="4"]:not([aria-expanded]):hover td {
+    background-color: #e8f4ff !important;
+}
+
 #treegrid tr[aria-level="5"]:hover td {
     background-color: #f5f5f5 !important;
 }
