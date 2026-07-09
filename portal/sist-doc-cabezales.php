@@ -55,7 +55,7 @@
                 <p>Este cabezal se utiliza únicamente en aplicaciones web. Su función principal es brindar contexto sobre la aplicación y ofrecer acceso a las acciones relacionadas con la sesión del usuario y las notificaciones.</p>
 
                 <h4 class="u-mt4">Estructura del componente</h4>
-                <img src="img/ejemplos_documentacion/cabezal_desktop.png" alt="Estructura de cabezal de aplicación" class="u-mb3" style="max-width: 100%;">
+                 <iframe src="../git/iframe-preview.php?comp=header-app" title="Ejemplo de estructura de cabezal de aplicación" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                 <h5 class="u-mt3">Elementos que lo componen</h5>
                 <ul class="List-text">
                     <li>Iconos</li>
@@ -85,7 +85,7 @@
 
                 <h4 class="u-mt4">Comportamiento responsive</h4>
                 <h5 class="u-mt3">Escritorio</h5>
-                <img src="img/ejemplos_documentacion/cabezal_desktop.png" alt="Cabezal de aplicación en escritorio" class="u-mb2 u-mt2" style="max-width: 100%;">
+                 <iframe src="../git/iframe-preview.php?comp=header-app" title="Ejemplo de cabezal de aplicación en escritorio" class="component-preview u-mb2 u-mt2" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                 <ul class="List-text">
                     <li>Se presenta en una única fila horizontal.</li>
                     <li>La identidad de la aplicación se ubica a la izquierda.</li>
@@ -94,7 +94,7 @@
                 </ul>
 
                 <h5 class="u-mt3">Móvil</h5>
-                <img src="img/ejemplos_documentacion/cabezal_movil.png" alt="Cabezal de aplicación en móvil" class="u-mb2 u-mt2" style="max-width: 100%;">
+                 <iframe src="../git/iframe-preview.php?comp=header-app" title="Ejemplo de cabezal de aplicación en móvil" class="component-preview u-mb2 u-mt2" style="width: 100%; max-width: 360px; border: 1px solid #ddd; min-height: 80px; margin: 0 auto; display: block;" scrolling="no"></iframe>
                 <ul class="List-text">
                     <li>Se adapta para ocupar menos espacio.</li>
                     <li>La identidad se presenta en formato reducido en la parte superior, en una única fila.</li>
@@ -128,5 +128,17 @@
 
   <!-- Footer -->
   <?php include "inc/footer.php"; ?>
+
+  <script src="../recursos/js/vendor/iframeResizer.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        iFrameResize({ 
+            log: false, 
+            checkOrigin: false,
+            heightCalculationMethod: 'lowestElement',
+            heightOffset: 50
+        }, '.component-preview');
+    });
+  </script>
 
 <?php include "inc/foot.php"; ?>
