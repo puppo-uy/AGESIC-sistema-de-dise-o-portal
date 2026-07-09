@@ -53,7 +53,7 @@
                 <p>Pueden utilizarse en listados, tablas o tarjetas para facilitar el escaneo de la información.</p>
 
                 <h3 class="u-mt4">Estructura del componente</h3>
-                <img src="img/ejemplos_documentacion/tags_todos.png" alt="Estructura de Tags" class="u-mb3" style="max-width: 100%;">
+                 <iframe src="../git/iframe-preview.php?comp=tag" title="Ejemplo de estructura de tags" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                 <h5 class="u-mt3">Elementos que lo componen</h5>
                 <ul class="List-text">
                     <li>Fondo</li>
@@ -84,17 +84,13 @@
                 <h4 class="u-mt3 u-mb3">Tipo</h4>
                 
                 <h5 class="u-mb2">Clasificación</h5>
-                <img src="img/ejemplos_documentacion/tags_todos.png" alt="Tags de Clasificación" class="u-mb3" style="max-width: 100%;">
+                 <iframe src="../git/iframe-preview.php?comp=tag&type=clasificacion" title="Ejemplo de tag de clasificación" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                 <p class="u-mb4">Se utilizan para categorizar contenidos. Identifican temáticas, tipos o atributos de un elemento.</p>
                 
                 <h5 class="u-mb2">Estado</h5>
-                <div class="u-mt3 u-mb4">
-                    <img src="img/ejemplos_documentacion/tag_activo.png" alt="Tag Activo" class="u-mb2 u-mr2" style="max-height: 40px;">
-                    <img src="img/ejemplos_documentacion/tag_completado.png" alt="Tag Completado" class="u-mb2 u-mr2" style="max-height: 40px;">
-                    <img src="img/ejemplos_documentacion/tag_error.png" alt="Tag Error" class="u-mb2 u-mr2" style="max-height: 40px;">
-                    <img src="img/ejemplos_documentacion/tag_inactivo.png" alt="Tag Inactivo" class="u-mb2 u-mr2" style="max-height: 40px;">
-                    <img src="img/ejemplos_documentacion/tag_pendiente.png" alt="Tag Pendiente" class="u-mb2" style="max-height: 40px;">
-                </div>
+                 <div class="u-mt3 u-mb4">
+                     <iframe src="../git/iframe-preview.php?comp=tag&type=estado" title="Ejemplo de tags de estado" class="component-preview" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                 </div>
                 <p class="u-mb2">Se utilizan para comunicar el estado actual de un elemento dentro de un flujo o proceso. Los estados pueden ser:</p>
                 <ul class="List-text u-mb4">
                     <li>Activo / Completado</li>
@@ -104,11 +100,9 @@
                 </ul>
 
                 <h4 class="u-mt3 u-mb3">Tamaño</h4>
-                <div class="u-mt3 u-mb4">
-                    <img src="img/ejemplos_documentacion/tag_l.png" alt="Tag L" class="u-mb3 u-mr3" style="max-height: 48px;">
-                    <img src="img/ejemplos_documentacion/tag_m.png" alt="Tag M" class="u-mb3 u-mr3" style="max-height: 40px;">
-                    <img src="img/ejemplos_documentacion/tag_s.png" alt="Tag S" class="u-mb3" style="max-height: 32px;">
-                </div>
+                 <div class="u-mt3 u-mb4">
+                     <iframe src="../git/iframe-preview.php?comp=tag" title="Ejemplo de tamaños de tags (normal y chico)" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
+                 </div>
                 <ul class="List-text">
                     <li>L</li>
                     <li>M</li>
@@ -139,5 +133,17 @@
 
   <!-- Footer -->
   <?php include "inc/footer.php"; ?>
+
+  <script src="../recursos/js/vendor/iframeResizer.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        iFrameResize({ 
+            log: false, 
+            checkOrigin: false,
+            heightCalculationMethod: 'lowestElement',
+            heightOffset: 50
+        }, '.component-preview');
+    });
+  </script>
 
 <?php include "inc/foot.php"; ?>
