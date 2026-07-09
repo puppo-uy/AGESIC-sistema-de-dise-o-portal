@@ -116,11 +116,11 @@
 								
 								<div class="Table-wrapper">
                   <table class="Table Table--responsive">
-                    <caption>Tabla 2. Título de tabla agregado con la etiqueta <code>caption</code></caption>
+                    <caption class="u-hideVisually">Variantes de estados del componente Alertas</caption>
                     <thead>
                       <tr>
-                        <th>Muestra</th>
-                        <th>Descripción</th>
+                        <th style="width: 70%;">Muestra</th>
+                        <th style="width: 30%;">Descripción</th>
                       </tr>
                     </thead>
                     <tbody>
