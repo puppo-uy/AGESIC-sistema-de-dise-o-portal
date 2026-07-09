@@ -99,9 +99,9 @@
                     <li>Pendiente / En espera</li>
                 </ul>
 
-                <h4 class="u-mt3 u-mb3">Tamaño</h4>
+                 <h4 class="u-mt3 u-mb3">Tamaño</h4>
                  <div class="u-mt3 u-mb4">
-                     <iframe src="../git/iframe-preview.php?comp=tag" title="Ejemplo de tamaños de tags (normal y chico)" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
+                     <iframe src="../git/iframe-preview.php?comp=tag&type=tamanos" title="Ejemplo de tamaños de tags (normal y chico)" class="component-preview" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                  </div>
                 <ul class="List-text">
                     <li>L</li>

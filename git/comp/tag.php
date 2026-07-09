@@ -88,3 +88,15 @@ $selectedSize = isset($_GET['size']) ? $_GET['size'] : null;
 	</span>
 	<?php endif; ?>
 <?php endif; ?>
+
+<?php if ($selectedType === 'tamanos') : ?>
+<!-- Tag Normal -->
+<span class="tag">
+	<span>Tag normal</span>
+</span>
+
+<!-- Tag Chico -->
+<span class="tag tag--small">
+	<span>Tag chico</span>
+</span>
+<?php endif; ?>
