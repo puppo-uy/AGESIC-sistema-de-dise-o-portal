@@ -9,32 +9,103 @@
   </colgroup>
   <thead>
     <tr>
-      <th scope="col">Título</th>
-			<th scope="col">Estado</th>
-      <th scope="col">Resumen</th>
-      <th scope="col">Correo</th>
-			<th scope="col">Acciones</th>
+      <th scope="col">
+				<div style="display: flex; align-items: center; gap: 8px;">
+					<input type="checkbox" class="form-checkbox">
+					<span>Etiqueta</span>
+					<svg class="icono icono--s">
+						<use href="#icono-colapsable-abajo--lineal"></use>
+					</svg>
+				</div>
+			</th>
+			<th scope="col">
+				<div style="display: flex; align-items: center; gap: 4px;">
+					<span>Etiqueta</span>
+					<svg class="icono icono--s">
+						<use href="#icono-colapsable-abajo--lineal"></use>
+					</svg>
+				</div>
+			</th>
+      <th scope="col">
+				<div style="display: flex; align-items: center; gap: 4px;">
+					<span>Etiqueta</span>
+					<svg class="icono icono--s">
+						<use href="#icono-colapsable-abajo--lineal"></use>
+					</svg>
+				</div>
+			</th>
+      <th scope="col">
+				<div style="display: flex; align-items: center; gap: 4px;">
+					<span>Etiqueta</span>
+					<svg class="icono icono--s">
+						<use href="#icono-colapsable-abajo--lineal"></use>
+					</svg>
+				</div>
+			</th>
+			<th scope="col" style="text-align: right;">
+				<div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px;">
+					<svg class="icono icono--s" style="cursor: pointer;"><use href="#icono-descargar--lineal"></use></svg>
+					<svg class="icono icono--s" style="cursor: pointer;"><use href="#icono-tabla--lineal"></use></svg>
+				</div>
+			</th>
     </tr>
   </thead>
   <tbody>
-				<tr role="row" aria-level="1" aria-posinset="1" aria-setsize="1" aria-expanded="true">
-      <td role="gridcell">Fila nivel 1 con hijos. Lorem ipsum dolor sit amet</td>
-			<td role="gridcell">
-				<span class="tag tag--small tag--activo">
-					<span class="dot"></span>
-					<span>Activo</span>
-				</span>
+		
+		<tr role="row" aria-level="1" aria-posinset="1" aria-setsize="1" aria-expanded="true">
+      <td role="gridcell">
+				<div class="cell-title-line">
+					<input type="checkbox" class="form-checkbox">
+					<span class="cell-main-content">Ítem 1 con tremendo título así re largo mal que llegue a dos renglones</span>
+				</div>
+				<div class="cell-details">
+					<span class="details-label">Etiqueta:</span>
+					<span class="details-value">Contenido texto un poco más largo que llegue al segundo renglón</span>
+				</div>
 			</td>
-      <td role="gridcell">Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
-      <td role="gridcell"><a href="mailto:usuario@correo.gub.uy">usuario@correo.gub.uy</a></td>
 			<td role="gridcell">
+				<div class="cell-content">
+					<span class="tag-figma">
+						<span class="dot"></span>
+						<span>Estado</span>
+					</span>
+					<div class="cell-details">
+						<span class="details-label">Etiqueta:</span>
+						<span class="details-value">Texto corto pero no tan corto, pero si</span>
+					</div>
+				</div>
+			</td>
+      <td role="gridcell">
+				<div class="cell-content">
+					<span class="cell-main-content">Contenido texto un poco más largo que lle...</span>
+					<div class="cell-details">
+						<span class="details-label">Etiqueta:</span>
+						<span class="details-value">Contenido texto un poco más largo que lle...</span>
+					</div>
+				</div>
+			</td>
+      <td role="gridcell">
+				<div class="cell-content">
+					<a class="enlace" href="#" target="_blank" rel="noopener noreferrer">
+						<span>Enlace</span>
+						<svg class="icono icono--s">
+							<use href="#icono-enlace-externo--lineal"></use>
+						</svg>
+					</a>
+					<div class="cell-details">
+						<span class="details-label">Etiqueta:</span>
+						<span class="details-value">Contenido texto un poco más largo que llegue al segundo renglón</span>
+					</div>
+				</div>
+			</td>
+			<td role="gridcell" style="vertical-align: middle;">
 				<ul class="botonera botonera--s">
 					<li>
 						<button class="boton boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-abrir-detalle--lineal"></use>
 							</svg>
-							<span>Expandir</span>
+							<span>Ver detalle</span>
 						</button>	
 					</li>
 					<li>
@@ -42,27 +113,35 @@
 							<svg class="icono">
 								<use href="#icono-edicion-rapida--lineal"></use>
 							</svg>
-							<span>Acción botón</span>
+							<span>Editar</span>
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono" disabled="">
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-mas--lineal"></use>
+							</svg>
+							<span>Agregar</span>
+						</button>
+					</li>	
+					<li>
+						<button class="boton boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-borrar--lineal"></use>
 							</svg>
-							<span>Acción botón</span>
+							<span>Borrar</span>
 						</button>
 					</li>	
 					<li>
 						<div class="desplegable-wrapper">
-							<button class="boton boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones" aria-expanded="false">
+							<button class="boton boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-1" aria-expanded="false">
 								<svg class="icono">
 									<use href="#icono-mas-opciones--lineal"></use>
 								</svg>
-								<span>Acción botón</span>
+								<span>Más opciones</span>
 							</button>
 							<?php 
-								$idDropdown = 'menu-opciones';
+								$idDropdown = 'menu-opciones-1';
 								include "comp/desplegable-opciones.php"; 
 							?>
 						</div>
@@ -71,227 +150,876 @@
 			</td>	
     </tr>
 		
-    <tr role="row" aria-level="2" aria-posinset="1" aria-setsize="3">
-      <td role="gridcell">Fila nivel 2. Lorem ipsum dolor sit amet</td>
-			<td role="gridcell">
-				<span class="tag tag--small tag--activo">
-					<span class="dot"></span>
-					<span>Activo</span>
-				</span>
-			</td>
-      <td role="gridcell">Consectetur adipiscing elit, sed do eiusmod tempor</td>
-      <td role="gridcell"><a href="mailto:usuario2@correo.gub.uy">usuario2@correo.gub.uy</a></td>
-			<td role="gridcell">
-		 		<button class="boton boton--primario boton--s">
-					<svg class="icono">
-						<use href="#icono-editar--lineal"></use>
-					</svg>
-					<span>Editar</span>
-				</button>
-			</td>
-    </tr>
-		
-    <tr role="row" aria-level="2" aria-posinset="2" aria-setsize="3" aria-expanded="false">
-      <td role="gridcell">Fila nivel 2. Consectetur adipiscing</td>
-			<td role="gridcell">
-				<span class="tag tag--small tag--activo">
-					<span class="dot"></span>
-					<span>Activo</span>
-				</span>
-			</td>
-      <td role="gridcell">Tempor incididunt ut labore et dolore magna aliqua</td>
-      <td role="gridcell"><a href="mailto:usuario3@correo.gub.uy">usuario3@correo.gub.uy</a></td>
-			<td role="gridcell">
-		 		<button class="boton boton--primario boton--s">
-					<svg class="icono">
-						<use href="#icono-editar--lineal"></use>
-					</svg>
-					<span>Editar</span>
-				</button>
-			</td>
-    </tr>
-		
-    <tr role="row" aria-level="3" aria-posinset="1" aria-setsize="1" class="hidden">
-      <td role="gridcell">Fila nivel 3. Tempor incididunt</td>
-			<td role="gridcell">
-				<span class="tag tag--small tag--activo">
-					<span class="dot"></span>
-					<span>Activo</span>
-				</span>
-			</td>
-      <td role="gridcell">Ut enim ad minim veniam, quis nostrud exercitation</td>
-      <td role="gridcell"><a href="mailto:usuario4@correo.gub.uy">usuario4@correo.gub.uy</a></td>
-			<td role="gridcell">
-		 		<button class="boton boton--primario boton--s">
-					<svg class="icono">
-						<use href="#icono-editar--lineal"></use>
-					</svg>
-					<span>Editar</span>
-				</button>
-			</td>
-    </tr>
-		
-    <tr role="row" aria-level="2" aria-posinset="3" aria-setsize="3" aria-expanded="false">
-      <td role="gridcell">Fila nivel 2. Ut enim ad minim</td>
-			<td role="gridcell">
-				<span class="tag tag--small tag--activo">
-					<span class="dot"></span>
-					<span>Activo</span>
-				</span>
-			</td>
-      <td role="gridcell">Ullamco laboris nisi ut aliquip ex ea commodo</td>
-      <td role="gridcell"><a href="mailto:usuario5@correo.gub.uy">usuario5@correo.gub.uy</a></td>
-			<td role="gridcell">
-		 		<button class="boton boton--primario boton--s">
-					<svg class="icono">
-						<use href="#icono-editar--lineal"></use>
-					</svg>
-					<span>Editar</span>
-				</button>
-			</td>
-    </tr>
-		
-    <tr role="row" aria-level="3" aria-posinset="1" aria-setsize="1" aria-expanded="false" class="hidden">
-      <td role="gridcell">Fila nivel 3. Ullamco laboris</td>
-			<td role="gridcell">
-				<span class="tag tag--small tag--activo">
-					<span class="dot"></span>
-					<span>Activo</span>
-				</span>
-			</td>
-      <td role="gridcell">Duis aute irure dolor in reprehenderit in voluptate</td>
-      <td role="gridcell"><a href="mailto:usuario6@correo.gub.uy">usuario6@correo.gub.uy</a></td>
-			<td role="gridcell">
-		 		<button class="boton--primario boton--s">
-					<svg class="icono">
-						<use href="#icono-editar--lineal"></use>
-					</svg>
-					<span>Editar</span>
-				</button>
-			</td>
-    </tr>
-		
-    <tr role="row" aria-level="4" aria-posinset="1" aria-setsize="2" class="hidden">
-      <td role="gridcell">Fila nivel 4. Duis aute irure</td>
-			<td role="gridcell">
-				<span class="tag tag--small tag--activo">
-					<span class="dot"></span>
-					<span>Activo</span>
-				</span>
-			</td>
-      <td role="gridcell">Excepteur sint occaecat cupidatat non proident</td>
-      <td role="gridcell"><a href="mailto:usuario7@correo.gub.uy">usuario7@correo.gub.uy</a></td>
-			<td role="gridcell">
-		 		<button class="boton boton--primario boton--s">
-					<svg class="icono">
-						<use href="#icono-editar--lineal"></use>
-					</svg>
-					<span>Editar</span>
-				</button>
-			</td>
-    </tr>
-		
-    <tr role="row" aria-level="4" aria-posinset="2" aria-setsize="2" class="hidden">
-      <td role="gridcell">Fila nivel 4. Excepteur sint</td>
-			<td role="gridcell">
-				<span class="tag tag--small tag--activo">
-					<span class="dot"></span>
-					<span>Activo</span>
-				</span>
-			</td>
-      <td role="gridcell">Sunt in culpa qui officia deserunt mollit anim</td>
-      <td role="gridcell"><a href="mailto:usuario8@correo.gub.uy">usuario8@correo.gub.uy</a></td>
-			<td role="gridcell">
-		 		<button class="boton boton--primario boton--s">
-					<svg class="icono">
-						<use href="#icono-editar--lineal"></use>
-					</svg>
-					<span>Editar</span>
-				</button>
-			</td>
-    </tr>
-		
-		<tr role="row" aria-level="1" aria-posinset="4" aria-setsize="1" aria-expanded="false">
-      <td role="gridcell">Fila nivel 1 con hijos. Consectetur adipiscing elit.</td>
-			<td role="gridcell">
-				<span class="tag tag--small tag--activo">
-					<span class="dot"></span>
-					<span>Activo</span>
-				</span>
-			</td>
-      <td role="gridcell">Párrafo de texto tamaño SM. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+    <tr role="row" aria-level="2" aria-posinset="1" aria-setsize="3" aria-expanded="false">
       <td role="gridcell">
-				<a class="enlace" href="mailto:usuario@correo.gub.uy">
+				<div class="cell-title-line">
+					<input type="checkbox" class="form-checkbox">
+					<span class="cell-main-content">Sub-ítem 1 con tremendo título así re largo mal que llegue a dos líneas</span>
+				</div>
+			</td>
+			<td role="gridcell">
+				<span class="tag-figma">
+					<span class="dot"></span>
+					<span>Estado</span>
+				</span>
+			</td>
+      <td role="gridcell">
+				<span class="cell-main-content">Contenido texto un poco más largo que...</span>
+			</td>
+      <td role="gridcell">
+				<a class="enlace" href="#" target="_blank" rel="noopener noreferrer">
+					<span>Enlace</span>
 					<svg class="icono icono--s">
-						<use href="#icono-co-editor--lineal"></use>
+						<use href="#icono-enlace-externo--lineal"></use>
 					</svg>
-					<span>usuario@correo.gub.uy</span>
 				</a>
 			</td>
 			<td role="gridcell">
-		 		<button class="boton boton--primario boton--s">
-					<svg class="icono">
-						<use href="#icono-editar--lineal"></use>
+				<ul class="botonera botonera--s">
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-abrir-detalle--lineal"></use>
+							</svg>
+							<span>Ver detalle</span>
+						</button>	
+					</li>
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-edicion-rapida--lineal"></use>
+							</svg>
+							<span>Editar</span>
+						</button>
+					</li>	
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-mas--lineal"></use>
+							</svg>
+							<span>Agregar</span>
+						</button>
+					</li>	
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-borrar--lineal"></use>
+							</svg>
+							<span>Borrar</span>
+						</button>
+					</li>	
+					<li>
+						<div class="desplegable-wrapper">
+							<button class="boton boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-2" aria-expanded="false">
+								<svg class="icono">
+									<use href="#icono-mas-opciones--lineal"></use>
+								</svg>
+								<span>Más opciones</span>
+							</button>
+							<?php 
+								$idDropdown = 'menu-opciones-2';
+								include "comp/desplegable-opciones.php"; 
+							?>
+						</div>
+					</li>
+				</ul>
+			</td>
+    </tr>
+		
+    <tr role="row" aria-level="2" aria-posinset="2" aria-setsize="3" aria-expanded="true">
+      <td role="gridcell">
+				<div class="cell-title-line">
+					<input type="checkbox" class="form-checkbox">
+					<span class="cell-main-content">Sub-ítem 1 con tremendo título así re largo mal que llegue a dos líneas</span>
+				</div>
+				<div class="cell-details">
+					<span class="details-label">Etiqueta:</span>
+					<span class="details-value">Contenido texto un poco más largo que llegue al segundo renglón</span>
+				</div>
+			</td>
+			<td role="gridcell">
+				<div class="cell-content">
+					<span class="tag-figma">
+						<span class="dot"></span>
+						<span>Estado</span>
+					</span>
+					<div class="cell-details">
+						<span class="details-label">Etiqueta:</span>
+						<span class="details-value">Texto corto pero no tan corto, pero si</span>
+					</div>
+				</div>
+			</td>
+      <td role="gridcell">
+				<div class="cell-content">
+					<span class="cell-main-content">Contenido texto un poco más largo que...</span>
+					<div class="cell-details">
+						<span class="details-label">Etiqueta:</span>
+						<span class="details-value">Contenido texto un poco...</span>
+					</div>
+				</div>
+			</td>
+      <td role="gridcell">
+				<div class="cell-content">
+					<a class="enlace" href="#" target="_blank" rel="noopener noreferrer">
+						<span>Enlace</span>
+						<svg class="icono icono--s">
+							<use href="#icono-enlace-externo--lineal"></use>
+						</svg>
+					</a>
+					<div class="cell-details">
+						<span class="details-label">Etiqueta:</span>
+						<span class="details-value">Contenido texto un poco más largo que llegue al segundo renglón</span>
+					</div>
+				</div>
+			</td>
+			<td role="gridcell">
+				<ul class="botonera botonera--s">
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-abrir-detalle--lineal"></use>
+							</svg>
+							<span>Ver detalle</span>
+						</button>	
+					</li>
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-edicion-rapida--lineal"></use>
+							</svg>
+							<span>Editar</span>
+						</button>
+					</li>	
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-mas--lineal"></use>
+							</svg>
+							<span>Agregar</span>
+						</button>
+					</li>	
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-borrar--lineal"></use>
+							</svg>
+							<span>Borrar</span>
+						</button>
+					</li>	
+					<li>
+						<div class="desplegable-wrapper">
+							<button class="boton boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-3" aria-expanded="false">
+								<svg class="icono">
+									<use href="#icono-mas-opciones--lineal"></use>
+								</svg>
+								<span>Más opciones</span>
+							</button>
+							<?php 
+								$idDropdown = 'menu-opciones-3';
+								include "comp/desplegable-opciones.php"; 
+							?>
+						</div>
+					</li>
+				</ul>
+			</td>
+    </tr>
+		
+    <tr role="row" aria-level="3" aria-posinset="1" aria-setsize="1" aria-expanded="false">
+      <td role="gridcell">
+				<div class="cell-title-line">
+					<input type="checkbox" class="form-checkbox">
+					<span class="cell-main-content">Sub-Sub-ítem 1 con tremendo título así re largo mal que llegue a dos líneas</span>
+				</div>
+			</td>
+			<td role="gridcell">
+				<span class="tag-figma">
+					<span class="dot"></span>
+					<span>Estado</span>
+				</span>
+			</td>
+      <td role="gridcell">
+				<span class="cell-main-content">Contenido texto un poco más largo que...</span>
+			</td>
+      <td role="gridcell">
+				<a class="enlace" href="#" target="_blank" rel="noopener noreferrer">
+					<span>Enlace</span>
+					<svg class="icono icono--s">
+						<use href="#icono-enlace-externo--lineal"></use>
 					</svg>
-					<span>Editar</span>
-				</button>
+				</a>
+			</td>
+			<td role="gridcell">
+				<ul class="botonera botonera--s">
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-abrir-detalle--lineal"></use>
+							</svg>
+							<span>Ver detalle</span>
+						</button>	
+					</li>
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-edicion-rapida--lineal"></use>
+							</svg>
+							<span>Editar</span>
+						</button>
+					</li>	
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-mas--lineal"></use>
+							</svg>
+							<span>Agregar</span>
+						</button>
+					</li>	
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-borrar--lineal"></use>
+							</svg>
+							<span>Borrar</span>
+						</button>
+					</li>	
+					<li>
+						<div class="desplegable-wrapper">
+							<button class="boton boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-4" aria-expanded="false">
+								<svg class="icono">
+									<use href="#icono-mas-opciones--lineal"></use>
+								</svg>
+								<span>Más opciones</span>
+							</button>
+							<?php 
+								$idDropdown = 'menu-opciones-4';
+								include "comp/desplegable-opciones.php"; 
+							?>
+						</div>
+					</li>
+				</ul>
+			</td>
+    </tr>
+		
+    <tr role="row" aria-level="3" aria-posinset="2" aria-setsize="3" aria-expanded="true">
+      <td role="gridcell">
+				<div class="cell-title-line">
+					<input type="checkbox" class="form-checkbox">
+					<span class="cell-main-content">Sub-Sub-ítem 1 con tremendo título así re largo mal que llegue a dos líneas</span>
+				</div>
+				<div class="cell-details">
+					<span class="details-label">Etiqueta:</span>
+					<span class="details-value">Contenido texto un poco más largo que llegue al segundo renglón</span>
+				</div>
+			</td>
+			<td role="gridcell">
+				<div class="cell-content">
+					<span class="tag-figma">
+						<span class="dot"></span>
+						<span>Estado</span>
+					</span>
+					<div class="cell-details">
+						<span class="details-label">Etiqueta:</span>
+						<span class="details-value">Texto corto pero no tan corto, pero si</span>
+					</div>
+				</div>
+			</td>
+      <td role="gridcell">
+				<div class="cell-content">
+					<span class="cell-main-content">Contenido texto un poco más largo que...</span>
+					<div class="cell-details">
+						<span class="details-label">Etiqueta:</span>
+						<span class="details-value">Contenido texto un poco...</span>
+					</div>
+				</div>
+			</td>
+      <td role="gridcell">
+				<div class="cell-content">
+					<a class="enlace" href="#" target="_blank" rel="noopener noreferrer">
+						<span>Enlace</span>
+						<svg class="icono icono--s">
+							<use href="#icono-enlace-externo--lineal"></use>
+						</svg>
+					</a>
+					<div class="cell-details">
+						<span class="details-label">Etiqueta:</span>
+						<span class="details-value">Contenido texto un poco más largo que llegue al segundo renglón</span>
+					</div>
+				</div>
+			</td>
+			<td role="gridcell">
+				<ul class="botonera botonera--s">
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-abrir-detalle--lineal"></use>
+							</svg>
+							<span>Ver detalle</span>
+						</button>	
+					</li>
+					<li>
+						<button class="boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-edicion-rapida--lineal"></use>
+							</svg>
+							<span>Editar</span>
+						</button>
+					</li>	
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-mas--lineal"></use>
+							</svg>
+							<span>Agregar</span>
+						</button>
+					</li>	
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-borrar--lineal"></use>
+							</svg>
+							<span>Borrar</span>
+						</button>
+					</li>	
+					<li>
+						<div class="desplegable-wrapper">
+							<button class="boton boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-5" aria-expanded="false">
+								<svg class="icono">
+									<use href="#icono-mas-opciones--lineal"></use>
+								</svg>
+								<span>Más opciones</span>
+							</button>
+							<?php 
+								$idDropdown = 'menu-opciones-5';
+								include "comp/desplegable-opciones.php"; 
+							?>
+						</div>
+					</li>
+				</ul>
+			</td>
+    </tr>
+		
+    <tr role="row" aria-level="4" aria-posinset="1" aria-setsize="2" aria-expanded="false">
+      <td role="gridcell">
+				<div class="cell-title-line">
+					<input type="checkbox" class="form-checkbox">
+					<span class="cell-main-content">Sub-Sub-Sub-ítem 1 con tremendo título así re largo mal que llegue a tres líneas</span>
+				</div>
+			</td>
+			<td role="gridcell">
+				<span class="tag-figma">
+					<span class="dot"></span>
+					<span>Estado</span>
+				</span>
+			</td>
+      <td role="gridcell">
+				<span class="cell-main-content">Contenido texto un poco más largo que...</span>
+			</td>
+      <td role="gridcell">
+				<a class="enlace" href="#" target="_blank" rel="noopener noreferrer">
+					<span>Enlace</span>
+					<svg class="icono icono--s">
+						<use href="#icono-enlace-externo--lineal"></use>
+					</svg>
+				</a>
+			</td>
+			<td role="gridcell">
+				<ul class="botonera botonera--s">
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-abrir-detalle--lineal"></use>
+							</svg>
+							<span>Ver detalle</span>
+						</button>	
+					</li>
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-edicion-rapida--lineal"></use>
+							</svg>
+							<span>Editar</span>
+						</button>
+					</li>	
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-mas--lineal"></use>
+							</svg>
+							<span>Agregar</span>
+						</button>
+					</li>	
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-borrar--lineal"></use>
+							</svg>
+							<span>Borrar</span>
+						</button>
+					</li>	
+					<li>
+						<div class="desplegable-wrapper">
+							<button class="boton boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-6" aria-expanded="false">
+								<svg class="icono">
+									<use href="#icono-mas-opciones--lineal"></use>
+								</svg>
+								<span>Más opciones</span>
+							</button>
+							<?php 
+								$idDropdown = 'menu-opciones-6';
+								include "comp/desplegable-opciones.php"; 
+							?>
+						</div>
+					</li>
+				</ul>
+			</td>
+    </tr>
+		
+    <tr role="row" aria-level="4" aria-posinset="2" aria-setsize="2" aria-expanded="true">
+      <td role="gridcell">
+				<div class="cell-title-line">
+					<input type="checkbox" class="form-checkbox">
+					<span class="cell-main-content">Sub-Sub-Sub-ítem 1 con tremendo título así re largo mal que llegue a tres líneas</span>
+				</div>
+				<div class="cell-details">
+					<span class="details-label">Etiqueta:</span>
+					<span class="details-value">Contenido texto un poco más largo que llegue al segundo renglón</span>
+				</div>
+			</td>
+			<td role="gridcell">
+				<div class="cell-content">
+					<span class="tag-figma">
+						<span class="dot"></span>
+						<span>Estado</span>
+					</span>
+					<div class="cell-details">
+						<span class="details-label">Etiqueta:</span>
+						<span class="details-value">Texto corto pero no tan corto, pero si</span>
+					</div>
+				</div>
+			</td>
+      <td role="gridcell">
+				<div class="cell-content">
+					<span class="cell-main-content">Contenido texto un poco más largo que...</span>
+					<div class="cell-details">
+						<span class="details-label">Etiqueta:</span>
+						<span class="details-value">Contenido texto un poco...</span>
+					</div>
+				</div>
+			</td>
+      <td role="gridcell">
+				<div class="cell-content">
+					<a class="enlace" href="#" target="_blank" rel="noopener noreferrer">
+						<span>Enlace</span>
+						<svg class="icono icono--s">
+							<use href="#icono-enlace-externo--lineal"></use>
+						</svg>
+					</a>
+					<div class="cell-details">
+						<span class="details-label">Etiqueta:</span>
+						<span class="details-value">Contenido texto un poco más largo que llegue al segundo renglón</span>
+					</div>
+				</div>
+			</td>
+			<td role="gridcell">
+				<ul class="botonera botonera--s">
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-abrir-detalle--lineal"></use>
+							</svg>
+							<span>Ver detalle</span>
+						</button>	
+					</li>
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-edicion-rapida--lineal"></use>
+							</svg>
+							<span>Editar</span>
+						</button>
+					</li>	
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-mas--lineal"></use>
+							</svg>
+							<span>Agregar</span>
+						</button>
+					</li>	
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-borrar--lineal"></use>
+							</svg>
+							<span>Borrar</span>
+						</button>
+					</li>	
+					<li>
+						<div class="desplegable-wrapper">
+							<button class="boton boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-7" aria-expanded="false">
+								<svg class="icono">
+									<use href="#icono-mas-opciones--lineal"></use>
+								</svg>
+								<span>Más opciones</span>
+							</button>
+							<?php 
+								$idDropdown = 'menu-opciones-7';
+								include "comp/desplegable-opciones.php"; 
+							?>
+						</div>
+					</li>
+				</ul>
+			</td>
+    </tr>
+		
+    <tr role="row" aria-level="5" aria-posinset="1" aria-setsize="2">
+      <td role="gridcell">
+				<div class="cell-title-line">
+					<input type="checkbox" class="form-checkbox">
+					<span class="cell-main-content">Sub-Sub-Sub-Sub-ítem 1 con tremendo título así re largo mal que llegue a tres líneas</span>
+				</div>
+			</td>
+			<td role="gridcell">
+				<span class="tag-figma">
+					<span class="dot"></span>
+					<span>Estado</span>
+				</span>
+			</td>
+      <td role="gridcell">
+				<span class="cell-main-content">Contenido texto un poco más largo que...</span>
+			</td>
+      <td role="gridcell">
+				<a class="enlace" href="#" target="_blank" rel="noopener noreferrer">
+					<span>Enlace</span>
+					<svg class="icono icono--s">
+						<use href="#icono-enlace-externo--lineal"></use>
+					</svg>
+				</a>
+			</td>
+			<td role="gridcell">
+				<ul class="botonera botonera--s">
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-abrir-detalle--lineal"></use>
+							</svg>
+							<span>Ver detalle</span>
+						</button>	
+					</li>
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-edicion-rapida--lineal"></use>
+							</svg>
+							<span>Editar</span>
+						</button>
+					</li>	
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-mas--lineal"></use>
+							</svg>
+							<span>Agregar</span>
+						</button>
+					</li>	
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-borrar--lineal"></use>
+							</svg>
+							<span>Borrar</span>
+						</button>
+					</li>	
+					<li>
+						<div class="desplegable-wrapper">
+							<button class="boton boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-8" aria-expanded="false">
+								<svg class="icono">
+									<use href="#icono-mas-opciones--lineal"></use>
+								</svg>
+								<span>Más opciones</span>
+							</button>
+							<?php 
+								$idDropdown = 'menu-opciones-8';
+								include "comp/desplegable-opciones.php"; 
+							?>
+						</div>
+					</li>
+				</ul>
+			</td>
+    </tr>
+		
+    <tr role="row" aria-level="5" aria-posinset="2" aria-setsize="2">
+      <td role="gridcell">
+				<div class="cell-title-line">
+					<input type="checkbox" class="form-checkbox">
+					<span class="cell-main-content">Sub-Sub-Sub-Sub-ítem 1 con tremendo título así re largo mal que llegue a tres líneas</span>
+				</div>
+				<div class="cell-details">
+					<span class="details-label">Etiqueta:</span>
+					<span class="details-value">Contenido texto un poco más largo que llegue al segundo renglón</span>
+				</div>
+			</td>
+			<td role="gridcell">
+				<div class="cell-content">
+					<span class="tag-figma">
+						<span class="dot"></span>
+						<span>Estado</span>
+					</span>
+					<div class="cell-details">
+						<span class="details-label">Etiqueta:</span>
+						<span class="details-value">Texto corto pero no tan corto, pero si</span>
+					</div>
+				</div>
+			</td>
+      <td role="gridcell">
+				<div class="cell-content">
+					<span class="cell-main-content">Contenido texto un poco...</span>
+					<div class="cell-details">
+						<span class="details-label">Etiqueta:</span>
+						<span class="details-value">Contenido texto un poco...</span>
+					</div>
+				</div>
+			</td>
+      <td role="gridcell">
+				<div class="cell-content">
+					<a class="enlace" href="#" target="_blank" rel="noopener noreferrer">
+						<span>Enlace</span>
+						<svg class="icono icono--s">
+							<use href="#icono-enlace-externo--lineal"></use>
+						</svg>
+					</a>
+					<div class="cell-details">
+						<span class="details-label">Etiqueta:</span>
+						<span class="details-value">Contenido texto un poco más largo que llegue al segundo renglón</span>
+					</div>
+				</div>
+			</td>
+			<td role="gridcell">
+				<ul class="botonera botonera--s">
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-abrir-detalle--lineal"></use>
+							</svg>
+							<span>Ver detalle</span>
+						</button>	
+					</li>
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-edicion-rapida--lineal"></use>
+							</svg>
+							<span>Editar</span>
+						</button>
+					</li>	
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-mas--lineal"></use>
+							</svg>
+							<span>Agregar</span>
+						</button>
+					</li>	
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-borrar--lineal"></use>
+							</svg>
+							<span>Borrar</span>
+						</button>
+					</li>	
+					<li>
+						<div class="desplegable-wrapper">
+							<button class="boton boton--secundario" data-menu-trigger data-menu-target="menu-opciones-9" aria-expanded="false">
+								<svg class="icono">
+									<use href="#icono-mas-opciones--lineal"></use>
+								</svg>
+								<span>Más opciones</span>
+							</button>
+							<?php 
+								$idDropdown = 'menu-opciones-9';
+								include "comp/desplegable-opciones.php"; 
+							?>
+						</div>
+					</li>
+				</ul>
+			</td>
+    </tr>
+		
+		<tr role="row" aria-level="1" aria-posinset="2" aria-setsize="2" aria-expanded="false">
+      <td role="gridcell">
+				<div class="cell-title-line">
+					<input type="checkbox" class="form-checkbox">
+					<span class="cell-main-content">Ítem 2 con tremendo título así re largo mal que llegue a dos renglones</span>
+				</div>
+			</td>
+			<td role="gridcell">
+				<span class="tag-figma">
+					<span class="dot"></span>
+					<span>Estado</span>
+				</span>
+			</td>
+      <td role="gridcell">
+				<span class="cell-main-content">Contenido texto un poco más largo que...</span>
+			</td>
+      <td role="gridcell">
+				<a class="enlace" href="#" target="_blank" rel="noopener noreferrer">
+					<span>Enlace</span>
+					<svg class="icono icono--s">
+						<use href="#icono-enlace-externo--lineal"></use>
+					</svg>
+				</a>
+			</td>
+			<td role="gridcell">
+				<ul class="botonera botonera--s">
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-abrir-detalle--lineal"></use>
+							</svg>
+							<span>Ver detalle</span>
+						</button>	
+					</li>
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-edicion-rapida--lineal"></use>
+							</svg>
+							<span>Editar</span>
+						</button>
+					</li>	
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-mas--lineal"></use>
+							</svg>
+							<span>Agregar</span>
+						</button>
+					</li>	
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-borrar--lineal"></use>
+							</svg>
+							<span>Borrar</span>
+						</button>
+					</li>	
+					<li>
+						<div class="desplegable-wrapper">
+							<button class="boton boton--secundario" data-menu-trigger data-menu-target="menu-opciones-10" aria-expanded="false">
+								<svg class="icono">
+									<use href="#icono-mas-opciones--lineal"></use>
+								</svg>
+								<span>Más opciones</span>
+							</button>
+							<?php 
+								$idDropdown = 'menu-opciones-10';
+								include "comp/desplegable-opciones.php"; 
+							?>
+						</div>
+					</li>
+				</ul>
 			</td>
    	</tr>
 	
-	  <tr role="row" aria-level="2" aria-posinset="4" aria-setsize="3" class="hidden">
-      <td role="gridcell">Fila nivel 2 con un título</td>
-			<td role="gridcell">
-				<span class="tag tag--small tag--activo">
-					<span class="dot"></span>
-					<span>Activo</span>
-				</span>
-			</td>
-      <td role="gridcell">Consectetur adipiscing elit, sed do eiusmod tempor</td>
+	  <tr role="row" aria-level="1" aria-posinset="2" aria-setsize="2">
       <td role="gridcell">
-				<a class="enlace" href="mailto:usuario2@correo.gub.uy">
-					<svg class="icono icono--s">
-						<use href="#icono-co-editor--lineal"></use>
-					</svg>
-					<span>usuario2@correo.gub.uy</span>
-				</a>
-			 </td>
-			 <td role="gridcell">
-				<button class="boton boton--primario boton--s">
-					<svg class="icono">
-						<use href="#icono-editar--lineal"></use>
-					</svg>
-					<span>Editar</span>
-				</button>
-			 </td>
+				<div class="cell-title-line">
+					<input type="checkbox" class="form-checkbox">
+					<span class="cell-main-content">Ítem 3 sin hijos. Lorem ipsum dolor sit amet.</span>
+				</div>
+				<div class="cell-details">
+					<span class="details-label">Etiqueta:</span>
+					<span class="details-value">Contenido texto un poco más largo que llegue al segundo renglón</span>
+				</div>
+			</td>
+			<td role="gridcell">
+				<div class="cell-content">
+					<span class="tag-figma">
+						<span class="dot"></span>
+						<span>Estado</span>
+					</span>
+					<div class="cell-details">
+						<span class="details-label">Etiqueta:</span>
+						<span class="details-value">Texto corto pero no tan corto, pero si</span>
+					</div>
+				</div>
+			</td>
+      <td role="gridcell">
+				<div class="cell-content">
+					<span class="cell-main-content">Párrafo de texto tamaño SM. Lorem ipsum dolor sit amet, consectetur...</span>
+					<div class="cell-details">
+						<span class="details-label">Etiqueta:</span>
+						<span class="details-value">Contenido texto un poco...</span>
+					</div>
+				</div>
+			</td>
+      <td role="gridcell">
+				<div class="cell-content">
+					<a class="enlace" href="#" target="_blank" rel="noopener noreferrer">
+						<span>Enlace</span>
+						<svg class="icono icono--s">
+							<use href="#icono-enlace-externo--lineal"></use>
+						</svg>
+					</a>
+					<div class="cell-details">
+						<span class="details-label">Etiqueta:</span>
+						<span class="details-value">Contenido texto un poco más largo que llegue al segundo renglón</span>
+					</div>
+				</div>
+			</td>
+			<td role="gridcell">
+				<ul class="botonera botonera--s">
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-abrir-detalle--lineal"></use>
+							</svg>
+							<span>Ver detalle</span>
+						</button>	
+					</li>
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-edicion-rapida--lineal"></use>
+							</svg>
+							<span>Editar</span>
+						</button>
+					</li>	
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-mas--lineal"></use>
+							</svg>
+							<span>Agregar</span>
+						</button>
+					</li>	
+					<li>
+						<button class="boton boton--secundario boton--icono">
+							<svg class="icono">
+								<use href="#icono-borrar--lineal"></use>
+							</svg>
+							<span>Borrar</span>
+						</button>
+					</li>	
+					<li>
+						<div class="desplegable-wrapper">
+							<button class="boton boton--secundario" data-menu-trigger data-menu-target="menu-opciones-11" aria-expanded="false">
+								<svg class="icono">
+									<use href="#icono-mas-opciones--lineal"></use>
+								</svg>
+								<span>Más opciones</span>
+							</button>
+							<?php 
+								$idDropdown = 'menu-opciones-11';
+								include "comp/desplegable-opciones.php"; 
+							?>
+						</div>
+					</li>
+				</ul>
+			</td>
     </tr>
-		
-		<tr role="row" aria-level="1" aria-posinset="5" aria-setsize="1">
-      <td role="gridcell">Fila nivel 1 sin hijos. Lorem ipsum dolor sit amet.</td>
-			<td role="gridcell">
-				<span class="tag tag--small tag--activo">
-					<span class="dot"></span>
-					<span>Activo</span>
-				</span>
-			</td>
-      <td role="gridcell">Párrafo de texto tamaño SM. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-      <td role="gridcell">
-				<a class="enlace" href="mailto:usuario@correo.gub.uy">
-					<svg class="icono icono--s">
-						<use href="#icono-co-editor--lineal"></use>
-					</svg>
-					<span>usuario@correo.gub.uy</span>
-				</a>
-			</td>
-			<td role="gridcell">
-		 		<button class="boton boton--primario boton--s">
-					<svg class="icono">
-						<use href="#icono-editar--lineal"></use>
-					</svg>
-					<span>Editar</span>
-				</button>
-			</td>
-   	</tr>
-		
+	
   </tbody>
 </table>
 </div>
@@ -440,6 +1168,88 @@
 /*#treegrid tr > td:first-child,*/
 #treegrid tr > th:first-child {
   padding-left: 2.25ch;
+}
+
+/* Estilos Figma para celdas y filas de detalles */
+#treegrid td {
+    vertical-align: top;
+    padding-top: var(--espaciado-12, 12px);
+    padding-bottom: var(--espaciado-12, 12px);
+}
+.cell-title-line {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    vertical-align: middle;
+}
+.cell-title-line .form-checkbox {
+    margin: 0;
+    cursor: pointer;
+}
+.cell-main-content {
+    font-size: 13px;
+    color: var(--neutro-900, #333);
+}
+.cell-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.cell-details {
+    margin-top: 6px;
+    font-size: 11px;
+    color: var(--neutro-500, #666);
+    line-height: 1.4;
+}
+.details-label {
+    font-weight: 600;
+    color: var(--neutro-600, #555);
+    margin-right: 4px;
+}
+.details-value {
+    color: var(--neutro-500, #666);
+}
+
+/* Alineación de la columna de detalles en la primera columna para compensar arrow y checkbox */
+#treegrid td:first-child .cell-details {
+    margin-left: 44px;
+}
+
+/* Tag estilo Figma (Capsula verde éxito) */
+.tag-figma {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 2px 8px;
+    background-color: #e6f4ea;
+    color: #137333;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 500;
+    width: fit-content;
+}
+.tag-figma .dot {
+    width: 6px;
+    height: 6px;
+    background-color: #137333;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Alineaciones específicas en cabezales */
+#treegrid th {
+    font-size: 12px;
+    color: var(--neutro-700, #555);
+    font-weight: 600;
+    background-color: var(--neutro-50, #f3f3f3) !important;
+    border-bottom: 2px solid var(--neutro-200, #ccc);
+}
+#treegrid th .form-checkbox {
+    margin: 0;
+}
+
+#treegrid tr > td:first-child::before {
+    vertical-align: middle;
 }
 
 </style>
@@ -922,6 +1732,12 @@ function TreeGrid(treegridElem, doAllowRowFocus, doStartRowFocus) {
   // Toggle row expansion if the click is anywhere on the first column cell
   function onClick(event) {
     var target = event.target;
+    
+    // Ignore clicks on inputs (like checkboxes), buttons, or links
+    if (target.localName === 'input' || target.localName === 'button' || target.localName === 'a' || 
+        target.closest('button') || target.closest('a') || target.closest('.botonera')) {
+      return;
+    }
     
     // Traverse up to the cell element in case they clicked a child tag
     while (target && target.localName !== 'td' && target.localName !== 'th') {
