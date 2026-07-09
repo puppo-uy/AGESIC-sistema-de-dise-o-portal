@@ -919,27 +919,26 @@ function TreeGrid(treegridElem, doAllowRowFocus, doStartRowFocus) {
     event.preventDefault();
   }
 
-  // Toggle row expansion if the click is over the expando triangle
-  // Since the triangle is a pseudo element we can't bind an event listener
-  // to it. Another option is to have an actual element with role="presentation"
+  // Toggle row expansion if the click is anywhere on the first column cell
   function onClick(event) {
     var target = event.target;
-    if (target.localName !== 'td') {
+    
+    // Traverse up to the cell element in case they clicked a child tag
+    while (target && target.localName !== 'td' && target.localName !== 'th') {
+      target = target.parentElement;
+    }
+    
+    if (!target || target.localName !== 'td') {
       return;
     }
 
-    var row = getContainingRow(event.target);
+    var row = getContainingRow(target);
     if (!isExpandable(row)) {
       return;
     }
 
-    // Determine if mouse coordinate is just to the left of the start of text
-    var range = document.createRange();
-    range.selectNodeContents(target.firstChild);
-    var left = range.getBoundingClientRect().left;
-    var EXPANDO_WIDTH = 20;
-
-    if (event.clientX < left && event.clientX > left - EXPANDO_WIDTH) {
+    // Toggle expansion if they click on the first cell of the row (Title column)
+    if (target === row.cells[0]) {
       changeExpanded(!isExpanded(row), row);
     }
   }
@@ -983,21 +982,33 @@ function getQuery() {
   return getQuery.cached;
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-  // Supports url parameter ?cell=force or ?cell=start (or leave out parameter)
+function initTreeGrid() {
   var cellParam = getQuery().cell;
   var doAllowRowFocus = cellParam !== 'force';
   var doStartRowFocus = doAllowRowFocus && cellParam !== 'start';
-  TreeGrid(
-    document.getElementById('treegrid'),
-    doAllowRowFocus,
-    doStartRowFocus
-  );
+  
+  var treegridElem = document.getElementById('treegrid');
+  if (treegridElem) {
+    TreeGrid(
+      treegridElem,
+      doAllowRowFocus,
+      doStartRowFocus
+    );
+  }
+  
   var choiceElem = document.getElementById(
     'option-cell-focus-' + (cellParam || 'allow')
   );
-  choiceElem.setAttribute('aria-current', 'true');
-});
+  if (choiceElem) {
+    choiceElem.setAttribute('aria-current', 'true');
+  }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initTreeGrid);
+} else {
+  initTreeGrid();
+}
 
 </script>
         
