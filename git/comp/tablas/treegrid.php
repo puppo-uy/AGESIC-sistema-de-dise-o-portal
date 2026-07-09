@@ -55,6 +55,7 @@
 		<tr role="row" aria-level="1" aria-posinset="1" aria-setsize="1" aria-expanded="true">
       <td role="gridcell">
 				<div class="cell-title-line">
+					<span class="treegrid-expando"></span>
 					<input type="checkbox" class="form-checkbox">
 					<span class="cell-main-content">Ítem 1 con tremendo título así re largo mal que llegue a dos renglones</span>
 				</div>
@@ -153,6 +154,7 @@
     <tr role="row" aria-level="2" aria-posinset="1" aria-setsize="3" aria-expanded="false">
       <td role="gridcell">
 				<div class="cell-title-line">
+					<span class="treegrid-expando"></span>
 					<input type="checkbox" class="form-checkbox">
 					<span class="cell-main-content">Sub-ítem 1 con tremendo título así re largo mal que llegue a dos líneas</span>
 				</div>
@@ -229,6 +231,7 @@
     <tr role="row" aria-level="2" aria-posinset="2" aria-setsize="3" aria-expanded="true">
       <td role="gridcell">
 				<div class="cell-title-line">
+					<span class="treegrid-expando"></span>
 					<input type="checkbox" class="form-checkbox">
 					<span class="cell-main-content">Sub-ítem 1 con tremendo título así re largo mal que llegue a dos líneas</span>
 				</div>
@@ -291,7 +294,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--s boton--secundario boton--icono">
+						<button class="boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-mas--lineal"></use>
 							</svg>
@@ -327,6 +330,7 @@
     <tr role="row" aria-level="3" aria-posinset="1" aria-setsize="1" aria-expanded="false">
       <td role="gridcell">
 				<div class="cell-title-line">
+					<span class="treegrid-expando"></span>
 					<input type="checkbox" class="form-checkbox">
 					<span class="cell-main-content">Sub-Sub-ítem 1 con tremendo título así re largo mal que llegue a dos líneas</span>
 				</div>
@@ -403,6 +407,7 @@
     <tr role="row" aria-level="3" aria-posinset="2" aria-setsize="3" aria-expanded="true">
       <td role="gridcell">
 				<div class="cell-title-line">
+					<span class="treegrid-expando"></span>
 					<input type="checkbox" class="form-checkbox">
 					<span class="cell-main-content">Sub-Sub-ítem 1 con tremendo título así re largo mal que llegue a dos líneas</span>
 				</div>
@@ -501,6 +506,7 @@
     <tr role="row" aria-level="4" aria-posinset="1" aria-setsize="2" aria-expanded="false">
       <td role="gridcell">
 				<div class="cell-title-line">
+					<span class="treegrid-expando"></span>
 					<input type="checkbox" class="form-checkbox">
 					<span class="cell-main-content">Sub-Sub-Sub-ítem 1 con tremendo título así re largo mal que llegue a tres líneas</span>
 				</div>
@@ -577,6 +583,7 @@
     <tr role="row" aria-level="4" aria-posinset="2" aria-setsize="2" aria-expanded="true">
       <td role="gridcell">
 				<div class="cell-title-line">
+					<span class="treegrid-expando"></span>
 					<input type="checkbox" class="form-checkbox">
 					<span class="cell-main-content">Sub-Sub-Sub-ítem 1 con tremendo título así re largo mal que llegue a tres líneas</span>
 				</div>
@@ -675,6 +682,7 @@
     <tr role="row" aria-level="5" aria-posinset="1" aria-setsize="2">
       <td role="gridcell">
 				<div class="cell-title-line">
+					<span class="treegrid-expando"></span>
 					<input type="checkbox" class="form-checkbox">
 					<span class="cell-main-content">Sub-Sub-Sub-Sub-ítem 1 con tremendo título así re largo mal que llegue a tres líneas</span>
 				</div>
@@ -751,6 +759,7 @@
     <tr role="row" aria-level="5" aria-posinset="2" aria-setsize="2">
       <td role="gridcell">
 				<div class="cell-title-line">
+					<span class="treegrid-expando"></span>
 					<input type="checkbox" class="form-checkbox">
 					<span class="cell-main-content">Sub-Sub-Sub-Sub-ítem 1 con tremendo título así re largo mal que llegue a tres líneas</span>
 				</div>
@@ -849,6 +858,7 @@
 		<tr role="row" aria-level="1" aria-posinset="2" aria-setsize="2" aria-expanded="false">
       <td role="gridcell">
 				<div class="cell-title-line">
+					<span class="treegrid-expando"></span>
 					<input type="checkbox" class="form-checkbox">
 					<span class="cell-main-content">Ítem 2 con tremendo título así re largo mal que llegue a dos renglones</span>
 				</div>
@@ -925,6 +935,7 @@
 	  <tr role="row" aria-level="1" aria-posinset="2" aria-setsize="2">
       <td role="gridcell">
 				<div class="cell-title-line">
+					<span class="treegrid-expando"></span>
 					<input type="checkbox" class="form-checkbox">
 					<span class="cell-main-content">Ítem 3 sin hijos. Lorem ipsum dolor sit amet.</span>
 				</div>
@@ -1104,37 +1115,30 @@
 }
 
 /* Collapse/expand icons */
-#treegrid tr > td:first-child::before {
-  font-family: monospace;
-  content: " ";
+.treegrid-expando {
   display: inline-block;
-  width: 2ch;
-  height: 11px;
-  transition: transform 0.3s;
-  transform-origin: 5px 5px;
-}
-
-#treegrid tr[aria-expanded] > td:first-child::before,
-#treegrid td[aria-expanded]:first-child::before {
-  cursor: pointer;
-
-  /* Load both right away so there is no lag when we need the other */
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpolygon fill='black' points='2,0 2,10 10,5'%3E%3C/polygon%3E%3C/svg%3E%0A"),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpolygon fill='hsl(216, 94%25, 50%25)' points='2,0 2,10 10,5'%3E%3C/polygon%3E%3C/svg%3E%0A");
+  width: 12px;
+  height: 12px;
   background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s;
+  transform-origin: 6px 6px;
+  flex-shrink: 0;
+  cursor: pointer;
+  vertical-align: middle;
 }
 
-#treegrid tr[aria-expanded="true"] > td:first-child::before,
-#treegrid td[aria-expanded="true"]:first-child::before {
+#treegrid tr[aria-expanded] .treegrid-expando {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpolygon fill='%231b2f6c' points='2,0 2,10 10,5'%3E%3C/polygon%3E%3C/svg%3E");
+}
+
+#treegrid tr[aria-expanded="true"] .treegrid-expando {
   transform: rotate(90deg);
 }
 
-#treegrid tr[aria-expanded]:focus > td:first-child::before,
-#treegrid tr[aria-expanded] > td:focus:first-child::before,
-#treegrid tr:focus > td[aria-expanded]:first-child::before,
-#treegrid tr > td[aria-expanded]:focus:first-child::before {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpolygon fill='hsl(216, 94%25, 50%25)' points='2,0 2,10 10,5'%3E%3C/polygon%3E%3C/svg%3E%0A");
+#treegrid tr:not([aria-expanded]) .treegrid-expando {
+  visibility: hidden;
+  width: 12px;
 }
 
 /* Agregados */	
@@ -1161,16 +1165,21 @@
 	border-bottom: solid 1px var(--neutro-50);
 }
 	
-#treegrid tr > td:first-child::before {
-	margin-right: var(--espaciado-4);
-}
-	
 /*#treegrid tr > td:first-child,*/
 #treegrid tr > th:first-child {
   padding-left: 2.25ch;
 }
 
 /* Estilos Figma para celdas y filas de detalles */
+#treegrid {
+    table-layout: fixed;
+}
+#treegrid-col1 { width: 32%; }
+#treegrid-col2 { width: 12%; }
+#treegrid-col3 { width: 28%; }
+#treegrid-col4 { width: 12%; }
+#treegrid-col5 { width: 16%; }
+
 #treegrid td {
     vertical-align: top;
     padding-top: var(--espaciado-12, 12px);
@@ -1211,7 +1220,7 @@
     color: var(--neutro-500, #666);
 }
 
-/* Alineación de la columna de detalles en la primera columna para compensar arrow y checkbox */
+/* Alignment of title details */
 #treegrid td:first-child .cell-details {
     margin-left: 44px;
 }
@@ -1237,7 +1246,7 @@
     display: inline-block;
 }
 
-/* Alineaciones específicas en cabezales */
+/* Cabezal de tabla */
 #treegrid th {
     font-size: 12px;
     color: var(--neutro-700, #555);
@@ -1247,10 +1256,6 @@
 }
 #treegrid th .form-checkbox {
     margin: 0;
-}
-
-#treegrid tr > td:first-child::before {
-    vertical-align: middle;
 }
 
 /* --- REGLAS DE COLOR DE GRUPO Y ALTERNANCIA FIGMA --- */
@@ -1266,70 +1271,70 @@
     border-right: 4px solid #0099ff !important;
 }
 
-/* Alternancia de fondos en el árbol */
+/* Alternancia de fondos en el árbol (aplicado a las celdas td) */
 /* Nivel 1 cerrado/sin hijos: fondo blanco */
-#treegrid tr[aria-level="1"]:not([aria-expanded="true"]) {
+#treegrid tr[aria-level="1"]:not([aria-expanded="true"]) td {
     background-color: #ffffff !important;
 }
 /* Nivel 1 expandido: fondo light blue */
-#treegrid tr[aria-level="1"][aria-expanded="true"] {
+#treegrid tr[aria-level="1"][aria-expanded="true"] td {
     background-color: #f3faff !important;
 }
 /* Nivel 2 cerrado: fondo light blue */
-#treegrid tr[aria-level="2"]:not([aria-expanded="true"]) {
+#treegrid tr[aria-level="2"]:not([aria-expanded="true"]) td {
     background-color: #f3faff !important;
 }
 /* Nivel 2 expandido: fondo blanco */
-#treegrid tr[aria-level="2"][aria-expanded="true"] {
+#treegrid tr[aria-level="2"][aria-expanded="true"] td {
     background-color: #ffffff !important;
 }
 /* Nivel 3 cerrado: fondo blanco */
-#treegrid tr[aria-level="3"]:not([aria-expanded="true"]) {
+#treegrid tr[aria-level="3"]:not([aria-expanded="true"]) td {
     background-color: #ffffff !important;
 }
 /* Nivel 3 expandido: fondo light blue */
-#treegrid tr[aria-level="3"][aria-expanded="true"] {
+#treegrid tr[aria-level="3"][aria-expanded="true"] td {
     background-color: #f3faff !important;
 }
 /* Nivel 4 cerrado: fondo light blue */
-#treegrid tr[aria-level="4"]:not([aria-expanded="true"]) {
+#treegrid tr[aria-level="4"]:not([aria-expanded="true"]) td {
     background-color: #f3faff !important;
 }
 /* Nivel 4 expandido: fondo blanco */
-#treegrid tr[aria-level="4"][aria-expanded="true"] {
+#treegrid tr[aria-level="4"][aria-expanded="true"] td {
     background-color: #ffffff !important;
 }
 /* Nivel 5: fondo blanco */
-#treegrid tr[aria-level="5"] {
+#treegrid tr[aria-level="5"] td {
     background-color: #ffffff !important;
 }
 
 /* Efectos de hover respetando el color del grupo */
-#treegrid tr[aria-level="1"]:not([aria-expanded="true"]):hover {
+#treegrid tr[aria-level="1"]:not([aria-expanded="true"]):hover td {
     background-color: #f5f5f5 !important;
 }
-#treegrid tr[aria-level="1"][aria-expanded="true"]:hover {
+#treegrid tr[aria-level="1"][aria-expanded="true"]:hover td {
     background-color: #e8f4ff !important;
 }
-#treegrid tr[aria-level="2"]:not([aria-expanded="true"]):hover {
+#treegrid tr[aria-level="2"]:not([aria-expanded="true"]):hover td {
     background-color: #e8f4ff !important;
 }
-#treegrid tr[aria-level="2"][aria-expanded="true"]:hover {
+#treegrid tr[aria-level="2"][aria-expanded="true"]:hover td {
     background-color: #f5f5f5 !important;
 }
-#treegrid tr[aria-level="3"]:not([aria-expanded="true"]):hover {
+#treegrid tr[aria-level="3"]:not([aria-expanded="true"]):hover td {
     background-color: #f5f5f5 !important;
 }
-#treegrid tr[aria-level="3"][aria-expanded="true"]:hover {
+#treegrid tr[aria-level="3"][aria-expanded="true"]:hover td {
     background-color: #e8f4ff !important;
 }
-#treegrid tr[aria-level="4"]:not([aria-expanded="true"]):hover {
+#treegrid tr[aria-level="4"]:not([aria-expanded="true"]):hover td {
     background-color: #e8f4ff !important;
 }
-#treegrid tr[aria-level="4"][aria-expanded="true"]:hover {
+#treegrid tr[aria-level="4"][aria-expanded="true"]:hover td {
     background-color: #f5f5f5 !important;
 }
-#treegrid tr[aria-level="5"]:hover {
+#treegrid tr[aria-level="5"]:hover td {
     background-color: #f5f5f5 !important;
 }
 
