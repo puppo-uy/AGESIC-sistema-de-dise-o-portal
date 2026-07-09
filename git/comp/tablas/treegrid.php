@@ -1074,13 +1074,14 @@
 
 #treegrid th {
   text-align: left;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--neutro-700, #444444);
-  background-color: var(--neutro-50, #f3f3f3);
-  border-bottom: 2px solid var(--neutro-200, #cccccc);
-  padding: 10px 12px;
+  font-size: 12px;                                   /* parrafo/s = 12px */
+  font-weight: 600;                                  /* semibold */
+  color: var(--neutro-700, #575757);
+  background-color: var(--primario-claro, #e9ecf4);  /* azul-50 institucional */
+  border-bottom: 2px solid var(--neutro-200, #c2c2c2);
+  padding: var(--espaciado-8, 8px) var(--espaciado-16, 16px);
   overflow: hidden;
+  white-space: nowrap;
 }
 
 /* Contenedor flex del cabezal (antes estaba como estilo inline) */
@@ -1107,28 +1108,33 @@
 
 #treegrid td {
   vertical-align: top;
-  padding: var(--espaciado-12, 12px) 12px;
-  border-bottom: 1px solid var(--neutro-100, #eeeeee);
+  padding: var(--espaciado-8, 8px) var(--espaciado-16, 16px);  /* Figma: top/bottom=8 left/right=16 */
+  border-bottom: 1px solid var(--neutro-100, #d6d6d6);
   overflow: hidden;
+  font-size: 14px;                                              /* parrafo/m = 14px */
+  color: var(--neutro-900, #2a2a2a);
+  line-height: 1.4;
 }
 
-/* Columnas que no son la primera: separación izquierda */
+/* Columnas que no son la primera: sin padding-left extra (ya viene del td base) */
 #treegrid tr > td:not(:first-child),
 #treegrid tr > th:not(:first-child) {
-  padding-left: 12px;
+  padding-left: var(--espaciado-16, 16px);
 }
 
 /* --- 5. Indentación por nivel (jerarquía del árbol) --- */
+/* Figma: hijo-1 paddingLeft=VariableID:5:2 (2px), pero el subitem paddingLeft=VariableID:5:36 (32px) */
+/* El indent real es el contenedor-subitem con paddingLeft acumulado */
 
-#treegrid tr[aria-level="1"] > td:first-child { padding-left: 12px; }
-#treegrid tr[aria-level="2"] > td:first-child { padding-left: 2.5ch; }
-#treegrid tr[aria-level="3"] > td:first-child { padding-left: 5ch;   }
-#treegrid tr[aria-level="4"] > td:first-child { padding-left: 7.5ch; }
-#treegrid tr[aria-level="5"] > td:first-child { padding-left: 10ch;  }
+#treegrid tr[aria-level="1"] > td:first-child { padding-left: var(--espaciado-16, 16px); }
+#treegrid tr[aria-level="2"] > td:first-child { padding-left: var(--espaciado-32, 32px); }
+#treegrid tr[aria-level="3"] > td:first-child { padding-left: calc(var(--espaciado-32, 32px) * 2); }
+#treegrid tr[aria-level="4"] > td:first-child { padding-left: calc(var(--espaciado-32, 32px) * 3); }
+#treegrid tr[aria-level="5"] > td:first-child { padding-left: calc(var(--espaciado-32, 32px) * 4); }
 
-/* Primer cabezal: sin indentación extra */
+/* Primer cabezal: alineado con nivel 1 */
 #treegrid tr > th:first-child {
-  padding-left: 12px;
+  padding-left: var(--espaciado-16, 16px);
 }
 
 /* --- 6. Icono de expansión/colapso (.treegrid-expando) --- */
@@ -1178,10 +1184,9 @@
   cursor: pointer;
 }
 
-/* Texto principal de la celda */
+/* Texto principal de la celda (hereda font-size y color del td) */
 .cell-main-content {
-  font-size: 14px;
-  color: var(--neutro-900, #111111);
+  font-weight: 400;
   flex-grow: 1;
   line-height: 1.4;
 }
@@ -1201,7 +1206,8 @@
   line-height: 1.4;
 }
 
-/* Alinear los detalles de la primera columna bajo el texto (compensar flecha + checkbox) */
+/* Alinear los detalles de la primera columna bajo el texto (compensar flecha + gap + checkbox + gap) */
+/* Figma: expando 12px + gap 8px + checkbox 16px + gap 8px = 44px */
 #treegrid td:first-child .cell-details {
   margin-left: 44px;
 }
@@ -1216,17 +1222,18 @@
   color: var(--neutro-500, #666666);
 }
 
-/* --- 8. Tag de estado (pill verde) --- */
-/* Usa las clases .tag y .tag--exito del sistema. Si no están disponibles globalmente,
-   se definen aquí como fallback con el mismo token: */
+/* --- 8. Tag de estado (pill de estado) ---
+   Usa las clases .tag-estado y .tag-estado__dot del componente tag-estado del sistema.
+   Equivalente a la variante "tipo=activo-completado" del COMPONENT_SET "tag-estado" (id: 2432:73)
+*/
 .tag-estado {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 2px 10px;
-  background-color: var(--exito-claro, #e6f4ea);
-  color: var(--exito-oscuro, #137333);
-  border-radius: 100px;
+  gap: var(--espaciado-4, 4px);
+  padding: var(--espaciado-2, 2px) var(--espaciado-8, 8px);
+  background-color: var(--funcional-exito-claro, #e9f5ec);
+  color: var(--funcional-exito-medio_oscuro, #155723);
+  border-radius: var(--borde-radio-full, 9999px);
   font-size: 12px;
   font-weight: 500;
   white-space: nowrap;
@@ -1240,12 +1247,12 @@
   flex-shrink: 0;
 }
 
-/* Alias retrocompatible (se mantendrá mientras se migra) */
-.tag-figma { display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px;
-  background-color: #e6f4ea; color: #137333; border-radius: 100px;
-  font-size: 12px; font-weight: 500; white-space: nowrap; }
-.tag-figma .dot { width: 6px; height: 6px; background-color: #137333;
-  border-radius: 50%; display: inline-block; }
+/* Alias retrocompatible (se mantendrá mientras se migra de .tag-figma a .tag-estado) */
+.tag-figma { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px;
+  background-color: var(--funcional-exito-claro, #e9f5ec); color: var(--funcional-exito-medio_oscuro, #155723);
+  border-radius: 9999px; font-size: 12px; font-weight: 500; white-space: nowrap; }
+.tag-figma .dot { width: 6px; height: 6px; background-color: var(--funcional-exito-acento, #279e3f);
+  border-radius: 50%; display: inline-block; flex-shrink: 0; }
 
 /* --- 9. Estados de foco (accesibilidad teclado) --- */
 
@@ -1260,73 +1267,61 @@
   border-bottom: none;
 }
 
-/* --- 10. Borde de grupo (línea azul derecha) --- */
+/* --- 10. Borde de grupo (línea azul derecha) — VariableID:543:42 = primario-principal #25418e --- */
 
-/* Fila raíz expandida: borde azul en el último td */
-#treegrid tr[aria-level="1"][aria-expanded="true"] > td:last-child {
-  border-right: 4px solid var(--primario, #0099ff);
+/* Fila raíz expandida: borde azul en el primer td (izquierda) */
+#treegrid tr[aria-level="1"][aria-expanded="true"] > td:first-child {
+  border-left: 4px solid var(--primario-principal, #25418e);
 }
 
-/* Todas las filas anidadas: borde azul en el último td */
-#treegrid tr[aria-level="2"] > td:last-child,
-#treegrid tr[aria-level="3"] > td:last-child,
-#treegrid tr[aria-level="4"] > td:last-child,
-#treegrid tr[aria-level="5"] > td:last-child {
-  border-right: 4px solid var(--primario, #0099ff);
+/* Filas anidadas: borde azul en el primer td (izquierda) */
+#treegrid tr[aria-level="2"] > td:first-child,
+#treegrid tr[aria-level="3"] > td:first-child,
+#treegrid tr[aria-level="4"] > td:first-child,
+#treegrid tr[aria-level="5"] > td:first-child {
+  border-left: 4px solid var(--primario-principal, #25418e);
 }
 
-/* --- 11. Alternancia de fondos por nivel (Figma) --- */
+/* --- 11. Fondos por nivel (Figma) ---
+   VariableID:543:429 = neutro-0 (#ffffff) → filas default cerradas y cabezal hover
+   VariableID:734:561 = primario-mas-claro (#f4f6fa, azul-25) → filas hijo
+   VariableID:734:383 = primario-claro (#e9ecf4, azul-50) → cabezal
+*/
 
-/* Nivel 1 cerrado → blanco */
-#treegrid tr[aria-level="1"][aria-expanded="false"] > td { background-color: #ffffff; }
-/* Nivel 1 abierto → celeste claro */
-#treegrid tr[aria-level="1"][aria-expanded="true"]  > td { background-color: #f3faff; }
-/* Nivel 1 sin hijos → blanco */
-#treegrid tr[aria-level="1"]:not([aria-expanded])   > td { background-color: #ffffff; }
+/* Nivel 1 (default): fondo blanco */
+#treegrid tr[aria-level="1"][aria-expanded="false"] > td { background-color: var(--neutro-0, #ffffff); }
+#treegrid tr[aria-level="1"][aria-expanded="true"]  > td { background-color: var(--neutro-0, #ffffff); }
+#treegrid tr[aria-level="1"]:not([aria-expanded])   > td { background-color: var(--neutro-0, #ffffff); }
 
-/* Nivel 2 cerrado → celeste claro */
-#treegrid tr[aria-level="2"][aria-expanded="false"] > td { background-color: #f3faff; }
-/* Nivel 2 abierto → blanco */
-#treegrid tr[aria-level="2"][aria-expanded="true"]  > td { background-color: #ffffff; }
-/* Nivel 2 sin hijos → celeste claro */
-#treegrid tr[aria-level="2"]:not([aria-expanded])   > td { background-color: #f3faff; }
+/* Nivel 2 (hijo-1): fondo azul-25 claro */
+#treegrid tr[aria-level="2"][aria-expanded="false"] > td { background-color: var(--primario-mas-claro, #f4f6fa); }
+#treegrid tr[aria-level="2"][aria-expanded="true"]  > td { background-color: var(--primario-mas-claro, #f4f6fa); }
+#treegrid tr[aria-level="2"]:not([aria-expanded])   > td { background-color: var(--primario-mas-claro, #f4f6fa); }
 
-/* Nivel 3 cerrado → blanco */
-#treegrid tr[aria-level="3"][aria-expanded="false"] > td { background-color: #ffffff; }
-/* Nivel 3 abierto → celeste claro */
-#treegrid tr[aria-level="3"][aria-expanded="true"]  > td { background-color: #f3faff; }
-/* Nivel 3 sin hijos → blanco */
-#treegrid tr[aria-level="3"]:not([aria-expanded])   > td { background-color: #ffffff; }
+/* Nivel 3 (hijo-2): fondo blanco */
+#treegrid tr[aria-level="3"][aria-expanded="false"] > td { background-color: var(--neutro-0, #ffffff); }
+#treegrid tr[aria-level="3"][aria-expanded="true"]  > td { background-color: var(--neutro-0, #ffffff); }
+#treegrid tr[aria-level="3"]:not([aria-expanded])   > td { background-color: var(--neutro-0, #ffffff); }
 
-/* Nivel 4 cerrado → celeste claro */
-#treegrid tr[aria-level="4"][aria-expanded="false"] > td { background-color: #f3faff; }
-/* Nivel 4 abierto → blanco */
-#treegrid tr[aria-level="4"][aria-expanded="true"]  > td { background-color: #ffffff; }
-/* Nivel 4 sin hijos → celeste claro */
-#treegrid tr[aria-level="4"]:not([aria-expanded])   > td { background-color: #f3faff; }
+/* Nivel 4 (hijo-3): fondo azul-25 claro */
+#treegrid tr[aria-level="4"][aria-expanded="false"] > td { background-color: var(--primario-mas-claro, #f4f6fa); }
+#treegrid tr[aria-level="4"][aria-expanded="true"]  > td { background-color: var(--primario-mas-claro, #f4f6fa); }
+#treegrid tr[aria-level="4"]:not([aria-expanded])   > td { background-color: var(--primario-mas-claro, #f4f6fa); }
 
-/* Nivel 5 → siempre blanco */
-#treegrid tr[aria-level="5"] > td { background-color: #ffffff; }
+/* Nivel 5: fondo blanco */
+#treegrid tr[aria-level="5"] > td { background-color: var(--neutro-0, #ffffff); }
 
-/* --- 12. Hover por nivel --- */
+/* --- 12. Hover por nivel (leve oscurecimiento sobre el fondo del nivel) --- */
 
-#treegrid tr[aria-level="1"][aria-expanded="false"]:hover > td { background-color: #f5f5f5; }
-#treegrid tr[aria-level="1"][aria-expanded="true"]:hover  > td { background-color: #e8f4ff; }
-#treegrid tr[aria-level="1"]:not([aria-expanded]):hover   > td { background-color: #f5f5f5; }
+#treegrid tr[aria-level="1"]:hover > td { background-color: var(--primario-mas-claro, #f4f6fa); }
 
-#treegrid tr[aria-level="2"][aria-expanded="false"]:hover > td { background-color: #e8f4ff; }
-#treegrid tr[aria-level="2"][aria-expanded="true"]:hover  > td { background-color: #f5f5f5; }
-#treegrid tr[aria-level="2"]:not([aria-expanded]):hover   > td { background-color: #e8f4ff; }
+#treegrid tr[aria-level="2"]:hover > td { background-color: var(--primario-claro, #e9ecf4); }
 
-#treegrid tr[aria-level="3"][aria-expanded="false"]:hover > td { background-color: #f5f5f5; }
-#treegrid tr[aria-level="3"][aria-expanded="true"]:hover  > td { background-color: #e8f4ff; }
-#treegrid tr[aria-level="3"]:not([aria-expanded]):hover   > td { background-color: #f5f5f5; }
+#treegrid tr[aria-level="3"]:hover > td { background-color: var(--primario-mas-claro, #f4f6fa); }
 
-#treegrid tr[aria-level="4"][aria-expanded="false"]:hover > td { background-color: #e8f4ff; }
-#treegrid tr[aria-level="4"][aria-expanded="true"]:hover  > td { background-color: #f5f5f5; }
-#treegrid tr[aria-level="4"]:not([aria-expanded]):hover   > td { background-color: #e8f4ff; }
+#treegrid tr[aria-level="4"]:hover > td { background-color: var(--primario-claro, #e9ecf4); }
 
-#treegrid tr[aria-level="5"]:hover > td { background-color: #f5f5f5; }
+#treegrid tr[aria-level="5"]:hover > td { background-color: var(--primario-mas-claro, #f4f6fa); }
 
 /* --- 13. Wrapper de la tabla --- */
 .table-wrap p {
