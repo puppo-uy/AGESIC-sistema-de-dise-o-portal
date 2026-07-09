@@ -1,5 +1,5 @@
 <div class="table-wrap">
-	<table id="treegrid" role="treegrid" aria-label="Inbox">
+	<table id="treegrid" role="treegrid" aria-label="Lista de ítems con jerarquía">
   <colgroup>
     <col id="treegrid-col1">
     <col id="treegrid-col2">
@@ -10,8 +10,8 @@
   <thead>
     <tr>
       <th scope="col">
-				<div style="display: flex; align-items: center; gap: 8px;">
-					<input type="checkbox" class="form-checkbox">
+				<div class="treegrid-th-content">
+					<input type="checkbox" class="form-checkbox" aria-label="Seleccionar todo">
 					<span>Etiqueta</span>
 					<svg class="icono icono--s">
 						<use href="#icono-colapsable-abajo--lineal"></use>
@@ -19,7 +19,7 @@
 				</div>
 			</th>
 			<th scope="col">
-				<div style="display: flex; align-items: center; gap: 4px;">
+				<div class="treegrid-th-content">
 					<span>Etiqueta</span>
 					<svg class="icono icono--s">
 						<use href="#icono-colapsable-abajo--lineal"></use>
@@ -27,7 +27,7 @@
 				</div>
 			</th>
       <th scope="col">
-				<div style="display: flex; align-items: center; gap: 4px;">
+				<div class="treegrid-th-content">
 					<span>Etiqueta</span>
 					<svg class="icono icono--s">
 						<use href="#icono-colapsable-abajo--lineal"></use>
@@ -35,24 +35,24 @@
 				</div>
 			</th>
       <th scope="col">
-				<div style="display: flex; align-items: center; gap: 4px;">
+				<div class="treegrid-th-content">
 					<span>Etiqueta</span>
 					<svg class="icono icono--s">
 						<use href="#icono-colapsable-abajo--lineal"></use>
 					</svg>
 				</div>
 			</th>
-			<th scope="col" style="text-align: right;">
-				<div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px;">
-					<svg class="icono icono--s" style="cursor: pointer;"><use href="#icono-descargar--lineal"></use></svg>
-					<svg class="icono icono--s" style="cursor: pointer;"><use href="#icono-tabla--lineal"></use></svg>
+			<th scope="col">
+				<div class="treegrid-th-content--end">
+					<svg class="icono icono--s"><use href="#icono-descargar--lineal"></use></svg>
+					<svg class="icono icono--s"><use href="#icono-tabla--lineal"></use></svg>
 				</div>
 			</th>
     </tr>
   </thead>
   <tbody>
 		
-		<tr role="row" aria-level="1" aria-posinset="1" aria-setsize="1" aria-expanded="true">
+		<tr role="row" aria-level="1" aria-posinset="1" aria-setsize="3" aria-expanded="true">
       <td role="gridcell">
 				<div class="cell-title-line">
 					<span class="treegrid-expando"></span>
@@ -855,7 +855,7 @@
 			</td>
     </tr>
 		
-		<tr role="row" aria-level="1" aria-posinset="2" aria-setsize="2" aria-expanded="false">
+		<tr role="row" aria-level="1" aria-posinset="2" aria-setsize="3" aria-expanded="false">
       <td role="gridcell">
 				<div class="cell-title-line">
 					<span class="treegrid-expando"></span>
@@ -932,7 +932,7 @@
 			</td>
    	</tr>
 	
-	  <tr role="row" aria-level="1" aria-posinset="2" aria-setsize="2">
+	  <tr role="row" aria-level="1" aria-posinset="3" aria-setsize="3">
       <td role="gridcell">
 				<div class="cell-title-line">
 					<span class="treegrid-expando"></span>
@@ -1036,349 +1036,311 @@
 </div>
 
 <style>
-/**/
+/* ============================================================
+   TREEGRID — Hoja de estilos única
+   Sistema de Diseño AGESIC
+   ============================================================ */
+
+/* --- 1. Estructura base de la tabla --- */
+
 #treegrid {
   width: 100%;
-  /*white-space: nowrap;*/
   border-collapse: collapse;
-  /*table-layout: fixed;*/
+  table-layout: fixed;
+  font-family: var(--tipo-familia-base);
 }
 
-#treegrid tr {
-  display: table-row;
-  cursor: default;
-}
-
-/* Extra space between columns for readability */
-#treegrid th,
-#treegrid td {
-  padding-bottom: 3px;
-  overflow-x: hidden;
-  text-overflow: ellipsis;
-}
-
-#treegrid tbody td {
-  cursor: default;
-}
-
-/*#treegrid-col1,
-#treegrid-col3 {
-  width: 30%;
-}*/
-
-#treegrid th {
-  text-align: left;
-  background-color: #eee;
-}
-
-#treegrid a {
-  padding-left: 0.25ch;
-  padding-right: 0.25ch;
-}
-
-#treegrid tr:focus,
-#treegrid td:focus,
-#treegrid a:focus {
-  outline: 2px solid hsl(216deg 94% 70%);
-  background-color: hsl(216deg 80% 97%);
-}
-
-#treegrid tr > td:not(:first-child),
-#treegrid tr > th:not(:first-child) {
-  padding-left: 3ch;
-}
-
-#treegrid a:focus {
-  border-bottom: none;
-}
-
-/* Hide collapsed rows */
-#treegrid tr.hidden {
-  display: none;
-}
-
-/* Indents */
-#treegrid tr[aria-level="2"] > td:first-child {
-  padding-left: 2.5ch;
-}
-
-#treegrid tr[aria-level="3"] > td:first-child {
-  padding-left: 5ch;
-}
-
-#treegrid tr[aria-level="4"] > td:first-child {
-  padding-left: 7.5ch;
-}
-
-#treegrid tr[aria-level="5"] > td:first-child {
-  padding-left: 10ch;
-}
-
-/* Collapse/expand icons */
-.treegrid-expando {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: transform 0.3s;
-  transform-origin: 6px 6px;
-  flex-shrink: 0;
-  cursor: pointer;
-  vertical-align: middle;
-  margin-top: 5px;
-}
-
-#treegrid tr[aria-expanded] .treegrid-expando {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpolygon fill='%231b2f6c' points='2,0 2,10 10,5'%3E%3C/polygon%3E%3C/svg%3E");
-}
-
-#treegrid tr[aria-expanded="true"] .treegrid-expando {
-  transform: rotate(90deg);
-}
-
-#treegrid tr:not([aria-expanded]) .treegrid-expando {
-  visibility: hidden;
-  width: 12px;
-}
-
-/* Agregados */	
-	
-#treegrid {
-	font-family: var(--tipo-familia-base);
-}
-
-	#treegrid th {
-		background-color: var(--primario-claro);
-	}
-	
-.table-wrap	p {
-	display: inline;
-} 
-
-#treegrid th, 
-#treegrid td {
-	padding-bottom: var(--espaciado-8);
-	padding-top: var(--espaciado-8);
-}	
-	
-#treegrid tr {
-	border-bottom: solid 1px var(--neutro-50);
-}
-	
-/*#treegrid tr > td:first-child,*/
-#treegrid tr > th:first-child {
-  padding-left: 2.25ch;
-}
-
-/* Estilos Figma para celdas y filas de detalles */
-#treegrid {
-    table-layout: fixed;
-}
+/* Anchos de columna */
 #treegrid-col1 { width: 34%; }
 #treegrid-col2 { width: 10%; }
 #treegrid-col3 { width: 20%; }
 #treegrid-col4 { width: 12%; }
 #treegrid-col5 { width: 24%; }
 
-#treegrid td {
-    vertical-align: top;
-    padding-top: var(--espaciado-12, 12px);
-    padding-bottom: var(--espaciado-12, 12px);
-    border-bottom: 1px solid var(--neutro-50, #f2f2f2);
-}
-.cell-title-line {
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-    width: 100%;
-}
-.cell-title-line .form-checkbox {
-    margin: 0;
-    margin-top: 3px;
-    cursor: pointer;
-    flex-shrink: 0;
-}
-.cell-main-content {
-    font-size: 14px;
-    color: var(--neutro-900, #333);
-    flex-grow: 1;
-}
-.cell-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-.cell-details {
-    margin-top: 6px;
-    font-size: 12px;
-    color: var(--neutro-500, #666);
-    line-height: 1.4;
-}
-.details-label {
-    font-weight: 600;
-    color: var(--neutro-600, #555);
-    margin-right: 4px;
-}
-.details-value {
-    color: var(--neutro-500, #666);
+/* --- 2. Filas --- */
+
+#treegrid tr {
+  display: table-row;
+  cursor: default;
+  border-bottom: 1px solid var(--neutro-100, #eeeeee);
 }
 
-/* Alignment of title details */
-#treegrid td:first-child .cell-details {
-    margin-left: 44px;
+/* Ocultar filas colapsadas (manejado por JS) */
+#treegrid tr.hidden {
+  display: none;
 }
 
-/* Tag estilo Figma (Capsula verde éxito) */
-.tag-figma {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 2px 8px;
-    background-color: #e6f4ea;
-    color: #137333;
-    border-radius: 12px;
-    font-size: 11px;
-    font-weight: 500;
-    width: fit-content;
-}
-.tag-figma .dot {
-    width: 6px;
-    height: 6px;
-    background-color: #137333;
-    border-radius: 50%;
-    display: inline-block;
-}
+/* --- 3. Cabezal --- */
 
-/* Cabezal de tabla */
 #treegrid th {
-    font-size: 12px;
-    color: var(--neutro-700, #555);
-    font-weight: 600;
-    background-color: var(--neutro-50, #f3f3f3) !important;
-    border-bottom: 2px solid var(--neutro-200, #ccc);
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--neutro-700, #444444);
+  background-color: var(--neutro-50, #f3f3f3);
+  border-bottom: 2px solid var(--neutro-200, #cccccc);
+  padding: 10px 12px;
+  overflow: hidden;
 }
+
+/* Contenedor flex del cabezal (antes estaba como estilo inline) */
+.treegrid-th-content {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.treegrid-th-content--end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.treegrid-th-content .form-checkbox,
 #treegrid th .form-checkbox {
-    margin: 0;
+  margin: 0;
+  flex-shrink: 0;
 }
 
-/* --- REGLAS DE COLOR DE GRUPO Y ALTERNANCIA FIGMA --- */
+/* --- 4. Celdas del cuerpo --- */
 
-/* Borde derecho azul de grupo (weight: 4) */
-#treegrid tr[aria-level="1"][aria-expanded="true"] td:last-child {
-    border-right: 4px solid #0099ff !important;
-}
-#treegrid tr[aria-level="2"] td:last-child,
-#treegrid tr[aria-level="3"] td:last-child,
-#treegrid tr[aria-level="4"] td:last-child,
-#treegrid tr[aria-level="5"] td:last-child {
-    border-right: 4px solid #0099ff !important;
+#treegrid td {
+  vertical-align: top;
+  padding: var(--espaciado-12, 12px) 12px;
+  border-bottom: 1px solid var(--neutro-100, #eeeeee);
+  overflow: hidden;
 }
 
-/* Alternancia de fondos en el árbol (aplicado a las celdas td) */
-/* Nivel 1 cerrado: fondo blanco */
-#treegrid tr[aria-level="1"][aria-expanded="false"] td {
-    background-color: #ffffff !important;
-}
-/* Nivel 1 abierto: fondo celeste claro */
-#treegrid tr[aria-level="1"][aria-expanded="true"] td {
-    background-color: #f3faff !important;
-}
-/* Nivel 1 sin hijos: fondo blanco */
-#treegrid tr[aria-level="1"]:not([aria-expanded]) td {
-    background-color: #ffffff !important;
+/* Columnas que no son la primera: separación izquierda */
+#treegrid tr > td:not(:first-child),
+#treegrid tr > th:not(:first-child) {
+  padding-left: 12px;
 }
 
-/* Nivel 2 cerrado: fondo celeste claro */
-#treegrid tr[aria-level="2"][aria-expanded="false"] td {
-    background-color: #f3faff !important;
-}
-/* Nivel 2 abierto: fondo blanco */
-#treegrid tr[aria-level="2"][aria-expanded="true"] td {
-    background-color: #ffffff !important;
-}
-/* Nivel 2 sin hijos: fondo celeste claro */
-#treegrid tr[aria-level="2"]:not([aria-expanded]) td {
-    background-color: #f3faff !important;
+/* --- 5. Indentación por nivel (jerarquía del árbol) --- */
+
+#treegrid tr[aria-level="1"] > td:first-child { padding-left: 12px; }
+#treegrid tr[aria-level="2"] > td:first-child { padding-left: 2.5ch; }
+#treegrid tr[aria-level="3"] > td:first-child { padding-left: 5ch;   }
+#treegrid tr[aria-level="4"] > td:first-child { padding-left: 7.5ch; }
+#treegrid tr[aria-level="5"] > td:first-child { padding-left: 10ch;  }
+
+/* Primer cabezal: sin indentación extra */
+#treegrid tr > th:first-child {
+  padding-left: 12px;
 }
 
-/* Nivel 3 cerrado: fondo blanco */
-#treegrid tr[aria-level="3"][aria-expanded="false"] td {
-    background-color: #ffffff !important;
-}
-/* Nivel 3 abierto: fondo celeste claro */
-#treegrid tr[aria-level="3"][aria-expanded="true"] td {
-    background-color: #f3faff !important;
-}
-/* Nivel 3 sin hijos: fondo blanco */
-#treegrid tr[aria-level="3"]:not([aria-expanded]) td {
-    background-color: #ffffff !important;
+/* --- 6. Icono de expansión/colapso (.treegrid-expando) --- */
+
+.treegrid-expando {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  margin-top: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.25s ease;
+  transform-origin: 6px 6px;
+  cursor: pointer;
 }
 
-/* Nivel 4 cerrado: fondo celeste claro */
-#treegrid tr[aria-level="4"][aria-expanded="false"] td {
-    background-color: #f3faff !important;
-}
-/* Nivel 4 abierto: fondo blanco */
-#treegrid tr[aria-level="4"][aria-expanded="true"] td {
-    background-color: #ffffff !important;
-}
-/* Nivel 4 sin hijos: fondo celeste claro */
-#treegrid tr[aria-level="4"]:not([aria-expanded]) td {
-    background-color: #f3faff !important;
+/* Filas con hijos: mostrar flecha */
+#treegrid tr[aria-expanded] .treegrid-expando {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpolygon fill='%231b2f6c' points='2,0 2,10 10,5'%3E%3C/polygon%3E%3C/svg%3E");
 }
 
-/* Nivel 5: fondo blanco */
-#treegrid tr[aria-level="5"] td {
-    background-color: #ffffff !important;
+/* Fila expandida: rotar flecha 90° */
+#treegrid tr[aria-expanded="true"] .treegrid-expando {
+  transform: rotate(90deg);
 }
 
-/* Efectos de hover respetando el color del grupo */
-#treegrid tr[aria-level="1"][aria-expanded="false"]:hover td {
-    background-color: #f5f5f5 !important;
-}
-#treegrid tr[aria-level="1"][aria-expanded="true"]:hover td {
-    background-color: #e8f4ff !important;
-}
-#treegrid tr[aria-level="1"]:not([aria-expanded]):hover td {
-    background-color: #f5f5f5 !important;
+/* Filas sin hijos: placeholder invisible (mantiene alineación) */
+#treegrid tr:not([aria-expanded]) .treegrid-expando {
+  visibility: hidden;
 }
 
-#treegrid tr[aria-level="2"][aria-expanded="false"]:hover td {
-    background-color: #e8f4ff !important;
-}
-#treegrid tr[aria-level="2"][aria-expanded="true"]:hover td {
-    background-color: #f5f5f5 !important;
-}
-#treegrid tr[aria-level="2"]:not([aria-expanded]):hover td {
-    background-color: #e8f4ff !important;
+/* --- 7. Contenido de las celdas --- */
+
+/* Línea de título (flecha + checkbox + texto) */
+.cell-title-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
 }
 
-#treegrid tr[aria-level="3"][aria-expanded="false"]:hover td {
-    background-color: #f5f5f5 !important;
-}
-#treegrid tr[aria-level="3"][aria-expanded="true"]:hover td {
-    background-color: #e8f4ff !important;
-}
-#treegrid tr[aria-level="3"]:not([aria-expanded]):hover td {
-    background-color: #f5f5f5 !important;
+.cell-title-line .form-checkbox {
+  margin: 0;
+  margin-top: 3px;
+  flex-shrink: 0;
+  cursor: pointer;
 }
 
-#treegrid tr[aria-level="4"][aria-expanded="false"]:hover td {
-    background-color: #e8f4ff !important;
-}
-#treegrid tr[aria-level="4"][aria-expanded="true"]:hover td {
-    background-color: #f5f5f5 !important;
-}
-#treegrid tr[aria-level="4"]:not([aria-expanded]):hover td {
-    background-color: #e8f4ff !important;
+/* Texto principal de la celda */
+.cell-main-content {
+  font-size: 14px;
+  color: var(--neutro-900, #111111);
+  flex-grow: 1;
+  line-height: 1.4;
 }
 
-#treegrid tr[aria-level="5"]:hover td {
-    background-color: #f5f5f5 !important;
+/* Contenedor flex para celdas con título + detalles */
+.cell-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Texto de detalles secundario (debajo del título) */
+.cell-details {
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--neutro-500, #666666);
+  line-height: 1.4;
+}
+
+/* Alinear los detalles de la primera columna bajo el texto (compensar flecha + checkbox) */
+#treegrid td:first-child .cell-details {
+  margin-left: 44px;
+}
+
+.details-label {
+  font-weight: 600;
+  color: var(--neutro-600, #555555);
+  margin-right: 4px;
+}
+
+.details-value {
+  color: var(--neutro-500, #666666);
+}
+
+/* --- 8. Tag de estado (pill verde) --- */
+/* Usa las clases .tag y .tag--exito del sistema. Si no están disponibles globalmente,
+   se definen aquí como fallback con el mismo token: */
+.tag-estado {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 10px;
+  background-color: var(--exito-claro, #e6f4ea);
+  color: var(--exito-oscuro, #137333);
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.tag-estado .tag-estado__dot {
+  width: 6px;
+  height: 6px;
+  background-color: currentColor;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Alias retrocompatible (se mantendrá mientras se migra) */
+.tag-figma { display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px;
+  background-color: #e6f4ea; color: #137333; border-radius: 100px;
+  font-size: 12px; font-weight: 500; white-space: nowrap; }
+.tag-figma .dot { width: 6px; height: 6px; background-color: #137333;
+  border-radius: 50%; display: inline-block; }
+
+/* --- 9. Estados de foco (accesibilidad teclado) --- */
+
+#treegrid tr:focus,
+#treegrid td:focus {
+  outline: 2px solid var(--primario, hsl(216, 94%, 50%));
+  outline-offset: -2px;
+}
+
+#treegrid a:focus {
+  outline: 2px solid var(--primario, hsl(216, 94%, 50%));
+  border-bottom: none;
+}
+
+/* --- 10. Borde de grupo (línea azul derecha) --- */
+
+/* Fila raíz expandida: borde azul en el último td */
+#treegrid tr[aria-level="1"][aria-expanded="true"] > td:last-child {
+  border-right: 4px solid var(--primario, #0099ff);
+}
+
+/* Todas las filas anidadas: borde azul en el último td */
+#treegrid tr[aria-level="2"] > td:last-child,
+#treegrid tr[aria-level="3"] > td:last-child,
+#treegrid tr[aria-level="4"] > td:last-child,
+#treegrid tr[aria-level="5"] > td:last-child {
+  border-right: 4px solid var(--primario, #0099ff);
+}
+
+/* --- 11. Alternancia de fondos por nivel (Figma) --- */
+
+/* Nivel 1 cerrado → blanco */
+#treegrid tr[aria-level="1"][aria-expanded="false"] > td { background-color: #ffffff; }
+/* Nivel 1 abierto → celeste claro */
+#treegrid tr[aria-level="1"][aria-expanded="true"]  > td { background-color: #f3faff; }
+/* Nivel 1 sin hijos → blanco */
+#treegrid tr[aria-level="1"]:not([aria-expanded])   > td { background-color: #ffffff; }
+
+/* Nivel 2 cerrado → celeste claro */
+#treegrid tr[aria-level="2"][aria-expanded="false"] > td { background-color: #f3faff; }
+/* Nivel 2 abierto → blanco */
+#treegrid tr[aria-level="2"][aria-expanded="true"]  > td { background-color: #ffffff; }
+/* Nivel 2 sin hijos → celeste claro */
+#treegrid tr[aria-level="2"]:not([aria-expanded])   > td { background-color: #f3faff; }
+
+/* Nivel 3 cerrado → blanco */
+#treegrid tr[aria-level="3"][aria-expanded="false"] > td { background-color: #ffffff; }
+/* Nivel 3 abierto → celeste claro */
+#treegrid tr[aria-level="3"][aria-expanded="true"]  > td { background-color: #f3faff; }
+/* Nivel 3 sin hijos → blanco */
+#treegrid tr[aria-level="3"]:not([aria-expanded])   > td { background-color: #ffffff; }
+
+/* Nivel 4 cerrado → celeste claro */
+#treegrid tr[aria-level="4"][aria-expanded="false"] > td { background-color: #f3faff; }
+/* Nivel 4 abierto → blanco */
+#treegrid tr[aria-level="4"][aria-expanded="true"]  > td { background-color: #ffffff; }
+/* Nivel 4 sin hijos → celeste claro */
+#treegrid tr[aria-level="4"]:not([aria-expanded])   > td { background-color: #f3faff; }
+
+/* Nivel 5 → siempre blanco */
+#treegrid tr[aria-level="5"] > td { background-color: #ffffff; }
+
+/* --- 12. Hover por nivel --- */
+
+#treegrid tr[aria-level="1"][aria-expanded="false"]:hover > td { background-color: #f5f5f5; }
+#treegrid tr[aria-level="1"][aria-expanded="true"]:hover  > td { background-color: #e8f4ff; }
+#treegrid tr[aria-level="1"]:not([aria-expanded]):hover   > td { background-color: #f5f5f5; }
+
+#treegrid tr[aria-level="2"][aria-expanded="false"]:hover > td { background-color: #e8f4ff; }
+#treegrid tr[aria-level="2"][aria-expanded="true"]:hover  > td { background-color: #f5f5f5; }
+#treegrid tr[aria-level="2"]:not([aria-expanded]):hover   > td { background-color: #e8f4ff; }
+
+#treegrid tr[aria-level="3"][aria-expanded="false"]:hover > td { background-color: #f5f5f5; }
+#treegrid tr[aria-level="3"][aria-expanded="true"]:hover  > td { background-color: #e8f4ff; }
+#treegrid tr[aria-level="3"]:not([aria-expanded]):hover   > td { background-color: #f5f5f5; }
+
+#treegrid tr[aria-level="4"][aria-expanded="false"]:hover > td { background-color: #e8f4ff; }
+#treegrid tr[aria-level="4"][aria-expanded="true"]:hover  > td { background-color: #f5f5f5; }
+#treegrid tr[aria-level="4"]:not([aria-expanded]):hover   > td { background-color: #e8f4ff; }
+
+#treegrid tr[aria-level="5"]:hover > td { background-color: #f5f5f5; }
+
+/* --- 13. Wrapper de la tabla --- */
+.table-wrap p {
+  display: inline;
 }
 
 </style>
+
+
+
+
+
+
+
 
 <script>
 	'use strict';
@@ -1682,18 +1644,16 @@ function TreeGrid(treegridElem, doAllowRowFocus, doStartRowFocus) {
       return;
     }
 
-    // If row has focus, open message
+    // Si el foco está en la fila, disparar evento personalizado
     if (currentRow === document.activeElement) {
-      alert(
-        'Message from ' +
-          currentRow.children[2].innerText +
-          ':\n\n' +
-          currentRow.children[1].innerText
-      );
+      currentRow.dispatchEvent(new CustomEvent('treegrid:rowactivate', {
+        bubbles: true,
+        detail: { row: currentRow }
+      }));
       return;
     }
 
-    // If first col has focused, toggle expand/collapse
+    // Si el foco está en la primera columna, expandir/colapsar
     toggleExpanded(currentRow);
   }
 
