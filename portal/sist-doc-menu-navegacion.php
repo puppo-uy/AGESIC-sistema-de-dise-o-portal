@@ -53,14 +53,14 @@
 
                 <h3 class="u-mt4">Estructura del componente</h3>
                 <h4 class="u-mt3">Barra lateral</h4>
-                <img src="img/ejemplos_documentacion/menu_escitorio.png" alt="Barra lateral" class="u-mb3" style="max-width: 100%;">
+                 <iframe src="../git/iframe-preview.php?comp=nav-lateral" title="Ejemplo de estructura de barra lateral" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 480px;" scrolling="no"></iframe>
                 
                 <h4 class="u-mt3">Submenú</h4>
-                <img src="img/ejemplos_documentacion/menu_escitorio.png" alt="Submenú" class="u-mb3" style="max-width: 100%;">
+                 <iframe src="../git/iframe-preview.php?comp=nav-lateral&force_open=1" title="Ejemplo de submenú lateral expandido" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 480px;" scrolling="no"></iframe>
 
                 <h3 class="u-mt4">Comportamiento</h3>
                 <h4 class="u-mt3">Escritorio</h4>
-                <img src="img/ejemplos_documentacion/menu_escitorio.png" alt="Comportamiento en escritorio" class="u-mb2 u-mt2" style="max-width: 100%;">
+                 <iframe src="../git/navegacion.php" title="Ejemplo de navegación en pantalla de escritorio" class="component-preview u-mb2 u-mt2" style="width: 100%; border: 1px solid #ddd; min-height: 520px;" scrolling="no"></iframe>
                 <ul class="List-text">
                     <li>La barra de navegación principal está siempre visible en pantalla (posición fija a la izquierda).</li>
                     <li>Si una sección tiene subnivel, ese subnivel aparece como una solapa colapsable junto a la barra lateral.</li>
@@ -69,7 +69,7 @@
                 </ul>
 
                 <h4 class="u-mt4">Móvil</h4>
-                <img src="img/ejemplos_documentacion/menu_movil.png" alt="Comportamiento en móvil" class="u-mb2 u-mt2" style="max-width: 100%;">
+                 <iframe src="../git/navegacion.php" title="Ejemplo de navegación en pantalla móvil" class="component-preview u-mb2 u-mt2" style="width: 100%; max-width: 360px; border: 1px solid #ddd; min-height: 520px; margin: 0 auto; display: block;" scrolling="no"></iframe>
                 <ul class="List-text">
                     <li>La navegación principal se sustituye por un menú hamburguesa en el cabezal.</li>
                     <li>Al tocar el menú hamburguesa aparece un desplegable en el lateral izquierdo. Dentro del desplegable se muestran los niveles principales con colapsables, si se requiere, para mostrar los subniveles.</li>
@@ -92,5 +92,17 @@
 
   <!-- Footer -->
   <?php include "inc/footer.php"; ?>
+
+  <script src="../recursos/js/vendor/iframeResizer.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        iFrameResize({ 
+            log: false, 
+            checkOrigin: false,
+            heightCalculationMethod: 'lowestElement',
+            heightOffset: 50
+        }, '.component-preview');
+    });
+  </script>
 
 <?php include "inc/foot.php"; ?>

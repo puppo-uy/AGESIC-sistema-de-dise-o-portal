@@ -112,11 +112,11 @@
                     <li>Mantener un orden lógico de lectura para el lector de pantallas.</li>
                 </ul>
 
-                <h3 class="u-mt4">Componentes relacionados</h3>
-                <ul class="List-text">
-                    <li><a href="sist-doc-menu.php">Menú de navegación</a></li>
-                    <li><a href="sist-doc-breadcrumb.php">Breadcrumb</a></li>
-                </ul>
+                 <h3 class="u-mt4">Componentes relacionados</h3>
+                 <ul class="List-text">
+                     <li><a href="sist-doc-menu-navegacion.php">Menú de navegación</a></li>
+                     <li><a href="sist-doc-breadcrumb.php">Breadcrumb</a></li>
+                 </ul>
 
               </div>
             </div>

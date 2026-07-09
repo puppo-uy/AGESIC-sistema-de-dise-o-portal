@@ -1,6 +1,7 @@
 <?php
 if (!isset($section)) $section = '';
 if (!isset($subsection)) $subsection = '';
+$force_open = isset($_GET['force_open']) ? $_GET['force_open'] : null;
 ?>
 
 <script>
@@ -9,7 +10,7 @@ if (!isset($subsection)) $subsection = '';
 </script>
 
 
-<nav id="menu" class="navegacion navegacion-lateral" aria-label="Navegación principal">
+<nav id="menu" class="navegacion navegacion-lateral <?php if ($force_open === '1') echo 'subnav-open'; ?>" aria-label="Navegación principal">
 
     <div class="barra-lateral" aria-label="Menú principal">
 
@@ -28,9 +29,9 @@ if (!isset($subsection)) $subsection = '';
 
 					
             <!-- item con con links dentro -->
-            <li class="barra-lateral-item tiene-submenu" role="none">
+            <li class="barra-lateral-item tiene-submenu <?php if ($force_open === '1') echo 'item-activo'; ?>" role="none">
 
-                <button class="barra-lateral-enlace barra-lateral-enlace--boton" aria-haspopup="true" aria-expanded="false" data-submenu-id="submenu-1" data-seccion="estructura">
+                <button class="barra-lateral-enlace barra-lateral-enlace--boton <?php if ($force_open === '1') echo 'activo'; ?>" aria-haspopup="true" aria-expanded="<?php echo ($force_open === '1') ? 'true' : 'false'; ?>" data-submenu-id="submenu-1" data-seccion="estructura">
                     <!--<span class="barra-lateral-icono">-->
                         <svg class="icono">
                             <use href="#icono-tabla--lineal"></use>
@@ -39,9 +40,9 @@ if (!isset($subsection)) $subsection = '';
                     <span class="barra-lateral-texto">Estructura</span>
                 </button>
 
-                <ul id="submenu-1" class="barra-lateral-submenu" role="menu" aria-hidden="true">
-                    <li role="none"><a href="grillas.php" role="menuitem" tabindex="-1" data-subseccion="grillas">Grillas</a></li>
-                    <li role="none"><a href="modulo-flex.php" role="menuitem" tabindex="-1" data-subseccion="flex">Módulo Flex</a></li>
+                <ul id="submenu-1" class="barra-lateral-submenu <?php if ($force_open === '1') echo 'is-open'; ?>" role="menu" aria-hidden="<?php echo ($force_open === '1') ? 'false' : 'true'; ?>" data-open="<?php echo ($force_open === '1') ? 'true' : 'false'; ?>" data-title="Estructura">
+                    <li role="none"><a href="grillas.php" role="menuitem" tabindex="<?php echo ($force_open === '1') ? '0' : '-1'; ?>" data-subseccion="grillas">Grillas</a></li>
+                    <li role="none"><a href="modulo-flex.php" role="menuitem" tabindex="<?php echo ($force_open === '1') ? '0' : '-1'; ?>" data-subseccion="flex">Módulo Flex</a></li>
                 </ul>
 
             </li>
