@@ -51,7 +51,7 @@
                 <p class="Page-description">Las tablas organizan información en filas y columnas, permitiendo al usuario comparar datos y encontrar información específica de manera eficiente.</p>
 
                 <h3 class="u-mt4">Estructura del componente</h3>
-                <iframe src="../git/iframe-preview.php?comp=tablas/tabla-estandar" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                <iframe src="../git/iframe-preview.php?comp=tablas/tabla-estandar" title="Ejemplo de estructura de tabla" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                 <h5 class="u-mt3">Elementos que lo componen:</h5>
                 <ul class="List-text">
                     <li><strong>Cabezal de tabla (thead)</strong>: Contiene los títulos de las columnas (th).</li>
@@ -92,11 +92,11 @@
                 
                 <h4 class="u-mt3 u-mb2">Tabla Estándar</h4>
                 <p class="u-mb3">Disposición de datos plana clásica, con diseño responsivo y efectos hover para facilitar la lectura de registros.</p>
-                <iframe src="../git/iframe-preview.php?comp=tablas/tabla-estandar" class="component-preview u-mb4" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                <iframe src="../git/iframe-preview.php?comp=tablas/tabla-estandar" title="Ejemplo de tabla estándar" class="component-preview u-mb4" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
 
                 <h4 class="u-mt4 u-mb2">Tabla Jerárquica (TreeGrid)</h4>
                 <p class="u-mb3">Permite mostrar datos estructurados de forma jerárquica con filas que se expanden o colapsan interactivamente.</p>
-                <iframe src="../git/iframe-preview.php?comp=tablas/treegrid" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 200px;" scrolling="no"></iframe>
+                <iframe src="../git/iframe-preview.php?comp=tablas/treegrid" title="Ejemplo de tabla jerárquica (treegrid)" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 200px;" scrolling="no"></iframe>
 
                 <h3 class="u-mt4">Accesibilidad</h3>
                 <h4 class="u-mt3">WCAG y Estándares WAI-ARIA</h4>

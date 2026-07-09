@@ -51,7 +51,7 @@
 								<p class="Page-description">Los botones permiten al usuario ejecutar acciones dentro de una interfaz. Según su jerarquía visual y funcional, los botones se utilizan para destacar la acción principal de una pantalla, ofrecer acciones alternativas o accesos secundarios, manteniendo siempre una clara diferenciación entre ellos.</p>
 								
 								<h3 class="u-mt4">Estructura del componente</h3>
-                                <iframe src="../git/iframe-preview.php?comp=botones/boton-primario" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                                <iframe src="../git/iframe-preview.php?comp=botones/boton-primario" title="Ejemplo de estructura de botón" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
 								<h5 class="u-mt3">Elementos que lo componen:</h5>
 								<ul class="List-text">
                                     <li>Fondo</li>
@@ -73,19 +73,19 @@
                                 <h4 class="u-mt3 u-mb3">Jerarquía</h4>
                                 
                                 <h5 class="u-mb2">Primario</h5>
-                                <iframe src="../git/iframe-preview.php?comp=botones/boton-primario" class="component-preview u-mb2" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                                <iframe src="../git/iframe-preview.php?comp=botones/boton-primario" title="Ejemplo de botón primario" class="component-preview u-mb2" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                                 <p class="u-mb4">Designa la acción principal o por defecto de una pantalla. Debe destacar visualmente sobre los demás botones para guiar al usuario hacia el objetivo principal. Solo debería haber uno por vista o contexto.</p>
 
                                 <h5 class="u-mb2">Secundario</h5>
-                                <iframe src="../git/iframe-preview.php?comp=botones/boton-secundario" class="component-preview u-mb2" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                                <iframe src="../git/iframe-preview.php?comp=botones/boton-secundario" title="Ejemplo de botón secundario" class="component-preview u-mb2" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                                 <p class="u-mb4">Se utiliza para acciones alternativas a la principal. Su peso visual es menor para no competir con el botón primario. Puede haber varios en una misma pantalla.</p>
 
                                 <h5 class="u-mb2">Terciario</h5>
-                                <iframe src="../git/iframe-preview.php?comp=botones/boton-enlace" class="component-preview u-mb2" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                                <iframe src="../git/iframe-preview.php?comp=botones/boton-enlace" title="Ejemplo de botón enlace (terciario)" class="component-preview u-mb2" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                                 <p class="u-mb4">Se utiliza para acciones opcionales o de menor importancia. Tiene menor prominencia visual.</p>
 
                                 <h4 class="u-mt4 u-mb3">Tamaño</h4>
-                                <iframe src="../git/iframe-preview.php?comp=botones/boton-tamanos" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                                <iframe src="../git/iframe-preview.php?comp=botones/boton-tamanos" title="Ejemplo de tamaños de botón" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                                 <ul class="List-text">
                                     <li>Grande (L)</li>
                                     <li>Medio (M)</li>

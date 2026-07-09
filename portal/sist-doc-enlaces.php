@@ -52,7 +52,7 @@
                 <p class="Page-description">Los enlaces permiten al usuario acceder a información, secciones o acciones de baja jerarquía dentro de una interfaz. Se utilizan para ofrecer caminos complementarios o alternativos sin competir visualmente con los botones, manteniendo un peso visual mínimo.</p>
 
                 <h3 class="u-mt4">Estructura del componente</h3>
-                <iframe src="../git/iframe-preview.php?comp=botones/enlace-icono-izq" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                <iframe src="../git/iframe-preview.php?comp=botones/enlace-icono-izq" title="Ejemplo de estructura de enlace" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                 <h5 class="u-mt3">Elementos que lo componen:</h5>
                 <ul class="List-text">
                     <li>Texto subrayado</li>
@@ -88,26 +88,26 @@
                 
                
 <h5 class="u-mb2">Solo texto</h5>
- <iframe src="../git/iframe-preview.php?comp=botones/enlace-solo-texto" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+ <iframe src="../git/iframe-preview.php?comp=botones/enlace-solo-texto" title="Ejemplo de enlace de solo texto" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
 <p class="u-mb4">Se presenta únicamente como texto interactivo y se utiliza para la mayoría de los casos de navegación o acceso a información dentro del sistema. Es el formato recomendado cuando el contexto ya es claro y no se requiere reforzar visualmente la acción o el destino. </p>
 
 <h5 class="u-mb2">Texto + icono a la izquierda</h5>
- <iframe src="../git/iframe-preview.php?comp=botones/enlace-icono-izq" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+ <iframe src="../git/iframe-preview.php?comp=botones/enlace-icono-izq" title="Ejemplo de enlace con icono a la izquierda" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
 <p class="u-mb4">Este formato combina el texto del enlace con un ícono alineado horizontalmente. El ícono puede ubicarse a la izquierda o a la derecha del texto, siguiendo el mismo criterio de uso que en los botones. </p>
 <p class="u-mb4">Se utiliza cuando el ícono aporta información adicional sobre la acción o el destino del enlace (Ej: navegación, descarga), sin modificar la jerarquía del componente. </p>
 
 <h5 class="u-mb2">Texto + icono a la derecha</h5>
-<iframe src="../git/iframe-preview.php?comp=botones/enlace-icono-der" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe> 
+<iframe src="../git/iframe-preview.php?comp=botones/enlace-icono-der" title="Ejemplo de enlace con icono a la derecha" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe> 
 <p class="u-mb4">Se utiliza solo cuando el ícono refuerza la dirección o consecuencia de la acción (Ej:“Siguiente” o “Ir a”).
 
 <h5 class="u-mb2">Enlace externo</h5>
- <iframe src="../git/iframe-preview.php?comp=botones/enlace-externo" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe> 
+ <iframe src="../git/iframe-preview.php?comp=botones/enlace-externo" title="Ejemplo de enlace externo" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe> 
 <p class="u-mb4">Formato específico para enlaces que dirigen al usuario fuera del dominio o sistema actual. Su función es comunicar de forma explícita que la acción implica abandonar el entorno en el que se encuentra. Debe utilizarse exclusivamente para enlaces externos y no para navegación interna. </p>
 
              
                 <h4 class="u-mt4 u-mb3">Tamaño</h4>
                 <div class="u-mt3 u-mb4">
-                    <iframe src="../git/iframe-preview.php?comp=botones/enlace-tamanos" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                    <iframe src="../git/iframe-preview.php?comp=botones/enlace-tamanos" title="Ejemplo de tamaños de enlaces" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                 </div>
                 <ul class="List-text">
                     <li>Grande</li>

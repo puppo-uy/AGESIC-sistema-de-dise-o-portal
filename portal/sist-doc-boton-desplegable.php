@@ -52,7 +52,7 @@
                 <p class="Page-description">Un botón con desplegable combina la acción de un botón tradicional con la capacidad de revelar un menú de opciones secundarias o relacionadas con la acción principal.</p>
 
                 <h3 class="u-mt4">Estructura del componente</h3>
-                <iframe src="../git/iframe-preview.php?comp=botones/boton-desplegable" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                <iframe src="../git/iframe-preview.php?comp=botones/boton-desplegable" title="Ejemplo de estructura de botón con desplegable" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                 <h5 class="u-mt3">Elementos que lo componen:</h5>
                 <ul class="List-text">
                     <li>Botón</li>
@@ -86,13 +86,13 @@
                 <h4 class="u-mt3 u-mb2">Jerarquía</h4>
                 
                 <h5 class="u-mb2">Primario</h5>
-                <iframe src="../git/iframe-preview.php?comp=botones/boton-desplegable-primario" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                <iframe src="../git/iframe-preview.php?comp=botones/boton-desplegable-primario" title="Ejemplo de botón con desplegable primario" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                 
                 <h5 class="u-mb2">Secundario</h5>
-                <iframe src="../git/iframe-preview.php?comp=botones/boton-desplegable-secundario" class="component-preview u-mb4" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                <iframe src="../git/iframe-preview.php?comp=botones/boton-desplegable-secundario" title="Ejemplo de botón con desplegable secundario" class="component-preview u-mb4" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
 
                 <h4 class="u-mt4 u-mb2">Tamaño</h4>
-                <iframe src="../git/iframe-preview.php?comp=botones/boton-desplegable-tamanos" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                <iframe src="../git/iframe-preview.php?comp=botones/boton-desplegable-tamanos" title="Ejemplo de tamaños de botón con desplegable" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                 
                 <ul class="List-text">
                     <li>Mediano (M)</li>
