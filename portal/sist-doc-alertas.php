@@ -52,7 +52,7 @@
 								
 								<h3>Estructura del componente</h3>
 								
-								<iframe src="../git/iframe-preview.php?comp=alerta-emergente&type=exito" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
+								<iframe src="../git/iframe-preview.php?comp=alerta-emergente&type=exito" title="Ejemplo de estructura de alerta emergente / éxito" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
 								
 								<div class="Grid">
 									<div class="Grid-item u-size1of2">
@@ -126,7 +126,7 @@
                     <tbody>
                       <tr>
                         <td data-title="Muestra">
-													<iframe src="../git/iframe-preview.php?comp=alerta-completa&type=exito" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
+													<iframe src="../git/iframe-preview.php?comp=alerta-completa&type=exito" title="Ejemplo de alerta completa / éxito" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
 												</td>
                         <td data-title="Descripción">
 													<h5 class="u-mt2 u-mb1 u-h6">Éxito</h5>
@@ -135,7 +135,7 @@
                       </tr>
                       <tr>
                         <td data-title="Muestra">
-													<iframe src="../git/iframe-preview.php?comp=alerta-completa&type=advertencia" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
+													<iframe src="../git/iframe-preview.php?comp=alerta-completa&type=advertencia" title="Ejemplo de alerta completa / advertencia" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
 												</td>
                         <td data-title="Descripción">
 													<h5 class="u-mt2 u-mb1 u-h6">Advertencia</h5>
@@ -144,7 +144,7 @@
                       </tr>
 											<tr>
                         <td data-title="Muestra">
-													<iframe src="../git/iframe-preview.php?comp=alerta-completa&type=info" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
+													<iframe src="../git/iframe-preview.php?comp=alerta-completa&type=info" title="Ejemplo de alerta completa / información" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
 												</td>
                         <td data-title="Descripción">
 													<h5 class="u-mt2 u-mb1 u-h6">Información</h5>
@@ -153,7 +153,7 @@
                       </tr>
 											<tr>
                         <td data-title="Muestra">
-													<iframe src="../git/iframe-preview.php?comp=alerta-completa&type=error" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
+													<iframe src="../git/iframe-preview.php?comp=alerta-completa&type=error" title="Ejemplo de alerta completa / error" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
 												</td>
                         <td data-title="Descripción">
 													<h5 class="u-mt2 u-mb1 u-h6">Error</h5>
@@ -162,7 +162,7 @@
                       </tr>
 											<tr>
                         <td data-title="Muestra">
-													<iframe src="../git/iframe-preview.php?comp=alerta-completa&type=notificacion" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
+													<iframe src="../git/iframe-preview.php?comp=alerta-completa&type=notificacion" title="Ejemplo de alerta completa / notificación" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
 												</td>
                         <td data-title="Descripción">
 													<h5 class="u-mt2 u-mb1 u-h6">Notificación</h5>
@@ -178,15 +178,15 @@
 								
 								<h5>Alerta completa</h5>
 								<p>Es una alerta fija que se utiliza cuando el mensaje requiere contexto o instrucciones adicionales que el usuario debe leer. Puede usarse para comunicar información que debe permanecer visible dentro del flujo hasta que el usuario la atienda mediante una acción relacionada.</p>
-								<iframe src="../git/iframe-preview.php?comp=alerta-completa" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 480px;" scrolling="no"></iframe>
+								<iframe src="../git/iframe-preview.php?comp=alerta-completa" title="Ejemplo de alerta completa" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 480px;" scrolling="no"></iframe>
 								
 								<h5>Alerta simple</h5>
 								<p>También es una alerta fija. Se utiliza para dar avisos breves y explícitos cuya intención se entiende con un título breve y conciso. Se usa cuando el contexto ya aporta suficiente detalle y no es necesario añadir texto explicativo ni acciones complementarias, o cuando hay poco espacio en pantalla.</p>
-								<iframe src="../git/iframe-preview.php?comp=alerta" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 480px;" scrolling="no"></iframe>
+								<iframe src="../git/iframe-preview.php?comp=alerta" title="Ejemplo de alerta simple" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 480px;" scrolling="no"></iframe>
 								
 								<h5>Alerta emergente</h5>
 								<p>Sirve para mensajes temporales que informan sin interrumpir la tarea en curso. Aparece en una esquina de la pantalla y puede cerrarse manualmente para no bloquear el flujo de trabajo del usuario. Se utiliza principalmente en aplicaciones.</p>
-								<iframe src="../git/iframe-preview.php?comp=alerta-emergente" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 520px;" scrolling="no"></iframe>	
+								<iframe src="../git/iframe-preview.php?comp=alerta-emergente" title="Ejemplo de alerta emergente" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 520px;" scrolling="no"></iframe>	
 								
 								<h3>Accesibilidad</h3>
 								<h4>Recomendaciones para no perder la accesibilidad</h4>
