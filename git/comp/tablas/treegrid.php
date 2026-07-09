@@ -101,7 +101,7 @@
 			<td role="gridcell" style="vertical-align: middle;">
 				<ul class="botonera botonera--s">
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-abrir-detalle--lineal"></use>
 							</svg>
@@ -109,7 +109,7 @@
 						</button>	
 					</li>
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-edicion-rapida--lineal"></use>
 							</svg>
@@ -117,7 +117,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-mas--lineal"></use>
 							</svg>
@@ -125,7 +125,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-borrar--lineal"></use>
 							</svg>
@@ -134,7 +134,7 @@
 					</li>	
 					<li>
 						<div class="desplegable-wrapper">
-							<button class="boton boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-1" aria-expanded="false">
+							<button class="boton boton--s boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-1" aria-expanded="false">
 								<svg class="icono">
 									<use href="#icono-mas-opciones--lineal"></use>
 								</svg>
@@ -177,7 +177,7 @@
 			<td role="gridcell">
 				<ul class="botonera botonera--s">
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-abrir-detalle--lineal"></use>
 							</svg>
@@ -185,7 +185,7 @@
 						</button>	
 					</li>
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-edicion-rapida--lineal"></use>
 							</svg>
@@ -193,7 +193,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-mas--lineal"></use>
 							</svg>
@@ -201,7 +201,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-borrar--lineal"></use>
 							</svg>
@@ -210,7 +210,7 @@
 					</li>	
 					<li>
 						<div class="desplegable-wrapper">
-							<button class="boton boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-2" aria-expanded="false">
+							<button class="boton boton--s boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-2" aria-expanded="false">
 								<svg class="icono">
 									<use href="#icono-mas-opciones--lineal"></use>
 								</svg>
@@ -275,7 +275,7 @@
 			<td role="gridcell">
 				<ul class="botonera botonera--s">
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-abrir-detalle--lineal"></use>
 							</svg>
@@ -283,7 +283,7 @@
 						</button>	
 					</li>
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-edicion-rapida--lineal"></use>
 							</svg>
@@ -291,7 +291,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-mas--lineal"></use>
 							</svg>
@@ -299,7 +299,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-borrar--lineal"></use>
 							</svg>
@@ -308,7 +308,7 @@
 					</li>	
 					<li>
 						<div class="desplegable-wrapper">
-							<button class="boton boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-3" aria-expanded="false">
+							<button class="boton boton--s boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-3" aria-expanded="false">
 								<svg class="icono">
 									<use href="#icono-mas-opciones--lineal"></use>
 								</svg>
@@ -351,7 +351,7 @@
 			<td role="gridcell">
 				<ul class="botonera botonera--s">
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-abrir-detalle--lineal"></use>
 							</svg>
@@ -359,7 +359,7 @@
 						</button>	
 					</li>
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-edicion-rapida--lineal"></use>
 							</svg>
@@ -367,7 +367,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-mas--lineal"></use>
 							</svg>
@@ -375,7 +375,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-borrar--lineal"></use>
 							</svg>
@@ -384,7 +384,7 @@
 					</li>	
 					<li>
 						<div class="desplegable-wrapper">
-							<button class="boton boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-4" aria-expanded="false">
+							<button class="boton boton--s boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-4" aria-expanded="false">
 								<svg class="icono">
 									<use href="#icono-mas-opciones--lineal"></use>
 								</svg>
@@ -449,7 +449,7 @@
 			<td role="gridcell">
 				<ul class="botonera botonera--s">
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-abrir-detalle--lineal"></use>
 							</svg>
@@ -457,7 +457,7 @@
 						</button>	
 					</li>
 					<li>
-						<button class="boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-edicion-rapida--lineal"></use>
 							</svg>
@@ -465,7 +465,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-mas--lineal"></use>
 							</svg>
@@ -473,7 +473,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-borrar--lineal"></use>
 							</svg>
@@ -482,7 +482,7 @@
 					</li>	
 					<li>
 						<div class="desplegable-wrapper">
-							<button class="boton boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-5" aria-expanded="false">
+							<button class="boton boton--s boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-5" aria-expanded="false">
 								<svg class="icono">
 									<use href="#icono-mas-opciones--lineal"></use>
 								</svg>
@@ -525,7 +525,7 @@
 			<td role="gridcell">
 				<ul class="botonera botonera--s">
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-abrir-detalle--lineal"></use>
 							</svg>
@@ -533,7 +533,7 @@
 						</button>	
 					</li>
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-edicion-rapida--lineal"></use>
 							</svg>
@@ -541,7 +541,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-mas--lineal"></use>
 							</svg>
@@ -549,7 +549,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-borrar--lineal"></use>
 							</svg>
@@ -558,7 +558,7 @@
 					</li>	
 					<li>
 						<div class="desplegable-wrapper">
-							<button class="boton boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-6" aria-expanded="false">
+							<button class="boton boton--s boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-6" aria-expanded="false">
 								<svg class="icono">
 									<use href="#icono-mas-opciones--lineal"></use>
 								</svg>
@@ -623,7 +623,7 @@
 			<td role="gridcell">
 				<ul class="botonera botonera--s">
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-abrir-detalle--lineal"></use>
 							</svg>
@@ -631,7 +631,7 @@
 						</button>	
 					</li>
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-edicion-rapida--lineal"></use>
 							</svg>
@@ -639,7 +639,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-mas--lineal"></use>
 							</svg>
@@ -647,7 +647,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-borrar--lineal"></use>
 							</svg>
@@ -656,7 +656,7 @@
 					</li>	
 					<li>
 						<div class="desplegable-wrapper">
-							<button class="boton boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-7" aria-expanded="false">
+							<button class="boton boton--s boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-7" aria-expanded="false">
 								<svg class="icono">
 									<use href="#icono-mas-opciones--lineal"></use>
 								</svg>
@@ -699,7 +699,7 @@
 			<td role="gridcell">
 				<ul class="botonera botonera--s">
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-abrir-detalle--lineal"></use>
 							</svg>
@@ -707,7 +707,7 @@
 						</button>	
 					</li>
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-edicion-rapida--lineal"></use>
 							</svg>
@@ -715,7 +715,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-mas--lineal"></use>
 							</svg>
@@ -723,7 +723,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-borrar--lineal"></use>
 							</svg>
@@ -732,7 +732,7 @@
 					</li>	
 					<li>
 						<div class="desplegable-wrapper">
-							<button class="boton boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-8" aria-expanded="false">
+							<button class="boton boton--s boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-8" aria-expanded="false">
 								<svg class="icono">
 									<use href="#icono-mas-opciones--lineal"></use>
 								</svg>
@@ -797,7 +797,7 @@
 			<td role="gridcell">
 				<ul class="botonera botonera--s">
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-abrir-detalle--lineal"></use>
 							</svg>
@@ -805,7 +805,7 @@
 						</button>	
 					</li>
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-edicion-rapida--lineal"></use>
 							</svg>
@@ -813,7 +813,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-mas--lineal"></use>
 							</svg>
@@ -821,7 +821,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-borrar--lineal"></use>
 							</svg>
@@ -830,7 +830,7 @@
 					</li>	
 					<li>
 						<div class="desplegable-wrapper">
-							<button class="boton boton--secundario" data-menu-trigger data-menu-target="menu-opciones-9" aria-expanded="false">
+							<button class="boton boton--s boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-9" aria-expanded="false">
 								<svg class="icono">
 									<use href="#icono-mas-opciones--lineal"></use>
 								</svg>
@@ -873,7 +873,7 @@
 			<td role="gridcell">
 				<ul class="botonera botonera--s">
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-abrir-detalle--lineal"></use>
 							</svg>
@@ -881,7 +881,7 @@
 						</button>	
 					</li>
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-edicion-rapida--lineal"></use>
 							</svg>
@@ -889,7 +889,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-mas--lineal"></use>
 							</svg>
@@ -897,7 +897,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-borrar--lineal"></use>
 							</svg>
@@ -906,7 +906,7 @@
 					</li>	
 					<li>
 						<div class="desplegable-wrapper">
-							<button class="boton boton--secundario" data-menu-trigger data-menu-target="menu-opciones-10" aria-expanded="false">
+							<button class="boton boton--s boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-10" aria-expanded="false">
 								<svg class="icono">
 									<use href="#icono-mas-opciones--lineal"></use>
 								</svg>
@@ -971,7 +971,7 @@
 			<td role="gridcell">
 				<ul class="botonera botonera--s">
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-abrir-detalle--lineal"></use>
 							</svg>
@@ -979,7 +979,7 @@
 						</button>	
 					</li>
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-edicion-rapida--lineal"></use>
 							</svg>
@@ -987,7 +987,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-mas--lineal"></use>
 							</svg>
@@ -995,7 +995,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-borrar--lineal"></use>
 							</svg>
@@ -1004,7 +1004,7 @@
 					</li>	
 					<li>
 						<div class="desplegable-wrapper">
-							<button class="boton boton--secundario" data-menu-trigger data-menu-target="menu-opciones-11" aria-expanded="false">
+							<button class="boton boton--s boton--secundario boton--icono" data-menu-trigger data-menu-target="menu-opciones-11" aria-expanded="false">
 								<svg class="icono">
 									<use href="#icono-mas-opciones--lineal"></use>
 								</svg>
@@ -1175,6 +1175,7 @@
     vertical-align: top;
     padding-top: var(--espaciado-12, 12px);
     padding-bottom: var(--espaciado-12, 12px);
+    border-bottom: 1px solid var(--neutro-50, #f2f2f2);
 }
 .cell-title-line {
     display: inline-flex;
@@ -1187,7 +1188,7 @@
     cursor: pointer;
 }
 .cell-main-content {
-    font-size: 13px;
+    font-size: 14px;
     color: var(--neutro-900, #333);
 }
 .cell-content {
@@ -1197,7 +1198,7 @@
 }
 .cell-details {
     margin-top: 6px;
-    font-size: 11px;
+    font-size: 12px;
     color: var(--neutro-500, #666);
     line-height: 1.4;
 }
@@ -1250,6 +1251,86 @@
 
 #treegrid tr > td:first-child::before {
     vertical-align: middle;
+}
+
+/* --- REGLAS DE COLOR DE GRUPO Y ALTERNANCIA FIGMA --- */
+
+/* Borde derecho azul de grupo (weight: 4) */
+#treegrid tr[aria-level="1"][aria-expanded="true"] td:last-child {
+    border-right: 4px solid #0099ff !important;
+}
+#treegrid tr[aria-level="2"] td:last-child,
+#treegrid tr[aria-level="3"] td:last-child,
+#treegrid tr[aria-level="4"] td:last-child,
+#treegrid tr[aria-level="5"] td:last-child {
+    border-right: 4px solid #0099ff !important;
+}
+
+/* Alternancia de fondos en el árbol */
+/* Nivel 1 cerrado/sin hijos: fondo blanco */
+#treegrid tr[aria-level="1"]:not([aria-expanded="true"]) {
+    background-color: #ffffff !important;
+}
+/* Nivel 1 expandido: fondo light blue */
+#treegrid tr[aria-level="1"][aria-expanded="true"] {
+    background-color: #f3faff !important;
+}
+/* Nivel 2 cerrado: fondo light blue */
+#treegrid tr[aria-level="2"]:not([aria-expanded="true"]) {
+    background-color: #f3faff !important;
+}
+/* Nivel 2 expandido: fondo blanco */
+#treegrid tr[aria-level="2"][aria-expanded="true"] {
+    background-color: #ffffff !important;
+}
+/* Nivel 3 cerrado: fondo blanco */
+#treegrid tr[aria-level="3"]:not([aria-expanded="true"]) {
+    background-color: #ffffff !important;
+}
+/* Nivel 3 expandido: fondo light blue */
+#treegrid tr[aria-level="3"][aria-expanded="true"] {
+    background-color: #f3faff !important;
+}
+/* Nivel 4 cerrado: fondo light blue */
+#treegrid tr[aria-level="4"]:not([aria-expanded="true"]) {
+    background-color: #f3faff !important;
+}
+/* Nivel 4 expandido: fondo blanco */
+#treegrid tr[aria-level="4"][aria-expanded="true"] {
+    background-color: #ffffff !important;
+}
+/* Nivel 5: fondo blanco */
+#treegrid tr[aria-level="5"] {
+    background-color: #ffffff !important;
+}
+
+/* Efectos de hover respetando el color del grupo */
+#treegrid tr[aria-level="1"]:not([aria-expanded="true"]):hover {
+    background-color: #f5f5f5 !important;
+}
+#treegrid tr[aria-level="1"][aria-expanded="true"]:hover {
+    background-color: #e8f4ff !important;
+}
+#treegrid tr[aria-level="2"]:not([aria-expanded="true"]):hover {
+    background-color: #e8f4ff !important;
+}
+#treegrid tr[aria-level="2"][aria-expanded="true"]:hover {
+    background-color: #f5f5f5 !important;
+}
+#treegrid tr[aria-level="3"]:not([aria-expanded="true"]):hover {
+    background-color: #f5f5f5 !important;
+}
+#treegrid tr[aria-level="3"][aria-expanded="true"]:hover {
+    background-color: #e8f4ff !important;
+}
+#treegrid tr[aria-level="4"]:not([aria-expanded="true"]):hover {
+    background-color: #e8f4ff !important;
+}
+#treegrid tr[aria-level="4"][aria-expanded="true"]:hover {
+    background-color: #f5f5f5 !important;
+}
+#treegrid tr[aria-level="5"]:hover {
+    background-color: #f5f5f5 !important;
 }
 
 </style>
