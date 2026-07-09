@@ -52,7 +52,7 @@
 								
 								<h3>Estructura del componente</h3>
 								
-								<img src="img/alertas/emergente.png" alt="Componente Alerta emergente">
+								<iframe src="../git/iframe-preview.php?comp=alerta-emergente&type=exito" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
 								
 								<div class="Grid">
 									<div class="Grid-item u-size1of2">
@@ -126,7 +126,7 @@
                     <tbody>
                       <tr>
                         <td data-title="Muestra">
-													<img src="img/alertas/exito.png" alt="Componente Alerta completa éxito">
+													<iframe src="../git/iframe-preview.php?comp=alerta-completa&type=exito" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
 												</td>
                         <td data-title="Descripción">
 													<h5 class="u-mt2 u-mb1 u-h6">Éxito</h5>
@@ -135,7 +135,7 @@
                       </tr>
                       <tr>
                         <td data-title="Muestra">
-													<img src="img/alertas/advertencia.png" alt="Componente Alerta completa advertencia">
+													<iframe src="../git/iframe-preview.php?comp=alerta-completa&type=advertencia" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
 												</td>
                         <td data-title="Descripción">
 													<h5 class="u-mt2 u-mb1 u-h6">Advertencia</h5>
@@ -144,7 +144,7 @@
                       </tr>
 											<tr>
                         <td data-title="Muestra">
-													<img src="img/alertas/info.png" alt="Componente Alerta completa información">
+													<iframe src="../git/iframe-preview.php?comp=alerta-completa&type=info" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
 												</td>
                         <td data-title="Descripción">
 													<h5 class="u-mt2 u-mb1 u-h6">Información</h5>
@@ -153,7 +153,7 @@
                       </tr>
 											<tr>
                         <td data-title="Muestra">
-													<img src="img/alertas/error.png" alt="Componente Alerta completa error">
+													<iframe src="../git/iframe-preview.php?comp=alerta-completa&type=error" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
 												</td>
                         <td data-title="Descripción">
 													<h5 class="u-mt2 u-mb1 u-h6">Error</h5>
@@ -162,7 +162,7 @@
                       </tr>
 											<tr>
                         <td data-title="Muestra">
-													<img src="img/alertas/notificacion.png" alt="Componente Alerta completa notificación">
+													<iframe src="../git/iframe-preview.php?comp=alerta-completa&type=notificacion" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
 												</td>
                         <td data-title="Descripción">
 													<h5 class="u-mt2 u-mb1 u-h6">Notificación</h5>
@@ -177,15 +177,15 @@
 								<h4>Formatos</h4>
 								
 								<h5>Alerta completa</h5>
-								<img class="u-mb2" src="img/alertas/completa.png" alt="Componente Alerta completa">
+								<iframe src="../git/iframe-preview.php?comp=alerta-completa" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 480px;" scrolling="no"></iframe>
 								<p>Es una alerta fija que se utiliza cuando el mensaje requiere contexto o instrucciones adicionales que el usuario debe leer. Puede usarse para comunicar información que debe permanecer visible dentro del flujo hasta que el usuario la atienda mediante una acción relacionada.</p>
 								
 								<h5>Alerta simple</h5>
-								<img class="u-mb2" src="img/alertas/simple.png" alt="Componente Alerta simple">
+								<iframe src="../git/iframe-preview.php?comp=alerta" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 480px;" scrolling="no"></iframe>
 								<p>También es una alerta fija. Se utiliza para dar avisos breves y explícitos cuya intención se entiende con un título breve y conciso. Se usa cuando el contexto ya aporta suficiente detalle y no es necesario añadir texto explicativo ni acciones complementarias, o cuando hay poco espacio en pantalla.</p>
 								
 								<h5>Alerta emergente</h5>
-								<img class="u-mb2" src="img/alertas/emergente.png" alt="Componente Alerta emergente">
+								<iframe src="../git/iframe-preview.php?comp=alerta-emergente" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 520px;" scrolling="no"></iframe>
 								<p>Sirve para mensajes temporales que informan sin interrumpir la tarea en curso. Aparece en una esquina de la pantalla y puede cerrarse manualmente para no bloquear el flujo de trabajo del usuario. Se utiliza principalmente en aplicaciones.</p>	
 								
 								<h3>Accesibilidad</h3>
@@ -417,5 +417,17 @@
 
   <!-- Footer -->
   <?php include "inc/footer.php"; ?>
+
+  <script src="../recursos/js/vendor/iframeResizer.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        iFrameResize({ 
+            log: false, 
+            checkOrigin: false,
+            heightCalculationMethod: 'lowestElement',
+            heightOffset: 50
+        }, '.component-preview');
+    });
+  </script>
 
 <?php include "inc/foot.php"; ?>

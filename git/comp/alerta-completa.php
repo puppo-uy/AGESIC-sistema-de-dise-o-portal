@@ -1,3 +1,8 @@
+<?php
+$selectedType = isset($_GET['type']) ? $_GET['type'] : null;
+?>
+
+<?php if (!$selectedType || $selectedType === 'exito') : ?>
 <!-- Alerta completa: Éxito -->
 <div class="alerta alerta--completa alerta--exito">
 	<svg class="icono icono--alerta icono--exito">
@@ -9,7 +14,9 @@
 		<a href="#">Enlace de acción</a>
 	</div>
 </div>
+<?php endif; ?>
 
+<?php if (!$selectedType || $selectedType === 'error') : ?>
 <!-- Alerta completa: Error -->
 <div class="alerta alerta--completa alerta--error">
 	<svg class="icono icono--alerta icono--error">
@@ -21,7 +28,9 @@
 		<a href="#">Enlace de acción</a>
 	</div>
 </div>
+<?php endif; ?>
 
+<?php if (!$selectedType || $selectedType === 'advertencia') : ?>
 <!-- Alerta completa: Advertencia -->
 <div class="alerta alerta--completa alerta--advertencia">
 	<svg class="icono icono--alerta icono--advertencia">
@@ -33,7 +42,9 @@
 		<a href="#">Enlace de acción</a>
 	</div>
 </div>
+<?php endif; ?>
 
+<?php if (!$selectedType || $selectedType === 'info') : ?>
 <!-- Alerta completa: Información -->
 <div class="alerta alerta--completa alerta--informacion">
 	<svg class="icono icono--alerta icono--informacion">
@@ -45,7 +56,9 @@
 		<a href="#">Enlace de acción</a>
 	</div>
 </div>
+<?php endif; ?>
 
+<?php if (!$selectedType || $selectedType === 'notificacion') : ?>
 <!-- Alerta completa: Notificación -->
 <div class="alerta alerta--completa alerta--notificacion">
 	<svg class="icono icono--alerta icono--notificacion">
@@ -57,3 +70,4 @@
 		<a href="#">Enlace de acción</a>
 	</div>
 </div>
+<?php endif; ?>
