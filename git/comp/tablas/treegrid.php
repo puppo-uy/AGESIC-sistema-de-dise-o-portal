@@ -99,7 +99,7 @@
 					</div>
 				</div>
 			</td>
-			<td role="gridcell" style="vertical-align: middle;">
+			<td role="gridcell">
 				<ul class="botonera botonera--s">
 					<li>
 						<button class="boton boton--s boton--secundario boton--icono">
@@ -1267,19 +1267,28 @@
   border-bottom: none;
 }
 
-/* --- 10. Borde de grupo (línea azul derecha) — VariableID:543:42 = primario-principal #25418e --- */
+/* --- 10. Borde de grupo (línea de color lateral) — Figma: BORDER_RIGHT_WEIGHT ---
+   El borde va en el LADO DERECHO de la última columna.
+   Color = primario-principal (#25418e) — VariableID:543:42
+   Grosor = 4px — VariableID:417:168
+*/
 
-/* Fila raíz expandida: borde azul en el primer td (izquierda) */
-#treegrid tr[aria-level="1"][aria-expanded="true"] > td:first-child {
-  border-left: 4px solid var(--primario-principal, #25418e);
+/* Fila raíz expandida: borde azul a la derecha */
+#treegrid tr[aria-level="1"][aria-expanded="true"] > td:last-child {
+  border-right: 4px solid var(--primario-principal, #25418e);
 }
 
-/* Filas anidadas: borde azul en el primer td (izquierda) */
-#treegrid tr[aria-level="2"] > td:first-child,
-#treegrid tr[aria-level="3"] > td:first-child,
-#treegrid tr[aria-level="4"] > td:first-child,
-#treegrid tr[aria-level="5"] > td:first-child {
-  border-left: 4px solid var(--primario-principal, #25418e);
+/* Filas anidadas: borde azul a la derecha */
+#treegrid tr[aria-level="2"] > td:last-child,
+#treegrid tr[aria-level="3"] > td:last-child,
+#treegrid tr[aria-level="4"] > td:last-child,
+#treegrid tr[aria-level="5"] > td:last-child {
+  border-right: 4px solid var(--primario-principal, #25418e);
+}
+
+/* Última columna: centrar verticalmente la botonera */
+#treegrid td:last-child {
+  vertical-align: middle;
 }
 
 /* --- 11. Fondos por nivel (Figma) ---
