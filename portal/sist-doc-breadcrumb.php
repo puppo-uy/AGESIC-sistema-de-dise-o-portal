@@ -52,7 +52,7 @@
                 <p class="Page-description">El breadcrumb es un componente de navegación secundaria que indica al usuario la ubicación actual dentro de la estructura del sitio o aplicación. Permite comprender el contexto de navegación y facilita el regreso a niveles anteriores de forma rápida y predecible.</p>
 
                 <h3 class="u-mt4">Estructura del componente</h3>
-                <img src="img/ejemplos_documentacion/breadcrumb.png" alt="Estructura de Breadcrumb" class="u-mb3" style="max-width: 100%;">
+                 <iframe src="../git/iframe-preview.php?comp=breadcrumb" title="Ejemplo de estructura de breadcrumb" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                 <h5 class="u-mt3">Elementos que lo componen</h5>
                 <ul class="List-text">
                     <li>Texto (Solo lectura)</li>
@@ -106,5 +106,17 @@
 
   <!-- Footer -->
   <?php include "inc/footer.php"; ?>
+
+  <script src="../recursos/js/vendor/iframeResizer.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        iFrameResize({ 
+            log: false, 
+            checkOrigin: false,
+            heightCalculationMethod: 'lowestElement',
+            heightOffset: 50
+        }, '.component-preview');
+    });
+  </script>
 
 <?php include "inc/foot.php"; ?>
