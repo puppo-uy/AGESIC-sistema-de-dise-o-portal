@@ -32,11 +32,11 @@ $duras = [
     margin-bottom: 32px;
   }
   .shadow-group-title {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.6px;
-    color: #777;
+    color: #555;
     margin: 0 0 16px;
   }
   .shadow-row {
@@ -61,11 +61,11 @@ $duras = [
     font-size: 13px;
     font-weight: 600;
     font-family: 'Courier New', monospace;
-    color: #1a1a1a;
+    color: #25418e;
   }
   .shadow-value {
-    font-size: 11px;
-    color: #888;
+    font-size: 12px;
+    color: #555;
     font-family: 'Courier New', monospace;
   }
 </style>

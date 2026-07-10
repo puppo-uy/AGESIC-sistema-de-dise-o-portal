@@ -60,7 +60,7 @@
                 <h3 class="u-mt4">Estilos</h3>
                 <p class="u-mb3">Se definen estilos tipográficos para títulos, párrafos y textos especiales. Cada estilo se define por: familia tipográfica, tamaño de fuente, peso y altura de línea.</p>
 
-                <h4 class="u-mt3">Títulos</h4>
+                <h4 class="u-mt3" id="titulo-titulos">Títulos</h4>
                 <p class="u-mb3">Los títulos se utilizan para estructurar el contenido y guiar la lectura. Utilizan la familia <strong>Open Sans</strong> y los pesos Light, Regular, Semibold y Bold.</p>
                 <iframe
                   src="../git/iframe-preview.php?comp=tipografias"
@@ -70,7 +70,7 @@
                   style="width:100%;border:none;display:block;"
                 ></iframe>
                 <div class="table-responsive u-mb5">
-                    <table class="Table Table--striped">
+                    <table class="Table Table--striped" aria-labelledby="titulo-titulos">
                         <thead>
                             <tr>
                                 <th>Estilo</th>
@@ -89,11 +89,11 @@
                     </table>
                 </div>
 
-                <h4 class="u-mt4">Párrafos</h4>
+                <h4 class="u-mt4" id="titulo-parrafos">Párrafos</h4>
                 <p class="u-mb3">Los estilos de párrafos se utilizan para el contenido principal y los textos descriptivos. El tamaño M (16px) es el tamaño base recomendado.</p>
 
                 <div class="table-responsive u-mb5">
-                    <table class="Table Table--striped">
+                    <table class="Table Table--striped" aria-labelledby="titulo-parrafos">
                         <thead>
                             <tr>
                                 <th>Estilo</th>
@@ -111,10 +111,10 @@
                     </table>
                 </div>
 
-                <h4 class="u-mt4">Estilos de texto especial</h4>
+                <h4 class="u-mt4" id="titulo-texto-especial">Estilos de texto especial</h4>
                 <p class="u-mb3">Los estilos de texto especiales corresponden a usos tipográficos específicos que no forman parte del flujo general de lectura.</p>
                 <div class="table-responsive u-mb5">
-                    <table class="Table Table--striped">
+                    <table class="Table Table--striped" aria-labelledby="titulo-texto-especial">
                         <thead>
                             <tr>
                                 <th>Estilo</th>
@@ -129,10 +129,10 @@
                     </table>
                 </div>
 
-                <h3 class="u-mt4">Uso responsivo</h3>
+                <h3 class="u-mt4" id="titulo-uso-responsivo">Uso responsivo</h3>
                 <p class="u-mb3">El sistema tipográfico está diseñado para adaptarse a distintos tamaños de pantalla. Los párrafos mantienen los mismos valores en móvil y escritorio. Los títulos se ajustan según el dispositivo:</p>
                 <div class="table-responsive u-mb5">
-                    <table class="Table Table--striped">
+                    <table class="Table Table--striped" aria-labelledby="titulo-uso-responsivo">
                         <thead>
                             <tr>
                                 <th>Nivel</th>

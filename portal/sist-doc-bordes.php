@@ -50,7 +50,7 @@
                 
                 <p class="Page-description">Los bordes se utilizan para delimitar, separar o enfatizar elementos dentro de la interfaz. Los estilos de borde se dividen en dos grupos: grosores y radios.</p>
 
-                <h3 class="u-mt4">Grosores</h3>
+                <h3 class="u-mt4" id="titulo-grosores">Grosores</h3>
                 <p class="u-mb3">El sistema define distintos grosores de borde, expresados en valores fijos en píxeles. Estos grosores permiten adaptarse a diferentes tipos de componentes, desde separaciones sutiles hasta delimitaciones más visibles.</p>
                 <p class="u-mb3">Los grosores de borde van desde <code>borde-0</code> hasta <code>borde-6</code>.</p>
 
@@ -63,7 +63,7 @@
                 ></iframe>
 
                 <div class="table-responsive u-mb5">
-                    <table class="Table Table--striped">
+                    <table class="Table Table--striped" aria-labelledby="titulo-grosores">
                         <thead>
                             <tr>
                                 <th>Variable</th>
@@ -82,7 +82,7 @@
                     </table>
                 </div>
 
-                <h3 class="u-mt4">Radios</h3>
+                <h3 class="u-mt4" id="titulo-radios">Radios</h3>
                 <p class="u-mb3">Los radios definen el nivel de redondeo de las esquinas de contenedores y componentes. El sistema contempla desde esquinas completamente rectas hasta esquinas totalmente redondeadas. El valor máximo de redondeo permite que ciertos elementos adopten una forma de "pastilla" o circular, según su proporción.</p>
 
                 <iframe
@@ -94,7 +94,7 @@
                 ></iframe>
 
                 <div class="table-responsive u-mb5">
-                    <table class="Table Table--striped">
+                    <table class="Table Table--striped" aria-labelledby="titulo-radios">
                         <thead>
                             <tr>
                                 <th>Variable</th>

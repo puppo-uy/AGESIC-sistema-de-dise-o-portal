@@ -51,7 +51,7 @@
                 <p class="Page-description">Los espaciados definen las medidas de separación entre los elementos de la interfaz, tanto en el espacio interno de los componentes como en el espacio externo entre componentes.</p>
                 <p>El sistema utiliza una serie de valores fijos en píxeles que permiten resolver desde separaciones pequeñas hasta separaciones más amplias, manteniendo consistencia visual en toda la interfaz.</p>
 
-                <h3 class="u-mt4">Tokens de espaciado</h3>
+                <h3 class="u-mt4" id="titulo-espaciados">Tokens de espaciado</h3>
                 <p class="u-mb3">El sistema define una escala progresiva de valores fijos. Cada token lleva como nombre su propio valor en píxeles, lo que facilita su identificación directa en código.</p>
 
                 <iframe
@@ -63,7 +63,7 @@
                 ></iframe>
 
                 <div class="table-responsive">
-                    <table class="Table Table--striped">
+                    <table class="Table Table--striped" aria-labelledby="titulo-espaciados">
                         <thead>
                             <tr>
                                 <th>Variable</th>

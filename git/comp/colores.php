@@ -14,16 +14,16 @@ function needsLightText($hex) {
 
 function renderSwatch($hex, $label, $var = null) {
     $textColor = needsLightText($hex) ? '#fff' : '#1a1a1a';
-    $border = ($hex === '#ffffff') ? '1px solid #ddd' : '1px solid rgba(0,0,0,0.08)';
-    echo '<div style="display:inline-flex;flex-direction:column;align-items:center;gap:5px;margin:4px;">';
+    $border = ($hex === '#ffffff') ? '1px solid #ccc' : '1px solid rgba(0,0,0,0.1)';
+    echo '<div style="display:inline-flex;flex-direction:column;align-items:center;gap:6px;margin:6px 4px;">';
     echo '<div title="' . htmlspecialchars($hex) . ($var ? ' | ' . htmlspecialchars($var) : '') . '" ';
-    echo 'style="width:80px;height:60px;background:' . htmlspecialchars($hex) . ';border-radius:8px;border:' . $border . ';';
-    echo 'display:flex;flex-direction:column;align-items:center;justify-content:center;color:' . $textColor . ';gap:2px;">';
-    echo '<span style="font-size:11px;font-weight:700;line-height:1;">' . htmlspecialchars($label) . '</span>';
-    echo '<span style="font-size:9.5px;opacity:0.75;line-height:1;">' . htmlspecialchars($hex) . '</span>';
+    echo 'style="width:96px;height:68px;background:' . htmlspecialchars($hex) . ';border-radius:8px;border:' . $border . ';';
+    echo 'display:flex;flex-direction:column;align-items:center;justify-content:center;color:' . $textColor . ';gap:3px;">';
+    echo '<span style="font-size:13px;font-weight:700;line-height:1;">' . htmlspecialchars($label) . '</span>';
+    echo '<span style="font-size:11px;opacity:0.85;line-height:1;">' . htmlspecialchars($hex) . '</span>';
     echo '</div>';
     if ($var) {
-        echo '<span style="font-size:8.5px;color:#666;text-align:center;max-width:80px;word-break:break-all;line-height:1.2;">' . htmlspecialchars($var) . '</span>';
+        echo '<span style="font-size:11px;color:#25418e;font-weight:600;text-align:center;max-width:96px;word-break:break-all;line-height:1.2;font-family:\'Courier New\',monospace;">' . htmlspecialchars($var) . '</span>';
     }
     echo '</div>';
 }

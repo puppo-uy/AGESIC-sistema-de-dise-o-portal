@@ -29,11 +29,11 @@ $parrafos = [
     padding: 16px;
   }
   .type-section-title {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.6px;
-    color: #777;
+    color: #555;
     margin: 24px 0 4px;
     border-bottom: 1px solid #eee;
     padding-bottom: 6px;
@@ -57,20 +57,26 @@ $parrafos = [
   .type-meta {
     display: flex;
     flex-direction: column;
-    gap: 1px;
+    gap: 2px;
     flex-shrink: 0;
     text-align: right;
-    min-width: 160px;
+    min-width: 180px;
   }
   .type-meta-name {
-    font-size: 12px;
-    font-weight: 600;
-    color: #333;
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a1a1a;
   }
   .type-meta-detail {
-    font-size: 11px;
-    color: #aaa;
+    font-size: 12px;
+    color: #555;
     font-family: 'Courier New', monospace;
+  }
+  .type-meta-var {
+    font-size: 11px;
+    color: #25418e;
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
   }
   .familia-section {
     padding: 12px 0 16px;
@@ -83,8 +89,8 @@ $parrafos = [
     margin: 0 0 2px;
   }
   .familia-sub {
-    font-size: 12px;
-    color: #888;
+    font-size: 13px;
+    color: #555;
   }
 </style>
 
@@ -109,7 +115,7 @@ $parrafos = [
   <div class="type-meta">
     <span class="type-meta-name"><?php echo htmlspecialchars($t['nombre']); ?></span>
     <span class="type-meta-detail"><?php echo $t['rem']; ?> · <?php echo $t['px']; ?>px · LH <?php echo $t['lh_label']; ?></span>
-    <span class="type-meta-detail" style="color:#ccc;"><?php echo htmlspecialchars($t['var']); ?></span>
+    <span class="type-meta-var"><?php echo htmlspecialchars($t['var']); ?></span>
   </div>
 </div>
 <?php endforeach; ?>
@@ -124,7 +130,7 @@ $parrafos = [
   <div class="type-meta">
     <span class="type-meta-name"><?php echo htmlspecialchars($p['nombre']); ?></span>
     <span class="type-meta-detail"><?php echo $p['rem']; ?> · <?php echo $p['px']; ?>px · LH <?php echo $p['lh_label']; ?></span>
-    <span class="type-meta-detail" style="color:#ccc;"><?php echo htmlspecialchars($p['var']); ?></span>
+    <span class="type-meta-var"><?php echo htmlspecialchars($p['var']); ?></span>
   </div>
 </div>
 <?php endforeach; ?>

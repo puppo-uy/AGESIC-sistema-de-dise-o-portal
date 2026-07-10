@@ -26,11 +26,11 @@ $radios = [
     padding: 16px;
   }
   .section-title {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.6px;
-    color: #777;
+    color: #555;
     margin: 24px 0 12px;
   }
   .section-title:first-child { margin-top: 0; }
@@ -55,11 +55,11 @@ $radios = [
   .grosor-label {
     font-family: 'Courier New', monospace;
     font-size: 12px;
-    color: #555;
+    color: #1a1a1a;
   }
   .grosor-value {
     font-size: 12px;
-    color: #aaa;
+    color: #555;
     margin-left: auto;
     min-width: 32px;
     text-align: right;
@@ -91,14 +91,16 @@ $radios = [
     border: 2px solid #25418e;
   }
   .radio-name {
-    font-size: 10px;
+    font-size: 12px;
     font-family: 'Courier New', monospace;
-    color: #555;
+    color: #25418e;
+    font-weight: 600;
     text-align: center;
   }
   .radio-val {
-    font-size: 10px;
-    color: #aaa;
+    font-size: 11px;
+    color: #555;
+    font-family: 'Courier New', monospace;
   }
 </style>
 

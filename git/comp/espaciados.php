@@ -42,7 +42,7 @@ $max = max($espaciados);
     width: 44px;
     flex-shrink: 0;
     font-size: 12px;
-    color: #888;
+    color: #555;
     text-align: right;
   }
 </style>
