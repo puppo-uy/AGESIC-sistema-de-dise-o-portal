@@ -44,8 +44,7 @@
                 <p class="Page-description">Los títulos son componentes de texto que se utilizan para organizar y jerarquizar el contenido dentro de la interfaz. Permiten estructurar la información, guiar la lectura y facilitar la comprensión del contenido en distintos niveles.</p>
                 <p>Además de su función visual, cumplen un rol semántico fundamental, ya que definen la estructura lógica del contenido.</p>
                 
-                <h3 class="u-mt4">Estructura del componente</h3>
-                <img src="img/ejemplos_documentacion/encabezados.png" alt="Ejemplo de Títulos" class="u-mb3" style="max-width: 100%;">
+                 <iframe src="../git/iframe-preview.php?comp=texto/titulos-todos" title="Ejemplos de títulos del sistema" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 380px;" scrolling="no"></iframe>
 
                 
                 <h3>Recomendaciones de uso</h3>
@@ -150,5 +149,17 @@
 
   <!-- Footer -->
   <?php include "inc/footer.php"; ?>
+
+  <script src="../recursos/js/vendor/iframeResizer.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        iFrameResize({ 
+            log: false, 
+            checkOrigin: false,
+            heightCalculationMethod: 'lowestElement',
+            heightOffset: 50
+        }, '.component-preview');
+    });
+  </script>
 
 <?php include "inc/foot.php"; ?>
