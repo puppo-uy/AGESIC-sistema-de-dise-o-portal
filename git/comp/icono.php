@@ -1,3 +1,36 @@
+<?php
+$iconName = isset($_GET['name']) ? $_GET['name'] : null;
+$iconSize = isset($_GET['size']) ? $_GET['size'] : null;
+$iconType = isset($_GET['type']) ? $_GET['type'] : null;
+?>
+
+<?php if ($iconName) : ?>
+<svg class="icono<?php echo $iconSize ? ' icono--' . htmlspecialchars($iconSize) : ''; ?>">
+  <use href="#icono-<?php echo htmlspecialchars($iconName); ?>"></use>
+</svg>
+<?php elseif ($iconType === 'comparativa') : ?>
+<div style="display: flex; gap: 32px; align-items: center;">
+  <div style="text-align: center;">
+    <svg class="icono icono--xl" style="color: var(--primario-principal);">
+      <use href="#icono-alerta--lineal"></use>
+    </svg>
+    <p style="margin: 8px 0 0 0; font-size: 14px; font-family: var(--tipo-familia-base); color: var(--texto-principal);">Lineal</p>
+  </div>
+  <div style="text-align: center;">
+    <svg class="icono icono--xl" style="color: var(--primario-principal);">
+      <use href="#icono-alerta--relleno"></use>
+    </svg>
+    <p style="margin: 8px 0 0 0; font-size: 14px; font-family: var(--tipo-familia-base); color: var(--texto-principal);">Relleno</p>
+  </div>
+</div>
+<?php elseif ($iconType === 'avatar') : ?>
+<span class="icono icono--xxl icono--iniciales icono--principal">
+    <span>AB</span>
+    <span class="tag tag--advertencia tag--indicador tag--indicador--numerico">
+        <span>8</span>
+    </span>
+</span>
+<?php else : ?>
 <div>Iconos</div>
 
 <svg class="icono icono--l">
@@ -521,5 +554,6 @@
 </span>
 
 </button>
+<?php endif; ?>
 
 

@@ -65,55 +65,55 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td><img src="img/iconos/lupa.png" width="48" height="48" alt="Lupa XXL"></td>
-                                <td>XXL</td>
-                                <td>48px</td>
-                            </tr>
-                            <tr>
-                                <td><img src="img/iconos/lupa.png" width="40" height="40" alt="Lupa XL"></td>
-                                <td>XL</td>
-                                <td>40px</td>
-                            </tr>
-                            <tr>
-                                <td><img src="img/iconos/lupa.png" width="32" height="32" alt="Lupa L"></td>
-                                <td>L</td>
-                                <td>32px</td>
-                            </tr>
-                            <tr>
-                                <td><img src="img/iconos/lupa.png" width="24" height="24" alt="Lupa M"></td>
-                                <td>M</td>
-                                <td>24px</td>
-                            </tr>
-                            <tr>
-                                <td><img src="img/iconos/lupa.png" width="20" height="20" alt="Lupa S"></td>
-                                <td>S</td>
-                                <td>20px</td>
-                            </tr>
-                            <tr>
-                                <td><img src="img/iconos/lupa.png" width="16" height="16" alt="Lupa XS"></td>
-                                <td>XS</td>
-                                <td>16px</td>
-                            </tr>
-                            <tr>
-                                <td><img src="img/iconos/lupa.png" width="12" height="12" alt="Lupa XXS"></td>
-                                <td>XXS</td>
-                                <td>12px</td>
-                            </tr>
+                             <tr>
+                                 <td><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=xxl&nopadding=1" title="Ejemplo de ícono tamaño XXL" width="48" height="48" style="border: none; overflow: hidden; display: block;" scrolling="no"></iframe></td>
+                                 <td>XXL</td>
+                                 <td>48px</td>
+                             </tr>
+                             <tr>
+                                 <td><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=xl&nopadding=1" title="Ejemplo de ícono tamaño XL" width="40" height="40" style="border: none; overflow: hidden; display: block;" scrolling="no"></iframe></td>
+                                 <td>XL</td>
+                                 <td>40px</td>
+                             </tr>
+                             <tr>
+                                 <td><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=l&nopadding=1" title="Ejemplo de ícono tamaño L" width="32" height="32" style="border: none; overflow: hidden; display: block;" scrolling="no"></iframe></td>
+                                 <td>L</td>
+                                 <td>32px</td>
+                             </tr>
+                             <tr>
+                                 <td><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=m&nopadding=1" title="Ejemplo de ícono tamaño M" width="24" height="24" style="border: none; overflow: hidden; display: block;" scrolling="no"></iframe></td>
+                                 <td>M</td>
+                                 <td>24px</td>
+                             </tr>
+                             <tr>
+                                 <td><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=s&nopadding=1" title="Ejemplo de ícono tamaño S" width="20" height="20" style="border: none; overflow: hidden; display: block;" scrolling="no"></iframe></td>
+                                 <td>S</td>
+                                 <td>20px</td>
+                             </tr>
+                             <tr>
+                                 <td><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=xs&nopadding=1" title="Ejemplo de ícono tamaño XS" width="16" height="16" style="border: none; overflow: hidden; display: block;" scrolling="no"></iframe></td>
+                                 <td>XS</td>
+                                 <td>16px</td>
+                             </tr>
+                             <tr>
+                                 <td><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=xxs&nopadding=1" title="Ejemplo de ícono tamaño XXS" width="12" height="12" style="border: none; overflow: hidden; display: block;" scrolling="no"></iframe></td>
+                                 <td>XXS</td>
+                                 <td>12px</td>
+                             </tr>
                         </tbody>
                     </table>
                 </div>
 
                 <h4>Formato</h4>
-                <h5 class="u-mt4">Lineales y rellenos</h5>
-                <img src="img/iconos/lineales.png" alt="Ejemplos de íconos lineales y rellenos" class="u-mb2 u-mt2" style="max-width: 100%;">
-                <p>Íconos de trazo simple o lineales, recomendados para la mayoría de los usos.</p>
-                <p>Íconos de forma sólida, rellenos, utilizados cuando se necesita mayor presencia visual o para indicar estado de activo.</p>
-
-                <h3>Íconos especiales</h3>
-                <h4>Avatar de usuario</h4>
-                <img src="img/iconos/avatar.png" alt="Ejemplo de avatar de usuario" class="u-mb2 u-mt2" style="max-width: 100%;">
-                <p>El Avatar de usuario es un ícono específico, construido mediante CSS, que se utiliza como indicador de usuario autenticado dentro de la interfaz, y puede aparecer, por ejemplo, en el cabezal o en contextos asociados al perfil del usuario.</p>
+                 <h5 class="u-mt4">Lineales y rellenos</h5>
+                 <iframe src="../git/iframe-preview.php?comp=icono&type=comparativa" title="Ejemplo de íconos lineales y rellenos" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 100px;" scrolling="no"></iframe>
+                 <p>Íconos de trazo simple o lineales, recomendados para la mayoría de los usos.</p>
+                 <p>Íconos de forma sólida, rellenos, utilizados cuando se necesita mayor presencia visual o para indicar estado de activo.</p>
+ 
+                 <h3>Íconos especiales</h3>
+                 <h4>Avatar de usuario</h4>
+                 <iframe src="../git/iframe-preview.php?comp=icono&type=avatar" title="Ejemplo de avatar de usuario" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                 <p>El Avatar de usuario es un ícono específico, construido mediante CSS, que se utiliza como indicador de usuario autenticado dentro de la interfaz, y puede aparecer, por ejemplo, en el cabezal o en contextos asociados al perfil del usuario.</p>
                 <p>Este ícono se comporta de la misma forma que el resto de los íconos del sistema, teniendo de variantes los mismos tamaños disponibles.</p>
                 <p>Su uso está limitado a contextos relacionados con la identidad del usuario y no debe utilizarse con fines decorativos ni como reemplazo de otros íconosconos funcionales.</p>
 
@@ -172,5 +172,17 @@
 
   <!-- Footer -->
   <?php include "inc/footer.php"; ?>
+
+  <script src="../recursos/js/vendor/iframeResizer.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        iFrameResize({ 
+            log: false, 
+            checkOrigin: false,
+            heightCalculationMethod: 'lowestElement',
+            heightOffset: 50
+        }, '.component-preview');
+    });
+  </script>
 
 <?php include "inc/foot.php"; ?>

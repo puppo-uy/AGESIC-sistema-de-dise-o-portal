@@ -11,7 +11,7 @@
         html, body {
             background: transparent;
             margin: 0;
-            padding: 16px; /* Un poco de padding para que los estados focus/box-shadow no se corten */
+            padding: <?php echo isset($_GET['nopadding']) ? '0' : '16px'; ?>;
         }
     </style>
 </head>
