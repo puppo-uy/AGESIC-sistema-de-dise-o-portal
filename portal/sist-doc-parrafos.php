@@ -43,8 +43,7 @@
                 
                 <p class="Page-description">Los párrafos son componentes de texto encargados de presentar el contenido principal y los textos de apoyo dentro de la interfaz. Se utilizan para desarrollar los contenidos introducidos por los títulos.</p>
 
-                <h3 class="u-mt4">Estructura del componente</h3>
-                <img src="img/ejemplos_documentacion/parrafos.png" alt="Ejemplo de Párrafos" class="u-mb3" style="max-width: 100%;">
+                <iframe src="../git/iframe-preview.php?comp=texto/parrafos-todos" title="Ejemplos de párrafos del sistema" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 480px;" scrolling="no"></iframe>
 
                 <h3>Recomendaciones de uso</h3>
                 <h4>Casos típicos de uso</h4>
@@ -126,5 +125,17 @@
 
   <!-- Footer -->
   <?php include "inc/footer.php"; ?>
+
+  <script src="../recursos/js/vendor/iframeResizer.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        iFrameResize({ 
+            log: false, 
+            checkOrigin: false,
+            heightCalculationMethod: 'lowestElement',
+            heightOffset: 50
+        }, '.component-preview');
+    });
+  </script>
 
 <?php include "inc/foot.php"; ?>
