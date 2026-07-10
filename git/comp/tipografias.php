@@ -88,6 +88,12 @@ $parrafos = [
     font-weight: 700;
     margin: 0 0 2px;
   }
+  .familia-name--open-sans {
+    font-family: 'Open Sans', sans-serif;
+  }
+  .familia-name--sora {
+    font-family: 'Sora', sans-serif;
+  }
   .familia-sub {
     font-size: 13px;
     color: #555;
@@ -97,11 +103,11 @@ $parrafos = [
 <!-- Familias -->
 <p class="type-section-title">Familias tipográficas</p>
 <div class="familia-section">
-  <div class="familia-name" style="font-family:'Open Sans',sans-serif;">Open Sans</div>
+  <div class="familia-name familia-name--open-sans">Open Sans</div>
   <div class="familia-sub">Tipografía base — títulos, párrafos e interfaz general</div>
 </div>
 <div class="familia-section" style="border-bottom:none;">
-  <div class="familia-name" style="font-family:'Sora',sans-serif;">Sora</div>
+  <div class="familia-name familia-name--sora">Sora</div>
   <div class="familia-sub">Tipografía de marca — exclusiva para el identificador de organismo en el cabezal</div>
 </div>
 

@@ -14,28 +14,31 @@ function needsLightText($hex) {
 
 function renderSwatch($hex, $label, $var = null) {
     $textColor = needsLightText($hex) ? '#fff' : '#1a1a1a';
-    $border = ($hex === '#ffffff') ? '1px solid #ccc' : '1px solid rgba(0,0,0,0.1)';
-    echo '<div style="display:inline-flex;flex-direction:column;align-items:center;gap:6px;margin:6px 4px;">';
-    echo '<div title="' . htmlspecialchars($hex) . ($var ? ' | ' . htmlspecialchars($var) : '') . '" ';
-    echo 'style="width:96px;height:68px;background:' . htmlspecialchars($hex) . ';border-radius:8px;border:' . $border . ';';
-    echo 'display:flex;flex-direction:column;align-items:center;justify-content:center;color:' . $textColor . ';gap:3px;">';
-    echo '<span style="font-size:13px;font-weight:700;line-height:1;">' . htmlspecialchars($label) . '</span>';
-    echo '<span style="font-size:11px;opacity:0.85;line-height:1;">' . htmlspecialchars($hex) . '</span>';
-    echo '</div>';
+    $borderClass = ($hex === '#ffffff') ? 'swatch__box--white-border' : 'swatch__box--normal-border';
+    
+    echo '<div class="swatch">';
+    echo '  <div class="swatch__box ' . $borderClass . '" ';
+    echo '       title="' . htmlspecialchars($hex) . ($var ? ' | ' . htmlspecialchars($var) : '') . '" ';
+    echo '       style="background-color: ' . htmlspecialchars($hex) . '; color: ' . $textColor . ';">';
+    echo '    <span class="swatch__label">' . htmlspecialchars($label) . '</span>';
+    echo '    <span class="swatch__hex">' . htmlspecialchars($hex) . '</span>';
+    echo '  </div>';
     if ($var) {
-        echo '<span style="font-size:11px;color:#25418e;font-weight:600;text-align:center;max-width:96px;word-break:break-all;line-height:1.2;font-family:\'Courier New\',monospace;">' . htmlspecialchars($var) . '</span>';
+        echo '  <span class="swatch__var">' . htmlspecialchars($var) . '</span>';
     }
     echo '</div>';
 }
 
 function renderScale($colors, $title = null) {
+    echo '<div class="swatch-group">';
     if ($title) {
-        echo '<p style="font-size:12px;font-weight:600;color:#555;text-transform:uppercase;letter-spacing:0.5px;margin:16px 0 6px;">' . htmlspecialchars($title) . '</p>';
+        echo '  <p class="swatch-group__title">' . htmlspecialchars($title) . '</p>';
     }
-    echo '<div style="display:flex;flex-wrap:wrap;gap:2px;margin-bottom:8px;">';
+    echo '  <div class="swatch-group__list">';
     foreach ($colors as $c) {
         renderSwatch($c['hex'], $c['label'], $c['var'] ?? null);
     }
+    echo '  </div>';
     echo '</div>';
 }
 
@@ -159,6 +162,75 @@ $decorativos_raw = [
     margin: 0;
     padding: 12px 16px 16px;
   }
+  
+  .swatch-group {
+    margin-bottom: 24px;
+  }
+  .swatch-group__title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 16px 0 6px;
+  }
+  .swatch-group__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .swatch {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin: 6px 4px;
+  }
+  .swatch__box {
+    width: 96px;
+    height: 68px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+  }
+  .swatch__box--white-border {
+    border: 1px solid #ccc;
+  }
+  .swatch__box--normal-border {
+    border: 1px solid rgba(0,0,0,0.1);
+  }
+  .swatch__label {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .swatch__hex {
+    font-size: 11px;
+    opacity: 0.85;
+    line-height: 1;
+  }
+  .swatch__var {
+    font-size: 11px;
+    color: #25418e;
+    font-weight: 600;
+    text-align: center;
+    max-width: 96px;
+    word-break: break-all;
+    line-height: 1.2;
+    font-family: 'Courier New', monospace;
+  }
+  .decorativo-header {
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 16px 0 6px;
+  }
 </style>
 
 <?php if ($grupo === 'institucionales' || $grupo === 'todos'): ?>
@@ -182,8 +254,8 @@ $decorativos_raw = [
 
 <?php if ($grupo === 'decorativos' || $grupo === 'todos'): ?>
   <?php foreach ($decorativos_raw as $nombre => $escala): ?>
-    <p style="font-size:12px;font-weight:600;color:#555;text-transform:uppercase;letter-spacing:0.5px;margin:16px 0 6px;"><?php echo htmlspecialchars($nombre); ?></p>
-    <div style="display:flex;flex-wrap:wrap;gap:2px;margin-bottom:8px;">
+    <p class="decorativo-header"><?php echo htmlspecialchars($nombre); ?></p>
+    <div class="swatch-group__list">
     <?php foreach ($escala as $label => $hex): renderSwatch($hex, (string)$label); endforeach; ?>
     </div>
   <?php endforeach; ?>
