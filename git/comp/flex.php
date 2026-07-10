@@ -23,17 +23,18 @@
     margin-bottom: 24px;
   }
   .demo-label {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    color: #777;
+    color: #555;
     margin: 0 0 6px;
   }
   .demo-code {
-    font-size: 11px;
+    font-size: 12px;
     font-family: 'Courier New', monospace;
-    color: #888;
+    color: #25418e;
+    font-weight: 600;
     margin: 0 0 8px;
   }
   .demo-container {
