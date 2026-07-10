@@ -104,9 +104,8 @@
                      <iframe src="../git/iframe-preview.php?comp=tag&type=tamanos" title="Ejemplo de tamaños de tags (normal y chico)" class="component-preview" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                  </div>
                 <ul class="List-text">
-                    <li>L</li>
-                    <li>M</li>
-                    <li>S</li>
+                    <li>Normal</li>
+                    <li>Chico (S)</li>
                 </ul>
 
                 <h3 class="u-mt4">Accesibilidad</h3>
