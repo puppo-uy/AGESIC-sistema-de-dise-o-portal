@@ -54,7 +54,13 @@
                 <h3 class="u-mt4">Tokens de espaciado</h3>
                 <p class="u-mb3">El sistema define una escala progresiva de valores fijos. Cada token lleva como nombre su propio valor en píxeles, lo que facilita su identificación directa en código.</p>
 
-                <img src="img/ejemplos_documentacion/espaciados.png" alt="Escala de tokens de espaciado" class="u-mb4" style="max-width: 100%;">
+                <iframe
+                  src="../git/iframe-preview.php?comp=espaciados"
+                  class="component-preview"
+                  title="Escala de tokens de espaciado"
+                  scrolling="no"
+                  style="width:100%;border:none;display:block;"
+                ></iframe>
 
                 <div class="table-responsive">
                     <table class="Table Table--striped">
@@ -65,31 +71,23 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td>espaciado-0</td><td>0px</td></tr>
-                            <tr><td>espaciado-2</td><td>2px</td></tr>
-                            <tr><td>espaciado-4</td><td>4px</td></tr>
-                            <tr><td>espaciado-8</td><td>8px</td></tr>
-                            <tr><td>espaciado-12</td><td>12px</td></tr>
-                            <tr><td>espaciado-16</td><td>16px</td></tr>
-                            <tr><td>espaciado-20</td><td>20px</td></tr>
-                            <tr><td>espaciado-24</td><td>24px</td></tr>
-                            <tr><td>espaciado-28</td><td>28px</td></tr>
-                            <tr><td>espaciado-32</td><td>32px</td></tr>
-                            <tr><td>espaciado-36</td><td>36px</td></tr>
-                            <tr><td>espaciado-40</td><td>40px</td></tr>
-                            <tr><td>espaciado-48</td><td>48px</td></tr>
-                            <tr><td>espaciado-56</td><td>56px</td></tr>
-                            <tr><td>espaciado-64</td><td>64px</td></tr>
-                            <tr><td>espaciado-72</td><td>72px</td></tr>
-                            <tr><td>espaciado-80</td><td>80px</td></tr>
-                            <tr><td>espaciado-88</td><td>88px</td></tr>
-                            <tr><td>espaciado-96</td><td>96px</td></tr>
-                            <tr><td>espaciado-104</td><td>104px</td></tr>
-                            <tr><td>espaciado-112</td><td>112px</td></tr>
-                            <tr><td>espaciado-120</td><td>120px</td></tr>
-                            <tr><td>espaciado-128</td><td>128px</td></tr>
-                            <tr><td>espaciado-136</td><td>136px</td></tr>
-                            <tr><td>espaciado-144</td><td>144px</td></tr>
+                            <tr><td>$espaciados-0</td><td>0px</td></tr>
+                            <tr><td>$espaciados-2</td><td>2px</td></tr>
+                            <tr><td>$espaciados-4</td><td>4px</td></tr>
+                            <tr><td>$espaciados-8</td><td>8px</td></tr>
+                            <tr><td>$espaciados-12</td><td>12px</td></tr>
+                            <tr><td>$espaciados-16</td><td>16px</td></tr>
+                            <tr><td>$espaciados-20</td><td>20px</td></tr>
+                            <tr><td>$espaciados-24</td><td>24px</td></tr>
+                            <tr><td>$espaciados-28</td><td>28px</td></tr>
+                            <tr><td>$espaciados-32</td><td>32px</td></tr>
+                            <tr><td>$espaciados-36</td><td>36px</td></tr>
+                            <tr><td>$espaciados-40</td><td>40px</td></tr>
+                            <tr><td>$espaciados-48</td><td>48px</td></tr>
+                            <tr><td>$espaciados-56</td><td>56px</td></tr>
+                            <tr><td>$espaciados-64</td><td>64px</td></tr>
+                            <tr><td>$espaciados-72</td><td>72px</td></tr>
+                            <tr><td>$espaciados-80</td><td>80px</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -120,5 +118,17 @@
 
   <!-- Footer -->
   <?php include "inc/footer.php"; ?>
+
+  <script src="../recursos/js/vendor/iframeResizer.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        iFrameResize({
+            log: false,
+            checkOrigin: false,
+            heightCalculationMethod: 'lowestElement',
+            heightOffset: 32
+        }, '.component-preview');
+    });
+  </script>
 
 <?php include "inc/foot.php"; ?>

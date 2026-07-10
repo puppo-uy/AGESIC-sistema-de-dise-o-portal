@@ -56,11 +56,23 @@
 
                 <h5 class="u-mt3 u-mb2">Difuminadas</h5>
                 <p class="u-mb3">Las sombras difuminadas tienen bordes suaves y transiciones graduales. Generan una separación visual leve entre un elemento y su entorno.</p>
-                <img src="img/ejemplos_documentacion/sombras_difuminadas.png" alt="Sombras difuminadas — xs, s, m, l, xl" class="u-mb4" style="max-width: 100%;">
+                <iframe
+                  src="../git/iframe-preview.php?comp=sombras&grupo=difuminadas"
+                  class="component-preview"
+                  title="Sombras difuminadas"
+                  scrolling="no"
+                  style="width:100%;border:none;display:block;"
+                ></iframe>
 
                 <h5 class="u-mt2 u-mb2">Duras</h5>
                 <p class="u-mb3">Las sombras duras tienen bordes definidos y sin difuminado, lo que produce un contraste más marcado con el fondo.</p>
-                <img src="img/ejemplos_documentacion/sombras_duras.png" alt="Sombras duras — xs, s, m, l, xl" class="u-mb4" style="max-width: 100%;">
+                <iframe
+                  src="../git/iframe-preview.php?comp=sombras&grupo=duras"
+                  class="component-preview"
+                  title="Sombras duras"
+                  scrolling="no"
+                  style="width:100%;border:none;display:block;"
+                ></iframe>
 
                 <h4 class="u-mt3 u-mb2">Nivel</h4>
                 <p>Cada tipo de sombra cuenta con cinco niveles de intensidad que regulan la separación del componente con el fondo. Estos niveles son:</p>
@@ -90,5 +102,17 @@
 
   <!-- Footer -->
   <?php include "inc/footer.php"; ?>
+
+  <script src="../recursos/js/vendor/iframeResizer.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        iFrameResize({
+            log: false,
+            checkOrigin: false,
+            heightCalculationMethod: 'lowestElement',
+            heightOffset: 32
+        }, '.component-preview');
+    });
+  </script>
 
 <?php include "inc/foot.php"; ?>

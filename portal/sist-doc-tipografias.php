@@ -62,7 +62,13 @@
 
                 <h4 class="u-mt3">Títulos</h4>
                 <p class="u-mb3">Los títulos se utilizan para estructurar el contenido y guiar la lectura. Utilizan la familia <strong>Open Sans</strong> y los pesos Light, Regular, Semibold y Bold.</p>
-                <img src="img/ejemplos_documentacion/tipografias_titulos.png" alt="Escala de títulos tipográficos" class="u-mb3" style="max-width: 100%;">
+                <iframe
+                  src="../git/iframe-preview.php?comp=tipografias"
+                  class="component-preview"
+                  title="Escala tipográfica"
+                  scrolling="no"
+                  style="width:100%;border:none;display:block;"
+                ></iframe>
                 <div class="table-responsive u-mb5">
                     <table class="Table Table--striped">
                         <thead>
@@ -85,7 +91,7 @@
 
                 <h4 class="u-mt4">Párrafos</h4>
                 <p class="u-mb3">Los estilos de párrafos se utilizan para el contenido principal y los textos descriptivos. El tamaño M (16px) es el tamaño base recomendado.</p>
-                <img src="img/ejemplos_documentacion/tipografias_parrafos.png" alt="Escala de párrafos tipográficos" class="u-mb3" style="max-width: 100%;">
+
                 <div class="table-responsive u-mb5">
                     <table class="Table Table--striped">
                         <thead>
@@ -164,5 +170,17 @@
 
   <!-- Footer -->
   <?php include "inc/footer.php"; ?>
+
+  <script src="../recursos/js/vendor/iframeResizer.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        iFrameResize({
+            log: false,
+            checkOrigin: false,
+            heightCalculationMethod: 'lowestElement',
+            heightOffset: 32
+        }, '.component-preview');
+    });
+  </script>
 
 <?php include "inc/foot.php"; ?>
