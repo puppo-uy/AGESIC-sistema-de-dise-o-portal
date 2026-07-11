@@ -1,4 +1,13 @@
-<div style="display: flex; align-items: center; gap: 24px; flex-wrap: wrap;">
+<style>
+  .desplegable-demo-row {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* 24px */
+    flex-wrap: wrap;
+  }
+</style>
+
+<div class="desplegable-demo-row">
 	<!-- Mediano M (Estándar) -->
 	<div class="boton-desplegable boton-desplegable--primario desplegable-wrapper">
 		<button class="boton boton--primario">
