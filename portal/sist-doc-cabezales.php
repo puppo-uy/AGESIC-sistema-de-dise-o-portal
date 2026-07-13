@@ -94,7 +94,7 @@
                 </ul>
 
                 <h5 class="u-mt3">Móvil</h5>
-                 <iframe src="../git/iframe-preview.php?comp=header-app" title="Ejemplo de cabezal de aplicación en móvil" class="component-preview u-mb2 u-mt2" style="width: 100%; max-width: 360px; border: 1px solid #ddd; min-height: 80px; margin: 0 auto; display: block;" scrolling="no"></iframe>
+                 <iframe src="../git/iframe-preview.php?comp=header-app" title="Ejemplo de cabezal de aplicación en móvil" class="component-preview u-mb2 u-mt2" style="width: 100%; max-width: 360px; border: 1px solid #ddd; min-height: 380px; margin: 0 auto; display: block;" scrolling="no"></iframe>
                 <ul class="List-text">
                     <li>Se adapta para ocupar menos espacio.</li>
                     <li>La identidad se presenta en formato reducido en la parte superior, en una única fila.</li>
