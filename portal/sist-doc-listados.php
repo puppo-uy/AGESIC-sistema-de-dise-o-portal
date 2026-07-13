@@ -86,12 +86,6 @@
                      <p class="u-mb2">Se utilizan cuando los elementos siguen una secuencia lógica, cronológica o de jerarquía. Emplean números seguidos de un punto (ej: 1., 2., 3.).</p>
                 </div>
 
-                <h4 class="u-mt4 u-mb3">Niveles</h4>
-                <div class="u-mt3 u-mb4">
-                     <p class="u-mb2">Los listados permiten anidamiento para representar subcategorías o elementos dependientes.</p>
-                     <iframe src="../git/iframe-preview.php?comp=texto/lista" title="Ejemplo de lista anidada con niveles" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 200px;" scrolling="no"></iframe>
-                </div>
-
                 <h3>Accesibilidad</h3>
                 <h5 class="u-mt4">Recomendaciones para no perder la accesibilidad</h5>
                 <ul class="List-text">
