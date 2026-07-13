@@ -66,36 +66,48 @@
                     <li>Evitar utilizar párrafos completos en peso semibold. Utilizar este recurso solo para resaltar información importante.</li>
                 </ul>
 
-                <h3>Variantes</h3>
-                <p class="u-mb2">Los párrafos cuentan con tres variantes, que deben utilizarse según la jerarquía del contenido.</p>
+                <h3 id="titulo-variantes">Variantes</h3>
+                <p class="u-mb2">Los párrafos cuentan con cinco variantes que corresponden a los estilos tipográficos implementados en código y hojas de estilos:</p>
                 <div class="table-responsive">
-                    <table class="Table">
+                    <table class="Table" aria-labelledby="titulo-variantes">
                         <thead>
                             <tr>
                                 <th>Componente</th>
-                                <th>Estilo tipográfico</th>
-                                <th>Peso</th>
-                                <th>Uso</th>
+                                <th>Clase CSS</th>
+                                <th>Tamaño (px / rem)</th>
+                                <th>Uso recomendado</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Párrafo principal</td>
-                                <td>Párrafo XL</td>
-                                <td>Regular, Semibold</td>
-                                <td>Contenido descriptivo principal de la pantalla. Generalmente se ubica inmediatamente debajo del Encabezado 1 y funciona como introducción o síntesis del contenido.</td>
+                                <td><strong>Párrafo XL</strong></td>
+                                <td><code>.parrafo-xl</code></td>
+                                <td>20px / 1.25rem</td>
+                                <td>Destacado o copete. Contenido descriptivo principal de la pantalla, generalmente ubicado debajo del título principal.</td>
                             </tr>
                             <tr>
-                                <td>Párrafo secundario</td>
-                                <td>Párrafo M</td>
-                                <td>Regular, Semibold</td>
-                                <td>Desarrollo del contenido. Aplica a la mayoría de los textos que continúan al párrafo principal dentro de una misma pantalla o sección.</td>
+                                <td><strong>Párrafo LG</strong></td>
+                                <td><code>.parrafo-lg</code></td>
+                                <td>18px / 1.125rem</td>
+                                <td>Introducción alternativa o textos destacados en el cuerpo de secciones internas.</td>
                             </tr>
                             <tr>
-                                <td>Párrafo de apoyo</td>
-                                <td>Párrafo S</td>
-                                <td>Regular, Semibold</td>
-                                <td>Información secundaria, aclaraciones o textos de apoyo. Debe aplicarse únicamente en contextos de menor jerarquía visual y semántica.</td>
+                                <td><strong>Párrafo MD</strong> (Base)</td>
+                                <td><code>.parrafo-md</code> (o <code>p</code>)</td>
+                                <td>16px / 1.0rem</td>
+                                <td>Cuerpo de texto y lectura estándar de la interfaz. Aplica a la mayoría de los párrafos del portal.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Párrafo SM</strong></td>
+                                <td><code>.parrafo-sm</code></td>
+                                <td>14px / 0.875rem</td>
+                                <td>Textos de apoyo, descripciones secundarias, bloques de menor jerarquía o elementos de formulario.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Párrafo XS</strong></td>
+                                <td><code>.parrafo-xs</code></td>
+                                <td>12px / 0.75rem</td>
+                                <td>Aclaraciones, metadatos, leyendas breves, notas al pie y texto complementario de la interfaz.</td>
                             </tr>
                         </tbody>
                     </table>
