@@ -61,7 +61,7 @@ $duras = [
     font-size: 0.8125rem; /* 13px */
     font-weight: 600;
     font-family: 'Courier New', monospace;
-    color: #25418e; /* Contraste de 5.2:1 */
+    color: #1a1a1a; /* Neutro de alta visibilidad, no parece enlace */
   }
   .shadow-section__value {
     font-size: 0.75rem; /* 12px */

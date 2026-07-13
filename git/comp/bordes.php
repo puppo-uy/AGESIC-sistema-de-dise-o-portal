@@ -93,7 +93,7 @@ $radios = [
   .radio-name {
     font-size: 12px;
     font-family: 'Courier New', monospace;
-    color: #25418e;
+    color: #1a1a1a;
     font-weight: 600;
     text-align: center;
   }

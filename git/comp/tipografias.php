@@ -74,7 +74,7 @@ $parrafos = [
   }
   .type-meta-var {
     font-size: 11px;
-    color: #25418e;
+    color: #1a1a1a;
     font-family: 'Courier New', monospace;
     font-weight: 600;
   }

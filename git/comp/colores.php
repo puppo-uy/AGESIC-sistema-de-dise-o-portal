@@ -215,7 +215,7 @@ $decorativos_raw = [
   }
   .swatch__var {
     font-size: 11px;
-    color: #25418e;
+    color: #1a1a1a;
     font-weight: 600;
     text-align: center;
     max-width: 96px;
