@@ -169,7 +169,7 @@ $decorativos_raw = [
   .swatch-group__title {
     font-size: 12px;
     font-weight: 600;
-    color: #555;
+    color: #2a2a2a;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin: 16px 0 6px;
@@ -226,7 +226,7 @@ $decorativos_raw = [
   .decorativo-header {
     font-size: 12px;
     font-weight: 600;
-    color: #555;
+    color: #2a2a2a;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin: 16px 0 6px;

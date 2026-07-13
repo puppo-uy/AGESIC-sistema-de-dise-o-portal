@@ -30,7 +30,7 @@ $radios = [
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.6px;
-    color: #555;
+    color: #2a2a2a;
     margin: 24px 0 12px;
   }
   .section-title:first-child { margin-top: 0; }
@@ -59,7 +59,7 @@ $radios = [
   }
   .grosor-value {
     font-size: 12px;
-    color: #555;
+    color: #2a2a2a;
     margin-left: auto;
     min-width: 32px;
     text-align: right;
@@ -99,7 +99,7 @@ $radios = [
   }
   .radio-val {
     font-size: 11px;
-    color: #555;
+    color: #2a2a2a;
     font-family: 'Courier New', monospace;
   }
 </style>

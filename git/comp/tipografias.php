@@ -33,7 +33,7 @@ $parrafos = [
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.6px;
-    color: #555;
+    color: #2a2a2a;
     margin: 24px 0 4px;
     border-bottom: 1px solid #eee;
     padding-bottom: 6px;
@@ -69,7 +69,7 @@ $parrafos = [
   }
   .type-meta-detail {
     font-size: 12px;
-    color: #555;
+    color: #2a2a2a;
     font-family: 'Courier New', monospace;
   }
   .type-meta-var {
@@ -96,7 +96,7 @@ $parrafos = [
   }
   .familia-sub {
     font-size: 13px;
-    color: #555;
+    color: #2a2a2a;
   }
 </style>
 
