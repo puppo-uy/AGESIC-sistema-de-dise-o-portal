@@ -1287,9 +1287,9 @@
   border-right: 4px solid var(--primario-principal, #25418e);
 }
 
-/* Última columna: centrar verticalmente la botonera */
+/* Última columna: alineada arriba con el título principal del registro */
 #treegrid td:last-child {
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 /* --- 11. Fondos por nivel (Figma) ---
