@@ -294,7 +294,7 @@
 						</button>
 					</li>	
 					<li>
-						<button class="boton--s boton--secundario boton--icono">
+						<button class="boton boton--s boton--secundario boton--icono">
 							<svg class="icono">
 								<use href="#icono-mas--lineal"></use>
 							</svg>
