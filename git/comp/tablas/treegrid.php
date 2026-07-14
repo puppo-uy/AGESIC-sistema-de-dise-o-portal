@@ -1045,18 +1045,18 @@
 
 #treegrid {
   width: 100%;
-  min-width: 800px;
+  min-width: 960px;
   border-collapse: collapse;
   table-layout: fixed;
   font-family: var(--tipo-familia-base);
 }
 
 /* Anchos de columna */
-#treegrid-col1 { width: 30%; }
-#treegrid-col2 { width: 10%; }
-#treegrid-col3 { width: 18%; }
-#treegrid-col4 { width: 10%; }
-#treegrid-col5 { width: 32%; }
+#treegrid-col1 { width: 28%; }
+#treegrid-col2 { width: 16%; }
+#treegrid-col3 { width: 20%; }
+#treegrid-col4 { width: 16%; }
+#treegrid-col5 { width: 20%; }
 
 /* --- 2. Filas --- */
 
@@ -1287,9 +1287,14 @@
   border-right: 4px solid var(--primario-principal, #25418e);
 }
 
-/* Última columna: alineada arriba con el título principal del registro */
+/* Última columna: alineada arriba y a la derecha (igual que las herramientas del cabezal) */
 #treegrid td:last-child {
   vertical-align: top;
+  text-align: right;
+}
+
+#treegrid td:last-child .botonera {
+  margin: 0 0 0 auto;
 }
 
 /* --- 11. Fondos por nivel (Figma) ---
