@@ -1045,17 +1045,18 @@
 
 #treegrid {
   width: 100%;
+  min-width: 800px;
   border-collapse: collapse;
   table-layout: fixed;
   font-family: var(--tipo-familia-base);
 }
 
 /* Anchos de columna */
-#treegrid-col1 { width: 34%; }
+#treegrid-col1 { width: 30%; }
 #treegrid-col2 { width: 10%; }
-#treegrid-col3 { width: 20%; }
-#treegrid-col4 { width: 12%; }
-#treegrid-col5 { width: 24%; }
+#treegrid-col3 { width: 18%; }
+#treegrid-col4 { width: 10%; }
+#treegrid-col5 { width: 32%; }
 
 /* --- 2. Filas --- */
 
