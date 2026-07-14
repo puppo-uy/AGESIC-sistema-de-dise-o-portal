@@ -92,11 +92,11 @@
                 
                 <h4 class="u-mt3 u-mb2">Tabla Estándar</h4>
                 <p class="u-mb3">Disposición de datos plana clásica, con diseño responsivo y efectos hover para facilitar la lectura de registros.</p>
-                <iframe src="../git/iframe-preview.php?comp=tablas/tabla-estandar" title="Ejemplo de tabla estándar" class="component-preview u-mb4" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                <iframe src="../git/iframe-preview.php?comp=tablas/tabla-estandar" title="Ejemplo de tabla estándar" class="component-preview u-mb4" style="width: 100%; border: none; min-height: 80px;" scrolling="auto"></iframe>
 
                 <h4 class="u-mt4 u-mb2">Tabla Jerárquica (TreeGrid)</h4>
                 <p class="u-mb3">Permite mostrar datos estructurados de forma jerárquica con filas que se expanden o colapsan interactivamente.</p>
-                <iframe src="../git/iframe-preview.php?comp=tablas/treegrid" title="Ejemplo de tabla jerárquica (treegrid)" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 200px;" scrolling="no"></iframe>
+                <iframe src="../git/iframe-preview.php?comp=tablas/treegrid" title="Ejemplo de tabla jerárquica (treegrid)" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 200px;" scrolling="auto"></iframe>
 
                 <h3 class="u-mt4">Accesibilidad</h3>
                 <h4 class="u-mt3">WCAG y Estándares WAI-ARIA</h4>
