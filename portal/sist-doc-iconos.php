@@ -66,37 +66,37 @@
                         </thead>
                         <tbody>
                              <tr>
-                                 <td><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=xxl&nopadding=1" title="Ejemplo de ícono tamaño XXL" width="48" height="48" style="border: none; overflow: hidden; display: block;" scrolling="no"></iframe></td>
+                                 <td style="min-height: 56px; vertical-align: middle;"><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=xxl&nopadding=1" title="Ejemplo de ícono tamaño XXL" width="48" height="48" style="border: none; overflow: hidden; display: block; margin: auto;" scrolling="no"></iframe></td>
                                  <td>XXL</td>
                                  <td>48px</td>
                              </tr>
                              <tr>
-                                 <td><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=xl&nopadding=1" title="Ejemplo de ícono tamaño XL" width="40" height="40" style="border: none; overflow: hidden; display: block;" scrolling="no"></iframe></td>
+                                 <td style="min-height: 56px; vertical-align: middle;"><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=xl&nopadding=1" title="Ejemplo de ícono tamaño XL" width="40" height="40" style="border: none; overflow: hidden; display: block; margin: auto;" scrolling="no"></iframe></td>
                                  <td>XL</td>
                                  <td>40px</td>
                              </tr>
                              <tr>
-                                 <td><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=l&nopadding=1" title="Ejemplo de ícono tamaño L" width="32" height="32" style="border: none; overflow: hidden; display: block;" scrolling="no"></iframe></td>
+                                 <td style="min-height: 56px; vertical-align: middle;"><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=l&nopadding=1" title="Ejemplo de ícono tamaño L" width="32" height="32" style="border: none; overflow: hidden; display: block; margin: auto;" scrolling="no"></iframe></td>
                                  <td>L</td>
                                  <td>32px</td>
                              </tr>
                              <tr>
-                                 <td><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=m&nopadding=1" title="Ejemplo de ícono tamaño M" width="24" height="24" style="border: none; overflow: hidden; display: block;" scrolling="no"></iframe></td>
+                                 <td style="min-height: 56px; vertical-align: middle;"><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=m&nopadding=1" title="Ejemplo de ícono tamaño M" width="24" height="24" style="border: none; overflow: hidden; display: block; margin: auto;" scrolling="no"></iframe></td>
                                  <td>M</td>
                                  <td>24px</td>
                              </tr>
                              <tr>
-                                 <td><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=s&nopadding=1" title="Ejemplo de ícono tamaño S" width="20" height="20" style="border: none; overflow: hidden; display: block;" scrolling="no"></iframe></td>
+                                 <td style="min-height: 56px; vertical-align: middle;"><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=s&nopadding=1" title="Ejemplo de ícono tamaño S" width="20" height="20" style="border: none; overflow: hidden; display: block; margin: auto;" scrolling="no"></iframe></td>
                                  <td>S</td>
                                  <td>20px</td>
                              </tr>
                              <tr>
-                                 <td><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=xs&nopadding=1" title="Ejemplo de ícono tamaño XS" width="16" height="16" style="border: none; overflow: hidden; display: block;" scrolling="no"></iframe></td>
+                                 <td style="min-height: 56px; vertical-align: middle;"><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=xs&nopadding=1" title="Ejemplo de ícono tamaño XS" width="16" height="16" style="border: none; overflow: hidden; display: block; margin: auto;" scrolling="no"></iframe></td>
                                  <td>XS</td>
                                  <td>16px</td>
                              </tr>
                              <tr>
-                                 <td><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=xxs&nopadding=1" title="Ejemplo de ícono tamaño XXS" width="12" height="12" style="border: none; overflow: hidden; display: block;" scrolling="no"></iframe></td>
+                                 <td style="min-height: 56px; vertical-align: middle;"><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=xxs&nopadding=1" title="Ejemplo de ícono tamaño XXS" width="12" height="12" style="border: none; overflow: hidden; display: block; margin: auto;" scrolling="no"></iframe></td>
                                  <td>XXS</td>
                                  <td>12px</td>
                              </tr>
