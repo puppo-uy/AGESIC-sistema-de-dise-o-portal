@@ -11,7 +11,7 @@
 		<!-- Mediano M (Estándar) -->
 	<div class="boton-desplegable boton-desplegable--primario desplegable-wrapper">
 		<button class="boton boton--primario boton--l">
-			<span>Botón Mediano (M)</span>
+			<span>Botón Grande (L)</span>
 		</button>	
 		<button class="boton boton--primario boton--icono" type="button" data-menu-trigger data-menu-target="split-sz-1" aria-haspopup="true" aria-expanded="false">
 			<svg class="icono down"><use href="#icono-colapsable-abajo--lineal"></use></svg>
