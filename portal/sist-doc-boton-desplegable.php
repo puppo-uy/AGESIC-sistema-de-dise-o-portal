@@ -95,6 +95,7 @@
                 <iframe src="../git/iframe-preview.php?comp=botones/boton-desplegable-tamanos" title="Ejemplo de tamaños de botón con desplegable" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                 
                 <ul class="List-text">
+                    <li>Grande (L)</li>
                     <li>Mediano (M)</li>
                     <li>Chico (S)</li>
                 </ul>
