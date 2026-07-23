@@ -49,40 +49,60 @@
                   </div>
                 </div>
                 
-                <p class="Page-description">El grupo de botones permite organizar múltiples acciones relacionadas en una misma ubicación, facilitando el acceso a opciones complementarias de manera agrupada.</p>
+                <p class="Page-description">El grupo de botones es un componente de acción que agrupa botones de solo ícono para presentar acciones de igual jerarquía dentro de un mismo contexto. Se utiliza principalmente en vistas donde el espacio es reducido o donde las acciones deben mantenerse visualmente neutras, como tablas o listados.</p>
 
                 <h3 class="u-mt4">Estructura del componente</h3>
                 <iframe src="../git/iframe-preview.php?comp=botones/grupo-botones-horizontal" title="Ejemplo de estructura de grupo de botones" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
 
                 <h5 class="u-mt3">Elementos que lo componen:</h5>
                 <ul class="List-text">
-                    <li>Botones (Primario, Secundario, Terciario)</li>
-                    <li>Separación entre botones</li>
+                    <li>Ícono</li>
+                    <li>Nombre accesible</li>
                 </ul>
 
                 <h3 class="u-mt4">Recomendaciones de uso</h3>
-                <h4 class="u-mt3">Casos típicos de uso</h4>
-                <ul class="List-text">
-                    <li>Formularios, diálogos o modales con más de una opción disponible (Ej: "Guardar", "Guardar y salir", "Cancelar").</li>
-                    <li>Cuando se requiere presentar acciones complementarias que tienen relación entre sí.</li>
-                </ul>
+                
+                <h4 class="u-mt3">Cuándo usarlo:</h4> 
+
+<ul class="List-text">
+  <li>Cuando se necesita mostrar varias acciones de manera paralela y con el mismo nivel jerárquico.</li> 
+
+<li>Para agrupar funciones similares o relacionadas (Ej: acciones de edición, descargas, vista de lista/cuadrícula). </li>
+
+En contextos donde la interfaz requiere ahorrar espacio y organizar opciones. </li>
+
+
+
 
                 <h4 class="u-mt3">Cuándo no usarlo</h4>
                 <ul class="List-text">
-                    <li>Para acciones independientes o ubicadas en diferentes contextos de la interfaz.</li>
+                    <li>Cuando las acciones no tienen relación entre sí.</li>
+                    <li>Para mostrar más de cinco opciones. </li>
+                    <li>Como reemplazo de un menú si las acciones no son frecuentes.</li> 
                 </ul>
 
                 <h3 class="u-mt4">Buenas prácticas</h3>
                 <ul class="List-text">
-                    <li>El primer botón (ubicado a la izquierda o arriba) debe ser siempre el de mayor jerarquía.</li>
-                    <li>En caso de tener más de una opción, usar un solo botón primario.</li>
-                    <li>Mantener una separación constante entre los botones (M o S).</li>
+                    <li>Mantener entre 2 y 5 botones como máximo. </li>
+                    <li>Elegir íconos reconocibles y con el mismo estilo visual. </li>
+                    
                 </ul>
 
                 <h3 class="u-mt4">Variantes</h3>
+<ul class="List-text">
+                <li>Iconográfica: cada acción está representada únicamente por un ícono. Recomendable cuando las acciones son universales y reconocibles (Ej: descargar, compartir, editar). </li>
+
+<li>Con texto: cada ítem incluye un label textual que explica la acción. Adecuado cuando el ícono no es suficiente o se busca mayor claridad. </li>
+
+<li>Mixta: texto acompañado de ícono para reforzar la acción. </li>
+
+
+
                 <h4 class="u-mt3 u-mb3">Alineación</h4>
                 
                 <h5 class="u-mb2">Horizontal</h5>
+
+
                 <iframe src="../git/iframe-preview.php?comp=botones/grupo-botones-horizontal" title="Ejemplo de grupo de botones alineación horizontal" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                 <p class="u-mb4">Los botones se alinean en una única fila. Esta es la disposición estándar.</p>
                 
