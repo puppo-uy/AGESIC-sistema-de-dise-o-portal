@@ -1,0 +1,39 @@
+@use "primitives" as *;
+
+// Variables de tipografía
+
+:root {
+
+    --tipo-familia-base: #{$open-sans};
+    --tipo-familia-marca: #{$sora};
+
+    --tipo-peso-light: #{$tipo-peso-light};
+    --tipo-peso-regular: #{$tipo-peso-regular};
+    --tipo-peso-medium: #{$tipo-peso-medium};
+    --tipo-peso-semibold: #{$tipo-peso-semibold};
+    --tipo-peso-bold: #{$tipo-peso-bold};
+    --tipo-peso-extrabold: #{$tipo-peso-bold};
+
+    --tipo-tamano-titulo-xxl: #{$tipo-tamano-titulo-xxl};
+    --tipo-tamano-titulo-xl: #{$tipo-tamano-titulo-xl};
+    --tipo-tamano-titulo-l: #{$tipo-tamano-titulo-l};
+    --tipo-tamano-titulo-m: #{$tipo-tamano-titulo-m};
+    --tipo-tamano-titulo-s: #{$tipo-tamano-titulo-s};
+    --tipo-tamano-titulo-xs: #{$tipo-tamano-titulo-xs};
+
+    --tipo-tamano-parrafo-xl: #{$tipo-tamano-parrafo-xl};
+    --tipo-tamano-parrafo-l: #{$tipo-tamano-parrafo-l};
+    --tipo-tamano-parrafo-m: #{$tipo-tamano-parrafo-m};
+    --tipo-tamano-parrafo-s: #{$tipo-tamano-parrafo-s};
+    --tipo-tamano-parrafo-xs: #{$tipo-tamano-parrafo-xs};
+    --tipo-tamano-parrafo-xxs: #{$tipo-tamano-parrafo-xxs};
+
+    --tipo-altura-linea-xl: #{$tipo-altura-linea-160};
+    --tipo-altura-linea-l: #{$tipo-altura-linea-150};
+    --tipo-altura-linea-m: #{$tipo-altura-linea-140};
+    --tipo-altura-linea-s: #{$tipo-altura-linea-130};
+    --tipo-altura-linea-xs: #{$tipo-altura-linea-120};
+    --tipo-altura-linea-xxs: #{$tipo-altura-linea-110};
+    --tipo-altura-linea-1: #{$tipo-altura-linea-100};
+    
+}

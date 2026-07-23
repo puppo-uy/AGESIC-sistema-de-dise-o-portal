@@ -1,0 +1,1 @@
+<p class="parrafo-sm">Párrafo de texto tamaño SM. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet efficitur risus. Maecenas lobortis mollis faucibus. Pellentesque quis lorem eget libero scelerisque congue non eget ex. Quisque consequat purus sapien, eget condimentum dolor accumsan at.</p>

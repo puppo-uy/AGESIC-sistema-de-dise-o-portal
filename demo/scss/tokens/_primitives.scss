@@ -1,0 +1,406 @@
+
+// Colores funcionales
+
+// Rojo error
+$colores-funcionales-rojo-error-25: #fdf5f5;
+$colores-funcionales-rojo-error-50: #faebeb;
+$colores-funcionales-rojo-error-100: #efc0c0;
+$colores-funcionales-rojo-error-200: #e8a1a1;
+$colores-funcionales-rojo-error-300: #dd7676;
+$colores-funcionales-rojo-error-400: #d65c5c;
+$colores-funcionales-rojo-error-500: #cc3333;
+$colores-funcionales-rojo-error-600: #ba2e2e;
+$colores-funcionales-rojo-error-700: #912424;
+$colores-funcionales-rojo-error-800: #701c1c;
+$colores-funcionales-rojo-error-900: #561515;
+$colores-funcionales-rojo-error-950: #2b0a0a;
+
+// Verde éxito
+$colores-funcionales-verde-exito-25: #f4faf6;
+$colores-funcionales-verde-exito-50: #e9f5ec;
+$colores-funcionales-verde-exito-100: #bce1c3;
+$colores-funcionales-verde-exito-200: #9cd2a7;
+$colores-funcionales-verde-exito-300: #6ebe7e;
+$colores-funcionales-verde-exito-400: #52b165;
+$colores-funcionales-verde-exito-500: #279e3f;
+$colores-funcionales-verde-exito-600: #239039;
+$colores-funcionales-verde-exito-700: #1c702d;
+$colores-funcionales-verde-exito-800: #155723;
+$colores-funcionales-verde-exito-900: #10421a;
+$colores-funcionales-verde-exito-950: #08210d;
+
+// Naranja advertencia
+$colores-funcionales-naranja-advertencia-25: #fffaf4;
+$colores-funcionales-naranja-advertencia-50: #fff4e9;
+$colores-funcionales-naranja-advertencia-100: #fdddba;
+$colores-funcionales-naranja-advertencia-200: #fdcc98;
+$colores-funcionales-naranja-advertencia-300: #fcb569;
+$colores-funcionales-naranja-advertencia-400: #fba74c;
+$colores-funcionales-naranja-advertencia-500: #fa911f;
+$colores-funcionales-naranja-advertencia-600: #e4841c;
+$colores-funcionales-naranja-advertencia-700: #b26716;
+$colores-funcionales-naranja-advertencia-800: #8a5011;
+$colores-funcionales-naranja-advertencia-900: #693d0d;
+$colores-funcionales-naranja-advertencia-950: #351e06;
+
+// Azul Notificación
+$colores-funcionales-azul-notificacion-25: #f6f9fe;
+$colores-funcionales-azul-notificacion-50: #ecf3fd;
+$colores-funcionales-azul-notificacion-100: #b0d1f5;
+$colores-funcionales-azul-notificacion-200: #8abbf1;
+$colores-funcionales-azul-notificacion-300: #549dea;
+$colores-funcionales-azul-notificacion-400: #3389e6;
+$colores-funcionales-azul-notificacion-500: #006ce0;
+$colores-funcionales-azul-notificacion-600: #0062cc;
+$colores-funcionales-azul-notificacion-700: #004d9f;
+$colores-funcionales-azul-notificacion-800: #003b7b;
+$colores-funcionales-azul-notificacion-900: #002d5e;
+$colores-funcionales-azul-notificacion-950: #00162f;
+
+// Colores neutros
+
+// Gris cálido
+$colores-neutros-gris-calido-25: #f9f9f9;
+$colores-neutros-gris-calido-50: #f2f2f2;
+$colores-neutros-gris-calido-100: #d6d6d6;
+$colores-neutros-gris-calido-200: #c2c2c2;
+$colores-neutros-gris-calido-300: #a6a6a6;
+$colores-neutros-gris-calido-400: #959595;
+$colores-neutros-gris-calido-500: #7a7a7a;
+$colores-neutros-gris-calido-600: #6f6f6f;
+$colores-neutros-gris-calido-700: #575757;
+$colores-neutros-gris-calido-800: #434343;
+$colores-neutros-gris-calido-900: #2a2a2a;
+$colores-neutros-gris-calido-950: #151515;
+
+// Gris frio
+$colores-neutros-gris-frio-25: #f9fafa;
+$colores-neutros-gris-frio-50: #e5e8eb;
+$colores-neutros-gris-frio-100: #cad0d6;
+$colores-neutros-gris-frio-200: #b0bac2;
+$colores-neutros-gris-frio-300: #8c9aa7;
+$colores-neutros-gris-frio-400: #758695;
+$colores-neutros-gris-frio-500: #53687b;
+$colores-neutros-gris-frio-600: #4c5f70;
+$colores-neutros-gris-frio-700: #3b4a57;
+$colores-neutros-gris-frio-800: #2e3944;
+$colores-neutros-gris-frio-900: #232c34;
+$colores-neutros-gris-frio-950: #11161a;
+
+// Blanco
+$colores-neutros-blanco: #ffffff;
+
+// Negro
+$colores-neutros-negro: #000000;
+
+//Colores cromáticos
+
+//Rojo
+$colores-cromaticos-rojo-25: #fff3f3;
+$colores-cromaticos-rojo-50: #ffe6e6;
+$colores-cromaticos-rojo-100: #ffb0b0;
+$colores-cromaticos-rojo-200: #ff8a8a;
+$colores-cromaticos-rojo-300: #ff5454;
+$colores-cromaticos-rojo-400: #ff3333;
+$colores-cromaticos-rojo-500: #ff0000;
+$colores-cromaticos-rojo-600: #e80000;
+$colores-cromaticos-rojo-700: #b50000;
+$colores-cromaticos-rojo-800: #8c0000;
+$colores-cromaticos-rojo-900: #6b0000;
+$colores-cromaticos-rojo-950: #350000;
+
+// Naranja
+$colores-cromaticos-naranja-25: #fff8f3;
+$colores-cromaticos-naranja-50: #fff0e6;
+$colores-cromaticos-naranja-100: #ffd1b0;
+$colores-cromaticos-naranja-200: #ffba8a;
+$colores-cromaticos-naranja-300: #ff9b54;
+$colores-cromaticos-naranja-400: #ff8733;
+$colores-cromaticos-naranja-500: #ff6900;
+$colores-cromaticos-naranja-600: #e86000;
+$colores-cromaticos-naranja-700: #b54b00;
+$colores-cromaticos-naranja-800: #8c3a00;
+$colores-cromaticos-naranja-900: #6b2c00;
+$colores-cromaticos-naranja-950: #351600;
+
+// Verde
+$colores-cromaticos-verde-25: #f8f9f4;
+$colores-cromaticos-verde-50: #f1f3e8;
+$colores-cromaticos-verde-100: #d5dbb6;
+$colores-cromaticos-verde-200: #c0c993;
+$colores-cromaticos-verde-300: #a4b162;
+$colores-cromaticos-verde-400: #92a144;
+$colores-cromaticos-verde-500: #778a15;
+$colores-cromaticos-verde-600: #6c7e13;
+$colores-cromaticos-verde-700: #54620f;
+$colores-cromaticos-verde-800: #414c0c;
+$colores-cromaticos-verde-900: #323a09;
+$colores-cromaticos-verde-950: #191d04;
+
+// Verde agua
+$colores-cromaticos-verde-agua-25: #f3f9f9;
+$colores-cromaticos-verde-agua-50: #e6f2f3;
+$colores-cromaticos-verde-agua-100: #b0d7db;
+$colores-cromaticos-verde-agua-200: #8ac3c9;
+$colores-cromaticos-verde-agua-300: #54a8b1;
+$colores-cromaticos-verde-agua-400: #3397a1;
+$colores-cromaticos-verde-agua-500: #007d8a;
+$colores-cromaticos-verde-agua-600: #00727e;
+$colores-cromaticos-verde-agua-700: #005962;
+$colores-cromaticos-verde-agua-800: #00454c;
+$colores-cromaticos-verde-agua-900: #00353a;
+$colores-cromaticos-verde-agua-950: #001a1d;
+
+// Celeste
+$colores-cromaticos-celeste-25: #f3faff;
+$colores-cromaticos-celeste-50: #e6f5ff;
+$colores-cromaticos-celeste-100: #b0dfff;
+$colores-cromaticos-celeste-200: #8ad0ff;
+$colores-cromaticos-celeste-300: #54bbff;
+$colores-cromaticos-celeste-400: #33adff;
+$colores-cromaticos-celeste-500: #0099ff;
+$colores-cromaticos-celeste-600: #008be8;
+$colores-cromaticos-celeste-700: #006db5;
+$colores-cromaticos-celeste-800: #00548c;
+$colores-cromaticos-celeste-900: #00406b;
+$colores-cromaticos-celeste-950: #002035;
+
+// Fucsia
+$colores-cromaticos-fucsia-25: #faf3f9;
+$colores-cromaticos-fucsia-50: #f4e7f2;
+$colores-cromaticos-fucsia-100: #deb5d7;
+$colores-cromaticos-fucsia-200: #cd92c4;
+$colores-cromaticos-fucsia-300: #b760a9;
+$colores-cromaticos-fucsia-400: #a94198;
+$colores-cromaticos-fucsia-500: #93117e;
+$colores-cromaticos-fucsia-600: #860f73;
+$colores-cromaticos-fucsia-700: #680c59;
+$colores-cromaticos-fucsia-800: #510945;
+$colores-cromaticos-fucsia-900: #3e0735;
+$colores-cromaticos-fucsia-950: #1f031a;
+
+// Violeta
+$colores-cromaticos-violeta-25: #f6f3f8;
+$colores-cromaticos-violeta-50: #ede7f0;
+$colores-cromaticos-violeta-100: #c6b3d0;
+$colores-cromaticos-violeta-200: #aa8eba;
+$colores-cromaticos-violeta-300: #845b9a;
+$colores-cromaticos-violeta-400: #6c3b86;
+$colores-cromaticos-violeta-500: #470a68;
+$colores-cromaticos-violeta-600: #41095f;
+$colores-cromaticos-violeta-700: #32074a;
+$colores-cromaticos-violeta-800: #270639;
+$colores-cromaticos-violeta-900: #1e042c;
+$colores-cromaticos-violeta-950: #0f0216;
+
+// Colores institucionales
+
+// Amarillo
+$colores-institucionales-amarillo-25: #fdfbf3;
+$colores-institucionales-amarillo-50: #fbf7e6;
+$colores-institucionales-amarillo-100: #f4e5b0;
+$colores-institucionales-amarillo-200: #eed88a;
+$colores-institucionales-amarillo-300: #e6c654;
+$colores-institucionales-amarillo-400: #e1bb33;
+$colores-institucionales-amarillo-500: #daaa00;
+$colores-institucionales-amarillo-600: #c69b00;
+$colores-institucionales-amarillo-700: #9b7900;
+$colores-institucionales-amarillo-800: #785e00;
+$colores-institucionales-amarillo-900: #5c4700;
+$colores-institucionales-amarillo-950: #2e2300;
+
+// Azul
+$colores-institucionales-azul-25: #f4f6fa;
+$colores-institucionales-azul-50: #e9ecf4;
+$colores-institucionales-azul-100: #bbc4dc;
+$colores-institucionales-azul-200: #9ba8cb;
+$colores-institucionales-azul-300: #6d80b3;
+$colores-institucionales-azul-400: #5167a5;
+$colores-institucionales-azul-500: #25418e;
+$colores-institucionales-azul-600: #223b81;
+$colores-institucionales-azul-700: #1a2e65;
+$colores-institucionales-azul-800: #14244e;
+$colores-institucionales-azul-900: #101b3c;
+$colores-institucionales-azul-950: #080d1e;
+
+// Color para el foco (focus)
+
+// Naranja foco
+$colores-naranja-foco-25: #fffbf3;
+$colores-naranja-foco-50: #fff6e6;
+$colores-naranja-foco-100: #ffe3b0;
+$colores-naranja-foco-200: #ffd68a;
+$colores-naranja-foco-300: #ffc354;
+$colores-naranja-foco-400: #ffb733;
+$colores-naranja-foco-500: #ffa500;
+$colores-naranja-foco-600: #e89600;
+$colores-naranja-foco-700: #b57500;
+$colores-naranja-foco-800: #8c5b00;
+$colores-naranja-foco-900: #6b4500;
+$colores-naranja-foco-950: #352200;
+
+// Espaciados
+$espaciados-0: 0px;
+$espaciados-2: 2px;
+$espaciados-4: 4px;
+$espaciados-8: 8px;
+$espaciados-12: 12px;
+$espaciados-16: 16px;
+$espaciados-20: 20px;
+$espaciados-24: 24px;
+$espaciados-28: 28px;
+$espaciados-32: 32px;
+$espaciados-36: 36px;
+$espaciados-40: 40px;
+$espaciados-48: 48px;
+$espaciados-56: 56px;
+$espaciados-64: 64px;
+$espaciados-72: 72px;
+$espaciados-80: 80px;
+
+// Bordes radios
+$bordes-radios-0: 0px;
+$bordes-radios-xs: 4px;
+$bordes-radios-s: 8px;
+$bordes-radios-l: 16px;
+$bordes-radios-xxl: 24px;
+$bordes-radios-m: 12px;
+$bordes-radios-xl: 20px;
+$bordes-radios-xxs: 2px;
+$bordes-radios-full: 9999px;
+
+// Bordes grosores
+$bordes-grosores-0: 0px;
+$bordes-grosores-1: 1px;
+$bordes-grosores-2: 2px;
+$bordes-grosores-3: 3px;
+$bordes-grosores-4: 4px;
+$bordes-grosores-5: 5px;
+$bordes-grosores-6: 6px;
+
+// Sombras
+$sombras-y-xs: 1px;
+$sombras-y-s: 2px;
+$sombras-y-m: 4px;
+$sombras-y-l: 8px;
+$sombras-y-xl: 16px;
+$sombras-blur-xs: 2px;
+$sombras-blur-s: 4px;
+$sombras-blur-m: 8px;
+$sombras-blur-l: 16px;
+$sombras-blur-xl: 24px;
+$sombras-spread-xs: 1px;
+$sombras-spread-s: 2px;
+$sombras-spread-m: 3px;
+$sombras-spread-l: 4px;
+$sombras-spread-xl: 5px;
+$sombras-spread-xxl: 6px;
+
+
+
+// Primitivas de tipografía
+
+// Familias tipográficas
+$open-sans: "Open Sans, sans-serif";
+$sora: "Sora";
+
+// Pesos
+$tipo-peso-light: 300;
+$tipo-peso-regular: 400;
+$tipo-peso-medium: 500;
+$tipo-peso-semibold: 600;
+$tipo-peso-bold: 700;
+$tipo-peso-extrabold: 800;
+
+// Tamaños Títulos (tamaños en rem en base 16px)
+$tipo-tamano-titulo-xxl: 2.5rem;
+$tipo-tamano-titulo-xl: 2rem;
+$tipo-tamano-titulo-l: 1.75rem;
+$tipo-tamano-titulo-m: 1.5rem;
+$tipo-tamano-titulo-s: 1.25rem;
+$tipo-tamano-titulo-xs: 1rem;
+
+// Tamaños Párrafos (tamaños en rem en base 16px)
+$tipo-tamano-parrafo-xl: 1.25rem;
+$tipo-tamano-parrafo-l: 1.125rem;
+$tipo-tamano-parrafo-m: 1rem;
+$tipo-tamano-parrafo-s: .875rem;
+$tipo-tamano-parrafo-xs: .75rem;
+$tipo-tamano-parrafo-xxs: .625rem; 
+
+// Altura de línea (no está definidio en figma)
+$tipo-altura-linea-160: 1.6;
+$tipo-altura-linea-150: 1.5;
+$tipo-altura-linea-140: 1.4;
+$tipo-altura-linea-130: 1.3;
+$tipo-altura-linea-120: 1.2;
+$tipo-altura-linea-110: 1.1;
+$tipo-altura-linea-100: 1;
+
+// Tamaños para los iconos
+$icon-sizes-xxxl: 56px;
+$icon-sizes-xxl: 48px;
+$icon-sizes-xl: 40px;
+$icon-sizes-l: 32px;
+$icon-sizes-m: 24px;
+$icon-sizes-s: 20px;
+$icon-sizes-xs: 16px;
+$icon-sizes-xxs: 12px;
+
+// Animaciones
+
+// Animaciones - tiempos
+
+$transition-duration-very-fast: 150ms;
+$transition-duration-fast: 300ms;
+$transition-duration-normal: 450ms;
+$transition-duration-slow: 600ms;
+$transition-duration-very-slow: 900ms;
+
+// Animaciones - efectos
+
+$transition-ease: ease;
+$transition-ease-in-out: ease-in-out;
+$transition-linear: linear;
+
+// Animaciones - delay
+$transition-delay-none: 0;
+
+// Sombras
+
+// Sombras - offsets
+$shadow-offset-none: 0 0;
+$shadow-offset-top-xs: 0 1px;
+$shadow-offset-top-s: 0 2px;
+$shadow-offset-top-m: 0 4px;
+$shadow-offset-top-l: 0 8px;
+$shadow-offset-top-xl: 0 16px;
+
+// Sombras - Blur
+$shadow-blur-none: 0;
+$shadow-blur-xxs: 1px;
+$shadow-blur-xs: 2px;
+$shadow-blur-s: 4px;
+$shadow-blur-m: 8px;
+$shadow-blur-l: 16px;
+$shadow-blur-xl: 24px;
+
+// Sobras - Spread
+$shadow-spread-none: 0;
+$shadow-spread-s: 4px;
+
+
+// Sombras - Color / opacidad
+$shadow-color-light: rgba(0, 0, 0, 0.10);
+$shadow-color-medium: rgba(0, 0, 0, 0.20);
+$shadow-color-strong: rgba(0, 0, 0, 0.30);
+
+
+
+// Breakpoints media queries
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1367px;
+
+
