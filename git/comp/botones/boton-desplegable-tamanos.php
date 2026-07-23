@@ -8,6 +8,22 @@
 </style>
 
 <div class="desplegable-demo-row">
+		<!-- Mediano M (Estándar) -->
+	<div class="boton-desplegable boton-desplegable--primario desplegable-wrapper">
+		<button class="boton boton--primario boton--l">
+			<span>Botón Mediano (M)</span>
+		</button>	
+		<button class="boton boton--primario boton--icono" type="button" data-menu-trigger data-menu-target="split-sz-1" aria-haspopup="true" aria-expanded="false">
+			<svg class="icono down"><use href="#icono-colapsable-abajo--lineal"></use></svg>
+			<span class="u-sr-only">Más acciones</span>
+		</button>
+		<div class="menubutton menubutton--split" data-menu="split-sz-1" role="menu" hidden>
+			<ul>
+				<li><button role="menuitem" class="boton boton--primario boton--l">Opción 1</button></li>
+				<li><button role="menuitem" class="boton boton--primario boton--l">Opción 2</button></li>
+			</ul>
+		</div>
+	</div>
 	<!-- Mediano M (Estándar) -->
 	<div class="boton-desplegable boton-desplegable--primario desplegable-wrapper">
 		<button class="boton boton--primario">
