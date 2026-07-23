@@ -115,7 +115,7 @@
                  <iframe src="../git/iframe-preview.php?comp=icono&type=avatar" title="Ejemplo de avatar de usuario" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                  <p>El Avatar de usuario es un ícono específico, construido mediante CSS, que se utiliza como indicador de usuario autenticado dentro de la interfaz, y puede aparecer, por ejemplo, en el cabezal o en contextos asociados al perfil del usuario.</p>
                 <p>Este ícono se comporta de la misma forma que el resto de los íconos del sistema, teniendo de variantes los mismos tamaños disponibles.</p>
-                <p>Su uso está limitado a contextos relacionados con la identidad del usuario y no debe utilizarse con fines decorativos ni como reemplazo de otros íconosconos funcionales.</p>
+                <p>Su uso está limitado a contextos relacionados con la identidad del usuario y no debe utilizarse con fines decorativos ni como reemplazo de otros íconos funcionales.</p>
 
                 <h3>Accesibilidad</h3>
                 <h4>Recomendaciones para no perder la accesibilidad</h4>
@@ -148,7 +148,7 @@
                     <li>Todos los vectores de íconos deben llamarse "icono".</li>
                     <li>Cada vector debe estar contenido dentro de un frame sin auto layout de 24px × 24px, con relación de aspecto bloqueada.</li>
                     <li>El vector debe estar centrado vertical y horizontalmente en el frame</li>
-                    <li>Constraints:
+                    <li>Comportamiento de reescalado (Constraints):
                         <ul class="List-text">
                             <li>Horizontal: center</li>
                             <li>Vertical: scale</li>
