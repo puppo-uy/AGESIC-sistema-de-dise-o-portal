@@ -96,19 +96,19 @@
                             </tr>
                             <tr>
                                 <td>H3</td>
-                                <td>Título L</td>
+                                <td>Título LG</td>
                                 <td>Semibold</td>
                                 <td>Subsecciones o títulos de bloques importantes.</td>
                             </tr>
                             <tr>
                                 <td>H4</td>
-                                <td>Título M</td>
+                                <td>Título MD</td>
                                 <td>Semibold</td>
                                 <td>Subsubsecciones o títulos dentro de contenedores.</td>
                             </tr>
                             <tr>
                                 <td>H5</td>
-                                <td>Título S</td>
+                                <td>Título SM</td>
                                 <td>Semibold</td>
                                 <td>Títulos en contextos con menor jerarquía después de un H4.</td>
                             </tr>
