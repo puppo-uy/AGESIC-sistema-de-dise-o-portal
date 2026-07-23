@@ -71,7 +71,6 @@
                           <ul>
                             <li><a href="sist-doc-cabezales.php">Cabezales</a></li>
                             <li><a href="sist-doc-pie-pagina.php">Pie de página</a></li>
-                            <li><a href="sist-doc-menu-navegacion.php">Menú de navegación</a></li>
                             <li><a href="sist-doc-breadcrumb.php">Breadcrumb</a></li>
                             <li><a href="sist-doc-paginador.php">Paginador</a></li>
                             <li><a href="sist-doc-menu-pasos.php">Menú de pasos</a></li>

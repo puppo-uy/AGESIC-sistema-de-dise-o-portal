@@ -92,7 +92,6 @@
 
                 <h3 class="u-mt4">Componentes relacionados</h3>
                 <ul class="List-text">
-                    <li><a href="sist-doc-menu-navegacion.php">Menú de navegación</a></li>
                     <li><a href="sist-doc-cabezales.php">Cabezales</a></li>
                 </ul>
 

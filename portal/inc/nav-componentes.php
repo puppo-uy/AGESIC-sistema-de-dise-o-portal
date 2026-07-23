@@ -18,13 +18,12 @@
 		</li>
 		
 		<!-- Menú anidado: Navegación -->
-		<?php $isNavExpanded = in_array($activeItem, ['navegacion', 'cabezales', 'pie-pagina', 'menu-navegacion', 'breadcrumb', 'paginador', 'menu-pasos']); ?>
+		<?php $isNavExpanded = in_array($activeItem, ['navegacion', 'cabezales', 'pie-pagina', 'breadcrumb', 'paginador', 'menu-pasos']); ?>
 		<li class="<?php if($activeItem == 'navegacion') echo 'is-active'; ?>">
 			<a href="sist-doc-navegacion.php">Navegación</a>
 			<ul class="Page-navSublist" <?php if(!$isNavExpanded) echo 'style="display:none;"'; ?>>
 				<li class="<?php if($activeItem == 'cabezales') echo 'is-active'; ?>"><a href="sist-doc-cabezales.php">Cabezales</a></li>
 				<li class="<?php if($activeItem == 'pie-pagina') echo 'is-active'; ?>"><a href="sist-doc-pie-pagina.php">Pie de página</a></li>
-				<li class="<?php if($activeItem == 'menu-navegacion') echo 'is-active'; ?>"><a href="sist-doc-menu-navegacion.php">Menú de navegación</a></li>
 				<li class="<?php if($activeItem == 'breadcrumb') echo 'is-active'; ?>"><a href="sist-doc-breadcrumb.php">Breadcrumb</a></li>
 				<li class="<?php if($activeItem == 'paginador') echo 'is-active'; ?>"><a href="sist-doc-paginador.php">Paginador</a></li>
 				<li class="<?php if($activeItem == 'menu-pasos') echo 'is-active'; ?>"><a href="sist-doc-menu-pasos.php">Menú de pasos</a></li>

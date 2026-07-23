@@ -59,9 +59,6 @@
                         <a href="sist-doc-pie-pagina.php"><strong>Pie de página</strong></a> — Componente de cierre de la interfaz. Incluye información institucional, enlaces secundarios y datos de contacto.
                     </li>
                     <li>
-                        <a href="sist-doc-menu-navegacion.php"><strong>Menú de navegación</strong></a> — Componente que organiza y da acceso a las secciones principales del sitio o aplicación.
-                    </li>
-                    <li>
                         <a href="sist-doc-breadcrumb.php"><strong>Breadcrumb</strong></a> — Componente de navegación secundaria que indica al usuario su ubicación actual dentro de la estructura del sitio.
                     </li>
                     <li>
