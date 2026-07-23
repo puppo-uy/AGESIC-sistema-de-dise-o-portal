@@ -147,12 +147,7 @@
                 <ul class="List-text">
                     <li>Todos los vectores de íconos deben llamarse "icono".</li>
                     <li>Cada vector debe estar contenido dentro de un frame sin auto layout de 24px × 24px, con relación de aspecto bloqueada.</li>
-                    <li>El vector debe:
-                        <ul class="List-text">
-                            <li>Estar centrado horizontalmente.</li>
-                            <li>Escalar verticalmente dentro del frame.</li>
-                        </ul>
-                    </li>
+                    <li>El vector debe estar centrado vertical y horizontalmente en el frame</li>
                     <li>Constraints:
                         <ul class="List-text">
                             <li>Horizontal: center</li>
