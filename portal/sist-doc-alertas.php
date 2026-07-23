@@ -177,11 +177,11 @@
 								<h4>Formatos</h4>
 								
 								<h5>Alerta completa</h5>
-								<p>Es una alerta fija que se utiliza cuando el mensaje requiere contexto o instrucciones adicionales que el usuario debe leer. Puede usarse para comunicar información que debe permanecer visible dentro del flujo hasta que el usuario la atienda mediante una acción relacionada.</p>
+								<p>Se utiliza cuando el mensaje requiere contexto o instrucciones adicionales que el usuario debe leer. Puede usarse para comunicar información que debe permanecer visible dentro del flujo hasta que el usuario la atienda mediante una acción relacionada.</p>
 								<iframe src="../git/iframe-preview.php?comp=alerta-completa" title="Ejemplo de alerta completa" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 480px;" scrolling="no"></iframe>
 								
 								<h5>Alerta simple</h5>
-								<p>También es una alerta fija. Se utiliza para dar avisos breves y explícitos cuya intención se entiende con un título breve y conciso. Se usa cuando el contexto ya aporta suficiente detalle y no es necesario añadir texto explicativo ni acciones complementarias, o cuando hay poco espacio en pantalla.</p>
+								<p>Se utiliza para dar avisos breves y explícitos cuya intención se entiende con un título breve y conciso. Se usa cuando el contexto ya aporta suficiente detalle y no es necesario añadir texto explicativo ni acciones complementarias, o cuando hay poco espacio en pantalla.</p>
 								<iframe src="../git/iframe-preview.php?comp=alerta" title="Ejemplo de alerta simple" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 480px;" scrolling="no"></iframe>
 								
 								<h5>Alerta emergente</h5>
