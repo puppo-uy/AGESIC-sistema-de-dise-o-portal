@@ -103,11 +103,11 @@ En contextos donde la interfaz requiere ahorrar espacio y organizar opciones. </
                 <h5 class="u-mb2">Horizontal</h5>
 
 
-                <iframe src="../git/iframe-preview.php?comp=botones/grupo-botones-horizontal" title="Ejemplo de grupo de botones alineación horizontal" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                <iframe src="../git/iframe-preview.php?comp=botones/botonera" title="Ejemplo de grupo de botones alineación horizontal" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                 <p class="u-mb4">Los botones se alinean en una única fila. Esta es la disposición estándar.</p>
                 
                 <h5 class="u-mb2">Vertical</h5>
-                <iframe src="../git/iframe-preview.php?comp=botones/grupo-botones-vertical" title="Ejemplo de grupo de botones alineación vertical" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
+                <iframe src="../git/iframe-preview.php?comp=botones/botonera" title="Ejemplo de grupo de botones alineación vertical" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
                 <p class="u-mb2">Los botones se apilan uno sobre el otro. Se utiliza en contextos donde el espacio horizontal es limitado, principalmente en resoluciones móviles.</p>
 
                 <h3 class="u-mt4">Accesibilidad</h3>
