@@ -52,7 +52,7 @@
                 <p class="Page-description">El grupo de botones es un componente de acción que agrupa botones de solo ícono para presentar acciones de igual jerarquía dentro de un mismo contexto. Se utiliza principalmente en vistas donde el espacio es reducido o donde las acciones deben mantenerse visualmente neutras, como tablas o listados.</p>
 
                 <h3 class="u-mt4">Estructura del componente</h3>
-                <iframe src="../git/iframe-preview.php?comp=botones/grupo-botones-horizontal" title="Ejemplo de estructura de grupo de botones" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                <iframe src="../git/iframe-preview.php?comp=botones/botonera" title="Ejemplo de grupo de botones alineación horizontal" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
 
                 <h5 class="u-mt3">Elementos que lo componen:</h5>
                 <ul class="List-text">
@@ -98,17 +98,6 @@ En contextos donde la interfaz requiere ahorrar espacio y organizar opciones. </
 
 
 
-                <h4 class="u-mt3 u-mb3">Alineación</h4>
-                
-                <h5 class="u-mb2">Horizontal</h5>
-
-
-                <iframe src="../git/iframe-preview.php?comp=botones/botonera" title="Ejemplo de grupo de botones alineación horizontal" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
-                <p class="u-mb4">Los botones se alinean en una única fila. Esta es la disposición estándar.</p>
-                
-                <h5 class="u-mb2">Vertical</h5>
-                <iframe src="../git/iframe-preview.php?comp=botones/botonera" title="Ejemplo de grupo de botones alineación vertical" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
-                <p class="u-mb2">Los botones se apilan uno sobre el otro. Se utiliza en contextos donde el espacio horizontal es limitado, principalmente en resoluciones móviles.</p>
 
                 <h3 class="u-mt4">Accesibilidad</h3>
                 <h4>WCAG Nivel AAA</h4>
