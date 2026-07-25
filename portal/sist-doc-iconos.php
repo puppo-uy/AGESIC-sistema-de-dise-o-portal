@@ -56,6 +56,8 @@
                 <p class="u-mb2">Existen distintos tamaños predefinidos que permiten adaptar los íconos al contexto de uso sin perder legibilidad.</p>
 
                 <div class="table-responsive">
+                    <!-- Sprite SVG para iconos inline -->
+                    <?php include "../git/recursos/dist/sprites.svg"; ?>
                     <table class="Table Table--striped">
                         <thead>
                             <tr>
@@ -66,37 +68,51 @@
                         </thead>
                         <tbody>
                              <tr>
-                                 <td style="min-height: 56px; vertical-align: middle;"><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=xxl&nopadding=1" title="Ejemplo de ícono tamaño XXL" width="48" height="48" style="border: none; overflow: hidden; display: block; margin: auto;" scrolling="no"></iframe></td>
+                                 <td style="height: 56px; vertical-align: middle;">
+                                     <svg class="icono icono--xxl"><use href="#icono-buscar--lineal"></use></svg>
+                                 </td>
                                  <td>XXL</td>
                                  <td>48px</td>
                              </tr>
                              <tr>
-                                 <td style="min-height: 56px; vertical-align: middle;"><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=xl&nopadding=1" title="Ejemplo de ícono tamaño XL" width="40" height="40" style="border: none; overflow: hidden; display: block; margin: auto;" scrolling="no"></iframe></td>
+                                 <td style="height: 56px; vertical-align: middle;">
+                                     <svg class="icono icono--xl"><use href="#icono-buscar--lineal"></use></svg>
+                                 </td>
                                  <td>XL</td>
                                  <td>40px</td>
                              </tr>
                              <tr>
-                                 <td style="min-height: 56px; vertical-align: middle;"><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=l&nopadding=1" title="Ejemplo de ícono tamaño L" width="32" height="32" style="border: none; overflow: hidden; display: block; margin: auto;" scrolling="no"></iframe></td>
+                                 <td style="height: 56px; vertical-align: middle;">
+                                     <svg class="icono icono--l"><use href="#icono-buscar--lineal"></use></svg>
+                                 </td>
                                  <td>L</td>
                                  <td>32px</td>
                              </tr>
                              <tr>
-                                 <td style="min-height: 56px; vertical-align: middle;"><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=m&nopadding=1" title="Ejemplo de ícono tamaño M" width="24" height="24" style="border: none; overflow: hidden; display: block; margin: auto;" scrolling="no"></iframe></td>
+                                 <td style="height: 56px; vertical-align: middle;">
+                                     <svg class="icono icono--m"><use href="#icono-buscar--lineal"></use></svg>
+                                 </td>
                                  <td>M</td>
                                  <td>24px</td>
                              </tr>
                              <tr>
-                                 <td style="min-height: 56px; vertical-align: middle;"><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=s&nopadding=1" title="Ejemplo de ícono tamaño S" width="20" height="20" style="border: none; overflow: hidden; display: block; margin: auto;" scrolling="no"></iframe></td>
+                                 <td style="height: 56px; vertical-align: middle;">
+                                     <svg class="icono icono--s"><use href="#icono-buscar--lineal"></use></svg>
+                                 </td>
                                  <td>S</td>
                                  <td>20px</td>
                              </tr>
                              <tr>
-                                 <td style="min-height: 56px; vertical-align: middle;"><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=xs&nopadding=1" title="Ejemplo de ícono tamaño XS" width="16" height="16" style="border: none; overflow: hidden; display: block; margin: auto;" scrolling="no"></iframe></td>
+                                 <td style="height: 56px; vertical-align: middle;">
+                                     <svg class="icono icono--xs"><use href="#icono-buscar--lineal"></use></svg>
+                                 </td>
                                  <td>XS</td>
                                  <td>16px</td>
                              </tr>
                              <tr>
-                                 <td style="min-height: 56px; vertical-align: middle;"><iframe src="../git/iframe-preview.php?comp=icono&name=buscar--lineal&size=xxs&nopadding=1" title="Ejemplo de ícono tamaño XXS" width="12" height="12" style="border: none; overflow: hidden; display: block; margin: auto;" scrolling="no"></iframe></td>
+                                 <td style="height: 56px; vertical-align: middle;">
+                                     <svg class="icono icono--xxs"><use href="#icono-buscar--lineal"></use></svg>
+                                 </td>
                                  <td>XXS</td>
                                  <td>12px</td>
                              </tr>
