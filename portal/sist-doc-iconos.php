@@ -68,49 +68,49 @@
                         </thead>
                         <tbody>
                              <tr>
-                                 <td style="height: 56px; vertical-align: middle;">
+                                 <td>
                                      <svg class="icono icono--xxl"><use href="#icono-buscar--lineal"></use></svg>
                                  </td>
                                  <td>XXL</td>
                                  <td>48px</td>
                              </tr>
                              <tr>
-                                 <td style="height: 56px; vertical-align: middle;">
+                                 <td>
                                      <svg class="icono icono--xl"><use href="#icono-buscar--lineal"></use></svg>
                                  </td>
                                  <td>XL</td>
                                  <td>40px</td>
                              </tr>
                              <tr>
-                                 <td style="height: 56px; vertical-align: middle;">
+                                 <td>
                                      <svg class="icono icono--l"><use href="#icono-buscar--lineal"></use></svg>
                                  </td>
                                  <td>L</td>
                                  <td>32px</td>
                              </tr>
                              <tr>
-                                 <td style="height: 56px; vertical-align: middle;">
+                                 <td>
                                      <svg class="icono icono--m"><use href="#icono-buscar--lineal"></use></svg>
                                  </td>
                                  <td>M</td>
                                  <td>24px</td>
                              </tr>
                              <tr>
-                                 <td style="height: 56px; vertical-align: middle;">
+                                 <td>
                                      <svg class="icono icono--s"><use href="#icono-buscar--lineal"></use></svg>
                                  </td>
                                  <td>S</td>
                                  <td>20px</td>
                              </tr>
                              <tr>
-                                 <td style="height: 56px; vertical-align: middle;">
+                                 <td>
                                      <svg class="icono icono--xs"><use href="#icono-buscar--lineal"></use></svg>
                                  </td>
                                  <td>XS</td>
                                  <td>16px</td>
                              </tr>
                              <tr>
-                                 <td style="height: 56px; vertical-align: middle;">
+                                 <td>
                                      <svg class="icono icono--xxs"><use href="#icono-buscar--lineal"></use></svg>
                                  </td>
                                  <td>XXS</td>
