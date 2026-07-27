@@ -1,4 +1,4 @@
-<?php
+﻿<?php
   $title = 'Alertas';
 ?>
 <?php include "inc/head.php"; ?>
@@ -68,7 +68,7 @@
 										</ul>
 									</div>
 									<div class="Grid-item u-size1of2">
-										<h4>Variantes:</h4>
+										<h4>Modos:</h4>
 										<ul class="List-text">
 											<li><b>Estado</b>: Éxito, Error, Advertencia, Notificación, Información</li>
 											<li><b>Formato</b>: Completa, Simple, Emergente</li>
@@ -110,7 +110,7 @@
                   <li>Evitar el uso de palabras completamente en mayúscula o signos de exclamación innecesarios.</li>
                 </ul>
 								
-								<h3>Variantes</h3>
+								<h3>Modos</h3>
 
 								<h4>Estados</h4>
 								

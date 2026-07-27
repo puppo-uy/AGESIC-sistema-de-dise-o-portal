@@ -1,4 +1,4 @@
-<?php
+﻿<?php
   $title = 'Tags';
 ?>
 <?php include "inc/head.php"; ?>
@@ -80,7 +80,7 @@
                     <li>Mantener consistencia entre el tipo de tag y su uso en la interfaz. No mezclar tags de clasificación con tags de estado para comunicar un mismo concepto.</li>
                 </ul>
 
-                <h3 class="u-mt4">Variantes</h3>
+                <h3 class="u-mt4">Modos</h3>
                 <h4 class="u-mt3 u-mb3">Tipo</h4>
                 
                 <h5 class="u-mb2">Clasificación</h5>

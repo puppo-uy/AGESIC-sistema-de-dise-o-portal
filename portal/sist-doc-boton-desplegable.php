@@ -1,4 +1,4 @@
-<?php
+﻿<?php
   $title = 'Botón con desplegable';
 ?>
 <?php include "inc/head.php"; ?>
@@ -81,7 +81,7 @@
                     <li>Mantener los textos de las opciones breves (1-2 palabras preferentemente).</li>
                 </ul>
 
-                <h3 class="u-mt4">Variantes</h3>
+                <h3 class="u-mt4">Modos</h3>
                 
                 <h4 class="u-mt3 u-mb2">Jerarquía</h4>
                 

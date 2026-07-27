@@ -66,10 +66,10 @@
                     <li>Evitar utilizar párrafos completos en peso semibold. Utilizar este recurso solo para resaltar información importante.</li>
                 </ul>
 
-                <h3 id="titulo-variantes">Variantes</h3>
+                <h3 id="titulo-modos">Modos</h3>
                 <p class="u-mb2">Los párrafos cuentan con cinco variantes que corresponden a los estilos tipográficos implementados en código y hojas de estilos:</p>
                 <div class="table-responsive">
-                    <table class="Table" aria-labelledby="titulo-variantes">
+                    <table class="Table" aria-labelledby="titulo-modos">
                         <thead>
                             <tr>
                                 <th>Componente</th>

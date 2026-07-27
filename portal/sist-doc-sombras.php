@@ -1,4 +1,4 @@
-<?php
+﻿<?php
   $title = 'Sombras';
 ?>
 <?php include "inc/head.php"; ?>
@@ -51,7 +51,7 @@
                 <p class="Page-description">Las sombras permiten representar distintos niveles de profundidad dentro de la interfaz, ayudando a diferenciar elementos superpuestos o a destacar componentes sobre el fondo.</p>
                 <p>El sistema define distintos niveles de sombra, que van desde sombras muy sutiles hasta sombras más marcadas, según la jerarquía y el contexto del componente.</p>
 
-                <h3 class="u-mt4">Variantes</h3>
+                <h3 class="u-mt4">Modos</h3>
                 <h4 class="u-mt3">Tipo</h4>
 
                 <h5 class="u-mt3 u-mb2">Difuminadas</h5>

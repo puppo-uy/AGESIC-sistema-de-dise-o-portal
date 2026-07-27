@@ -1,4 +1,4 @@
-<?php
+﻿<?php
   $title = 'Paginador';
 ?>
 <?php include "inc/head.php"; ?>
@@ -83,7 +83,7 @@
                     <li>Incluir información contextual cuando aporte claridad, por ejemplo: “Mostrando X de Y resultados”.</li>
                 </ul>
 
-                <h3 class="u-mt4">Variantes</h3>
+                <h3 class="u-mt4">Modos</h3>
                 <h4 class="u-mt3">Estándar</h4>
                 <img src="img/ejemplos_documentacion/paginador.png" alt="Variante Estándar" class="u-mb2 u-mt2" style="max-width: 100%;">
                 <p class="u-mb4">Se utiliza para listados extensos de contenido donde el usuario puede necesitar navegar rápidamente a otras páginas.</p>

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
   $title = 'Botones';
 ?>
 <?php include "inc/head.php"; ?>
@@ -69,7 +69,7 @@
                                     <li>Acciones concretas y autodescriptivas (Ej: Enviar formulario). Evitar términos genéricos sin contexto.</li>
                                 </ul>
 
-                                <h3 class="u-mt4">Variantes</h3>
+                                <h3 class="u-mt4">Modos</h3>
                                 <h4 class="u-mt3 u-mb3">Jerarquía</h4>
                                 
                                 <h5 class="u-mb2">Primario</h5>

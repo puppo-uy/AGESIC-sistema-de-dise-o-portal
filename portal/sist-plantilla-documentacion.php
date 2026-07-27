@@ -1,4 +1,4 @@
-<?php
+﻿<?php
   $title = 'Documento HTML';
 ?>
 <?php include "inc/head.php"; ?>
@@ -85,7 +85,7 @@
 										</ul>
 									</div>
 									<div class="Grid-item u-size1of2">
-										<h4>Variantes:</h4>
+										<h4>Modos:</h4>
 										<ul class="List-text">
 											<li><b>Jerarquía</b>: Botón primario, Botón secundario, Botón enlace</li>
 											<li><b>Estado interactivo</b>: Por defecto, Hover, Presionado, Deshabilitado</li>
@@ -112,7 +112,7 @@
                   <li>Acciones concretas y autodescriptivas (Ej: Enviar formulario). Evitar términos genéricos sin contexto.</li>
                 </ul>
 								
-								<h3>Variantes</h3>
+								<h3>Modos</h3>
 
 								<h4>Jerarquía</h4>
 								

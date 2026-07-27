@@ -1,4 +1,4 @@
-<?php
+﻿<?php
   $title = 'Menú de pasos';
 ?>
 <?php include "inc/head.php"; ?>
@@ -81,7 +81,7 @@
                     <li>Evitar flujos excesivamente largos; en esos casos, agrupar pasos o dividir el proceso en secciones.</li>
                 </ul>
 
-                <h3 class="u-mt4">Variantes</h3>
+                <h3 class="u-mt4">Modos</h3>
                 <h4 class="u-mt3 u-mb3">Estado de los pasos</h4>
                 <div class="table-responsive">
                     <table class="Table">

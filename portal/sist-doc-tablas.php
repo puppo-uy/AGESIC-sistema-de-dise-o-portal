@@ -1,4 +1,4 @@
-<?php
+﻿<?php
   $title = 'Tablas';
 ?>
 <?php include "inc/head.php"; ?>
@@ -88,7 +88,7 @@
                     <li><strong>Cabezales fijos</strong>: En tablas muy extensas, fijar la primera fila (Cabezal) al hacer scroll.</li>
                 </ul>
 
-                <h3 class="u-mt4">Variantes</h3>
+                <h3 class="u-mt4">Modos</h3>
                 
                 <h4 class="u-mt3 u-mb2">Tabla Estándar</h4>
                 <p class="u-mb3">Disposición de datos plana clásica, con diseño responsivo y efectos hover para facilitar la lectura de registros.</p>

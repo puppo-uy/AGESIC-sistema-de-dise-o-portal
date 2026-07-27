@@ -1,4 +1,4 @@
-<?php
+﻿<?php
   $title = 'Indicadores de carga';
 ?>
 <?php include "inc/head.php"; ?>
@@ -67,7 +67,7 @@
                 <h3>Buenas prácticas</h3>
                 <p>Los indicadores de carga deben ser claros y concisos, deben proporcionar al usuario información sobre el estado pero sin entrar en detalles técnicos innecesarios.</p>
 
-                <h3>Variantes</h3>
+                <h3>Modos</h3>
                 <p>Los indicadores de carga se presentan en diferentes formatos, cada uno adecuado para distintas situaciones:</p>
                 <ul>
                   <li><strong>Spinner:</strong> Ideal para indicar que una acción está en progreso y que el usuario debe esperar.</li>

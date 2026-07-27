@@ -1,4 +1,4 @@
-<?php
+﻿<?php
   $title = 'Modales';
 ?>
 <?php include "inc/head.php"; ?>
@@ -85,7 +85,7 @@
                     <li>Devolver el foco al elemento que abrió el modal al cerrarlo.</li>
                 </ul>
 
-                <h3 class="u-mt4">Variantes</h3>
+                <h3 class="u-mt4">Modos</h3>
 
                 <h4 class="u-mt3 u-mb3">Modal simple</h4>
                 <div class="u-mb6">

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
   $title = 'Listados';
 ?>
 <?php include "inc/head.php"; ?>
@@ -74,7 +74,7 @@
                     <li>Respetar el espaciado definido por el sistema entre ítems.</li>
                 </ul>
 
-                <h3>Variantes</h3>
+                <h3>Modos</h3>
                 <h4>Formato</h4>
                 <div class="u-mt3 u-mb4">
                      <h5 class="u-mb2">No ordenadas (Viñetas)</h5>

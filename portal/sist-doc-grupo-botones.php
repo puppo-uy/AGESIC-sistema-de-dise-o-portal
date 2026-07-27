@@ -1,4 +1,4 @@
-<?php
+﻿<?php
   $title = 'Grupo de botones';
 ?>
 <?php include "inc/head.php"; ?>
@@ -88,7 +88,7 @@ En contextos donde la interfaz requiere ahorrar espacio y organizar opciones. </
                     
                 </ul>
 
-                <h3 class="u-mt4">Variantes</h3>
+                <h3 class="u-mt4">Modos</h3>
 <ul class="List-text">
                 <li>Iconográfica: cada acción está representada únicamente por un ícono. Recomendable cuando las acciones son universales y reconocibles (Ej: descargar, compartir, editar). </li>
 

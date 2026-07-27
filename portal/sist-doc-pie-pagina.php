@@ -1,4 +1,4 @@
-<?php
+﻿<?php
   $title = 'Pie de página';
 ?>
 <?php include "inc/head.php"; ?>
@@ -71,7 +71,7 @@
                 <h3>Buenas prácticas</h3>
                 <p>Información sin definir</p>
 
-                <h3>Variantes</h3>
+                <h3>Modos</h3>
                 <p>Información sin definir</p>
 
                 <h3>Accesibilidad</h3>

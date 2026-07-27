@@ -1,4 +1,4 @@
-<?php
+﻿<?php
   $title = 'Íconos';
 ?>
 <?php include "inc/head.php"; ?>
@@ -51,7 +51,7 @@
                 <p class="Page-description">Los íconos permiten comunicar acciones, estados o conceptos de forma visual y sintética. Se utilizan para reforzar el significado de textos, optimizar el espacio en la interfaz y/o facilitar el reconocimiento rápido de acciones o información.</p>
                 <p>Dentro del sistema de diseño, los íconos se utilizan siempre como elementos de apoyo, ya sea acompañando texto o como parte de otros componentes.</p>
 
-                <h3>Variantes</h3>
+                <h3>Modos</h3>
                 <h4>Tamaño</h4>
                 <p class="u-mb2">Existen distintos tamaños predefinidos que permiten adaptar los íconos al contexto de uso sin perder legibilidad.</p>
 

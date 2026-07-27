@@ -1,4 +1,4 @@
-<?php
+﻿<?php
   $title = 'Enlaces';
 ?>
 <?php include "inc/head.php"; ?>
@@ -80,7 +80,7 @@
                     <li>Colocar el ícono solo cuando refuerce la acción (Ej: flecha para "Ir a", descarga para "Descargar").</li>
                 </ul>
 
-                <h3 class="u-mt4">Variantes</h3>
+                <h3 class="u-mt4">Modos</h3>
                 <h4 class="u-mt3 u-mb3">Formato</h4>
                 
                 

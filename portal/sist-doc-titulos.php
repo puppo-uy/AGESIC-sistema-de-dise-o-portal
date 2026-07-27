@@ -1,4 +1,4 @@
-<?php
+﻿<?php
   $title = 'Títulos';
 ?>
 <?php include "inc/head.php"; ?>
@@ -69,7 +69,7 @@
                     <li>Utilizar títulos para estructurar el contenido, no para estilizarlo.</li>
                 </ul>
 
-                <h3>Variantes</h3>
+                <h3>Modos</h3>
                 <p class="u-mb2">Los títulos se organizan en seis niveles jerárquicos, que deben utilizarse de acuerdo con la estructura del contenido.</p>
                 <div class="table-responsive">
                     <table class="Table">
