@@ -70,10 +70,10 @@
 												<ul>
 													<li><a href="sist-doc-iconos.php">Íconos</a></li>
 													<li><a href="sist-doc-textos.php">Textos</a></li>
-													<li><a href="sist-doc-navegacion.php">Navegación</a></li>
+													<!-- <li><a href="sist-doc-navegacion.php">Navegación</a></li> -->
 													<li><a href="sist-doc-mensajes-dialogos.php">Mensajes y diálogos</a></li>
-													<li><a href="sist-doc-formularios.php">Formularios</a></li>
-													<li><a href="sist-doc-tablas.php">Tablas</a></li>
+													<!-- <li><a href="sist-doc-formularios.php">Formularios</a></li> -->
+													<!-- <li><a href="sist-doc-tablas.php">Tablas</a></li> -->
 													<li><a href="sist-doc-acciones.php">Acciones</a></li>
 												</ul>
 											</div>

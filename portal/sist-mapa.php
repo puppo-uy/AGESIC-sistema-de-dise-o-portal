@@ -66,6 +66,7 @@
                             <li><a href="sist-doc-listados.php">Listados</a></li>
                           </ul>
                         </li>
+                        <!-- Navegación (oculto temporalmente)
                         <li>
                           <a href="sist-doc-navegacion.php">Navegación</a>
                           <ul>
@@ -77,6 +78,7 @@
 
                           </ul>
                         </li>
+                        -->
                         <li>
                           <a href="sist-doc-mensajes-dialogos.php">Mensajes y diálogos</a>
                           <ul>
@@ -87,6 +89,7 @@
                             <li><a href="sist-doc-tags.php">Tags</a></li>
                           </ul>
                         </li>
+                        <!-- Formularios (oculto temporalmente)
                         <li>
                           <a href="sist-doc-formularios.php">Formularios</a>
                           <ul>
@@ -94,7 +97,10 @@
                             <li><a href="sist-doc-fieldset.php">Fieldset</a></li>
                           </ul>
                         </li>
+                        -->
+                        <!-- Tablas (oculto temporalmente)
                         <li><a href="sist-doc-tablas.php">Tablas</a></li>
+                        -->
                         <li>
                           <a href="sist-doc-acciones.php">Acciones</a>
                           <ul>

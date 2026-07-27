@@ -17,7 +17,8 @@
 			</ul>
 		</li>
 		
-		<!-- Menú anidado: Navegación -->
+		<!-- Menú anidado: Navegación (oculto temporalmente) -->
+		<!--
 		<?php $isNavExpanded = in_array($activeItem, ['navegacion', 'cabezales', 'pie-pagina', 'breadcrumb', 'paginador', 'menu-pasos']); ?>
 		<li class="<?php if($activeItem == 'navegacion') echo 'is-active'; ?>">
 			<a href="sist-doc-navegacion.php">Navegación</a>
@@ -30,6 +31,7 @@
 
 			</ul>
 		</li>
+		-->
 		
 		<!-- Menú anidado: Mensajes y diálogos -->
 		<?php $isMensajesExpanded = in_array($activeItem, ['mensajes', 'alertas', 'modales', 'tooltips', 'indicadores', 'tags']); ?>
@@ -44,7 +46,8 @@
 			</ul>
 		</li>
 
-		<!-- Menú anidado: Formularios -->
+		<!-- Menú anidado: Formularios (oculto temporalmente) -->
+		<!--
 		<?php $isFormulariosExpanded = in_array($activeItem, ['formularios', 'campos', 'fieldset']); ?>
 		<li class="<?php if($activeItem == 'formularios') echo 'is-active'; ?>">
 			<a href="sist-doc-formularios.php">Formularios</a>
@@ -53,8 +56,10 @@
 				<li class="<?php if($activeItem == 'fieldset') echo 'is-active'; ?>"><a href="sist-doc-fieldset.php">Fieldset</a></li>
 			</ul>
 		</li>
+		-->
 
-		<li class="<?php if($activeItem == 'tablas') echo 'is-active'; ?>"><a href="sist-doc-tablas.php">Tablas</a></li>
+		<!-- Tablas (oculto temporalmente) -->
+		<!-- <li class="<?php if($activeItem == 'tablas') echo 'is-active'; ?>"><a href="sist-doc-tablas.php">Tablas</a></li> -->
 
 		<!-- Menú anidado: Acciones -->
 		<?php $isAccionesExpanded = in_array($activeItem, ['acciones', 'botones', 'enlaces', 'grupo-botones', 'boton-desplegable']); ?>
