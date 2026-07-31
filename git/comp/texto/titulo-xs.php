@@ -1,1 +1,0 @@
-<h6>Título jerarquía 6 tamaño XS</h6>

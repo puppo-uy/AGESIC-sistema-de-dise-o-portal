@@ -1,1 +1,0 @@
-<h2>Título jerarquía 2 tamaño XL</h2>

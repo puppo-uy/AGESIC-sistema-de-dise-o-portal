@@ -1,1 +1,0 @@
-<h3>Título jerarquía 3 tamaño LG</h3>
