@@ -44,7 +44,7 @@
                 <p class="Page-description">Los títulos son componentes de texto que se utilizan para organizar y jerarquizar el contenido dentro de la interfaz. Permiten estructurar la información, guiar la lectura y facilitar la comprensión del contenido en distintos niveles.</p>
                 <p>Además de su función visual, cumplen un rol semántico fundamental, ya que definen la estructura lógica del contenido.</p>
                 
-                 <iframe src="iframe-preview.php?comp=texto/parrafo-lg" title="Ejemplos de títulos del sistema" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 380px;" scrolling="no"></iframe>
+                 <iframe src="iframe-preview.php?comp=texto/titulo-lg" title="Ejemplos de títulos del sistema" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 380px;" scrolling="no"></iframe>
 
                 
                 <h3>Recomendaciones de uso</h3>
