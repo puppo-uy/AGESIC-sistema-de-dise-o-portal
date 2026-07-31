@@ -1,4 +1,4 @@
-﻿<?php
+<?php
   $title = 'Íconos';
 ?>
 <?php include "inc/head.php"; ?>
@@ -57,7 +57,7 @@
 
                 <div class="table-responsive">
                     <!-- Sprite SVG para iconos inline -->
-                    <?php include "../git/recursos/dist/sprites.svg"; ?>
+                    <?php include "../biblioteca/recursos/dist/sprites.svg"; ?>
                     <table class="Table Table--striped">
                         <thead>
                             <tr>
@@ -122,13 +122,13 @@
 
                 <h4>Formato</h4>
                  <h5 class="u-mt4">Lineales y rellenos</h5>
-                 <iframe src="../git/iframe-preview.php?comp=icono&type=comparativa" title="Ejemplo de íconos lineales y rellenos" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 100px;" scrolling="no"></iframe>
+                 <iframe src="iframe-preview.php?comp=icono&type=comparativa" title="Ejemplo de íconos lineales y rellenos" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 100px;" scrolling="no"></iframe>
                  <p>Íconos de trazo simple o lineales, recomendados para la mayoría de los usos.</p>
                  <p>Íconos de forma sólida, rellenos, utilizados cuando se necesita mayor presencia visual o para indicar estado de activo.</p>
  
                  <h3>Íconos especiales</h3>
                  <h4>Avatar de usuario</h4>
-                 <iframe src="../git/iframe-preview.php?comp=icono&type=avatar" title="Ejemplo de avatar de usuario" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                 <iframe src="iframe-preview.php?comp=icono&type=avatar" title="Ejemplo de avatar de usuario" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                  <p>El Avatar de usuario es un ícono específico, construido mediante CSS, que se utiliza como indicador de usuario autenticado dentro de la interfaz, y puede aparecer, por ejemplo, en el cabezal o en contextos asociados al perfil del usuario.</p>
                 <p>Este ícono se comporta de la misma forma que el resto de los íconos del sistema, teniendo de variantes los mismos tamaños disponibles.</p>
                 <p>Su uso está limitado a contextos relacionados con la identidad del usuario y no debe utilizarse con fines decorativos ni como reemplazo de otros íconos funcionales.</p>

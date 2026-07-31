@@ -1,4 +1,4 @@
-﻿<?php
+<?php
   $title = 'Grupo de botones';
 ?>
 <?php include "inc/head.php"; ?>
@@ -52,7 +52,7 @@
                 <p class="Page-description">El grupo de botones es un componente de acción que agrupa botones de solo ícono para presentar acciones de igual jerarquía dentro de un mismo contexto. Se utiliza principalmente en vistas donde el espacio es reducido o donde las acciones deben mantenerse visualmente neutras, como tablas o listados.</p>
 
                 <h3 class="u-mt4">Estructura del componente</h3>
-                <iframe src="../git/iframe-preview.php?comp=botones/botonera" title="Ejemplo de grupo de botones alineación horizontal" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                <iframe src="iframe-preview.php?comp=botones/botonera" title="Ejemplo de grupo de botones alineación horizontal" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
 
                 <h5 class="u-mt3">Elementos que lo componen:</h5>
                 <ul class="List-text">

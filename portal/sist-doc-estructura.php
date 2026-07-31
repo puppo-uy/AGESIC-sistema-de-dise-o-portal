@@ -92,7 +92,7 @@
                 <p class="u-mt2">Para esos casos, se provee una clase modificadora en el contenedor <code>.row</code> y es <code>.row--no-stack</code>.</p>
 
                 <iframe
-                  src="../git/iframe-preview.php?comp=grillas"
+                  src="iframe-preview.php?comp=grillas"
                   class="component-preview"
                   title="Ejemplos de sistema de grillas"
                   scrolling="no"
@@ -120,7 +120,7 @@
                 </ul>
 
                 <iframe
-                  src="../git/iframe-preview.php?comp=flex"
+                  src="iframe-preview.php?comp=flex"
                   class="component-preview"
                   title="Ejemplos de módulo flex"
                   scrolling="no"

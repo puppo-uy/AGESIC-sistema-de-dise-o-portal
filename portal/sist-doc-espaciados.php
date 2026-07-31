@@ -55,7 +55,7 @@
                 <p class="u-mb3">El sistema define una escala progresiva de valores fijos. Cada token lleva como nombre su propio valor en píxeles, lo que facilita su identificación directa en código.</p>
 
                 <iframe
-                  src="../git/iframe-preview.php?comp=espaciados"
+                  src="iframe-preview.php?comp=espaciados"
                   class="component-preview"
                   title="Escala de tokens de espaciado"
                   scrolling="no"

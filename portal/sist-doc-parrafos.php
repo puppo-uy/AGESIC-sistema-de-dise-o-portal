@@ -43,7 +43,7 @@
                 
                 <p class="Page-description">Los párrafos son componentes de texto encargados de presentar el contenido principal y los textos de apoyo dentro de la interfaz. Se utilizan para desarrollar los contenidos introducidos por los títulos.</p>
 
-                <iframe src="../git/iframe-preview.php?comp=texto/parrafos-todos" title="Ejemplos de párrafos del sistema" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 480px;" scrolling="no"></iframe>
+                <iframe src="iframe-preview.php?comp=texto/parrafos-todos" title="Ejemplos de párrafos del sistema" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 480px;" scrolling="no"></iframe>
 
                 <h3>Recomendaciones de uso</h3>
                 <h4>Casos típicos de uso</h4>

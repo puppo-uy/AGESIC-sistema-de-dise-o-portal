@@ -1,4 +1,4 @@
-﻿<?php
+<?php
   $title = 'Tags';
 ?>
 <?php include "inc/head.php"; ?>
@@ -53,7 +53,7 @@
                 <p>Pueden utilizarse en listados, tablas o tarjetas para facilitar el escaneo de la información.</p>
 
                 <h3 class="u-mt4">Estructura del componente</h3>
-                 <iframe src="../git/iframe-preview.php?comp=tag" title="Ejemplo de estructura de tags" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                 <iframe src="iframe-preview.php?comp=tag" title="Ejemplo de estructura de tags" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                 <h5 class="u-mt3">Elementos que lo componen</h5>
                 <ul class="List-text">
                     <li>Fondo</li>
@@ -84,12 +84,12 @@
                 <h4 class="u-mt3 u-mb3">Tipo</h4>
                 
                 <h5 class="u-mb2">Clasificación</h5>
-                 <iframe src="../git/iframe-preview.php?comp=tag&type=clasificacion" title="Ejemplo de tag de clasificación" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                 <iframe src="iframe-preview.php?comp=tag&type=clasificacion" title="Ejemplo de tag de clasificación" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                 <p class="u-mb4">Se utilizan para categorizar contenidos. Identifican temáticas, tipos o atributos de un elemento.</p>
                 
                 <h5 class="u-mb2">Estado</h5>
                  <div class="u-mt3 u-mb4">
-                     <iframe src="../git/iframe-preview.php?comp=tag&type=estado" title="Ejemplo de tags de estado" class="component-preview" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                     <iframe src="iframe-preview.php?comp=tag&type=estado" title="Ejemplo de tags de estado" class="component-preview" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                  </div>
                 <p class="u-mb2">Se utilizan para comunicar el estado actual de un elemento dentro de un flujo o proceso. Los estados pueden ser:</p>
                 <ul class="List-text u-mb4">
@@ -101,7 +101,7 @@
 
                  <h4 class="u-mt3 u-mb3">Tamaño</h4>
                  <div class="u-mt3 u-mb4">
-                     <iframe src="../git/iframe-preview.php?comp=tag&type=tamanos" title="Ejemplo de tamaños de tags (normal y chico)" class="component-preview" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                     <iframe src="iframe-preview.php?comp=tag&type=tamanos" title="Ejemplo de tamaños de tags (normal y chico)" class="component-preview" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                  </div>
                 <ul class="List-text">
                     <li>Normal</li>

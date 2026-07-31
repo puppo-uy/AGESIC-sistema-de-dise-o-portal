@@ -54,38 +54,39 @@
                 <h3 class="u-mt4 u-mb3">Cabezal de aplicación</h3>
                 <p>Este cabezal se utiliza únicamente en aplicaciones web. Su función principal es brindar contexto sobre la aplicación y ofrecer acceso a las acciones relacionadas con la sesión del usuario y las notificaciones.</p>
 
-                <h4 class="u-mt4">Estructura del componente</h4>
-                 <iframe src="../git/iframe-preview.php?comp=header-app" title="Ejemplo de estructura de cabezal de aplicación" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
-                <h5 class="u-mt3">Elementos que lo componen</h5>
-                <ul class="List-text">
-                    <li>Iconos</li>
-                    <li>Texto</li>
-                    <li>Fondo</li>
-                    <li>Bordes</li>
-                    <li>Identidad (isotipo y nombre)</li>
-                    <li>Accesos</li>
-                    <li>Menú (versión móvil)</li>
-                </ul>
+                 <h3 class="u-mt4">Estructura del componente</h3>
+                 <iframe src="iframe-preview.php?comp=header-app" title="Ejemplo de estructura de cabezal de aplicación" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                 <h5 class="u-mt3">Elementos que lo componen:</h5>
+                 <ul class="List-text">
+                     <li>Logo del organismo / Marca</li>
+                     <li>Título de la aplicación</li>
+                     <li>Botón de menú / Navegación (móvil)</li>
+                     <li>Buscador / Acciones secundarias (opcional)</li>
+                     <li>Selector de perfil / Usuario (opcional)</li>
+                 </ul>
 
-                <h4 class="u-mt4">Recomendaciones de uso</h4>
-                
-                <p>Aplicaciones web, donde el foco está puesto en la realización de tareas que requieren interacción con un sistema y no meramente el consumo de información estática.</p>
+                 <h3 class="u-mt4">Recomendaciones de uso</h3>
+                 <h4 class="u-mt3">Casos típicos de uso</h4>
+                 <ul class="List-text">
+                     <li>Como encabezado superior en sistemas web, trámites en línea y aplicaciones de gobierno.</li>
+                     <li>Para mantener la identidad institucional visible en todo momento durante el uso de la aplicación.</li>
+                 </ul>
 
-                <h5 class="u-mt3">Cuándo no usarlo</h5>
-                <ul class="List-text">
-                    <li>En portales institucionales o sitios web de carácter informativo.</li>
-                </ul>
+                 <h4 class="u-mt3">Cuándo no usarlo</h4>
+                 <ul class="List-text">
+                     <li>En sitios institucionales o portales informativos donde se debe utilizar el cabezal estándar de gub.uy.</li>
+                 </ul>
 
-                <h5 class="u-mt3">Buenas prácticas</h5>
-                <ul class="List-text">
-                    <li>Mantener el color propuesto por el sistema salvo que haya una razón de fuerza mayor que requiera una presencia de otro color por el contexto de navegación de la aplicación.</li>
-                    <li>Evitar agregar accesos o funcionalidades nuevas.</li>
-                    <li>Evitar el uso del cabezal móvil en pantallas de escritorio.</li>
-                </ul>
+                 <h3 class="u-mt4">Modos y comportamiento responsive</h3>
+                 
+                 <h4 class="u-mt3">Escritorio</h4>
+                 <iframe src="iframe-preview.php?comp=header-app" title="Ejemplo de cabezal de aplicación en escritorio" class="component-preview u-mb2 u-mt2" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                 <ul class="List-text">
+                     <li>Muestra todos los elementos de navegación y acciones visibles horizontalmente.</li>
+                 </ul>
 
-                <h4 class="u-mt4">Comportamiento responsive</h4>
-                <h5 class="u-mt3">Escritorio</h5>
-                 <iframe src="../git/iframe-preview.php?comp=header-app" title="Ejemplo de cabezal de aplicación en escritorio" class="component-preview u-mb2 u-mt2" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                 <h4 class="u-mt4">Móvil</h4>
+                 <iframe src="iframe-preview.php?comp=header-app" title="Ejemplo de cabezal de aplicación en móvil" class="component-preview u-mb2 u-mt2" style="width: 100%; max-width: 360px; border: 1px solid #ddd; min-height: 380px; margin: 0 auto; display: block;" scrolling="no"></iframe>
                 <ul class="List-text">
                     <li>Se presenta en una única fila horizontal.</li>
                     <li>La identidad de la aplicación se ubica a la izquierda.</li>
@@ -94,7 +95,7 @@
                 </ul>
 
                 <h5 class="u-mt3">Móvil</h5>
-                 <iframe src="../git/iframe-preview.php?comp=header-app" title="Ejemplo de cabezal de aplicación en móvil" class="component-preview u-mb2 u-mt2" style="width: 100%; max-width: 360px; border: 1px solid #ddd; min-height: 380px; margin: 0 auto; display: block;" scrolling="no"></iframe>
+                 <iframe src="iframe-preview.php?comp=header-app" title="Ejemplo de cabezal de aplicación en móvil" class="component-preview u-mb2 u-mt2" style="width: 100%; max-width: 360px; border: 1px solid #ddd; min-height: 380px; margin: 0 auto; display: block;" scrolling="no"></iframe>
                 <ul class="List-text">
                     <li>Se adapta para ocupar menos espacio.</li>
                     <li>La identidad se presenta en formato reducido en la parte superior, en una única fila.</li>

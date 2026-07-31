@@ -1,4 +1,4 @@
-﻿<?php
+<?php
   $title = 'Sombras';
 ?>
 <?php include "inc/head.php"; ?>
@@ -57,7 +57,7 @@
                 <h5 class="u-mt3 u-mb2">Difuminadas</h5>
                 <p class="u-mb3">Las sombras difuminadas tienen bordes suaves y transiciones graduales. Generan una separación visual leve entre un elemento y su entorno.</p>
                 <iframe
-                  src="../git/iframe-preview.php?comp=sombras&grupo=difuminadas"
+                  src="iframe-preview.php?comp=sombras&grupo=difuminadas"
                   class="component-preview"
                   title="Sombras difuminadas"
                   scrolling="no"
@@ -67,7 +67,7 @@
                 <h5 class="u-mt2 u-mb2">Duras</h5>
                 <p class="u-mb3">Las sombras duras tienen bordes definidos y sin difuminado, lo que produce un contraste más marcado con el fondo.</p>
                 <iframe
-                  src="../git/iframe-preview.php?comp=sombras&grupo=duras"
+                  src="iframe-preview.php?comp=sombras&grupo=duras"
                   class="component-preview"
                   title="Sombras duras"
                   scrolling="no"

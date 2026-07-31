@@ -1,4 +1,4 @@
-﻿<?php
+<?php
   $title = 'Listados';
 ?>
 <?php include "inc/head.php"; ?>
@@ -78,11 +78,11 @@
                 <h4>Formato</h4>
                 <div class="u-mt3 u-mb4">
                      <h5 class="u-mb2">No ordenadas (Viñetas)</h5>
-                     <iframe src="../git/iframe-preview.php?comp=texto/lista" title="Ejemplo de lista no ordenada" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 200px;" scrolling="no"></iframe>
+                     <iframe src="iframe-preview.php?comp=texto/lista" title="Ejemplo de lista no ordenada" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 200px;" scrolling="no"></iframe>
                      <p class="u-mb4">Se utilizan cuando el orden de los elementos no es relevante. Emplean un bullet (viñeta) negro para marcar cada ítem.</p>
  
                      <h5 class="u-mb2">Ordenadas (Numeradas)</h5>
-                     <iframe src="../git/iframe-preview.php?comp=texto/lista-numerada" title="Ejemplo de lista ordenada" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 200px;" scrolling="no"></iframe>
+                     <iframe src="iframe-preview.php?comp=texto/lista-numerada" title="Ejemplo de lista ordenada" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 200px;" scrolling="no"></iframe>
                      <p class="u-mb2">Se utilizan cuando los elementos siguen una secuencia lógica, cronológica o de jerarquía. Emplean números seguidos de un punto (ej: 1., 2., 3.).</p>
                 </div>
 
