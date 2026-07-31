@@ -1,0 +1,84 @@
+   
+ 
+   
+ Íconos  
+Los íconos permiten comunicar acciones, estados o conceptos de forma visual y 
+sintética. Se utilizan para reforzar el significado de textos, optimizar el espacio en la 
+interfaz y /o facilitar el reconocimiento rápido de acciones o información.  
+Dentro del sistema de diseño, los íconos se utilizan siempre como elementos de apoyo, 
+ya sea acompañando texto o como  parte de otros componentes.  
+Variantes  
+Tamaño  
+Existen  distintos tamaños predefinidos que permiten adaptar  los íconos  al contexto de 
+uso sin perder legibilidad . 
+Referencia  Nombre  de la variante  Tamaño en pixeles  
+ XXL 48px 
+ XL 40px 
+ L 32px 
+ M 24px 
+ S 20px 
+ XS 16px 
+ XXS 12px 
+Formato  
+Lineales  
+ 
+
+ 
+ 
+2 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+Íconos de trazo simple, recomendados para la mayoría de los usos.  
+Rellenos  
+ 
+Íconos  forma sólida, utilizados cuando se necesita mayor presencia visual  o para indicar 
+estado de activo . 
+Íconos especiales  
+Avatar  de usuario  
+ 
+El Avatar de usuario es un ícono específico, construido mediante CSS, que se utiliza 
+como indicador de usuario autenticado dentro de la interfaz , y puede aparecer, por 
+ejemplo, en el cabezal o en contextos asociados al perfil del usuario.  
+Este ícono se comporta de la misma forma que el resto de los iconos del sistema , 
+teniendo de variantes los mismos tamaños disponibles.  
+Su uso está limitado a contextos relacionados con la identidad del usuario y no debe 
+utilizarse con fines decorativos ni como reemplazo de otros iconos funcionales.  
+Accesibilidad  
+Recomendaciones para no perder la accesibilidad  
+✓ No utilizar íconos como único medio para transmitir información.  
+✓ Asegurar contraste suficiente entre el ícono y el fondo.  
+✓ Acompañar los íconos con texto cuando representen acciones.  
+✓ Proveer textos alternativos o etiquetas accesibles cuando el ícono sea interactivo.  
+Criterios de diseño  y uso  en figma  
+Uso de íconos  
+Para insertar un ícono, arrastrar una instancia del componente padre desde “Recursos ” y 
+luego : 
+1. Seleccionar en las propiedades del componente:  
+▪ Tamaño  
+▪ Formato  
+
+ 
+ 
+3 
+ 
+LADILOR S.A. |  Convención 1382 of 810   |  (598) 2902 1237  |  concreta.com.uy  |  Montevideo, Uruguay  
+  
+▪ Vector del ícono 
+2. Para cambiar el color, aplicar una variable semántica de color en el relleno de la 
+instancia.  
+Construcción de un nuevo ícono 
+Para agregar un nuevo ícono a l kit de iconos en figm a, debe hacerse desde el grupo de 
+variantes “icono_vecto r” siguiendo los siguientes criterios:  
+✓ Todos los vectores de iconos deben llamarse “icono”.  
+✓ Cada vector debe estar contenido dentro de un frame sin auto layout de 24px × 
+24px, con relación de aspecto bloqueada.  
+✓ El vector debe:  
+▪ Estar centrado horizontalmente.  
+▪ Escalar verticalmente dentro del frame.  
+✓ Constraints:  
+▪ Horizontal: center  
+▪ Vertical: scale  
+✓ El color de relleno del vector debe ser siempre el color semántico “neutro -0” 
+(blanco), para permitir que los cambios de variables funcionen correctamente en 
+las instancias.  
