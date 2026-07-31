@@ -1,0 +1,76 @@
+@use "sass:map";
+@use "primitives" as *;
+
+
+$breakpoints: (
+  xs: $breakpoint-xs,
+  sm: $breakpoint-sm,
+  md: $breakpoint-md,
+  lg: $breakpoint-lg
+);
+
+@mixin media($key, $direction: up) {
+
+  $size: map.get($breakpoints, $key);
+
+  @if $size == null {
+    @error "El breakpoint `#{$key}` no existe en \$breakpoints.";
+  }
+
+  @if $direction == down {
+    @media screen and (max-width: $size) {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $size) {
+      @content;
+    }
+  }
+
+}
+
+//
+// Reset List Mixin
+// @link https://ismamz.github.io/postcss-utilities/docs#reset-list
+//
+
+@mixin reset-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+
+/*
+
+Ejemplos de uso:
+
+@include media(xs) {
+  .box { background: red; }
+}
+
+@include media(md, down) {
+  .sidebar { display: none; }
+}
+
+*/
+
+// ─────────────────────────────────────────────
+// Escala semántica de Z-Index
+// ─────────────────────────────────────────────
+// Regla: cada capa debe superar a la anterior.
+// NO usar números fuera de esta escala.
+// ─────────────────────────────────────────────
+
+:root {
+	--z-badge:    100;  // Indicadores de punto/número sobre botones
+	--z-header:   101;  // Cabezal sticky (tapa badges al hacer scroll)
+	--z-dropdown: 102;  // Menús desplegables (sobre header y badges)
+	--z-overlay:  200;  // Fondo oscurecido del drawer en mobile
+	--z-drawer:   201;  // Barra lateral / nav drawer en mobile
+	--z-skip:     300;  // SkipLink de accesibilidad (siempre lo más alto)
+}

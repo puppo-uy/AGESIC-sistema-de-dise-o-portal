@@ -1,0 +1,69 @@
+// flex.scss
+@use "../tokens" as *; 
+
+$grid-gutter: 16px !default;
+
+.mod-flex {
+
+  display: flex;
+  flex-wrap: nowrap;
+  gap: $grid-gutter;
+  justify-content: flex-start; 
+  align-items:stretch;        
+  flex-direction: column;
+
+  /* justify */
+  &.flex-justify-start   { justify-content: flex-start !important; }
+  &.flex-justify-center  { justify-content: center !important; }
+  &.flex-justify-end     { justify-content: flex-end !important; }
+  &.flex-justify-between { justify-content: space-between !important; }
+  &.flex-justify-around  { justify-content: space-around !important; }
+  &.flex-justify-evenly  { justify-content: space-evenly !important; }
+
+  /* align */
+  &.flex-items-start   { align-items: flex-start !important; }
+  &.flex-items-center  { align-items: center !important; }
+  &.flex-items-end     { align-items: flex-end !important; }
+  &.flex-items-stretch { align-items: stretch !important; }
+
+  /* direction */
+  &.flex-dir-row    { flex-direction: row !important; }
+  &.flex-dir-column { flex-direction: column !important; }
+  
+  @include media(sm) {
+
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: flex-start;
+
+    /* justify */
+    &.sm-flex-justify-start   { justify-content: flex-start !important; }
+    &.sm-flex-justify-center  { justify-content: center !important; }
+    &.sm-flex-justify-end     { justify-content: flex-end !important; }
+    &.sm-flex-justify-between { justify-content: space-between !important; }
+    &.sm-flex-justify-around  { justify-content: space-around !important; }
+    &.sm-flex-justify-evenly  { justify-content: space-evenly !important; }
+
+    /* align */
+    &.sm-flex-items-start   { align-items: flex-start !important; }
+    &.sm-flex-items-center  { align-items: center !important; }
+    &.sm-flex-items-end     { align-items: flex-end !important; }
+    &.sm-flex-items-stretch { align-items: stretch !important; }
+
+    &.sm-flex-dir-row    { flex-direction: row !important; }
+    &.sm-flex-dir-column { flex-direction: column !important; }
+
+    /* utilidad específica solicitada: a partir de sm los items quedan apilados (column) */
+    &.sm-stack { flex-direction: column !important; }
+
+  }
+	
+	&.flex-gap-0 { gap: var(--espaciado-4); }
+	&.flex-gap-4 { gap: var(--espaciado-4); }
+	&.flex-gap-8 { gap: var(--espaciado-8); }
+	&.flex-gap-12 { gap: var(--espaciado-12); }
+	&.flex-gap-16 { gap: var(--espaciado-16); }
+	&.flex-gap-20 { gap: var(--espaciado-20); }
+	&.flex-gap-24 { gap: var(--espaciado-24); }
+	
+}

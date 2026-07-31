@@ -1,0 +1,182 @@
+@use "../tokens" as *;
+
+// -----------------------------------------------------------------------------
+// REBOOT
+// -----------------------------------------------------------------------------
+// Este archivo define el "piso visual" del sistema Agesic: 
+// configura el box-sizing, color y tipografía global, 
+// además de algunas mejoras de accesibilidad y consistencia base.
+// -----------------------------------------------------------------------------
+// Estructura recomendada:
+//   ├─ normalize.scss    → corrige inconsistencias entre navegadores
+//   ├─ reboot.scss       → define el entorno visual y comportamental base
+//   ├─ typography.scss   → declara la jerarquía y escala tipográfica
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// 1. Box-sizing y ajustes base del documento
+// -----------------------------------------------------------------------------
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+// -----------------------------------------------------------------------------
+// 2. Configuración general del body
+// -----------------------------------------------------------------------------
+// Esta es la base visual del sistema. Usa tokens o variables globales
+// (pueden ser CSS o SCSS) para asegurar consistencia.
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background-color: var(--neutro-25);
+  color: var(--texto-principal);
+  font-family: var(--tipo-familia-base);
+  font-weight: var(--tipo-peso-regular);
+  line-height: var(--tipo-altura-linea-l);
+  text-rendering: optimizeLegibility;
+}
+
+// -----------------------------------------------------------------------------
+// 3. Imágenes, medios y tablas
+// -----------------------------------------------------------------------------
+// Estas reglas hacen que los medios sean responsivos y las tablas consistentes.
+// Si usás normalize.scss, podrías mover parte de esto allí.
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+iframe, embed, object {
+  border: 0;
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: transparent;
+  width: 100%;
+}
+
+// -----------------------------------------------------------------------------
+// 4. Elementos de texto y tipografía base
+// -----------------------------------------------------------------------------
+// Solo reglas mínimas. La jerarquía (h1, h2, p, etc.) se define en typography.scss.
+
+
+/* Podrían estar en typography.scss*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+strong {
+  font-weight: var(--tipo-peso-bold);
+}
+
+a {
+  color: var(--texto-enlace-primario);
+  text-decoration: underline;
+  text-underline-offset: 0.1em;
+  transition: color 0.2s ease;
+}
+
+
+/* Validar antes de aplicar 
+a:hover,
+a:focus-visible {
+  color: var(--primario-oscuro);
+  outline: none;
+}
+*/
+
+// -----------------------------------------------------------------------------
+// 5. Formularios y botones
+// -----------------------------------------------------------------------------
+// Reglas neutras para poder aplicar estilos del sistema después.
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+// En algunos navegadores (Firefox/IE) se pierde el focus visual al usar fondo transparente.
+/* Validar antes de aplicar 
+button:focus-visible {
+  outline: 2px solid $color-focus;
+  outline-offset: 2px;
+}*/
+
+// -----------------------------------------------------------------------------
+// 6. Accesibilidad y visibilidad
+// -----------------------------------------------------------------------------
+
+/* Validar antes de aplicar 
+:focus-visible {
+  outline: 2px solid $color-focus;
+  outline-offset: 2px;
+}*/
+
+[hidden] {
+  display: none !important;
+}
+
+[tabindex="-1"]:focus {
+  outline: none !important;
+}
+
+// -----------------------------------------------------------------------------
+// 7. Otros ajustes globales opcionales
+// -----------------------------------------------------------------------------
+// Vertical-align para imágenes inline, ajustes de rendimiento y consistencia.
+
+img {
+  vertical-align: middle;
+}
+
+* {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+
+// -----------------------------------------------------------------------------
+// 8. Foco global
+// -----------------------------------------------------------------------------
+// Desactivar el outline por defecto en navegadores
+:focus {
+  outline: none;
+}
+
+// Aplicar el estilo de foco globalmente
+:focus-visible {
+  outline: 3px solid var(--foco-acento); 
+  outline-offset: 2px; // Separa el contorno del borde del elemento
+  border-radius: inherit; // Intenta respetar el borde redondeado si el navegador lo soporta
+}

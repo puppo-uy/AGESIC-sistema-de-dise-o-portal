@@ -1,0 +1,137 @@
+// grid.scss
+@use "../tokens" as *; 
+
+
+// Para metrizar estos valores!
+$grid-columns: 12 !default;
+$grid-gutter: 16px !default; 
+$container-padding: 0 !default;
+
+// Container
+.container {
+  width: 100%;
+  padding-left: $container-padding;
+  padding-right: $container-padding;
+  margin-left: auto;
+  margin-right: auto;
+
+  // Máximo ancho escalonado (opcional): podés afinar por breakpoint
+  /*
+  @include media(sm) {
+    max-width: 720px;
+  }
+  @include media(md) {
+    max-width: 960px;
+  }
+  @include media(lg) {
+    max-width: 1200px;
+  }*/
+}
+
+// Row — grid wrapper
+.row {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); // mobile-first: 1 column
+  gap: $grid-gutter;
+  margin-bottom: var(--espaciado-32); // o podría ser 2 * $grid-gutter;
+
+  // A partir de sm: convertir a 12 columnas
+  @include media(sm) {
+    grid-template-columns: repeat($grid-columns, 1fr);
+  }
+}
+
+.row--no-stack {
+  grid-template-columns: repeat($grid-columns, 1fr);
+
+    @for $i from 1 through $grid-columns {
+
+    // fallback mobile si NO hay col-m-*
+    > .col-#{$i}:not([class*="col-m-"]) {
+      grid-column: span #{$i};
+    }
+
+  }
+
+}
+
+
+@for $i from 1 through $grid-columns {
+  .col-m-#{$i} {
+    grid-column: span #{$i};
+  }
+}
+
+
+$max-row-cols: $grid-columns !default;
+
+// Generar utilidades base .row.row-cols-1 ... .row.row-cols-N
+@for $i from 1 through $max-row-cols {
+  .row.row-cols-#{$i} {
+    > * {
+      /* cada hijo (item) ocupará 1/N dentro de la fila */
+      grid-column: auto;
+      width: 100%;
+    }
+
+    /* aplicamos la plantilla de columnas en el mismo contexto de breakpoints */
+    @include media(sm) {
+      grid-template-columns: repeat(#{$i}, 1fr);
+    }
+  }
+}
+
+// Breakpoints para variantes responsivas
+$cols-bps: (sm, md, lg);
+
+// Generar .row.row-cols-<bp>-N (responsive)
+@each $bp in $cols-bps {
+  @for $i from 1 through $max-row-cols {
+    .row.row-cols-#{$bp}-#{$i} {
+      @include media($bp) {
+        grid-template-columns: repeat(#{$i}, 1fr);
+      }
+    }
+  }
+}
+
+// Opcional: auto-fit responsive
+.row-cols-auto {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+}
+
+
+
+// Column base
+// .col {
+//   // por defecto ocupa toda la fila en mobile
+//   grid-column: 1 / -1;
+
+// }
+
+// Helper mixin para generar utilidades .col-N
+@function col-span-value($n) {
+  @return $n; // reserved in case you want percentage calc later
+}
+
+// Generar utilidades .col-1 ... .col-12 (mobile: las dejamos como full width; útiles para desktop)
+@for $i from 1 through $grid-columns {
+  .col-#{$i} {
+    // cuando estamos en grilla (sm o superior) aplicamos el span
+    @include media(sm) {
+      grid-column: span #{col-span-value($i)};
+    }
+  }
+}
+
+// Generar utilidades responsive: .col-sm-*, .col-md-*, .col-lg-*
+$bps: (sm, md, lg);
+@each $bp in $bps {
+  @for $i from 1 through $grid-columns {
+    .col-#{$bp}-#{$i} {
+      @include media($bp) {
+        grid-column: span #{col-span-value($i)};
+      }
+    }
+  }
+}

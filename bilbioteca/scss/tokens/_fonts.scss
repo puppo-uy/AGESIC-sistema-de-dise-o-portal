@@ -1,0 +1,130 @@
+/* Open sans */
+
+/* light - normal */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans-web/OpenSans-Light.woff2') format('woff2'),
+       url('../fonts/opensans-web/OpenSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* light - italic */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans-web/OpenSans-LightItalicLight.woff2') format('woff2'),
+       url('../fonts/opensans-web/OpenSans-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* regular - normal  */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans-web/OpenSans-Regular.woff2') format('woff2'),
+       url('../fonts/opensans-web/OpenSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* regular - italic  */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans-web/OpenSans-Italic.woff2') format('woff2'),
+       url('../fonts/opensans-web/OpenSans-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* semibold - normal */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans-web/OpenSans-Semibold.woff2') format('woff2'),
+       url('../fonts/opensans-web/OpenSans-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* semibold italic */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans-web/OpenSans-SemiboldItalic.woff2') format('woff2'),
+       url('../fonts/opensans-web/OpenSans-SemiboldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* bold - normal */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans-web/OpenSans-Bold.woff2') format('woff2'),
+       url('../fonts/opensans-web/OpenSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* bold - italic */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans-web/OpenSans-BoldItalic.woff2') format('woff2'),
+       url('../fonts/opensans-web/OpenSans-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+/* Sora */
+
+/* regular */
+@font-face {
+  font-family: 'Sora';
+  src: url('../fonts/sora-web/Sora-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* medium */
+@font-face {
+  font-family: 'Sora';
+  src: url('../fonts/sora-web/Sora-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* semibold */
+@font-face {
+  font-family: 'Sora';
+  src: url('../fonts/sora-web/Sora-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* bold */
+@font-face {
+  font-family: 'Sora';
+  src: url('../fonts/sora-web/Sora-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* extrabold */
+@font-face {
+  font-family: 'Sora';
+  src: url('../fonts/sora-web/Sora-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}

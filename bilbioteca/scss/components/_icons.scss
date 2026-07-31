@@ -1,0 +1,297 @@
+@use "../tokens" as *;
+
+:root {
+
+    --icono-tamano-xxxl : #{$icon-sizes-xxxl};
+    --icono-tamano-xxl : #{$icon-sizes-xxl};
+    --icono-tamano-xl : #{$icon-sizes-xl};
+    --icono-tamano-l : #{$icon-sizes-l};
+    --icono-tamano-m : #{$icon-sizes-m};
+    --icono-tamano-s : #{$icon-sizes-s};
+    --icono-tamano-xs : #{$icon-sizes-xs};
+    --icono-tamano-xxs : #{$icon-sizes-xxs};
+
+    --color-icono-principal: var(--primario-principal);
+    --color-icono-error: var(--funcional-error-acento);
+    --color-icono-advertencia: var(--funcional-advertencia-acento);
+    --color-icono-exito: var(--funcional-exito-acento);
+		--color-icono-informacion: var(--funcional-informacion-acento);
+		--color-icono-notificacion: var(--funcional-notificacion-acento);
+    --color-icono-blanco: var(--neutro-0);
+    --color-icono-texto-principal: var(--texto-principal);
+
+    --icono-tamano-defecto : var(--icono-tamano-m);
+    --color-icono-defecto: var(--color-icono-texto-principal);
+    --icono-borde-radio-full: var(--borde-radio-full);
+
+    //badge
+    --btn-badge-point-size: var(--espaciado-12); // En figma es 10!
+    --btn-badge-tag-size: var(--espaciado-24);
+    --btn-badge-border: var(--borde-grosor-1) solid var(--neutro-0);
+
+}
+
+.icono {
+  display: inline-block;
+  width: var(--icono-tamano-defecto);
+  height: var(--icono-tamano-defecto);
+  vertical-align: middle;
+  fill: var(--color-icono-defecto, currentColor);
+  flex-shrink: 0; // esto es para que al ponerlo en un contexto flex el otro div no le robe espacio.
+
+  &--iniciales{
+
+    background-color: var(--color-icono-defecto);
+    color: var(--color-icono-blanco);
+    display: inline-flex;
+    justify-content: center;
+		align-items: center;
+    border-radius: var(--icono-borde-radio-full);
+    line-height: var(--tipo-altura-linea-1);
+    font-size: var(--tipo-tamano-parrafo-xs);
+    position: relative;
+    text-decoration: none;
+
+    &.icono--s{
+
+      font-size: var(--tipo-tamano-parrafo-xxs);
+
+      .tag.tag--indicador{
+
+        margin: calc(var(--btn-badge-point-size) / -3) calc(var(--btn-badge-point-size) / -3) 0 0; // -4px -4px 0 0
+
+        &--numerico{
+
+          margin: calc(var(--btn-badge-tag-size) / -2) 0 0 0; // -12px 0x 0 0
+
+          > span{
+
+            font-size: var(--tipo-tamano-parrafo-xs);
+
+          }
+
+        }
+
+      }
+
+    }
+    
+    &.icono--m{
+
+      font-size: var(--tipo-tamano-parrafo-xs);
+
+      .tag.tag--indicador{
+
+        margin: calc(var(--btn-badge-point-size) / -3) calc(var(--btn-badge-point-size) / -3) 0 0;
+
+        &--numerico{
+
+          margin: calc(var(--btn-badge-tag-size) / -2) 0 0 0; // -12px 0x 0 0
+
+          > span{
+
+            font-size: var(--tipo-tamano-parrafo-xs);
+
+          }
+
+        }
+
+      }      
+
+
+    } 
+
+    &.icono--l{
+
+      font-size: var(--tipo-tamano-parrafo-s);
+
+      .tag.tag--indicador{
+
+        margin: calc(var(--btn-badge-point-size) / -3) calc(var(--btn-badge-point-size) / -3) 0 0;
+
+        &--numerico{
+
+          margin: calc(var(--btn-badge-tag-size) / -2) 0 0 0; // -12px 0x 0 0
+          
+
+        }
+
+      }
+
+          
+    }
+
+    &.icono--xl{
+
+      font-size: var(--tipo-tamano-parrafo-m);
+
+      .tag.tag--indicador{
+
+        margin: calc(var(--btn-badge-point-size) / -4) calc(var(--btn-badge-point-size) / -4) 0 0;
+
+        &--numerico{
+
+          margin: calc(var(--btn-badge-tag-size) / -4) 0 0 0; // -6px 0 0 0
+          
+
+        }
+
+      }
+
+    }
+
+    &.icono--xxl{
+
+      font-size: var(--tipo-tamano-parrafo-l);
+
+      .tag.tag--indicador{
+
+        margin: calc(var(--btn-badge-point-size) / -6) calc(var(--btn-badge-point-size) / -6) 0 0;
+
+      }
+
+    }
+
+    &.icono--xxxl{
+
+      font-size: var(--tipo-tamano-parrafo-xl);
+
+      .tag.tag--indicador{
+
+        margin: 0;
+
+      }
+
+    }
+
+    // .tag.tag--indicador{
+
+    //   margin: calc(var(--btn-badge-point-size) / -3) calc(var(--btn-badge-point-size) / -3) 0 0;
+
+    //       &--numerico{
+
+    //       margin: calc(var(--btn-badge-tag-size) / -2) 0 0 0; // -6px -6px 0 0
+
+    //       > span{
+
+    //         font-size: var(--tipo-tamano-parrafo-xs);
+
+    //       }
+
+    //     }
+
+    // }    
+
+
+  }
+
+}
+
+@mixin icon-size($key) {
+
+  $var-name: "--icono-tamano-#{$key}";
+  width: var(#{$var-name});
+  height: var(#{$var-name});
+
+}
+
+@each $key in (xxxl, xxl, xl, l, m, s, xs, xxs) {
+  .icono--#{$key} {
+    @include icon-size($key);
+  }
+}
+
+$icon-color-keys: (
+  principal: --color-icono-principal,
+  error: --color-icono-error,
+  advertencia: --color-icono-advertencia,
+  exito: --color-icono-exito,
+  negativo: --color-icono-blanco,
+	informacion: --color-icono-informacion,
+	notificacion: --color-icono-notificacion,
+  texto-principal: --color-icono-texto-principal
+);
+
+@mixin icon-fill-var($css-var-name) {
+  color: var(#{$css-var-name}, currentColor);
+  // nota: la segunda parte del var() es el fallback si la variable no está definida
+  fill: var(#{$css-var-name}, currentColor);
+}
+
+@mixin icon-bg-var($css-var-name) {
+  background-color: var(#{$css-var-name}, currentColor);
+  color: #fff
+};
+
+@each $name, $cssvar in $icon-color-keys {
+
+  .icono--#{$name}:not(.icono--iniciales) {
+    @include icon-fill-var($cssvar);
+  }
+
+  .icono--#{$name}.icono--iniciales {
+    @include icon-bg-var($cssvar);
+  }
+
+};
+
+
+
+/*
+
+
+	&.boton--usuario{
+
+		
+
+		background-color: transparent;
+		height: var(--espaciado-40);
+    width: var(--espaciado-40);
+		padding: var(--espaciado-8);
+		box-shadow: none;
+
+
+		&:hover:not(:disabled), :focus:not(:disabled){
+
+			background-color: transparent;
+
+		}
+
+		> span:not(.tag--indicador){
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: var(--tipo-tamano-parrafo-xs);
+			text-transform: uppercase;
+			background-color: var(--btn-color-primary);
+			color: var(--color-primary-text);
+			border-radius: var(--borde-radio-full);
+			width: var(--espaciado-24);
+			height: var(--espaciado-24);
+			line-height: var(--tipo-altura-linea-1);
+
+		}
+
+		// Botón usuario con indiciador // Ajustes de alineación del tag - El resto de los atributos asociados a los tag están en el archivo _tags.scss
+
+		.tag {
+
+			&.tag--indicador{
+
+				margin: calc(var(--btn-badge-point-size) / 3) calc(var(--btn-badge-point-size) / 3) 0 0;
+
+				&--numerico{
+
+					margin-top: calc(var(--btn-badge-tag-size) / -4);
+
+				}
+
+			}
+
+		}
+
+
+	}
+
+  */

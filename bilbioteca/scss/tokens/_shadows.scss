@@ -1,0 +1,21 @@
+@use "primitives" as *;
+
+// Variables de sombras
+
+:root {
+
+    --sombra-difuminada-xs: #{$shadow-offset-top-xs} #{$shadow-blur-xs} #{$shadow-spread-none} #{$shadow-color-light};
+    --sombra-difuminada-s: #{$shadow-offset-top-s} #{$shadow-blur-s} #{$shadow-spread-none} #{$shadow-color-light};
+    --sombra-difuminada-m: #{$shadow-offset-top-m} #{$shadow-blur-m} #{$shadow-spread-none} #{$shadow-color-light};
+    --sombra-difuminada-l: #{$shadow-offset-top-l} #{$shadow-blur-l} #{$shadow-spread-none} #{$shadow-color-light};
+    --sombra-difuminada-xl: #{$shadow-offset-top-xl} #{$shadow-blur-xl} #{$shadow-spread-none} #{$shadow-color-light};
+
+    --sombra-dura-xs: #{$shadow-offset-top-xs} #{$shadow-blur-xxs} #{$shadow-spread-none} #{$shadow-color-medium};
+    --sombra-dura-s: #{$shadow-offset-top-s} #{$shadow-blur-xs} #{$shadow-spread-none} #{$shadow-color-medium};
+    --sombra-dura-m: #{$shadow-offset-top-m} #{$shadow-blur-s} #{$shadow-spread-none} #{$shadow-color-medium};
+    --sombra-dura-l: #{$shadow-offset-top-l} #{$shadow-blur-m} #{$shadow-spread-none} #{$shadow-color-medium};
+    --sombra-dura-xl: #{$shadow-offset-top-xl} #{$shadow-blur-l} #{$shadow-spread-none} #{$shadow-color-medium};
+
+    --sombra-foco: #{$shadow-offset-none} #{$shadow-blur-none} #{$shadow-spread-s} var(--formulario-campo-sombra-foco);
+
+}

@@ -1,0 +1,24 @@
+@use "primitives" as *;
+
+// Variables de bordes
+:root {
+
+	--borde-radio-0: #{$bordes-radios-0};
+	--borde-radio-xxs: #{$bordes-radios-xxs};
+	--borde-radio-xs: #{$bordes-radios-xs};
+	--borde-radio-s: #{$bordes-radios-s};
+	--borde-radio-m: #{$bordes-radios-m};
+	--borde-radio-l: #{$bordes-radios-l};
+	--borde-radio-xl: #{$bordes-radios-xl};
+	--borde-radio-xxl: #{$bordes-radios-xxl};
+	--borde-radio-full: #{$bordes-radios-full};
+	
+	--borde-grosor-0: #{$bordes-grosores-0};
+	--borde-grosor-1: #{$bordes-grosores-1};
+	--borde-grosor-2: #{$bordes-grosores-2};
+	--borde-grosor-3: #{$bordes-grosores-3};
+	--borde-grosor-4: #{$bordes-grosores-4};
+	--borde-grosor-5: #{$bordes-grosores-5};
+	--borde-grosor-6: #{$bordes-grosores-6};
+	
+}

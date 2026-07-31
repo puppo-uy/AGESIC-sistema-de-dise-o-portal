@@ -1,0 +1,44 @@
+@use "../tokens" as *;
+
+.divider {
+  border: 0;
+  border-top: 1px solid var(--divider-color, currentColor);
+  margin-block: var(--divider-space, var(--espaciado-16));
+}
+
+$divider-spaces: (
+  0,
+  8,
+  16,
+  24,
+  32,
+  40,
+  48,
+  64
+);
+
+@each $space in $divider-spaces {
+  .divider--space-#{$space} {
+    --divider-space: var(--espaciado-#{$space});
+  }
+}
+
+$divider-colors: (
+
+    neutro-25,
+    neutro-50,
+    neutro-100,
+    neutro-200,
+    neutro-300,
+    neutro-400,
+    neutro-500,
+    neutro-600,
+    neutro-700,
+
+);
+
+@each $color in $divider-colors {
+  .divider--#{$color} {
+    --divider-color: var(--#{$color});
+  }
+}

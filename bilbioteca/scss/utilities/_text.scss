@@ -1,0 +1,72 @@
+@use "../tokens" as *;
+
+/* ==========================================================================
+   Utilidades de Texto
+   ========================================================================== */
+// Clases atómicas (utilities) para alterar la presentación visual de los textos 
+// sin afectar la semántica del HTML (ej. no usar <strong> solo para poner negrita).
+
+/* Grosores (Font Weights)
+   ========================================================================== */
+
+.u-text-regular {
+  font-weight: var(--tipo-peso-regular) !important;
+}
+
+.u-text-semibold {
+  font-weight: var(--tipo-peso-semibold) !important;
+}
+
+.u-text-bold {
+  font-weight: var(--tipo-peso-bold) !important;
+}
+
+/* Estilos (Styles)
+   ========================================================================== */
+
+.u-text-italic {
+  font-style: italic !important;
+}
+
+/* Alineaciones (Alignment)
+   ========================================================================== */
+
+.u-text-left {
+  text-align: left !important;
+}
+
+.u-text-center {
+  text-align: center !important;
+}
+
+.u-text-right {
+  text-align: right !important;
+}
+
+/* Colores de Texto (Colors)
+   ========================================================================== */
+
+// Color principal (Negro/Gris oscuro)
+.u-color-principal {
+  color: var(--texto-principal) !important;
+}
+
+// Color auxiliar (Gris para bajar intensidad manteniendo contraste)
+.u-color-auxiliar {
+  color: var(--texto-auxiliar) !important;
+}
+
+// Color de información adicional (Gris más claro, cuidado con contraste)
+.u-color-info-adicional {
+  color: var(--texto-info_adicional) !important;
+}
+
+// Color primario (Azul institucional, ideal para resaltar acciones o estados)
+.u-color-primario {
+  color: var(--primario-principal) !important;
+}
+
+// Color inverso (Blanco, para fondos oscuros)
+.u-color-inverso {
+  color: var(--neutro-0) !important;
+}

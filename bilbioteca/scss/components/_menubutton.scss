@@ -1,0 +1,194 @@
+@use "../tokens" as *;
+@use "../layouts/flex" as *;
+@use "icons" as *;
+
+:root {
+	--breadcrumb-gutter: var(--espaciado-12);
+	--breadcrumb-gutter-s: var(--espaciado-8);
+}
+
+
+.desplegable-wrapper {
+	position: relative;
+	display: inline-block;
+}
+
+.menubutton {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	margin-top: 0;
+
+	/* Modificadores direccionales */
+	&.menubutton--right {
+		left: auto;
+		right: 0;
+	}
+
+	&.menubutton--top {
+		top: auto;
+		bottom: 100%;
+	}
+
+	width: max-content;
+	max-width: min(320px, calc(100vw - 32px));
+
+	display: flex;
+	flex-direction: column;
+	gap: var(--espaciado-8);
+	padding: var(--espaciado-0);
+	background: var(--neutro-0);
+	border-radius: var(--borde-radio-xs);
+	border: 1px solid var(--neutro-200);
+	box-shadow: var(--sombra-dura-l);
+	z-index: var(--z-dropdown);
+
+	>* {
+		margin-bottom: 0;
+		padding: var(--espaciado-8) var(--espaciado-24);
+	}
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		@include reset-list;
+		padding-left: var(--espaciado-24);
+
+		li {
+			border-bottom: solid 1px var(--neutro-50);
+
+			&:last-child {
+				border-bottom: none;
+			}
+
+			.enlace {
+				display: flex;
+				padding: var(--espaciado-12) var(--espaciado-8);
+				color: var(--neutro-900);
+				border-radius: var(--borde-radio-xs);
+				text-decoration-line: none;
+
+				&:hover {
+					background-color: var(--decorativo-celeste-claro);
+					//text-decoration-line: underline;
+				}
+
+
+				.icono {
+					@include icon-size(s);
+					color: var(--neutro-700);
+				}
+			}
+		}
+	}
+
+	&.menubutton--acciones {
+		padding: var(--espaciado-12);
+
+		ul {
+			padding: 0;
+		}
+	}
+
+	&.menubutton--notificaciones {
+		padding: var(--espaciado-24) var(--espaciado-0);
+	}
+
+	&.menubutton--usuario {
+		padding: 0;
+		gap: var(--espaciado-0);
+
+		ul {
+			padding: var(--espaciado-12);
+		}
+	}
+
+	.usuario-datos {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		gap: var(--espaciado-16);
+		padding: var(--espaciado-32) var(--espaciado-24);
+		border-bottom: solid 1px var(--neutro-100);
+
+		.usuario-nombre {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: var(--espaciado-8);
+			text-align: center;
+
+			p {
+				font-weight: 600;
+			}
+		}
+
+		.usuario-metodo {
+			margin-bottom: var(--espaciado-8);
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 12px;
+
+			.nivel-seguridad {
+				color: var(--neutro-700);
+			}
+		}
+	}
+
+	// Variante Split Button
+	&.menubutton--split {
+		padding: var(--espaciado-0);
+		min-width: 100%; // Ocupa al menos el ancho de los 2 botones juntos
+		
+		ul {
+			padding: var(--espaciado-0);
+		}
+
+		li {
+			border-bottom: solid 1px var(--neutro-50);
+			padding: 0; // Sobrescribe el padding heredado de > *
+			
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+
+		.boton {
+			width: 100%;
+			justify-content: flex-start;
+			border: none;
+			border-radius: var(--borde-radio-0);
+			box-shadow: none;
+			background: transparent;
+			font-weight: normal;
+			
+			// Por defecto (Secundarios o genéricos)
+			color: var(--btn-color-primary);
+			
+			&:hover, &:focus-visible {
+				background: var(--neutro-50);
+				color: var(--btn-color-primary);
+			}
+		}
+
+		// Estilos específicos cuando el Split Button es Primario
+		.boton-desplegable--primario & {
+			background: var(--btn-color-primary);
+			border-color: var(--primario-claro);
+
+			li {
+				border-bottom-color: var(--primario-claro);
+			}
+
+			.boton {
+				color: var(--neutro-0); // Texto blanco
+
+				&:hover, &:focus-visible {
+					background: var(--color-primary-hover);
+					color: var(--neutro-0);
+				}
+			}
+		}
+	}
+}

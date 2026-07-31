@@ -1,0 +1,513 @@
+@use "../tokens" as *;
+@use "icons" as *;
+
+$ancho-barra: 138px; // analizar
+$ancho-panel: 240px; // analizar
+
+
+:root {
+  --menu-lateral-submenu-ancho: #{$ancho-panel}; // revisar este dato
+  --menu-lateral-menu-ancho: #{$ancho-barra}; // revisar este dato
+  --menu-lateral-seccion-activa-fondo: #{$colores-institucionales-azul-200}; // revisar este dato
+
+  --menu-lateral-fondo: #{$colores-institucionales-azul-400};
+  --menu-lateral-padding-y: var(--espaciado-12);
+  --menu-lateral-padding-x: var(--espaciado-8) var(--espaciado-0);
+  --menu-lateral-gap: var(--espaciado-16);
+  --menu-lateral-item-gap: var(--espaciado-4);
+  --menu-lateral-item-padding-y: var(--espaciado-16);
+  --menu-lateral-item-padding-x: var(--espaciado-12) var(--espaciado-12);
+  --menu-lateral-item-activo-fondo: var(--neutro-0);
+  --menu-lateral-item-activo-color: var(--texto-principal);
+  --menu-lateral-item-fondo-hover: var(--primario-mas-claro);
+  --menu-lateral-item-color: var(--texto-enlace-claro);
+  --menu-lateral-item-active-border-radius: var(--borde-radio-s) var(--borde-radio-0) var(--borde-radio-0) var(--borde-radio-s);
+  --menu-lateral-item-border-radius: var(--borde-radio-s);
+  --menu-lateral-submenu-padding: var(--espaciado-40) var(--espaciado-20);
+  --menu-lateral-submenu-item-padding: var(--espaciado-12) var(--espaciado-12);
+  --menu-lateral-submenu-fondo: var(--neutro-0);
+  --menu-lateral-enlace-color: var(--texto-principal);
+  --menu-lateral-submenu-item-activo-fondo: var(--decorativo-celeste-claro);
+
+  @include media(sm, down) {
+    --menu-lateral-gap: var(--espaciado-12);
+    --menu-lateral-item-gap: var(--espaciado-8);
+    --menu-lateral-item-padding-x: var(--espaciado-24);
+    --menu-lateral-item-padding-y: var(--espaciado-12);
+    --menu-lateral-submenu-padding: var(--espaciado-0) var(--espaciado-24) var(--espaciado-12) var(--espaciado-48);
+    --menu-lateral-submenu-item-padding: var(--espaciado-8) var(--espaciado-8) var(--espaciado-8) var(--espaciado-8);
+
+  }
+
+  // variables para analizar
+  --submenu-duration: .5s;
+  /* duración */
+  --submenu-easing: cubic-bezier(.2, .9, .2, 1);
+  /* easing (suave) */
+}
+
+.navegacion-lateral {
+  z-index: 1;
+  position: relative;
+
+  // Solo en escritorio: elevar el nav cuando hay un submenú abierto para superar los badges
+  @include media(sm) {
+    &:has(.barra-lateral-submenu.is-open) {
+      z-index: var(--z-dropdown);
+    }
+  }
+
+  // En mobile el nav ya tiene un z-index alto para estar sobre el overlay
+  @include media(sm, down) {
+    z-index: var(--z-drawer);
+  }
+}
+
+/*
+  width: var(--menu-lateral-menu-ancho);
+  transition: var(--animacion-base);
+
+  &.subnav-open{
+
+    width: calc(var(--menu-lateral-menu-ancho) + var(--menu-lateral-submenu-ancho)); // el nav crece con el ancho del submenu
+    background-color: var(--menu-lateral-submenu-fondo);
+
+  }
+}
+*/
+
+.barra-lateral {
+  width: var(--menu-lateral-menu-ancho);
+  height: 100%;
+
+  @include media(sm, down) {
+    position: fixed;
+    top: 74px; //esta es la altura del header - revisar esto.
+    left: -100%;
+    height: calc(100vh - 65px);
+    width: 80vw;
+    max-width: 560px;
+    z-index: var(--z-drawer);
+    transform: translateX(0);
+    transition: var(--animacion-base);
+    box-shadow: var(--sombra-difuminada-xl);
+  }
+
+  ;
+
+  .barra-lateral-lista {
+    height: 100%;
+    background-color: var(--menu-lateral-fondo);
+    padding-block: var(--menu-lateral-padding-y);
+    padding-inline: var(--menu-lateral-padding-x);
+    font-family: var(--tipo-familia-base);
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: var(--menu-lateral-gap);
+
+    @include media(sm, down) {
+      align-items: stretch;
+      padding-inline: 0;
+    }
+  }
+
+  .barra-lateral-item {
+    width: 100%;
+    border-right: 2px solid transparent;
+
+    @include media(sm, down) {
+      border-right: none;
+    }
+
+    .barra-lateral-enlace {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: var(--menu-lateral-item-gap);
+      padding-block: var(--menu-lateral-item-padding-y);
+      padding-inline: var(--menu-lateral-item-padding-x);
+      background-color: transparent;
+      color: var(--menu-lateral-item-color);
+      text-decoration: none;
+      font-size: var(--tipo-tamano-parrafo-s);
+      font-weight: var(--tipo-peso-bold);
+      font-family: var(--tipo-familia-base);
+      border: none;
+      width: calc(100% - var(--espaciado-4));
+      border-radius: var(--menu-lateral-item-border-radius);
+      transition: var(--animacion-base);
+      position: relative;
+
+      .icono {
+        @include icon-size(l);
+      }
+
+      @include media(sm, down) {
+        flex-direction: row;
+        justify-content: flex-start;
+        font-size: var(--tipo-tamano-parrafo-m);
+        font-weight: var(--tipo-peso-semibold);
+        width: 100%;
+        border-radius: 0;
+
+        .icono {
+          @include icon-size(s);
+        }
+      }
+
+      .barra-lateral-texto {
+        text-align: center;
+      }
+
+      &.seccion-activa {
+        background-color: var(--menu-lateral-item-activo-fondo);
+        color: var(--menu-lateral-item-activo-color);
+
+        &+.barra-lateral-submenu {
+
+          background-color: var(--menu-lateral-item-activo-fondo);
+          //transform: translateX(calc(-100% + var(--espaciado-8)));
+          transform: translateX(-100%);
+
+          &.is-opening,
+          &.is-open {
+            opacity: 1;
+            transform: translateX(0);
+          }
+
+          &.is-closing {
+            opacity: 1;
+            transform: translateX(calc(-100% + var(--espaciado-8)));
+          }
+
+          .barra-lateral-flecha-toggle {
+            position: absolute;
+            top: var(--espaciado-32);
+            padding-block: var(--espaciado-12);
+            padding-left: var(--espaciado-2);
+            padding-right: var(--espaciado-8);
+            right: 0;
+            transform: translateX(100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            border-radius: 0 var(--borde-radio-full) var(--borde-radio-full) 0;
+            cursor: pointer;
+            user-select: none;
+            background-color: var(--menu-lateral-item-activo-fondo);
+            border: none;
+
+            &:focus {}
+          }
+
+          &.is-open {
+
+            .barra-lateral-flecha-toggle {
+
+              .icono {
+                transform: rotate(180deg);
+                transition: var(--animacion-rapida);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.tiene-submenu {
+
+      .barra-lateral-enlace {
+        &::after {
+          content: "";
+          position: absolute;
+          right: var(--espaciado-4);
+          top: calc(var(--menu-lateral-item-padding-y) + var(--icono-tamano-l) / 2 - var(--espaciado-12) / 2);
+          //transform: translateY(-50%);
+          width: var(--espaciado-12);
+          height: var(--espaciado-12);
+          background-color: var(--menu-lateral-item-color);
+          mask-image: url(../iconos/chevron-derecha--lineal.svg);
+          -webkit-mask-image: url(../iconos/chevron-derecha--lineal.svg);
+          mask-size: contain;
+          transition: var(--animacion-rapida);
+
+          @include media(sm, down) {
+            background-color: var(--menu-lateral-item-color);
+            right: var(--espaciado-16);
+            transform: rotate(90deg);
+          }
+        }
+
+        &:hover {
+
+          &::after {
+            background-color: var(--menu-lateral-item-activo-color);
+
+            @include media(sm, down) {
+              background-color: var(--menu-lateral-item-color);
+            }
+          }
+        }
+
+        &.seccion-activa {
+          &::after {
+            background-color: var(--menu-lateral-item-activo-color);
+          }
+        }
+      }
+
+      &.item-activo {
+        border-right-color: var(--menu-lateral-item-activo-fondo);
+        background-color: var(--menu-lateral-item-activo-fondo);
+        border-radius: var(--menu-lateral-item-active-border-radius);
+        min-height: fit-content;
+
+        @include media(sm, down) {
+          border-radius: var(--borde-radio-0);
+        }
+
+        .activo[aria-expanded='true'] {
+          color: var(--menu-lateral-item-activo-color);
+
+          &::after {
+            background-color: var(--menu-lateral-item-activo-color);
+            transform: rotate(-180deg);
+
+            @include media(sm, down) {
+              transform: rotate(-90deg);
+            }
+          }
+        }
+
+        &.otro-submenu-abierto {
+          border-right-color: var(--menu-lateral-fondo);
+
+          .barra-lateral-submenu {
+            z-index: -2;
+          }
+        }
+      }
+    }
+
+    &:not(.item-activo) {
+
+      button,
+      a {
+
+        &:hover {
+
+          background-color: var(--menu-lateral-item-fondo-hover);
+          color: var(--menu-lateral-item-activo-color);
+
+          cursor: pointer;
+
+          @include media(sm, down) {
+
+            background-color: inherit;
+            color: var(--menu-lateral-item-color);
+
+          }
+        }
+      }
+    }
+  }
+
+  .barra-lateral-submenu {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaciado-8);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: var(--menu-lateral-menu-ancho);
+    width: var(--menu-lateral-submenu-ancho);
+    padding: var(--menu-lateral-submenu-padding);
+    list-style: none;
+    max-height: none;
+    overflow: unset;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+    background-color: var(--menu-lateral-submenu-fondo);
+    opacity: 1;
+    transform: translateX(-100%);
+    transition: var(--animacion-base);
+
+    @include media(sm, down) {
+      height: fit-content;
+      position: relative;
+      max-height: 0;
+      overflow: hidden;
+      transition: var(--animacion-fade), max-height .5s ease;
+      opacity: 0;
+      visibility: hidden;
+      left: 0;
+      width: 100%;
+      padding: 0;
+
+      &.is-accordion-open {
+        opacity: 1;
+        visibility: visible;
+        max-height: 1000px;
+        z-index: var(--z-drawer);
+        padding: var(--menu-lateral-submenu-padding);
+      }
+    }
+
+    &:before {
+      content: attr(data-title);
+      display: block;
+      font-size: var(--tipo-tamano-titulo-s);
+      font-weight: var(--tipo-peso-bold);
+      margin-bottom: var(--espaciado-40);
+
+      @include media(sm, down) {
+        display: none;
+      }
+    }
+
+    li a {
+      padding: var(--menu-lateral-submenu-item-padding);
+      color: var(--menu-lateral-enlace-color);
+      width: 100%;
+      display: block;
+      text-decoration: none;
+      font-size: var(--tipo-tamano-parrafo-m);
+      font-weight: var(--tipo-peso-semibold);
+      border-radius: var(--menu-lateral-item-border-radius);
+      transition: var(--animacion-base);
+
+      &.subseccion-activa {
+        background-color: var(--menu-lateral-submenu-item-activo-fondo);
+      }
+
+      &:not(.subseccion-activa) {
+
+        &:hover {
+          cursor: pointer;
+          background-color: var(--menu-lateral-item-fondo-hover);
+
+          @include media(sm, down) {
+
+            background-color: transparent;
+
+          }
+        }
+      }
+    }
+
+    &.is-opening,
+    &.is-open {
+      display: flex;
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    &.is-closing {
+      opacity: 1;
+      transform: translateX(-100%);
+    }
+  }
+}
+
+
+/* overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .22s ease;
+  z-index: var(--z-overlay);
+}
+
+.menu-movil-abierto .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+@include media(sm, down) {
+
+  .app {
+    /* ajusta grid si tenés layout grid */
+    grid-template-columns: 1fr;
+    /* el contenido queda debajo del drawer */
+  }
+
+  /* cuando esté abierto lo hacemos visible */
+  .menu-movil-abierto .barra-lateral {
+    left: 0;
+  }
+
+  button.barra-lateral-enlace {
+    position: relative;
+
+    &::before {
+      /*
+      content: "";
+        position: absolute;
+        right: var(--espaciado-24);
+        top: 50%;
+        transform: translateY(-50%);
+        width: var(--icono-tamano-xxs);
+        height: var(--icono-tamano-xxs);
+        background-color: var(--menu-lateral-item-color);
+        mask-image: url(../iconos/colapsable-abajo--relleno.svg);
+        -webkit-mask-image: url(../iconos/colapsable-abajo--relleno.svg);
+        mask-repeat: no-repeat;
+        mask-size: contain;
+*/
+    }
+
+    &.activo {
+
+      &::before {
+        mask-image: url(../iconos/colapsable-arriba--relleno.svg);
+        -webkit-mask-image: url(../iconos/colapsable-arriba--relleno.svg);
+      }
+
+    }
+
+  }
+
+  /* flecha/indicador para botones con submenu (opcional estilo) */
+  /*  .barra-lateral-enlace--boton .barra-lateral-flecha {
+    margin-left: auto;
+    transform: rotate(0);
+    transition: transform .18s ease;
+  }
+  .barra-lateral-enlace--boton.activo .barra-lateral-flecha {
+    transform: rotate(90deg);
+  }*/
+
+  /* overlay z-index ordering */
+  .overlay {
+    z-index: var(--z-overlay);
+  }
+
+  .barra-lateral {
+    z-index: var(--z-drawer);
+  }
+}
+
+// Cuando el menu lateral está abierto en mobile, el header debe
+// mantenerse por encima del overlay para que el botón sea clickeable
+.menu-movil-abierto header,
+.menu-movil-abierto .header--app {
+  z-index: var(--z-drawer); // Sube a 201, encima del overlay (200)
+}
+
+#boton-hamburguesa[aria-expanded="true"] {
+  background-color: var(--menu-lateral-fondo);
+  color: white;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}

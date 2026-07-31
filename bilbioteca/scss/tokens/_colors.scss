@@ -1,0 +1,125 @@
+@use "primitives" as *;
+
+// Variables de colores
+
+:root {
+
+    //Primario
+    --primario-mas-claro: #{$colores-institucionales-azul-25};
+    --primario-claro: #{$colores-institucionales-azul-50};
+    --primario-principal: #{$colores-institucionales-azul-500}; 
+    --primario-oscuro: #{$colores-institucionales-azul-800};
+		//--primario-oscuro: #{$colores-institucionales-azul-950};
+
+    //Secundario
+    --secundario-claro: #{$colores-institucionales-amarillo-50};
+    --secundario-principal: #{$colores-institucionales-amarillo-500};
+    --secundario-oscuro: #{$colores-institucionales-amarillo-700};
+
+    // Neutros
+    --neutro-0: #{$colores-neutros-blanco};
+    --neutro-25: #{$colores-neutros-gris-calido-25};
+    --neutro-50: #{$colores-neutros-gris-calido-50};
+    --neutro-100: #{$colores-neutros-gris-calido-100};
+    --neutro-200: #{$colores-neutros-gris-calido-200};
+    --neutro-300: #{$colores-neutros-gris-calido-300};
+    --neutro-400: #{$colores-neutros-gris-calido-400};
+    --neutro-500: #{$colores-neutros-gris-calido-500};
+    --neutro-600: #{$colores-neutros-gris-calido-600};
+    --neutro-700: #{$colores-neutros-gris-calido-700};
+    --neutro-800: #{$colores-neutros-gris-calido-800};
+    --neutro-900: #{$colores-neutros-gris-calido-900};
+    --neutro-950: #{$colores-neutros-gris-calido-950};
+    --neutro-1000: #{$colores-neutros-negro};
+	
+		// Colores funcionales: Información
+		--funcional-informacion-claro: #{$colores-neutros-gris-calido-50};
+		--funcional-informacion-medio: #{$colores-neutros-gris-calido-200};
+		--funcional-informacion-acento: #{$colores-neutros-gris-calido-500};
+		--funcional-informacion-medio_oscuro: #{$colores-neutros-gris-calido-800};
+		--funcional-informacion-oscuro: #{$colores-neutros-gris-calido-950};
+	
+    // Colores funcionales: Notificación
+		--funcional-notificacion-claro: #{$colores-funcionales-azul-notificacion-50};
+		--funcional-notificacion-medio: #{$colores-funcionales-azul-notificacion-200};
+		--funcional-notificacion-acento: #{$colores-funcionales-azul-notificacion-500};
+		--funcional-notificacion-medio_oscuro: #{$colores-funcionales-azul-notificacion-800};
+		--funcional-notificacion-oscuro: #{$colores-funcionales-azul-notificacion-950};
+	
+    // Colores funcionales: Exito
+		--funcional-exito-claro: #{$colores-funcionales-verde-exito-50};
+		--funcional-exito-medio: #{$colores-funcionales-verde-exito-200};
+		--funcional-exito-acento: #{$colores-funcionales-verde-exito-500};
+		--funcional-exito-medio_oscuro: #{$colores-funcionales-verde-exito-800};
+		--funcional-exito-oscuro: #{$colores-funcionales-verde-exito-950};
+	
+    // Colores funcionales: Error
+		--funcional-error-claro: #{$colores-funcionales-rojo-error-50};
+		--funcional-error-medio: #{$colores-funcionales-rojo-error-200};
+		--funcional-error-acento: #{$colores-funcionales-rojo-error-500};
+		--funcional-error-medio_oscuro: #{$colores-funcionales-rojo-error-800};
+		--funcional-error-oscuro: #{$colores-funcionales-rojo-error-950};
+	
+    // Colores funcionales: Advertencia
+		--funcional-advertencia-claro: #{$colores-funcionales-naranja-advertencia-50};
+		--funcional-advertencia-medio: #{$colores-funcionales-naranja-advertencia-200};
+		--funcional-advertencia-acento: #{$colores-funcionales-naranja-advertencia-500};
+		--funcional-advertencia-medio_oscuro: #{$colores-funcionales-naranja-advertencia-800};
+		--funcional-advertencia-oscuro: #{$colores-funcionales-naranja-advertencia-950};
+
+
+    // Foco
+
+    --foco-acento : #{$colores-naranja-foco-500};
+	  --foco-acento-claro: #{$colores-naranja-foco-50};
+
+    // Decorativos: Celeste
+
+    --decorativo-celeste-claro: #{$colores-cromaticos-celeste-50};
+	
+    // Colores de textos 
+
+    --texto-principal: var(--neutro-1000);
+    --texto-auxiliar: var(--neutro-900);
+    --texto-info_adicional: var(--neutro-800);
+    --texto-placeholder: var(--neutro-800);
+    --texto-enlace-primario: var(--primario-principal);
+    --texto-enlace-oscuro: var(--neutro-1000);
+    --texto-enlace-claro: var(--neutro-0);
+   
+    
+
+    // Colores formularios
+    --formulario-borde-fieldset: var(--neutro-700);
+
+    --fomulario-texto-label: var(--texto-principal);
+    --fomulario-texto-input: var(--texto-principal);
+    --formulario-texto-ayuda_info: var(--texto-auxiliar);
+    --formulario-texto-placeholder: var(--texto-placeholder);
+    
+    --formulario-validacion-texto-error: var(--funcional-error-medio_oscuro);
+    --formulario-validacion-texto-advertencia: var(--funcional-advertencia-medio_oscuro);
+    --formulario-validacion-texto-exito: var(--funcional-exito-medio_oscuro);
+    --formulario-texto-ayuda_enlace: var(--texto-enlace-primario);
+    
+    --formulario-validacion-fondo-error: var(--funcional-error-claro);
+    --formulario-validacion-borde-error: var(--funcional-error-medio);
+    --formulario-validacion-fondo-advertencia: var(--funcional-advertencia-claro);
+    --formulario-validacion-borde-advertencia: var(--funcional-advertencia-medio);
+    
+    --formulario-campo-borde-default: var(--neutro-700);
+    --formulario-campo-borde-foco:var(--foco-acento);
+    --formulario-campo-sombra-foco: var(--foco-acento-claro);
+    --formulario-campo-fondo-default: var(--neutro-0);
+    --formulario-campo-borde-error: var(--funcional-error-acento);
+    --formulario-campo-fondo-error: var(--neutro-0);
+    --formulario-campo-borde-advertencia: var(--funcional-advertencia-acento);
+    --formulario-campo-fondo-advertencia: var(--neutro-0);
+
+    --formulario-etiqueta-texto: var(--primario-principal);
+    --formulario-etiqueta-borde: var(--primario-principal);
+    --formulario-etiqueta-fondo-seleccionada: var(--primario-claro);
+
+
+
+}

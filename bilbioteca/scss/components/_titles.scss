@@ -1,0 +1,67 @@
+@use "../tokens" as *;
+
+:root {
+  --heading-spacing-xl: var(--espaciado-36);
+  --heading-spacing-l:  var(--espaciado-32);
+  --heading-spacing-m:  var(--espaciado-24);
+  --heading-spacing-s:  var(--espaciado-20);
+  --heading-spacing-xs: var(--espaciado-16);
+}
+
+
+h1, h2, h3, h4, h5, h6{
+
+  font-family: var(--tipo-familia-base);
+  font-weight: var(--tipo-peso-semibold);
+  color: var(--texto-principal);
+
+}
+
+h1 {
+
+  font-size: var(--tipo-tamano-titulo-xxl);
+  line-height: var(--tipo-altura-linea-s);
+  margin: 0 0 var(--heading-spacing-xl);
+
+}
+
+h2 {
+
+
+  font-size: var(--tipo-tamano-titulo-xl);
+  line-height: var(--tipo-altura-linea-s);
+  margin: 0 0 var(--heading-spacing-l);
+
+}
+
+h3 {
+
+  font-size: var(--tipo-tamano-titulo-l);
+  line-height: var(--tipo-altura-linea-xs);
+  margin: 0 0 var(--heading-spacing-m);
+
+}
+
+h4 {
+
+  font-size: var(--tipo-tamano-titulo-m);
+  line-height: var(--tipo-altura-linea-s);
+  margin: 0 0 var(--heading-spacing-s);
+  
+}
+
+h5 {
+
+  font-size: var(--tipo-tamano-titulo-s);
+  line-height: var(--tipo-altura-linea-m);
+  margin: 0 0 var(--heading-spacing-xs);
+  
+}
+
+h6 {
+
+  font-size: var(--tipo-tamano-titulo-xs);
+  line-height: var(--tipo-altura-linea-l);
+  margin: 0 0 var(--heading-spacing-xs);
+  
+}
