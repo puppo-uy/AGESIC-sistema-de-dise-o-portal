@@ -11,16 +11,37 @@
         html, body {
             background: transparent;
             margin: 0;
-            padding: <?php echo isset($_GET['nopadding']) ? '0' : '16px'; ?>;
+            padding: 0;
             overflow-x: auto;
         }
         /* Contenedor con borde sutil para visualizar el componente externo */
         .preview-container {
+            position: relative;
             border: 1px solid #d0d7de;
             border-radius: 6px;
-            padding: 16px;
+            padding: 24px 16px 16px 16px;
             background-color: #ffffff;
             box-sizing: border-box;
+        }
+        /* Etiqueta / Bloque en la esquina superior derecha */
+        .preview-badge {
+            position: absolute;
+            top: -1px;
+            right: -1px;
+            background-color: #f6f8fa;
+            border: 1px solid #d0d7de;
+            border-top-right-radius: 6px;
+            border-bottom-left-radius: 6px;
+            padding: 3px 10px;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 11px;
+            font-weight: 600;
+            color: #57606a;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            line-height: 1.3;
+            pointer-events: none;
+            user-select: none;
         }
     </style>
 </head>
@@ -34,6 +55,7 @@
     ?>
 
     <div class="preview-container">
+        <span class="preview-badge">Componente de ejemplo</span>
     <?php
     $comp = isset($_GET['comp']) ? $_GET['comp'] : '';
     
