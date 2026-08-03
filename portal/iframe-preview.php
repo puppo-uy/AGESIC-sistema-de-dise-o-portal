@@ -17,7 +17,7 @@
         /* Contenedor con borde sutil para visualizar el componente externo */
         .preview-container {
             position: relative;
-            border: 1px solid #d0d7de;
+            border: 2px solid #93c5fd;
             border-radius: 6px;
             padding: 24px 16px 16px 16px;
             background-color: #ffffff;
@@ -26,17 +26,17 @@
         /* Etiqueta / Bloque en la esquina superior derecha */
         .preview-badge {
             position: absolute;
-            top: -1px;
-            right: -1px;
-            background-color: #f6f8fa;
-            border: 1px solid #d0d7de;
+            top: -2px;
+            right: -2px;
+            background-color: #eff6ff;
+            border: 2px solid #93c5fd;
             border-top-right-radius: 6px;
             border-bottom-left-radius: 6px;
             padding: 3px 10px;
             font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             font-size: 11px;
             font-weight: 600;
-            color: #57606a;
+            color: #1e40af;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             line-height: 1.3;
