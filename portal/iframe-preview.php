@@ -13,6 +13,7 @@
             margin: 0;
             padding: <?php echo isset($_GET['nopadding']) ? '0' : '16px'; ?>;
             overflow-x: auto;
+            border: 1px solid #666;
         }
     </style>
 </head>
