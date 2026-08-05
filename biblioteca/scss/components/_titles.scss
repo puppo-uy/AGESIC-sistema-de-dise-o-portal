@@ -1,67 +1,58 @@
 @use "../tokens" as *;
 
-:root {
-  --heading-spacing-xl: var(--espaciado-36);
-  --heading-spacing-l:  var(--espaciado-32);
-  --heading-spacing-m:  var(--espaciado-24);
-  --heading-spacing-s:  var(--espaciado-20);
-  --heading-spacing-xs: var(--espaciado-16);
-}
+// Clases de título: permiten aplicar el tamaño visual de un nivel de título a cualquier etiqueta, independientemente de su nivel semántico (h1-h6).
+// Una clase sola ya gana por especificidad a los selectores de tipo (h1-h6) definidos en base/typography
 
-
-h1, h2, h3, h4, h5, h6{
-
+.titulo--xxl {
   font-family: var(--tipo-familia-base);
   font-weight: var(--tipo-peso-semibold);
   color: var(--texto-principal);
-
-}
-
-h1 {
-
   font-size: var(--tipo-tamano-titulo-xxl);
   line-height: var(--tipo-altura-linea-s);
   margin: 0 0 var(--heading-spacing-xl);
-
 }
 
-h2 {
-
-
+.titulo--xl {
+  font-family: var(--tipo-familia-base);
+  font-weight: var(--tipo-peso-semibold);
+  color: var(--texto-principal);
   font-size: var(--tipo-tamano-titulo-xl);
   line-height: var(--tipo-altura-linea-s);
   margin: 0 0 var(--heading-spacing-l);
-
 }
 
-h3 {
-
+.titulo--lg {
+  font-family: var(--tipo-familia-base);
+  font-weight: var(--tipo-peso-semibold);
+  color: var(--texto-principal);
   font-size: var(--tipo-tamano-titulo-l);
   line-height: var(--tipo-altura-linea-xs);
   margin: 0 0 var(--heading-spacing-m);
-
 }
 
-h4 {
-
+.titulo--md {
+  font-family: var(--tipo-familia-base);
+  font-weight: var(--tipo-peso-semibold);
+  color: var(--texto-principal);
   font-size: var(--tipo-tamano-titulo-m);
   line-height: var(--tipo-altura-linea-s);
   margin: 0 0 var(--heading-spacing-s);
-  
 }
 
-h5 {
-
+.titulo--sm {
+  font-family: var(--tipo-familia-base);
+  font-weight: var(--tipo-peso-semibold);
+  color: var(--texto-principal);
   font-size: var(--tipo-tamano-titulo-s);
   line-height: var(--tipo-altura-linea-m);
   margin: 0 0 var(--heading-spacing-xs);
-  
 }
 
-h6 {
-
+.titulo--xs {
+  font-family: var(--tipo-familia-base);
+  font-weight: var(--tipo-peso-semibold);
+  color: var(--texto-principal);
   font-size: var(--tipo-tamano-titulo-xs);
   line-height: var(--tipo-altura-linea-l);
   margin: 0 0 var(--heading-spacing-xs);
-  
 }

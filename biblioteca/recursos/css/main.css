@@ -133,6 +133,16 @@
   --tipo-altura-linea-xs: 1.2;
   --tipo-altura-linea-xxs: 1.1;
   --tipo-altura-linea-1: 1;
+  --heading-spacing-xl: var(--espaciado-36);
+  --heading-spacing-l: var(--espaciado-32);
+  --heading-spacing-m: var(--espaciado-24);
+  --heading-spacing-s: var(--espaciado-20);
+  --heading-spacing-xs: var(--espaciado-16);
+  --parrafo-spacing-xl: var(--espaciado-24);
+  --parrafo-spacing-l: var(--espaciado-20);
+  --parrafo-spacing-m: var(--espaciado-16);
+  --parrafo-spacing-s: var(--espaciado-12);
+  --parrafo-spacing-xs: var(--espaciado-8);
 }
 
 :root {
@@ -763,37 +773,37 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: var(--tipo-tamano-titulo-xxl);
   line-height: var(--tipo-altura-linea-s);
-  margin: 0 0 var(--espaciado-36);
+  margin: 0 0 var(--heading-spacing-xl);
 }
 
 h2 {
   font-size: var(--tipo-tamano-titulo-xl);
   line-height: var(--tipo-altura-linea-s);
-  margin: 0 0 var(--espaciado-32);
+  margin: 0 0 var(--heading-spacing-l);
 }
 
 h3 {
   font-size: var(--tipo-tamano-titulo-l);
   line-height: var(--tipo-altura-linea-xs);
-  margin: 0 0 var(--espaciado-24);
+  margin: 0 0 var(--heading-spacing-m);
 }
 
 h4 {
   font-size: var(--tipo-tamano-titulo-m);
   line-height: var(--tipo-altura-linea-s);
-  margin: 0 0 var(--espaciado-20);
+  margin: 0 0 var(--heading-spacing-s);
 }
 
 h5 {
   font-size: var(--tipo-tamano-titulo-s);
   line-height: var(--tipo-altura-linea-m);
-  margin: 0 0 var(--espaciado-16);
+  margin: 0 0 var(--heading-spacing-xs);
 }
 
 h6 {
   font-size: var(--tipo-tamano-titulo-xs);
   line-height: var(--tipo-altura-linea-l);
-  margin: 0 0 var(--espaciado-16);
+  margin: 0 0 var(--heading-spacing-xs);
 }
 
 /* Other type elements
@@ -803,7 +813,7 @@ p {
   font-weight: var(--tipo-peso-regular);
   color: var(--texto-principal);
   font-size: var(--tipo-tamano-parrafo-m);
-  margin: 0 0 var(--espaciado-16);
+  margin: 0 0 var(--parrafo-spacing-m);
 }
 
 strong, b {
@@ -2397,62 +2407,58 @@ dd {
   height: var(--icono-tamano-m);
 }
 
-:root {
-  --heading-spacing-xl: var(--espaciado-36);
-  --heading-spacing-l: var(--espaciado-32);
-  --heading-spacing-m: var(--espaciado-24);
-  --heading-spacing-s: var(--espaciado-20);
-  --heading-spacing-xs: var(--espaciado-16);
-}
-
-h1, h2, h3, h4, h5, h6 {
+.titulo--xxl {
   font-family: var(--tipo-familia-base);
   font-weight: var(--tipo-peso-semibold);
   color: var(--texto-principal);
-}
-
-h1 {
   font-size: var(--tipo-tamano-titulo-xxl);
   line-height: var(--tipo-altura-linea-s);
   margin: 0 0 var(--heading-spacing-xl);
 }
 
-h2 {
+.titulo--xl {
+  font-family: var(--tipo-familia-base);
+  font-weight: var(--tipo-peso-semibold);
+  color: var(--texto-principal);
   font-size: var(--tipo-tamano-titulo-xl);
   line-height: var(--tipo-altura-linea-s);
   margin: 0 0 var(--heading-spacing-l);
 }
 
-h3 {
+.titulo--lg {
+  font-family: var(--tipo-familia-base);
+  font-weight: var(--tipo-peso-semibold);
+  color: var(--texto-principal);
   font-size: var(--tipo-tamano-titulo-l);
   line-height: var(--tipo-altura-linea-xs);
   margin: 0 0 var(--heading-spacing-m);
 }
 
-h4 {
+.titulo--md {
+  font-family: var(--tipo-familia-base);
+  font-weight: var(--tipo-peso-semibold);
+  color: var(--texto-principal);
   font-size: var(--tipo-tamano-titulo-m);
   line-height: var(--tipo-altura-linea-s);
   margin: 0 0 var(--heading-spacing-s);
 }
 
-h5 {
+.titulo--sm {
+  font-family: var(--tipo-familia-base);
+  font-weight: var(--tipo-peso-semibold);
+  color: var(--texto-principal);
   font-size: var(--tipo-tamano-titulo-s);
   line-height: var(--tipo-altura-linea-m);
   margin: 0 0 var(--heading-spacing-xs);
 }
 
-h6 {
+.titulo--xs {
+  font-family: var(--tipo-familia-base);
+  font-weight: var(--tipo-peso-semibold);
+  color: var(--texto-principal);
   font-size: var(--tipo-tamano-titulo-xs);
   line-height: var(--tipo-altura-linea-l);
   margin: 0 0 var(--heading-spacing-xs);
-}
-
-:root {
-  --parrafo-spacing-xl: var(--espaciado-24);
-  --parrafo-spacing-l: var(--espaciado-20);
-  --parrafo-spacing-m: var(--espaciado-16);
-  --parrafo-spacing-s: var(--espaciado-12);
-  --parrafo-spacing-xs: var(--espaciado-8);
 }
 
 p {
@@ -2463,49 +2469,46 @@ p {
   margin: 0 0 var(--parrafo-spacing-m);
 }
 
-.parrafo-xl {
+.parrafo--xl {
   font-size: var(--tipo-tamano-parrafo-xl);
   line-height: var(--tipo-altura-linea-m);
   margin: 0 0 var(--parrafo-spacing-xl);
 }
-.parrafo-lg {
+.parrafo--lg {
   font-size: var(--tipo-tamano-parrafo-l);
   line-height: var(--tipo-altura-linea-m);
   margin: 0 0 var(--parrafo-spacing-l);
 }
-.parrafo-md {
+.parrafo--md {
   font-size: var(--tipo-tamano-parrafo-m);
   line-height: var(--tipo-altura-linea-l);
   margin: 0 0 var(--parrafo-spacing-m);
 }
-.parrafo-sm {
+.parrafo--sm {
   font-size: var(--tipo-tamano-parrafo-s);
   line-height: var(--tipo-altura-linea-m);
   margin: 0 0 var(--parrafo-spacing-s);
 }
-.parrafo-xs {
+.parrafo--xs {
   font-size: var(--tipo-tamano-parrafo-xs);
   line-height: var(--tipo-altura-linea-s);
   margin: 0 0 var(--parrafo-spacing-xs);
 }
 
-/* Formtato base para listas de texto o numéricas: List-text */
-/*ul, 
-ol,*/
-.lista-texto li {
+.lista li {
   margin-top: var(--espaciado-8);
 }
-.lista-texto li:first-child {
+.lista li:first-child {
   margin-top: var(--espaciado-0);
 }
-.lista-texto li ul, .lista-texto li ol {
+.lista li ul, .lista li ol {
   margin-top: var(--espaciado-4);
   padding-top: var(--espaciado-2);
 }
-.lista-texto li ul li, .lista-texto li ol li {
+.lista li ul li, .lista li ol li {
   margin-top: var(--espaciado-4);
 }
-.lista-texto li ul li:first-child, .lista-texto li ol li:first-child {
+.lista li ul li:first-child, .lista li ol li:first-child {
   margin-top: var(--espaciado-0);
 }
 

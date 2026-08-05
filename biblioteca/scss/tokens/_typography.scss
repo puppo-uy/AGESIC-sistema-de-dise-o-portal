@@ -35,5 +35,19 @@
     --tipo-altura-linea-xs: #{$tipo-altura-linea-120};
     --tipo-altura-linea-xxs: #{$tipo-altura-linea-110};
     --tipo-altura-linea-1: #{$tipo-altura-linea-100};
-    
+
+    // Espaciado semántico de títulos (usado por base/typography y components/titles)
+    --heading-spacing-xl: var(--espaciado-36);
+    --heading-spacing-l:  var(--espaciado-32);
+    --heading-spacing-m:  var(--espaciado-24);
+    --heading-spacing-s:  var(--espaciado-20);
+    --heading-spacing-xs: var(--espaciado-16);
+
+    // Espaciado semántico de párrafos (usado por base/typography y components/paragraphs)
+    --parrafo-spacing-xl: var(--espaciado-24);
+    --parrafo-spacing-l:  var(--espaciado-20);
+    --parrafo-spacing-m:  var(--espaciado-16);
+    --parrafo-spacing-s:  var(--espaciado-12);
+    --parrafo-spacing-xs: var(--espaciado-8);
+
 }

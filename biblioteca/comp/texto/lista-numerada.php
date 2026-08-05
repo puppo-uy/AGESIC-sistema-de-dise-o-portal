@@ -1,4 +1,4 @@
-<ol class="lista-texto">
+<ol class="lista lista--numerada">
 	<li>Lorem ipsum dolor sit amet.</li>
 	<li>Esse necessitatibus, adipisci saepe laboriosam.
 		<ol>

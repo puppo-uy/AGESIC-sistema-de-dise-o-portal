@@ -1,4 +1,4 @@
-<ul class="lista-texto">
+<ul class="lista lista--texto">
 	<li>Lorem ipsum dolor sit amet.</li>
 	<li>Esse necessitatibus, adipisci saepe laboriosam.
 		<ul>
