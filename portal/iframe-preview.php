@@ -77,6 +77,6 @@
     </div>
 
     <!-- Script para comunicar la altura al portal -->
-    <script src="../recursos/js/vendor/iframeResizer.min.js"></script>
+    <script src="../recursos/js/vendor/iframeResizer.contentWindow.min.js"></script>
 </body>
 </html>
