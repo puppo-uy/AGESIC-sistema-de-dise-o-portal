@@ -45,36 +45,36 @@
 
 <!-- Botón primario -->
 <div style="margin: 8px;">
-<?php include "comp/botones/boton-primario.php"; ?>
+<?php include "comp/acciones/boton-primario.php"; ?>
 </div>
 
 <!-- Botón secundario -->
 <div style="margin: 8px;">
-	<?php include "comp/botones/boton-secundario.php"; ?>
+	<?php include "comp/acciones/boton-secundario.php"; ?>
 </div>
 
 <!-- Botón enlace -->
 <div style="margin: 8px;">
-<?php include "comp/botones/boton-enlace.php"; ?>
+<?php include "comp/acciones/boton-enlace.php"; ?>
 </div>
 
 <hr>
 
 <!-- Enlace -->
 <div style="margin: 8px; display: flex; margin: 8px; align-items: center; gap: 24px;">
-	<?php include "comp/botones/enlace.php"; ?>
+	<?php include "comp/acciones/enlace.php"; ?>
 </div>
 
 <hr>
 
 <!-- Botonera -->
-<?php include "comp/botones/botonera.php"; ?>
+<?php include "comp/acciones/botonera.php"; ?>
 
 <hr>
 
 <!-- Botón con desplegable -->
 <div>
-	<?php include "comp/botones/boton-desplegable.php"; ?>
+	<?php include "comp/acciones/boton-desplegable.php"; ?>
 </div>
 
 <hr>

@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass scss/main.scss recursos/css/main.css",
+    "postsass": "postcss recursos/css/main.css --use autoprefixer -d recursos/css/",
     "sass:watch": "sass --watch scss/main.scss recursos/css/main.css",
     "build:css": "postcss recursos/css/*.css --use autoprefixer -d recursos/css/",
     "sprite": "node recursos/scripts/build-sprite.js"

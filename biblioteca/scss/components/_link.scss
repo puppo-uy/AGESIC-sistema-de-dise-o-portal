@@ -1,0 +1,104 @@
+@use "../tokens" as *;
+@use "icons" as *;
+
+.enlace {
+	// Flex solo cuando hay un ícono real adentro (el que va a la izquierda
+	// del texto): es el único caso que necesita este layout. Un .enlace de
+	// solo texto se queda como <a> en línea normal, para que su texto siga
+	// partiendo línea por línea dentro de un párrafo en vez de comportarse
+	// como un bloque atómico que salta entero.
+	&:has(.icono) {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--espaciado-4);
+	}
+
+	.icono {
+		@include icon-size(s);
+	}
+
+	&.enlace--s {
+		font-size: var(--tipo-tamano-parrafo-s);
+
+		.icono {
+			@include icon-size(xs);
+		}
+	}
+
+	&.enlace--m {
+		font-size: var(--tipo-tamano-parrafo-m);
+
+		.icono {
+			@include icon-size(s);
+		}
+	}
+
+	&.enlace--l {
+		font-size: var(--tipo-tamano-parrafo-l);
+
+		.icono {
+			@include icon-size(m);
+		}
+	}
+
+	// Variantes de color: por defecto (sin clase de color) hereda el color
+	// de enlace genérico del sistema (base/typography), incluido su
+	// comportamiento de :active. No existe una variante "primario" porque
+	// coincidiría con ese default — declararla igual rompía el :active
+	// genérico por especificidad (una regla de color incondicional le
+	// ganaba a la regla a:active). Estas clases solo cubren los casos
+	// donde el contexto realmente requiere otro color (ej. fondos oscuros).
+	&.enlace--oscuro {
+		color: var(--texto-enlace-oscuro);
+
+		&:active {
+			color: var(--neutro-800);
+		}
+	}
+
+	&.enlace--claro {
+		color: var(--texto-enlace-claro);
+
+		&:active {
+			color: var(--neutro-200);
+		}
+	}
+}
+
+// Indicador de enlace externo. Clase independiente (no requiere .enlace):
+// aplica a cualquier <a> del sitio, incluido un link suelto dentro de un
+// párrafo. El ícono se genera con ::after (no un <svg> real) a propósito:
+// así el <a> se queda como inline normal y su texto sigue partiendo línea
+// por línea como cualquier párrafo — nada lo vuelve un bloque atómico.
+// El ::after se genera pegado al final del contenido real, sin ningún
+// espacio de por medio, así que nunca queda huérfano en un salto de línea.
+.enlace--externo {
+	&::after {
+		content: "";
+		display: inline-block;
+		width: var(--icono-tamano-xxs);
+		height: var(--icono-tamano-xxs);
+		margin-top: var(--espaciado-2);
+		margin-left: var(--espaciado-4);
+		vertical-align: text-top;
+		background-color: currentColor;
+		-webkit-mask-image: url(../iconos/enlace-externo--lineal.svg);
+		mask-image: url(../iconos/enlace-externo--lineal.svg);
+		-webkit-mask-repeat: no-repeat;
+		mask-repeat: no-repeat;
+		-webkit-mask-size: contain;
+		mask-size: contain;
+	}
+}
+
+// Caso específico: .enlace con ícono a la izquierda (activa el flex de
+// arriba) combinado con enlace--externo. Ahí align-items:center ignora
+// vertical-align, así que el margin-bottom compensa para que quede
+// arriba en vez de centrado; y el margin-left pasa a 0 porque el gap
+// del flex ya separa el ícono del resto — no hace falta en los demás
+// casos, que se quedan en línea normal (sin flex).
+.enlace.enlace--externo:has(.icono)::after {
+	margin-left: 0;
+	margin-top: var(--espaciado-0);
+	margin-bottom: var(--espaciado-4);
+}

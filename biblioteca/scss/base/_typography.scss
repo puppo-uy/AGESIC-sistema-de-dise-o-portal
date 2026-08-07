@@ -22,6 +22,10 @@ a:focus {
 	//text-decoration-thickness: .15rem;
 }
 
+a:active {
+	color: var(--primario-oscuro);
+}
+
 a:focus-visible {
   // Aplica estilos outline global
 	border-radius: var(--borde-radio-xs);
