@@ -26,7 +26,7 @@
 			<h2 class="u-mt5 u-mb3">Menu opciones</h2>	
 			<?php /*include "comp/menubutton.php";*/ ?>
 			
-			<ul class="botonera">
+			<ul class="grupo-botones">
 				<li>
 					<button class="boton boton--secundario boton--icono">
 						<svg class="icono">

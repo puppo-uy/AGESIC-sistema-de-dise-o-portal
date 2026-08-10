@@ -68,7 +68,7 @@
 <hr>
 
 <!-- Botonera -->
-<?php include "comp/acciones/botonera.php"; ?>
+<?php include "comp/acciones/grupo-botones.php"; ?>
 
 <hr>
 
