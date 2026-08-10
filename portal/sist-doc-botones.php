@@ -92,8 +92,8 @@
                                     <li>Chico (S)</li>
                                 </ul>
 
-                                <h5 class="u-mb2">Botonera</h5>
-                                <iframe src="iframe-preview.php?comp=acciones/botonera" title="Ejemplo de botonera" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
+                                <h5 class="u-mb2">Grupo de botones</h5>
+                                <iframe src="iframe-preview.php?comp=acciones/grupo-botones" title="Ejemplo de grupo de botones" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
 
                                 <h3 class="u-mt4">Accesibilidad</h3>
                                 <h4>WCAG Nivel AAA</h4>
