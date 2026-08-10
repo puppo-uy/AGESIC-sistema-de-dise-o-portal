@@ -80,7 +80,7 @@
                                 <iframe src="iframe-preview.php?comp=acciones/boton-secundario" title="Ejemplo de botón secundario" class="component-preview u-mb2" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                                 <p class="u-mb4">Se utiliza para acciones alternativas a la principal. Su peso visual es menor para no competir con el botón primario. Puede haber varios en una misma pantalla.</p>
 
-                                <h5 class="u-mb2">Terciario</h5>
+                                <h5 class="u-mb2">Terciario (Botón enlace)</h5>
                                 <iframe src="iframe-preview.php?comp=acciones/boton-enlace" title="Ejemplo de botón enlace (terciario)" class="component-preview u-mb2" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                                 <p class="u-mb4">Se utiliza para acciones opcionales o de menor importancia. Tiene menor prominencia visual.</p>
 
@@ -91,6 +91,9 @@
                                     <li>Medio (M)</li>
                                     <li>Chico (S)</li>
                                 </ul>
+
+                                <h5 class="u-mb2">Botonera</h5>
+                                <iframe src="iframe-preview.php?comp=acciones/botonera" title="Ejemplo de botonera" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
 
                                 <h3 class="u-mt4">Accesibilidad</h3>
                                 <h4>WCAG Nivel AAA</h4>
