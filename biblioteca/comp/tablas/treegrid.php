@@ -29,7 +29,7 @@
       <td role="gridcell">Want to learn how to use them?</td>
       <td role="gridcell"><a href="mailto:aaron@thegoogle.rocks">aaron@thegoogle.rocks</a></td>
 			<td role="gridcell">
-				<ul class="botonera botonera--s">
+				<ul class="grupo-botones grupo-botones--s">
 					<li>
 						<button class="boton boton--secundario boton--icono">
 							<svg class="icono">

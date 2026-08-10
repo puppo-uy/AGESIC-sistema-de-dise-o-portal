@@ -54,7 +54,7 @@
 			<h2 class="u-mt5">Grupo de botones</h2>
 			<div style="margin: var(--espaciado-16);">
 				<!-- Botonera -->
-				<?php include "comp/acciones/botonera.php"; ?>
+				<?php include "comp/acciones/grupo-botones.php"; ?>
 			</div>
 			
 			<h2>Botón con desplegable</h2>
