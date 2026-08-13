@@ -62,9 +62,6 @@
                         <a href="sist-doc-modales.php"><strong>Modales</strong></a> — Ventanas superpuestas que requieren la atención del usuario antes de continuar con el flujo principal. Se utilizan para confirmar acciones, mostrar información crítica o solicitar datos adicionales.
                     </li>
                     <li>
-                        <a href="sist-doc-tooltips.php"><strong>Tooltips</strong></a> — Textos de ayuda contextual que aparecen al posicionarse sobre un elemento, ofreciendo información adicional sin ocupar espacio permanente en la interfaz.
-                    </li>
-                    <li>
                         <a href="sist-doc-indicadores.php"><strong>Indicadores de estado</strong></a> — Componentes visuales que comunican el estado actual de un proceso, elemento o sistema dentro de la interfaz.
                     </li>
                 </ul>
