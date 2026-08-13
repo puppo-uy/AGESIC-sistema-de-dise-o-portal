@@ -113,66 +113,24 @@
 								<h3>Modos</h3>
 
 								<h4>Estados</h4>
-								
-								<div class="Table-wrapper">
-                  <table class="Table Table--responsive">
-                    <caption class="u-hideVisually">Variantes de estados del componente Alertas</caption>
-                    <thead>
-                      <tr>
-                        <th style="width: 70%;">Muestra</th>
-                        <th style="width: 30%;">Descripción</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td data-title="Muestra">
-													<iframe src="iframe-preview.php?comp=alerta-completa&type=exito" title="Ejemplo de alerta completa / éxito" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
-												</td>
-                        <td data-title="Descripción">
-													<h5 class="u-mt2 u-mb1 u-h6">Éxito</h5>
-													<p>Indica que una acción se completó correctamente.</p>
-												</td>
-                      </tr>
-                      <tr>
-                        <td data-title="Muestra">
-													<iframe src="iframe-preview.php?comp=alerta-completa&type=advertencia" title="Ejemplo de alerta completa / advertencia" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
-												</td>
-                        <td data-title="Descripción">
-													<h5 class="u-mt2 u-mb1 u-h6">Advertencia</h5>
-													<p>Señala una posible consecuencia o requerimiento de atención.</p>
-												</td>
-                      </tr>
-											<tr>
-                        <td data-title="Muestra">
-													<iframe src="iframe-preview.php?comp=alerta-completa&type=info" title="Ejemplo de alerta completa / información" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
-												</td>
-                        <td data-title="Descripción">
-													<h5 class="u-mt2 u-mb1 u-h6">Información</h5>
-													<p>Presenta contenido informativo o complementario.</p>
-												</td>
-                      </tr>
-											<tr>
-                        <td data-title="Muestra">
-													<iframe src="iframe-preview.php?comp=alerta-completa&type=error" title="Ejemplo de alerta completa / error" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
-												</td>
-                        <td data-title="Descripción">
-													<h5 class="u-mt2 u-mb1 u-h6">Error</h5>
-													<p>Indica un problema que impide continuar o completar una acción.</p>
-												</td>
-                      </tr>
-											<tr>
-                        <td data-title="Muestra">
-													<iframe src="iframe-preview.php?comp=alerta-completa&type=notificacion" title="Ejemplo de alerta completa / notificación" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
-												</td>
-                        <td data-title="Descripción">
-													<h5 class="u-mt2 u-mb1 u-h6">Notificación</h5>
-													<p>Comunica estados o mensajes del sistema que no dependen de una acción directa del usuario.</p>
-												</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <!--<p id="descripcionTabla3">Descripción de la tabla 2 - Tabla con clase <code>Table--responsive</code> y descripción abajo.</p>-->
-                </div>
+
+                    <h5 class="u-mt2 u-mb1 u-h6">Éxito</h5>
+                    <p>Indica que una acción se completó correctamente.</p>
+
+                    <h5 class="u-mt2 u-mb1 u-h6">Advertencia</h5>
+                    <p>Señala una posible consecuencia o requerimiento de atención.</p>
+
+                    <h5 class="u-mt2 u-mb1 u-h6">Información</h5>
+                    <p>Presenta contenido informativo o complementario.</p>
+
+                    <h5 class="u-mt2 u-mb1 u-h6">Error</h5>
+                    <p>Indica un problema que impide continuar o completar una acción.</p>
+
+                    <h5 class="u-mt2 u-mb1 u-h6">Notificación</h5>
+                    <p>Comunica estados o mensajes del sistema que no dependen de una acción directa del usuario.</p>
+
+                    <iframe src="iframe-preview.php?comp=alerta-completa&type=exito" title="Ejemplo de alerta completa / éxito" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
+          
 								
 								<h4>Formatos</h4>
 								
