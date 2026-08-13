@@ -55,12 +55,12 @@
 
                 <h4>Cuándo no usarlos</h4>
                 <ul class="List-text">
-                    <li>Para títulos o encabezados (usar el componente de Títulos).</li>
+                    <li>Para títulos o encabezados (usar el componente <a href="sist-doc-titulos.php">Títulos</a>).</li>
                 </ul>
 
                 <h3>Buenas prácticas</h3>
                 <ul class="List-text">
-                    <li>Mantener la alineación del texto en bandera a la izquierda para facilitar la lectura.</li>
+                    <li>Mantener la alineación del texto alineado a la izquierda sin justifcar, para facilitar la lectura.</li>
                     <li>Separar los párrafos utilizando el espaciado definido por el sistema.</li>
                     <li>Evitar bloques de texto extensos sin divisiones visuales.</li>
                     <li>Evitar utilizar párrafos completos en peso semibold. Utilizar este recurso solo para resaltar información importante.</li>
@@ -116,7 +116,7 @@
                 <h3>Accesibilidad</h3>
                 <h5 class="u-mt4">Recomendaciones para no perder la accesibilidad</h5>
                 <ul class="List-text">
-                    <li>Asegurar contraste suficiente entre el texto y el fondo.</li>
+                    <li>Asegurar contraste suficiente (WCAG AAA) entre el texto y el fondo.</li>
                     <li>Evitar textos demasiado largos sin separación en párrafos.</li>
                     <li>Utilizar un lenguaje claro y comprensible.</li>
                 </ul>
