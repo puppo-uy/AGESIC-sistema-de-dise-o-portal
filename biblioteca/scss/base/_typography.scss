@@ -84,7 +84,7 @@ h6 {
 p {
   font-family: var(--tipo-familia-base);
   font-weight: var(--tipo-peso-regular);
-  color: var(--texto-principal);
+  color: inherit;
   font-size: var(--tipo-tamano-parrafo-m);
   margin: 0 0 var(--parrafo-spacing-m);
 }

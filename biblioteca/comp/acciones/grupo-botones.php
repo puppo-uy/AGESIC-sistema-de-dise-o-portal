@@ -106,6 +106,8 @@
 	</li>
 </ul>
 
+<br>
+
 <!-- Botonera primaria -->
 <ul class="grupo-botones grupo-botones--primaria">
 	<li>
@@ -142,6 +144,8 @@
 	</li>
 </ul>
 
+<br>
+
 <!-- Botonera con botón de texto, sin ícono -->
 <ul class="grupo-botones grupo-botones--secundaria">
 	<li>
@@ -155,6 +159,8 @@
 	</li>
 </ul>
 
+<br>
+
 <!-- Botonera con botón enlace -->
 <ul class="grupo-botones grupo-botones--enlace">
 	<li>
@@ -167,6 +173,8 @@
 		<button class="boton boton--enlace">Eliminar</button>
 	</li>
 </ul>
+
+<br>
 
 <!-- Botonera con botón enlace, con íconos -->
 <ul class="grupo-botones grupo-botones--enlace">

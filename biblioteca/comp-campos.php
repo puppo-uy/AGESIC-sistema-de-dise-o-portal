@@ -99,7 +99,7 @@
                                     <input class="Form-widget" name="example-campo-warning" type="text" id="example-campo-warning" aria-describedby="advertencia-campo">
                                     <div class="Form-status Form-status--warning" id="advertencia-campo">
                                         <svg class="icono icono--s">
-		                                    <use href="#icono-alerta--relleno"></use>
+		                                    <use href="#icono-advertencia--relleno"></use>
 	                                    </svg>    
                                         <span><strong>Advertencia</strong> - No se pudo validar el dato</span>
                                     </div>
@@ -793,7 +793,7 @@
 									<input class="Form-widget" name="example-campo-stacked-warning" type="text" id="example-campo-stacked-warning" aria-describedby="advertencia-campo">
                                     <div class="Form-status Form-status--warning" id="advertencia-campo-stacked">
                                         <svg class="icono icono--s">
-		                                    <use href="#icono-alerta--relleno"></use>
+		                                    <use href="#icono-advertencia--relleno"></use>
 	                                    </svg>    
                                         <span><strong>Advertencia</strong> - No se pudo validar el dato</span>
                                     </div>

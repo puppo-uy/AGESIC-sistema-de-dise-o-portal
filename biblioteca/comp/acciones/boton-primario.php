@@ -11,6 +11,8 @@
 	<span>Botón primario L</span>
 </button>
 
+<br>
+
 <!-- Con ícono -->
 <button class="boton boton--primario boton--s">
 	<svg class="icono" aria-hidden="true">
@@ -33,6 +35,8 @@
 	<span>Botón primario L</span>
 </button>
 
+<br>
+
 <!-- Solo ícono -->
 <button class="boton boton--primario boton--icono boton--s">
 	<svg class="icono" aria-hidden="true">
@@ -54,6 +58,8 @@
 	</svg>
 	<span>Acción botón primario</span>
 </button>
+
+<br>
 
 <!-- Deshabilitado -->
 <button class="boton boton--primario" disabled>

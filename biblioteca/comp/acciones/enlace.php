@@ -5,37 +5,35 @@
 
 <a class="enlace enlace--l" href="#">Enlace L</a>
 
+<br>
+
 <!-- Con ícono -->
 <a class="enlace enlace--s" href="#">
 	<svg class="icono" aria-hidden="true">
 		<use href="#icono-co-editor--lineal"></use>
 	</svg>
-	<span>Enlace S</span>
+	<span>Enlace S con ícono</span>
 </a>
 
 <a class="enlace" href="#">
 	<svg class="icono" aria-hidden="true">
 		<use href="#icono-co-editor--lineal"></use>
 	</svg>
-	<span>Enlace M</span>
+	<span>Enlace M con ícono</span>
 </a>
 
 <a class="enlace enlace--l" href="#">
 	<svg class="icono" aria-hidden="true">
 		<use href="#icono-co-editor--lineal"></use>
 	</svg>
-	<span>Enlace L</span>
+	<span>Enlace L con ícono</span>
 </a>
 
-<!-- Variantes de color -->
-<a class="enlace enlace--oscuro" href="#">Enlace oscuro</a>
-
-<div style="background-color: var(--primario-oscuro); padding: var(--espaciado-16); display: inline-block;">
-	<a class="enlace enlace--claro" href="#">Enlace claro</a>
-</div>
+<br>
 
 <!-- Enlace externo -->
 <a href="#" class="enlace enlace--externo">Enlace externo<span class="u-hideVisually"> (enlace externo)</span></a>
+
 
 <!-- Enlace externo con ícono -->
 <a class="enlace enlace--externo" href="#">
@@ -44,6 +42,37 @@
 	</svg>
 	<span>Enlace externo con ícono</span><span class="u-hideVisually"> (enlace externo)</span>
 </a>
+
+<br>
+
+<!-- Variantes de color oscuro -->
+<a class="enlace enlace--oscuro" href="#">Enlace oscuro</a>
+
+<!-- Variantes de color oscuro con ícono -->
+<a class="enlace enlace--oscuro" href="#">
+	<svg class="icono" aria-hidden="true">
+		<use href="#icono-co-editor--lineal"></use>
+	</svg>
+	<span>Enlace oscuro con ícono</span>
+</a>
+
+<br>
+
+<!-- Variantes de color claro -->
+<div style="background-color: var(--primario-oscuro); padding: var(--espaciado-16); display: inline-block;">
+	<a class="enlace enlace--claro" href="#">Enlace claro</a>
+</div>
+
+<!-- Variantes de color claro con ícono -->
+<div style="background-color: var(--primario-oscuro); padding: var(--espaciado-16); display: inline-block;">
+	<a class="enlace enlace--claro" href="#">
+		<svg class="icono" aria-hidden="true">
+			<use href="#icono-co-editor--lineal"></use>
+		</svg>
+		<span>Enlace claro con ícono</span>
+	</a>
+</div>
+
 
 <!-- Enlace externo en variante de color claro -->
 <div style="background-color: var(--primario-oscuro); padding: var(--espaciado-16); display: inline-block;">

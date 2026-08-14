@@ -26,13 +26,13 @@
 			
 			<h3 class="u-mt5">Alerta simple</h3>
 			<!-- Alertas -->
-			<?php include "comp/alerta.php"; ?>
+			<?php include "comp/alertas/alerta-simple.php"; ?>
 			
 			<h3 class="u-mt5">Alerta completa</h3>
-			<?php include "comp/alerta-completa.php"; ?>
+			<?php include "comp/alertas/alerta-completa.php"; ?>
 			
 			<h3 class="u-mt5">Alerta emergente</h3>
-			<?php include "comp/alerta-emergente.php"; ?>
+			<?php include "comp/alertas/alerta-emergente.php"; ?>
 			
 			<h2 class="u-mt5">Tags (Etiquetas)</h2>
 			<!-- Tags -->

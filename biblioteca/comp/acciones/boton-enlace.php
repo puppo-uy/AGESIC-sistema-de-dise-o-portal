@@ -11,6 +11,8 @@
 	<span>Botón enlace L</span>
 </button>
 
+<br>
+
 <!-- Con ícono -->
 <button class="boton boton--enlace boton--s">
 	<svg class="icono" aria-hidden="true">
@@ -33,6 +35,8 @@
 	<span>Botón enlace L</span>
 </button>
 
+<br>
+
 <!-- Solo ícono -->
 <button class="boton boton--enlace boton--icono boton--s">
 	<svg class="icono" aria-hidden="true">
@@ -54,6 +58,8 @@
 	</svg>
 	<span>Acción botón enlace</span>
 </button>
+
+<br>
 
 <!-- Deshabilitado -->
 <button class="boton boton--enlace" disabled>

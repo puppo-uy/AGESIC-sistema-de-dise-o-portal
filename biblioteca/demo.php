@@ -80,11 +80,15 @@
 <hr>
 <!-- Icono -->
 
-<?php include "comp/icono.php"; ?>
+<?php include "comp/icono/icono-lineal.php"; ?>
+<?php include "comp/icono/icono-relleno.php"; ?>
+<?php include "comp/icono/icono-tamanos.php"; ?>
+<?php include "comp/icono/icono-colores.php"; ?>
+<?php include "comp/icono/icono-usuario.php"; ?>
 
 <hr>
 <!-- Alertas -->
-<?php include "comp/alerta.php"; ?>
+<?php include "comp/alertas/alerta-simple.php"; ?>
 
 <hr>
 <!-- Tags -->

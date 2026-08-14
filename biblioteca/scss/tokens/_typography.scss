@@ -1,4 +1,5 @@
 @use "primitives" as *;
+@use "tools" as *;
 
 // Variables de tipografía
 
@@ -50,4 +51,17 @@
     --parrafo-spacing-s:  var(--espaciado-12);
     --parrafo-spacing-xs: var(--espaciado-8);
 
+}
+
+// Tamaños de título en mobile. --xs no cambia. Afecta por igual a los
+// h1-h6 nativos (base/typography) y a las clases .titulo--* (components/
+// titles) — ambos ya consumen estas mismas variables.
+@include media(sm, down) {
+    :root {
+        --tipo-tamano-titulo-xxl: 2rem;
+        --tipo-tamano-titulo-xl: 1.75rem;
+        --tipo-tamano-titulo-l: 1.5rem;
+        --tipo-tamano-titulo-m: 1.25rem;
+        --tipo-tamano-titulo-s: 1.125rem;
+    }
 }

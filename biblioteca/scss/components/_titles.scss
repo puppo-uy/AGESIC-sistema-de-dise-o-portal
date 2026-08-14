@@ -6,7 +6,7 @@
 .titulo--xxl {
   font-family: var(--tipo-familia-base);
   font-weight: var(--tipo-peso-semibold);
-  color: var(--texto-principal);
+  color: inherit;
   font-size: var(--tipo-tamano-titulo-xxl);
   line-height: var(--tipo-altura-linea-s);
   margin: 0 0 var(--heading-spacing-xl);
@@ -15,7 +15,7 @@
 .titulo--xl {
   font-family: var(--tipo-familia-base);
   font-weight: var(--tipo-peso-semibold);
-  color: var(--texto-principal);
+  color: inherit;
   font-size: var(--tipo-tamano-titulo-xl);
   line-height: var(--tipo-altura-linea-s);
   margin: 0 0 var(--heading-spacing-l);
@@ -24,7 +24,7 @@
 .titulo--lg {
   font-family: var(--tipo-familia-base);
   font-weight: var(--tipo-peso-semibold);
-  color: var(--texto-principal);
+  color: inherit;
   font-size: var(--tipo-tamano-titulo-l);
   line-height: var(--tipo-altura-linea-xs);
   margin: 0 0 var(--heading-spacing-m);
@@ -33,7 +33,7 @@
 .titulo--md {
   font-family: var(--tipo-familia-base);
   font-weight: var(--tipo-peso-semibold);
-  color: var(--texto-principal);
+  color: inherit;
   font-size: var(--tipo-tamano-titulo-m);
   line-height: var(--tipo-altura-linea-s);
   margin: 0 0 var(--heading-spacing-s);
@@ -42,7 +42,7 @@
 .titulo--sm {
   font-family: var(--tipo-familia-base);
   font-weight: var(--tipo-peso-semibold);
-  color: var(--texto-principal);
+  color: inherit;
   font-size: var(--tipo-tamano-titulo-s);
   line-height: var(--tipo-altura-linea-m);
   margin: 0 0 var(--heading-spacing-xs);
@@ -51,7 +51,7 @@
 .titulo--xs {
   font-family: var(--tipo-familia-base);
   font-weight: var(--tipo-peso-semibold);
-  color: var(--texto-principal);
+  color: inherit;
   font-size: var(--tipo-tamano-titulo-xs);
   line-height: var(--tipo-altura-linea-l);
   margin: 0 0 var(--heading-spacing-xs);

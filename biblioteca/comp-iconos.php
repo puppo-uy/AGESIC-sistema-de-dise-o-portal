@@ -23,7 +23,11 @@
       <h1 style="margin-bottom: var(--espaciado-24);"><?php echo $title; ?></h1>
 			
 			<!-- Icono -->
-			<?php include "comp/icono.php"; ?>
+			<?php include "comp/icono/icono-lineal.php"; ?>
+			<?php include "comp/icono/icono-relleno.php"; ?>
+			<?php include "comp/icono/icono-tamanos.php"; ?>
+			<?php include "comp/icono/icono-colores.php"; ?>
+			<?php include "comp/icono/icono-usuario.php"; ?>
 			
     </main>
 
