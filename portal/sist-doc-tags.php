@@ -97,6 +97,7 @@
                     <li>Error / Cancelado</li>
                     <li>Inactivo / Abandonado</li>
                     <li>Pendiente / En espera</li>
+                    <li>En vivo</li>
                 </ul>
 
                  <h4 class="u-mt3 u-mb3">Tamaño</h4>

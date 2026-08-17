@@ -85,15 +85,14 @@
                                 <p class="u-mb4">Se utiliza para acciones opcionales o de menor importancia. Tiene menor prominencia visual.</p>
 
                                 <h4 class="u-mt4 u-mb3">Tamaño</h4>
-                                <iframe src="iframe-preview.php?comp=acciones/boton-tamanos" title="Ejemplo de tamaños de botón" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                                
                                 <ul class="List-text">
                                     <li>Grande (L)</li>
                                     <li>Medio (M)</li>
                                     <li>Chico (S)</li>
                                 </ul>
 
-                                <h5 class="u-mb2">Grupo de botones</h5>
-                                <iframe src="iframe-preview.php?comp=acciones/grupo-botones" title="Ejemplo de grupo de botones" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
+                              
 
                                 <h3 class="u-mt4">Accesibilidad</h3>
                                 <h4>WCAG Nivel AAA</h4>
