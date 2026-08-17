@@ -58,7 +58,8 @@
                 <p class="u-mb2">Existen distintos tamaños predefinidos que permiten adaptar los íconos al contexto de uso sin perder legibilidad.</p>
                  <iframe src="iframe-preview.php?comp=icono/icono-tamanos" title="Ejemplo de tamaños de íconos" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 100px;" scrolling="no"></iframe>
                                 
-                <h5 class="u-mt4">Colores</h5>                 
+                <h5 class="u-mt4">Colores</h5>  
+                <p>Se recomeienda el uso de los colores semánticos definidos en los estilos globales. De usar otro tipo de colores se debe asegurar el correcto contraste con el fondo.</p>               
                 <iframe src="iframe-preview.php?comp=icono/icono-colores" title="Ejemplo de avatar de usuario" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
               
                 <h4>Formato</h4>
