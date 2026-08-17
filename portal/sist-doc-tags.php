@@ -84,12 +84,12 @@
                 <h4 class="u-mt3 u-mb3">Tipo</h4>
                 
                 <h5 class="u-mb2">Clasificación</h5>
-                 <iframe src="iframe-preview.php?comp=talertas/tag-clasificacion" title="Ejemplo de tag de clasificación" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                 <iframe src="iframe-preview.php?comp=alertas/tag-clasificacion" title="Ejemplo de tag de clasificación" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                 <p class="u-mb4">Se utilizan para categorizar contenidos. Identifican temáticas, tipos o atributos de un elemento.</p>
                 
                 <h5 class="u-mb2">Estado</h5>
                  <div class="u-mt3 u-mb4">
-                     <iframe src="iframe-preview.php?comp=talertas/tag-estado" title="Ejemplo de tags de estado" class="component-preview" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                     <iframe src="iframe-preview.php?comp=alertas/tag-estado" title="Ejemplo de tags de estado" class="component-preview" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                  </div>
                 <p class="u-mb2">Se utilizan para comunicar el estado actual de un elemento dentro de un flujo o proceso. Los estados pueden ser:</p>
                 <ul class="List-text u-mb4">
