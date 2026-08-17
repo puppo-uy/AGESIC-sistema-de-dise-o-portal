@@ -61,9 +61,7 @@
                     <li>
                         <a href="sist-doc-grupo-botones.php"><strong>Grupo de botones</strong></a> — Agrupación de botones relacionados que permiten al usuario elegir entre un conjunto de opciones o ejecutar acciones vinculadas.
                     </li>
-                    <li>
-                        <a href="sist-doc-boton-desplegable.php"><strong>Botón desplegable</strong></a> — Botón que al ser accionado despliega un menú con opciones adicionales, agrupando acciones secundarias bajo una sola acción principal.
-                    </li>
+                    
                 </ul>
 
               </div>

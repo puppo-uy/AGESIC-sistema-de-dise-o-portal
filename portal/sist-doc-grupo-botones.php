@@ -112,7 +112,7 @@ En contextos donde la interfaz requiere ahorrar espacio y organizar opciones. </
                 <h3 class="u-mt4">Componentes relacionados</h3>
                 <ul class="List-text">
                     <li><a href="sist-doc-botones.php">Botones</a></li>
-                    <li><a href="sist-doc-boton-desplegable.php">Botón desplegable</a></li>
+                    <li><a href="sist-doc-enlaces.php">Enlaces</a></li>
                 </ul>
             </div>
           </div>
