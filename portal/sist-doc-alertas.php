@@ -52,7 +52,7 @@
 								
 								<h3>Estructura del componente</h3>
 								
-								<iframe src="iframe-preview.php?comp=alerta-emergente&type=exito" title="Ejemplo de estructura de alerta emergente / éxito" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
+								<iframe src="iframe-preview.php?comp=alertas/alerta" title="Ejemplo de estructura de alerta" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
 								
 								<div class="Grid">
 									<div class="Grid-item u-size1of2">
@@ -76,13 +76,6 @@
 									</div>
 								</div>
 
-                <!--
-                <div class="Page-image">
-                  <img src="../recursos/img/uruguay.jpg" alt="Uruguay">
-                </div>
-                -->
-
-                <!-- Inicio de HTML Portal Unificado -->
                 <h3>Recomendaciones de uso</h3>
 								
 								<h4>Casos típicos</h4>
@@ -98,7 +91,7 @@
 								
 								<ul class="List-text">
                   <li>Para confirmaciones menores que puedan resolverse dentro del flujo (Ej: un cambio guardado de forma automática).</li>
-                  <li>Para mensajes extensos o con contenido de ayuda detallado (en ese caso, usar una ventana modal o un bloque informativo).</li>
+                  <li>Para mensajes extensos o con contenido de ayuda detallado. En ese caso, utilizar una ventana modal o una página específica.</li>
                   <li>Para interrumpir tareas en curso sin justificación o sin una acción esperada por parte del usuario.</li>
                 </ul>
 
@@ -128,23 +121,21 @@
 
                     <h5 class="u-mt2 u-mb1 u-h6">Notificación</h5>
                     <p>Comunica estados o mensajes del sistema que no dependen de una acción directa del usuario.</p>
-
-                    <iframe src="iframe-preview.php?comp=alerta-completa&type=exito" title="Ejemplo de alerta completa / éxito" class="component-preview" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
           
 								
 								<h4>Formatos</h4>
 								
 								<h5>Alerta completa</h5>
 								<p>Se utiliza cuando el mensaje requiere contexto o instrucciones adicionales que el usuario debe leer. Puede usarse para comunicar información que debe permanecer visible dentro del flujo hasta que el usuario la atienda mediante una acción relacionada.</p>
-								<iframe src="iframe-preview.php?comp=alerta-completa" title="Ejemplo de alerta completa" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 480px;" scrolling="no"></iframe>
+								<iframe src="iframe-preview.php?comp=alertas/alerta-completa" title="Ejemplo de alerta completa" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 480px;" scrolling="no"></iframe>
 								
 								<h5>Alerta simple</h5>
 								<p>Se utiliza para dar avisos breves y explícitos cuya intención se entiende con un título breve y conciso. Se usa cuando el contexto ya aporta suficiente detalle y no es necesario añadir texto explicativo ni acciones complementarias, o cuando hay poco espacio en pantalla.</p>
-								<iframe src="iframe-preview.php?comp=alerta" title="Ejemplo de alerta simple" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 480px;" scrolling="no"></iframe>
+								<iframe src="iframe-preview.php?comp=alertas/alerta-simple" title="Ejemplo de alerta simple" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 480px;" scrolling="no"></iframe>
 								
 								<h5>Alerta emergente</h5>
 								<p>Sirve para mensajes temporales que informan sin interrumpir la tarea en curso. Aparece en una esquina de la pantalla y puede cerrarse manualmente para no bloquear el flujo de trabajo del usuario. Se utiliza principalmente en aplicaciones.</p>
-								<iframe src="iframe-preview.php?comp=alerta-emergente" title="Ejemplo de alerta emergente" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 520px;" scrolling="no"></iframe>	
+								<iframe src="iframe-preview.php?comp=alertas/alerta-emergente" title="Ejemplo de alerta emergente" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 520px;" scrolling="no"></iframe>	
 								
 								<h3>Accesibilidad</h3>
 								<h4>Recomendaciones para no perder la accesibilidad</h4>
@@ -155,215 +146,6 @@
 									<li>No cambiar los tokens de color del componente, se podría reducir el contraste y entorpecer la lectura.</li>
                 </ul>
 								
-                <!-- Fin de HTML Portal Unificado -->
-                <!--
-                <h3>Otros contenidos</h3>
-
-                <div class="Alert">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora sapiente inventore fugiat velit, ipsam nemo recusandae corporis labore optio quas.
-                </div>
-
-                <div class="Alert">
-                  <h3>Encabezado H3</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae eligendi asperiores assumenda atque impedit perferendis, quasi, ratione facere reprehenderit quia!</p>
-                  <ul>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Praesentium voluptates quos, alias.</li>
-                    <li>Architecto deserunt ipsam, quasi.</li>
-                    <li>Fugit molestias ad excepturi?</li>
-                  </ul>
-                </div>
-
-                <a class="Download" href="#" title="Descargar: Formulario para inscripción (.pdf 354 KB)">
-                  <div class="Media">
-                    <div class="Media-image">
-                      <span class="Download-icon">
-          <span class="Icon Icon--download"></span>
-                      </span>
-                    </div>
-                    <div class="Media-body">
-                      <div class="Download-title">Formulario para inscripción (.pdf 354 KB)</div>
-                      <div class="Download-description">Lorem ipsum dolor sit amet consectetur</div>
-                    </div>
-                  </div>
-                </a>
-
-                <h3>Audios</h3>
-                <div class="Audio">
-                  <div id="audioTitle1" class="Audio-title">Título del audio</div>
-                  <audio aria-labelledby="audioTitle1" src="https://archive.org/download/testmp3testfile/mpthreetest.mp3" preload="none" controls>
-                    Su navegador no permite reproducir este archivo de audio.
-                  </audio>
-                  <a href="#audioTitle1Transcription" class="Audio-link collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="audioTitle1Transcription">
-                    <span>Ver transcripción</span>
-                    <span class="u-hideVisually"> de Título del audio</span>
-                  </a>
-
-                  <div class="collapse" id="audioTitle1Transcription">
-                    <div class="u-p3">
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque perspiciatis accusamus, officia possimus ea voluptatem adipisci a vel veritatis deserunt!</p>
-
-                      <p>Lorem ipsum dolor sit, <strong>amet consectetur adipisicing</strong> elit. Reprehenderit animi nulla facere. Aliquam eius voluptate perspiciatis deserunt, corrupti placeat facere? Assumenda voluptate velit distinctio commodi dolor. Quae ea ab eligendi!</p>
-
-                      <p>Lorem ipsum dolor sit amet <em>consectetur adipisicing elit</em>. Incidunt itaque atque optio unde delectus perferendis porro, animi quis, dolorem aspernatur saepe natus sint nostrum labore. Quibusdam vero saepe pariatur dolorum.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="Audio">
-                  <div id="audioTitle2" class="Audio-title">Título del audio 2</div>
-                  <audio aria-labelledby="audioTitle2" src="https://archive.org/download/testmp3testfile/mpthreetest.mp3" preload="none" controls>
-                    Su navegador no permite reproducir este archivo de audio.
-                  </audio>
-                  <a href="#audioTitle2Transcription" class="Audio-link collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="audioTitle2Transcription">
-                    <span>Ver transcripción</span>
-                    <span class="u-hideVisually"> de Título del audio</span>
-                  </a>
-
-                  <div class="collapse" id="audioTitle2Transcription">
-                    <div class="u-p3">
-                      <p>Transcripción de Audio 2.</p>
-
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque perspiciatis accusamus, officia possimus ea voluptatem adipisci a vel veritatis deserunt!</p>
-
-                      <p>Lorem ipsum dolor sit, <strong>amet consectetur adipisicing</strong> elit. Reprehenderit animi nulla facere. Aliquam eius voluptate perspiciatis deserunt, corrupti placeat facere? Assumenda voluptate velit distinctio commodi dolor. Quae ea ab eligendi!</p>
-
-                      <p>Lorem ipsum dolor sit amet <em>consectetur adipisicing elit</em>. Incidunt itaque atque optio unde delectus perferendis porro, animi quis, dolorem aspernatur saepe natus sint nostrum labore. Quibusdam vero saepe pariatur dolorum.</p>
-                    </div>
-                  </div>
-                </div>
-
-                <h3>Video</h3>
-                <div class="Video">
-                  <div class="FlexEmbed FlexEmbed--16by9">
-                    <iframe class="FlexEmbed-item" src="https://www.youtube.com/embed/JYKje4jO-iY?rel=0" title="Video"></iframe>
-                  </div>
-                </div>
-
-                <h3>Galería de imágenes</h3>
-                <div class="Carousel" tabindex="0">
-                  <div>
-                    <img src="../recursos/img/720x350-yellow.png" alt="Nombre imagen 1">
-                    <p class="Carousel-caption">
-                      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-                      <a href="#"><span class="Icon Icon--download u-mr1"></span><span>Descargar imagen<span class="u-hideVisually">: Nombre imagen 1</span></span></a>
-                    </p>
-                  </div>
-                  <div>
-                    <img src="../recursos/img/720x350-red.png" alt="Nombre imagen 2">
-                    <p class="Carousel-caption">
-                      <span>Perferendis, doloribus nemo quae quis earum dignissimos rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas minima ipsam veniam nemo, odio similique, maiores unde aut architecto cum at saepe voluptatum quidem quo voluptatibus dicta sapiente sit.</span>
-                      <a href="#"><span class="Icon Icon--download u-mr1"></span><span>Descargar imagen<span class="u-hideVisually">: Nombre imagen 2</span></span></a>
-                    </p>
-                  </div>
-                  <div>
-                    <img src="../recursos/img/720x350-blue.png" alt="Nombre imagen 3">
-                    <p class="Carousel-caption">
-                      <span>Animi, necessitatibus. Quas dolor vel quidem magni iusto.</span>
-                      <a href="#"><span class="Icon Icon--download u-mr1"></span><span>Descargar imagen<span class="u-hideVisually">: Nombre imagen 3</span></span></a>
-                    </p>
-                  </div>
-                  <div>
-                    <img src="../recursos/img/720x350-green.png" alt="Nombre imagen 4">
-                    <p class="Carousel-caption">
-                      <span>Iure, sint possimus voluptatum hic temporibus ullam, natus.</span>
-                      <a href="#"><span class="Icon Icon--download u-mr1"></span><span>Descargar imagen<span class="u-hideVisually">: Nombre imagen 4</span></span></a>
-                    </p>
-                  </div>
-                </div>
-
-                <a class="Carousel-download Download" href="#" title="Descargar todas las imágenes (.zip 4 MB)">
-                  <div class="Media u-textSmall">
-                    <div class="Media-image">
-                      <span class="Download-icon">
-                        <span class="Icon Icon--download"></span>
-                      </span>
-                    </div>
-                    <div class="Media-body">
-                      <div class="Download-title">Descargar todas las imágenes (.zip 4 MB)</div>
-                      <div class="Download-description">14 imágenes, 4 MB</div>
-                    </div>
-                  </div>
-                </a>
-
-                <h3>Enlaces relacionados</h3>
-
-                <ul>
-                  <li><a href="#">Lorem ipsum dolor sit.</a></li>
-                  <li><a href="#">Libero eos voluptate nemo.</a></li>
-                  <li><a href="#">Omnis exercitationem, itaque quibusdam!</a></li>
-                </ul>
-
-                <h3>Enlaces de descarga</h3>
-
-                <ul class="Page-downloads List">
-                  <li>
-                    <a class="Download" href="#" title="Descargar: Formulario para inscripción (.pdf 354 KB)">
-                      <div class="Media">
-                        <div class="Media-image">
-                          <span class="Download-icon">
-                            <span class="Icon Icon--download"></span>
-                          </span>
-                        </div>
-                        <div class="Media-body">
-                          <div class="Download-title">Formulario para inscripción (.pdf 354 KB)</div>
-                          <div class="Download-description">Lorem ipsum dolor sit amet consectetur</div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="Download" href="#" title="Descargar: Formulario para inscripción (.pdf 354 KB)">
-                      <div class="Media">
-                        <div class="Media-image">
-                          <span class="Download-icon">
-                            <span class="Icon Icon--download"></span>
-                          </span>
-                        </div>
-                        <div class="Media-body">
-                          <div class="Download-title">Formulario para inscripción (.pdf 354 KB)</div>
-                          <div class="Download-description">Lorem ipsum dolor sit amet consectetur</div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="Download" href="#" title="Descargar: Formulario para inscripción (.pdf 354 KB)">
-                      <div class="Media">
-                        <div class="Media-image">
-                          <span class="Download-icon">
-                            <span class="Icon Icon--download"></span>
-                          </span>
-                        </div>
-                        <div class="Media-body">
-                          <div class="Download-title">Formulario para inscripción (.pdf 354 KB)</div>
-                          <div class="Download-description">Lorem ipsum dolor sit amet consectetur</div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a class="Download" href="#" title="Descargar todos los archivos adjuntos (.zip 12 MB)">
-                      <div class="Media">
-                        <div class="Media-body">
-                          <span class="Download-title u-textNormal u-textSmall">Descargar todos los archivos adjuntos (.zip 12 MB)</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-
-                <h3>Etiquetas</h3>
-
-                <div class="Tags">
-                  <a href="#" class="Tags-item">Etiqueta</a>
-                  <a href="#" class="Tags-item">Uruguay</a>
-                  <a href="#" class="Tags-item">Palabra clave</a>
-                </div>
-                -->
-
-
               </div>
             </div>
           </div>
