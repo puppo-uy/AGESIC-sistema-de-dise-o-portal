@@ -122,6 +122,18 @@ $title = 'Muestrario de componentes';
 				.then(function (html) {
 					preview.innerHTML = '<p class="muestrario-preview-titulo">' + comp + '</p>' + html;
 
+					// Los <script> insertados vía innerHTML no se ejecutan; se reemplazan por
+					// copias nuevas para forzar su ejecución.
+					preview.querySelectorAll('script').forEach(function (viejo) {
+						var nuevo = document.createElement('script');
+						if (viejo.src) {
+							nuevo.src = viejo.src;
+						} else {
+							nuevo.textContent = viejo.textContent;
+						}
+						viejo.replaceWith(nuevo);
+					});
+
 					// Reinicializa componentes con JS (modales, desplegables) cargados dinámicamente.
 					if (window.SistemaGravity) {
 						preview.querySelectorAll('dialog[data-modal]').forEach(function (el) {
