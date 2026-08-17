@@ -50,15 +50,16 @@
                 
                 <p class="Page-description">Los íconos funcionales permiten comunicar acciones, estados o conceptos de forma visual y sintética. Se utilizan para reforzar el significado de textos, optimizar el espacio en la interfaz y/o facilitar el reconocimiento rápido de acciones o información.</p>
                 <p>Dentro del sistema de diseño, los íconos se utilizan siempre como elementos de apoyo, ya sea acompañando texto o como parte de otros componentes. No están contemplados en este sistema los íconos que pudieran utilizarse como parte de los contenidos, ya que no siguen ninguna referencia estética ni comunicacional particular, solo responden a objetivos funcionales</p>
-
-                <iframe src="iframe-preview.php?comp=icono/icono" title="Ejemplo de avatar de usuario" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
-                <iframe src="iframe-preview.php?comp=icono/icono-colores" title="Ejemplo de avatar de usuario" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                
+                
 
                 <h3>Modos</h3>
                 <h4>Tamaño</h4>
                 <p class="u-mb2">Existen distintos tamaños predefinidos que permiten adaptar los íconos al contexto de uso sin perder legibilidad.</p>
-                 <iframe src="iframe-preview.php?comp=icono/icono-tamano" title="Ejemplo de tamaños de íconos" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 100px;" scrolling="no"></iframe>
-
+                 <iframe src="iframe-preview.php?comp=icono/icono-tamanos" title="Ejemplo de tamaños de íconos" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 100px;" scrolling="no"></iframe>
+                                
+                <h5 class="u-mt4">Colores</h5>                 
+                <iframe src="iframe-preview.php?comp=icono/icono-colores" title="Ejemplo de avatar de usuario" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
               
                 <h4>Formato</h4>
                 <p>Íconos de trazo simple o lineales, recomendados para la mayoría de los usos.</p>
