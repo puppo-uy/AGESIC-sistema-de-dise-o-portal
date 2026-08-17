@@ -145,7 +145,7 @@
                   <li>Escribir frases y oraciones breves. Los párrafos extensos exigen más concentración y dificultan la lectura y comprensión del texto.</li>
 									<li>No cambiar los tokens de color del componente, se podría reducir el contraste y entorpecer la lectura.</li>
                 </ul>
-								
+
               </div>
             </div>
           </div>
