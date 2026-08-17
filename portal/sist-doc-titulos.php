@@ -42,7 +42,7 @@
                 <h2 class="Page-title">Títulos</h2>
                 
                 <p class="Page-description">Los títulos son componentes de texto que se utilizan para organizar y jerarquizar el contenido dentro de la interfaz. Permiten estructurar la información, guiar la lectura y facilitar la comprensión del contenido en distintos niveles.</p>
-                <p>Además de su función visual, cumplen un rol semántico fundamental, ya que definen la estructura lógica del contenido.</p>
+                <p>Además de su función visual, cumplen un rol semántico fundamental, ya que definen la estructura lógica del contenido. No obstante, se dispone de estilos para emular el peso visual de un encabezado, pero sin alterar la semántica del código. Del mismo modo puede aplicarse cuando el encabezado que correponde para mantener la lógica de anidación no es coherente con el peso visual que se necesita por su contenido.</p>
                 
                  <iframe src="iframe-preview.php?comp=texto/titulo" title="Ejemplos de títulos del sistema" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 380px;" scrolling="no"></iframe>
 
