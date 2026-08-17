@@ -63,7 +63,7 @@
                 <h4 class="u-mt3" id="titulo-titulos">Títulos</h4>
                 <p class="u-mb3">Los títulos se utilizan para estructurar el contenido y guiar la lectura. Utilizan la familia <strong>Open Sans</strong> y los pesos Light, Regular, Semibold y Bold.</p>
                 <iframe
-                  src="iframe-preview.php?comp=tipografias"
+                  src="iframe-preview.php?comp=globales/tipografias"
                   class="component-preview"
                   title="Escala tipográfica"
                   scrolling="no"

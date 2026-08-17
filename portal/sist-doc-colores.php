@@ -67,7 +67,7 @@
 				<p>Estos colores se aplican en componentes clave como botones, cabezales y otros elementos de alto peso visual o funcional. Su uso no es decorativo, sino que responde a la necesidad de jerarquizar acciones, secciones y contenidos importantes dentro de la interfaz.</p>
 
 				<iframe
-					src="iframe-preview.php?comp=colores&grupo=institucionales"
+					src="iframe-preview.php?comp=globales/colores-institucionales"
 					class="component-preview"
 					title="Colores institucionales"
 					scrolling="no"
@@ -79,7 +79,7 @@
 				<p>Estos colores deben utilizarse exclusivamente con el significado definido por el sistema y no con fines decorativos.</p>
 
 				<iframe
-					src="iframe-preview.php?comp=colores&grupo=funcionales"
+					src="iframe-preview.php?comp=globales/colores-funcionales"
 					class="component-preview"
 					title="Colores funcionales"
 					scrolling="no"
@@ -91,7 +91,7 @@
 				<p>Este color se utiliza exclusivamente para indicar visualmente qué elemento de la interfaz se encuentra enfocado, ya sea en campos de formulario o durante la navegación mediante teclado.</p>
 
 				<iframe
-					src="iframe-preview.php?comp=colores&grupo=foco"
+					src="iframe-preview.php?comp=globales/colores-foco"
 					class="component-preview"
 					title="Color de foco"
 					scrolling="no"
@@ -102,7 +102,7 @@
 				<p>Los colores neutros se utilizan principalmente para fondos, textos, bordes y separadores, permitiendo que los otros colores destaquen correctamente.</p>
 
 				<iframe
-					src="iframe-preview.php?comp=colores&grupo=neutros"
+					src="iframe-preview.php?comp=globales/colores-neutros"
 					class="component-preview"
 					title="Colores neutros"
 					scrolling="no"
@@ -114,7 +114,7 @@
 				<p>Su uso no debe interferir con la jerarquía ni con los colores funcionales definidos por el sistema.</p>
 
 				<iframe
-					src="iframe-preview.php?comp=colores&grupo=decorativos"
+					src="iframe-preview.php?comp=globales/colores-decorativos"
 					class="component-preview"
 					title="Colores decorativos"
 					scrolling="no"
