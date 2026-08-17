@@ -68,6 +68,31 @@
 		--funcional-advertencia-oscuro: #{$colores-funcionales-naranja-advertencia-950};
 
 
+    // Colores de clasificación (tags categóricos)
+    --clasificacion-rojo-claro: #{$colores-cromaticos-rojo-50};
+    --clasificacion-rojo-oscuro: #{$colores-cromaticos-rojo-800};
+
+    --clasificacion-naranja-claro: #{$colores-cromaticos-naranja-50};
+    --clasificacion-naranja-oscuro: #{$colores-cromaticos-naranja-800};
+
+    --clasificacion-verde-claro: #{$colores-cromaticos-verde-50};
+    --clasificacion-verde-oscuro: #{$colores-cromaticos-verde-800};
+
+    --clasificacion-verde-agua-claro: #{$colores-cromaticos-verde-agua-50};
+    --clasificacion-verde-agua-oscuro: #{$colores-cromaticos-verde-agua-800};
+
+    --clasificacion-celeste-claro: #{$colores-cromaticos-celeste-50};
+    --clasificacion-celeste-oscuro: #{$colores-cromaticos-celeste-800};
+
+    --clasificacion-fucsia-claro: #{$colores-cromaticos-fucsia-50};
+    --clasificacion-fucsia-oscuro: #{$colores-cromaticos-fucsia-800};
+
+    --clasificacion-violeta-claro: #{$colores-cromaticos-violeta-50};
+    --clasificacion-violeta-oscuro: #{$colores-cromaticos-violeta-800};
+
+    --clasificacion-gris-claro: #{$colores-neutros-gris-frio-50};
+    --clasificacion-gris-oscuro: #{$colores-neutros-gris-frio-800};
+
     // Foco
 
     --foco-acento : #{$colores-naranja-foco-500};
