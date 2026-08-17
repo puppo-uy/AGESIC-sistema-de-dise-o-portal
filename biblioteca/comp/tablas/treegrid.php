@@ -21,7 +21,7 @@
 		<tr role="row" aria-level="1" aria-posinset="1" aria-setsize="1" aria-expanded="true">
       <td role="gridcell">Fila nivel 1 con hijos. Treegrids are awesome</td>
 			<td role="gridcell">
-				<span class="tag tag--small tag--activo">
+				<span class="tag tag--s tag--activo">
 					<span class="dot"></span>
 					<span>Activo</span>
 				</span>
@@ -75,7 +75,7 @@
     <tr role="row" aria-level="2" aria-posinset="1" aria-setsize="3">
       <td role="gridcell">Fila nivel 2 re: Treegrids are awesome</td>
 			<td role="gridcell">
-				<span class="tag tag--small tag--activo">
+				<span class="tag tag--s tag--activo">
 					<span class="dot"></span>
 					<span>Activo</span>
 				</span>
@@ -95,7 +95,7 @@
     <tr role="row" aria-level="2" aria-posinset="2" aria-setsize="3" aria-expanded="false">
       <td role="gridcell">Fila nivel 2 re: Treegrids are awesome</td>
 			<td role="gridcell">
-				<span class="tag tag--small tag--activo">
+				<span class="tag tag--s tag--activo">
 					<span class="dot"></span>
 					<span>Activo</span>
 				</span>
@@ -115,7 +115,7 @@
     <tr role="row" aria-level="3" aria-posinset="1" aria-setsize="1" class="hidden">
       <td role="gridcell">Fila nivel 3 re: Treegrids are awesome</td>
 			<td role="gridcell">
-				<span class="tag tag--small tag--activo">
+				<span class="tag tag--s tag--activo">
 					<span class="dot"></span>
 					<span>Activo</span>
 				</span>
@@ -135,7 +135,7 @@
     <tr role="row" aria-level="2" aria-posinset="3" aria-setsize="3" aria-expanded="false">
       <td role="gridcell">Fila nivel 2 re: Treegrids are awesome</td>
 			<td role="gridcell">
-				<span class="tag tag--small tag--activo">
+				<span class="tag tag--s tag--activo">
 					<span class="dot"></span>
 					<span>Activo</span>
 				</span>
@@ -155,7 +155,7 @@
     <tr role="row" aria-level="3" aria-posinset="1" aria-setsize="1" aria-expanded="false" class="hidden">
       <td role="gridcell">Fila nivel 3 re: Treegrids are awesome</td>
 			<td role="gridcell">
-				<span class="tag tag--small tag--activo">
+				<span class="tag tag--s tag--activo">
 					<span class="dot"></span>
 					<span>Activo</span>
 				</span>
@@ -175,7 +175,7 @@
     <tr role="row" aria-level="4" aria-posinset="1" aria-setsize="2" class="hidden">
       <td role="gridcell">Fila nivel 4 re: Treegrids are awesome</td>
 			<td role="gridcell">
-				<span class="tag tag--small tag--activo">
+				<span class="tag tag--s tag--activo">
 					<span class="dot"></span>
 					<span>Activo</span>
 				</span>
@@ -195,7 +195,7 @@
     <tr role="row" aria-level="4" aria-posinset="2" aria-setsize="2" class="hidden">
       <td role="gridcell">Fila nivel 4 re: Treegrids are awesome</td>
 			<td role="gridcell">
-				<span class="tag tag--small tag--activo">
+				<span class="tag tag--s tag--activo">
 					<span class="dot"></span>
 					<span>Activo</span>
 				</span>
@@ -215,7 +215,7 @@
 		<tr role="row" aria-level="1" aria-posinset="4" aria-setsize="1" aria-expanded="false">
       <td role="gridcell">Fila nivel 1 con hijos. Consectetur adipiscing elit.</td>
 			<td role="gridcell">
-				<span class="tag tag--small tag--activo">
+				<span class="tag tag--s tag--activo">
 					<span class="dot"></span>
 					<span>Activo</span>
 				</span>
@@ -242,7 +242,7 @@
 	  <tr role="row" aria-level="2" aria-posinset="4" aria-setsize="3" class="hidden">
       <td role="gridcell">Fila nivel 2 con un título</td>
 			<td role="gridcell">
-				<span class="tag tag--small tag--activo">
+				<span class="tag tag--s tag--activo">
 					<span class="dot"></span>
 					<span>Activo</span>
 				</span>
@@ -269,7 +269,7 @@
 		<tr role="row" aria-level="1" aria-posinset="5" aria-setsize="1">
       <td role="gridcell">Fila nivel 1 sin hijos. Lorem ipsum dolor sit amet.</td>
 			<td role="gridcell">
-				<span class="tag tag--small tag--activo">
+				<span class="tag tag--s tag--activo">
 					<span class="dot"></span>
 					<span>Activo</span>
 				</span>
