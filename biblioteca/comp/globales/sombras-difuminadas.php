@@ -57,7 +57,6 @@ $tamanos_sombra = [
 <div class="muestra-sombras">
 
 	<div>
-		<p class="titulo--sm">Difuminada</p>
 		<div class="muestra-sombras__fila">
 
 			<?php foreach ($tamanos_sombra as $tamano => $token): ?>

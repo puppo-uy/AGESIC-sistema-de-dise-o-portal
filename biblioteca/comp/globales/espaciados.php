@@ -51,8 +51,6 @@ $tokens_espaciado = [
 
 <div class="muestra-espaciados">
 
-	<p class="titulo--sm">Espaciado</p>
-
 	<?php foreach ($tokens_espaciado as $token): ?>
 	<div class="muestra-espaciado">
 		<div class="muestra-espaciado__info">

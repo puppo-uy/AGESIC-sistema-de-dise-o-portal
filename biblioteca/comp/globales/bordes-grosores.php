@@ -51,7 +51,6 @@ $tokens_grosor = [
 <div class="muestra-bordes">
 
 	<div>
-		<p class="titulo--sm">Grosor</p>
 		<div class="muestra-bordes__fila">
 
 			<?php foreach ($tokens_grosor as $token): ?>

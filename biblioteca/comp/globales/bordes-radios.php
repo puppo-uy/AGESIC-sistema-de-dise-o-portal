@@ -52,7 +52,6 @@ $tokens_radio = [
 <div class="muestra-bordes">
 
 	<div>
-		<p class="titulo--sm">Radio</p>
 		<div class="muestra-bordes__fila">
 
 			<?php foreach ($tokens_radio as $token): ?>
