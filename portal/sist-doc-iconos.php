@@ -49,7 +49,8 @@
                 </div>
                 
                 <p class="Page-description">Los íconos funcionales permiten comunicar acciones, estados o conceptos de forma visual y sintética. Se utilizan para reforzar el significado de textos, optimizar el espacio en la interfaz y/o facilitar el reconocimiento rápido de acciones o información.</p>
-                <p>Dentro del sistema de diseño, los íconos se utilizan siempre como elementos de apoyo, ya sea acompañando texto o como parte de otros componentes. No están contemplados en este sistema los íconos que pudieran utilizarse como parte de los contenidos, ya que no siguen ninguna referencia estética ni comunicacional particular, solo responden a objetivos funcionales</p>
+                <p>Los íconos propuestos por el sistema de diseño son íconos funcionales y están destinados a utilizarse dentro de componentes para aportar contexto o evidenciar acciones. Por ejemplo, pueden formar parte de botones, campos, controles, mensajes y otros componentes de la interfaz. Son los únicos íconos que deben utilizarse como parte de los componentes del sistema.</p>
+                <p>Los íconos utilizados como parte del contenido quedan fuera del alcance de este sistema, ya que pueden responder a necesidades específicas de cada contenido y no necesariamente requieren seguir una referencia estética o comunicacional común.</p>
                 
                 
 
@@ -80,8 +81,12 @@
                 <p>Su uso está limitado a contextos relacionados con la identidad del usuario y no debe utilizarse con fines decorativos ni como reemplazo de otros íconos funcionales.</p>
                  <iframe src="iframe-preview.php?comp=icono/icono-usuario" title="Ejemplo de avatar de usuario" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                  
+<h3>Biblioteca de íconos</h3>
+<p>El sistema de diseño utiliza como base la biblioteca de íconos de Material Design. Esta biblioteca ofrece una amplia variedad de íconos con una lógica visual y criterios de construcción consistentes, lo que facilita mantener coherencia entre los distintos componentes y contextos de uso.</p>
 
-                <h3>Accesibilidad</h3>
+<p>Cuando se necesite un ícono que no esté disponible en el sistema, se recomienda verificar primero si existe un ícono equivalente o similar en la biblioteca de Material Design antes de incorporar uno nuevo. Esto permite mantener la consistencia visual y evitar la incorporación innecesaria de recursos con estilos diferentes.</p>
+
+<h3>Accesibilidad</h3>
                 <h4>Recomendaciones para no perder la accesibilidad</h4>
                 <ul class="List-text">
                     <li>No utilizar íconos como único medio para transmitir información.</li>

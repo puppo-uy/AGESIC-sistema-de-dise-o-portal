@@ -67,11 +67,13 @@
                 <ul class="List-text">
                     <li>Clasificar contenidos.</li>
                     <li>Comunicar el estado de un elemento dentro de un flujo o proceso.</li>
+                    <li>Tag Transmitiendo en vivo: Transmisiones que están saliendo al aire en el momento en que el usuario mira la pantalla.</li>
                 </ul>
 
                 <h4 class="u-mt3">Cuándo no usarlo</h4>
                 <ul class="List-text">
                     <li>Para comunicar información compleja o extensa.</li>
+                    <li>Tag Transmitiendo en vivo: Como recurso para destacar contenido que no es una transmisión. El tag tiene un significado literal y usarlo de otro modo hace que pierda su valor dentro del sistema.</li>
                 </ul>
 
                 <h3 class="u-mt4">Buenas prácticas</h3>
@@ -97,9 +99,18 @@
                     <li>Error / Cancelado</li>
                     <li>Inactivo / Abandonado</li>
                     <li>Pendiente / En espera</li>
-                    <li>En vivo</li>
+                    
                 </ul>
-
+              
+ <h5 class="u-mb2">En vivo</h5>
+   <iframe src="iframe-preview.php?comp=alertas/tag-en-vivo" title="Ejemplo de tag en vivo" class="component-preview" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+                <p>El tag de transmitiendo en vivo indica que un contenido se está transmitiendo en este momento. Es el único tag del sistema con animación propia, ya que el punto que acompaña a la etiqueta parpadea de forma continua mientras la transmisión está en vivo.</p>
+<p>Se distingue del resto de los tags en tres motivos:</p>
+<ul>
+  <li>Tiene una identidad visual propia y diferente al resto.</li>
+  <li>Su color y su etiqueta son fijos, no se editan ni se reemplazan por otro texto.</li>
+  <li>Su presencia en pantalla es temporal. Aparece cuando la transmisión comienza y desaparece cuando termina. No queda como marca permanente sobre el contenido.</li>
+</ul>
                  <h4 class="u-mt3 u-mb3">Tamaño</h4>
                
                 <ul class="List-text">
