@@ -55,7 +55,7 @@
                 <p class="u-mb3">Los grosores de borde van desde <code>borde-0</code> hasta <code>borde-6</code>.</p>
 
                 <iframe
-                  src="iframe-preview.php?comp=globales/bordes"
+                  src="iframe-preview.php?comp=globales/bordes-grosores"
                   class="component-preview"
                   title="Grosores de borde"
                   scrolling="no"
@@ -86,7 +86,7 @@
                 <p class="u-mb3">Los radios definen el nivel de redondeo de las esquinas de contenedores y componentes. El sistema contempla desde esquinas completamente rectas hasta esquinas totalmente redondeadas. El valor máximo de redondeo permite que ciertos elementos adopten una forma de "pastilla" o circular, según su proporción.</p>
 
                 <iframe
-                  src="iframe-preview.php?comp=globales/radios
+                  src="iframe-preview.php?comp=globales/bordes-radios"
                   title="Radios de borde"
                   scrolling="no"
                   style="width:100%;border:none;display:block;"
