@@ -40,7 +40,6 @@
 			<ul class="Page-navSublist" <?php if(!$isMensajesExpanded) echo 'style="display:none;"'; ?>>
 				<li class="<?php if($activeItem == 'alertas') echo 'is-active'; ?>"><a href="sist-doc-alertas.php">Alertas</a></li>
 				<li class="<?php if($activeItem == 'modales') echo 'is-active'; ?>"><a href="sist-doc-modales.php">Modales</a></li>
-				<li class="<?php if($activeItem == 'tooltips') echo 'is-active'; ?>"><a href="sist-doc-tooltips.php">Tooltips</a></li>
 				<li class="<?php if($activeItem == 'indicadores') echo 'is-active'; ?>"><a href="sist-doc-indicadores.php">Indicadores de carga</a></li>
 				<li class="<?php if($activeItem == 'tags') echo 'is-active'; ?>"><a href="sist-doc-tags.php">Tags</a></li>
 			</ul>
@@ -69,7 +68,6 @@
 				<li class="<?php if($activeItem == 'botones') echo 'is-active'; ?>"><a href="sist-doc-botones.php">Botones</a></li>
 				<li class="<?php if($activeItem == 'enlaces') echo 'is-active'; ?>"><a href="sist-doc-enlaces.php">Enlaces</a></li>
 				<li class="<?php if($activeItem == 'grupo-botones') echo 'is-active'; ?>"><a href="sist-doc-grupo-botones.php">Grupo de botones</a></li>
-				<li class="<?php if($activeItem == 'boton-desplegable') echo 'is-active'; ?>"><a href="sist-doc-boton-desplegable.php">Botón con desplegable</a></li>
 			</ul>
 		</li>
 		
