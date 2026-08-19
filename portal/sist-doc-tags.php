@@ -52,15 +52,6 @@
                 <p class="Page-description">Las tags son etiquetas visuales que permiten clasificar información o comunicar el estado de un elemento dentro de la interfaz. Se utilizan para aportar contexto de forma breve y clara, sin competir con el contenido principal ni interrumpir el flujo de lectura.</p>
                 <p>Pueden utilizarse en listados, tablas o tarjetas para facilitar el escaneo de la información.</p>
 
-                <h3 class="u-mt4">Estructura del componente</h3>
-                
-                <h5 class="u-mt3">Elementos que lo componen</h5>
-                <ul class="List-text">
-                    <li>Fondo</li>
-                    <li>Etiqueta</li>
-                    <li>Estado (Opcional)</li>
-                    <li>Radio</li>
-                </ul>
 
                 <h3 class="u-mt4">Recomendaciones de uso</h3>
                 <h4 class="u-mt3">Casos típicos</h4>
