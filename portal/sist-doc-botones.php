@@ -50,17 +50,7 @@
 								
 								<p class="Page-description">Los botones permiten al usuario ejecutar acciones dentro de una interfaz. Según su jerarquía visual y funcional, los botones se utilizan para destacar la acción principal de una pantalla, ofrecer acciones alternativas o accesos secundarios, manteniendo siempre una clara diferenciación entre ellos.</p>
 								
-								<h3 class="u-mt4">Estructura del componente</h3>
-                                <iframe src="iframe-preview.php?comp=acciones/boton-primario" title="Ejemplo de estructura de botón" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
-								<h5 class="u-mt3">Elementos que lo componen:</h5>
-								<ul class="List-text">
-                                    <li>Fondo</li>
-                                    <li>Borde</li>
-                                    <li>Texto</li>
-                                    <li>Ícono</li>
-                                    <li>Sombra</li>
-								</ul>
-
+								
 								<h3 class="u-mt4">Recomendaciones de uso</h3>
                                 <h4 class="u-mt3">Buenas prácticas</h4>
                                 <ul class="List-text">
