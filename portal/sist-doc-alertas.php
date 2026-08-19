@@ -50,32 +50,6 @@
 								
 								<p class="Page-description">Las alertas comunican mensajes relevantes al usuario sobre el estado de un proceso, el resultado de una acción o información que requiere atención. Permiten confirmar, advertir, informar o notificar de manera clara y jerarquizada, y pueden variar su formato según su tipo de mensaje y nivel de permanencia en la pantalla.</p>
 								
-								<h3>Estructura del componente</h3>
-								
-								<iframe src="iframe-preview.php?comp=alertas/alerta" title="Ejemplo de estructura de alerta" class="component-preview u-mb3" style="width: 100%; border: none; min-height: 120px;" scrolling="no"></iframe>
-								
-								<div class="Grid">
-									<div class="Grid-item u-size1of2">
-										<h4>Elementos que lo componen:</h4>
-										<ul class="List-text">
-											<li>Fondo</li>
-											<li>Borde</li>
-											<li>Título</li>
-											<li>Párrafo</li>
-											<li>Ícono de estado</li>
-											<li>Ícono de cerrar</li>
-											<li>Enlace de acción</li>
-										</ul>
-									</div>
-									<div class="Grid-item u-size1of2">
-										<h4>Modos:</h4>
-										<ul class="List-text">
-											<li><b>Estado</b>: Éxito, Error, Advertencia, Notificación, Información</li>
-											<li><b>Formato</b>: Completa, Simple, Emergente</li>
-										</ul>
-									</div>
-								</div>
-
                 <h3>Recomendaciones de uso</h3>
 								
 								<h4>Casos típicos</h4>
