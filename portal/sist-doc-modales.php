@@ -85,8 +85,47 @@
                     <li>Devolver el foco al elemento que abrió el modal al cerrarlo.</li>
                 </ul>
 
+                <h3>Tamaños</h3>
+<p class="u-mb4">En escritorio el modal tiene tres anchos fijos. El tamaño no se elige libremente, lo determina el contenido que el modal necesita mostrar. La regla general es usar el más chico que permita resolver la tarea, porque un modal más grande de lo necesario puede transmitir que la decisión es más compleja de lo que realmente es.</p>
+
+<h4>Chico (480 px)</h4>
+<p>Se utiliza cuando se le pide al usuario una sola decisión y ningún ingreso de datos.</p>
+<p>Ejemplos de uso:</p>
+<ul>
+    <li>Confirmar una acción destructiva o irreversible.</li>
+    <li>Mostrar un aviso que requiere acuse de recibo.</li>
+    <li>Solicitar un único dato breve, como un código de verificación.</li>
+</ul>
+<p>En este tamaño no se muestra el enlace de la fila de acciones y las etiquetas de los botones deben ser breves, de una o dos palabras. Si la acción necesita una etiqueta larga o un enlace secundario, corresponde el tamaño mediano.</p>
+
+<h4>Mediano (690 px)</h4>
+<p>Es el tamaño por defecto y cubre la mayoría de los casos.</p>
+<p>Ejemplos de uso:</p>
+<ul>
+<li>Formularios de una columna de hasta seis u ocho campos.</li>
+<li>Contenido explicativo que incluye listas o pasos.</li>
+<li>Selección de una opción dentro de un conjunto acotado.</li>
+</ul>
+<p>Ante la duda entre chico y mediano, corresponde el mediano: el ancho de línea resultante es cómodo para leer y admite campos de formulario sin que queden desproporcionados.</p>
+
+<h4>Grande (900 px)</h4>
+<p>Se reserva para el contenido que necesita más espacio del que ofrece el mediano.</p>
+<p>Ejemplos de uso:</p>
+<ul>
+<li>Formularios extensos o con campos que requieren mayor ancho para ser legibles.</li>
+<li>Agrupaciones de campos que conviene mostrar juntas y no llegan a entrar cómodas en el mediano.</li>
+<li>Modales que muestran tablas de contenido</li>
+</ul>
+<p>Este tamaño exige un criterio adicional: si el contenido es tan extenso que necesita el ancho completo y además un desplazamiento vertical largo, probablemente no corresponda un modal sino una página propia. El modal sirve para tareas que se resuelven sin perder de vista el contexto; cuando la tarea tiene entidad suficiente para justificar su propia pantalla, conviene darle una.</p>
+
+<h3>Comportamiento en móvil:</h3>
+<p>El modal ocupa un ancho único que va de lado a lado de la pantalla dejando un márgen de 24px respecto al borde. No se separa por tamaño, solo por modo.</p>
+
+
+
                 <h3 class="u-mt4">Modos</h3>
 
+            
                 <h4 class="u-mt3 u-mb3">Modal simple</h4>
                 <div class="u-mb6">
                     <button class="Button Button--primary" data-modal-target="modal-simple">
@@ -210,6 +249,11 @@
                         </div>
                     </div>
                 </div>
+                <h4 class="u-mt3">Buenas prácticas</h4>
+                <ul class="List-text">
+                    <li>Elegir el tamaño más chico de modal que permita resolver la tarea.</li>
+                    <li>No se abre un modal desde otro modal. Si un paso requiere una decisión adicional, se resuelve dentro del mismo modal o se convierte el flujo en una secuencia de pasos.</li>
+                </ul>
 
                 <h3 class="u-mt4">Accesibilidad</h3>
                 <h4>WCAG Nivel AAA</h4>
