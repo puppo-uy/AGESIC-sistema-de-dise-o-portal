@@ -20,7 +20,7 @@ $tokens_radio = [
 	}
 
 	.muestra-borde {
-		width: 120px;
+		width: 100px;
 	}
 
 	.muestra-borde__caja {

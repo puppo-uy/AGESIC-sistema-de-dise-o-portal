@@ -23,7 +23,7 @@ $tamanos_sombra = [
 	}
 
 	.muestra-sombra {
-		width: 140px;
+		width: 118px;
 	}
 
 	.muestra-sombra__info {
@@ -35,7 +35,7 @@ $tamanos_sombra = [
 
 	.muestra-sombra__caja {
 		display: block;
-		height: 80px;
+		height: 64px;
 		border-radius: var(--borde-radio-xs);
 		background: var(--neutro-0);
 	}

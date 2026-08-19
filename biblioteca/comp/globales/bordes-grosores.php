@@ -19,7 +19,7 @@ $tokens_grosor = [
 	}
 
 	.muestra-borde {
-		width: 120px;
+		width: 100px;
 	}
 
 	.muestra-borde__caja {
