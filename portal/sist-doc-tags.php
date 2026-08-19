@@ -94,7 +94,7 @@
                 </ul>
               
  <h5 class="u-mb2">En vivo</h5>
-   <iframe src="iframe-preview.php?comp=alertas/tag-en-vivo" title="Ejemplo de tag en vivo" class="component-preview" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
+   <iframe src="iframe-preview.php?comp=alertas/tag-transmision" title="Ejemplo de tag para transmisiones en vivo" class="component-preview" style="width: 100%; border: none; min-height: 80px;" scrolling="no"></iframe>
                 <p>El tag de transmitiendo en vivo indica que un contenido se está transmitiendo en este momento. Es el único tag del sistema con animación propia, ya que el punto que acompaña a la etiqueta parpadea de forma continua mientras la transmisión está en vivo.</p>
 <p>Se distingue del resto de los tags en tres motivos:</p>
 <ul>
