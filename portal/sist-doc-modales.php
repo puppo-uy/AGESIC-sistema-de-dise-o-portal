@@ -39,7 +39,7 @@
               <div class="Page-document">
 
                 <span class="Page-subtitle">Mensajes y diálogos</span>
-                <h2 class="Page-title">Modales</h2>
+                <h2 class="Page-title">Modales 2</h2>
                 
                  <div class="Page-info">
                   <div class="Bar">
