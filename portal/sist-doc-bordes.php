@@ -92,7 +92,7 @@
                   style="width:100%;border:none;display:block;"
                 ></iframe>
 
-                <div class="table-responsive u-mb5 u-mt3">
+                <div class="table-responsive u-mb5">
                     <table class="Table Table--striped" aria-labelledby="titulo-radios">
                         <thead>
                             <tr>
