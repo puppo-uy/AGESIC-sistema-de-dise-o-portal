@@ -54,7 +54,27 @@
                 <p class="u-mb3">El sistema utiliza dos familias tipográficas, cada una con un propósito específico:</p>
                 <ul class="List-text u-mb4">
                     <li><strong>Open Sans:</strong> Es la tipografía principal del sistema. Se utiliza para títulos, párrafos y la mayoría de los textos de la interfaz por su alta legibilidad en entornos digitales.</li>
+
+                     <iframe
+                  src="iframe-preview.php?comp=globales/tipografias-open-sans"
+                  class="component-preview"
+                  title="Escala tipográfica"
+                  scrolling="no"
+                  style="width:100%;border:none;display:block;"
+                ></iframe>
+
+
                     <li><strong>Sora:</strong> Se utiliza exclusivamente para el texto identificatorio del organismo en el cabezal. El uso de Sora fuera de este contexto no está contemplado dentro del sistema.</li>
+
+                     <iframe
+                  src="iframe-preview.php?comp=globales/tipografias-sora"
+                  class="component-preview"
+                  title="Escala tipográfica"
+                  scrolling="no"
+                  style="width:100%;border:none;display:block;"
+                ></iframe>
+
+
                 </ul>
 
                 <h3 class="u-mt4">Estilos</h3>
@@ -62,13 +82,7 @@
 
                 <h4 class="u-mt3" id="titulo-titulos">Títulos</h4>
                 <p class="u-mb3">Los títulos se utilizan para estructurar el contenido y guiar la lectura. Utilizan la familia <strong>Open Sans</strong> y los pesos Light, Regular, Semibold y Bold.</p>
-                <iframe
-                  src="iframe-preview.php?comp=globales/tipografias"
-                  class="component-preview"
-                  title="Escala tipográfica"
-                  scrolling="no"
-                  style="width:100%;border:none;display:block;"
-                ></iframe>
+               
                 <div class="table-responsive u-mb5">
                     <table class="Table Table--striped" aria-labelledby="titulo-titulos">
                         <thead>
