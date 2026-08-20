@@ -1,8 +1,9 @@
 @use "../tokens" as *;
+@use "icons" as *;
 
 :root {
-	--tag-padding-y: var(--espaciado-0);
-	--tag-padding-x: var(--espaciado-8);
+	--tag-padding-y: var(--espaciado-2);
+	--tag-padding-x: var(--espaciado-12);
 	--tag-radius: var(--borde-radio-full);
 
 	//badge
@@ -27,58 +28,64 @@
 	// Variantes tamaño
 	&.tag--l {
 		font-size: var(--tipo-tamano-parrafo-l);
-		line-height: var(--tipo-altura-linea-xl);
+		line-height: var(--tipo-altura-linea-m);
+
+		.icono {
+			@include icon-size(s);
+		}
 	}
 
 	&.tag--m {
 		font-size: var(--tipo-tamano-parrafo-m);
-		line-height: var(--tipo-altura-linea-l);
+		line-height: var(--tipo-altura-linea-m);
+
+		.icono {
+			@include icon-size(xs);
+		}
 	}
 
 	&.tag--s {
 		font-size: var(--tipo-tamano-parrafo-s);
 		line-height: var(--tipo-altura-linea-m);
+
+		.icono {
+			@include icon-size(xs);
+		}
 	}
 
 	// Variantes de clasificación (categóricas, sin significado funcional)
+	// El texto siempre usa el color principal (--texto-principal, heredado
+	// de la regla base .tag); solo cambia el fondo según la familia.
 	&.tag--rojo {
 		background: var(--clasificacion-rojo-claro);
-		color: var(--clasificacion-rojo-oscuro);
 	}
 
 	&.tag--naranja {
 		background: var(--clasificacion-naranja-claro);
-		color: var(--clasificacion-naranja-oscuro);
+	}
+
+	&.tag--amarillo {
+		background: var(--clasificacion-amarillo-claro);
 	}
 
 	&.tag--verde {
 		background: var(--clasificacion-verde-claro);
-		color: var(--clasificacion-verde-oscuro);
 	}
 
 	&.tag--verde-agua {
 		background: var(--clasificacion-verde-agua-claro);
-		color: var(--clasificacion-verde-agua-oscuro);
 	}
 
 	&.tag--celeste {
 		background: var(--clasificacion-celeste-claro);
-		color: var(--clasificacion-celeste-oscuro);
 	}
 
 	&.tag--fucsia {
 		background: var(--clasificacion-fucsia-claro);
-		color: var(--clasificacion-fucsia-oscuro);
 	}
 
 	&.tag--violeta {
 		background: var(--clasificacion-violeta-claro);
-		color: var(--clasificacion-violeta-oscuro);
-	}
-
-	&.tag--gris {
-		background: var(--clasificacion-gris-claro);
-		color: var(--clasificacion-gris-oscuro);
 	}
 
 	// Variantes estados
@@ -116,6 +123,30 @@
 		.dot {
 			background: var(--funcional-advertencia-acento);
 		}
+	}
+
+	// Variantes de transmisión en vivo
+	&.tag--en-vivo,
+	&.tag--en-vivo-inactivo {
+		font-weight: var(--tipo-peso-bold);
+		border-radius: var(--borde-radio-xs);
+		padding-left: var(--espaciado-8);
+		padding-right: var(--espaciado-8);
+	}
+
+	&.tag--en-vivo {
+		background: var(--funcional-error-claro);
+
+		.dot {
+			width: 10px;
+			height: 10px;
+			background: var(--funcional-error-acento);
+			animation: tag-en-vivo-parpadeo 1.5s ease-in-out infinite;
+		}
+	}
+
+	&.tag--en-vivo-inactivo {
+		background: var(--neutro-50);
 	}
 
 	&.tag--indicador {
@@ -185,4 +216,19 @@
 	width: 8px;
 	background: var(--neutro-400);
 	border-radius: 100%;
+}
+
+@keyframes tag-en-vivo-parpadeo {
+	0%, 100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.3;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.tag--en-vivo .dot {
+		animation: none;
+	}
 }

@@ -10,16 +10,16 @@
 <span class="tag tag--s tag--rojo"><span>Tag de clasificación</span></span>
 
 <br><br>
-<!-- Tag: Clasificación fucsia -->
-<span class="tag tag--l tag--fucsia"><span>Tag de clasificación</span></span>
-<span class="tag tag--m tag--fucsia"><span>Tag de clasificación</span></span>
-<span class="tag tag--s tag--fucsia"><span>Tag de clasificación</span></span>
-
-<br><br>
 <!-- Tag: Clasificación naranja -->
 <span class="tag tag--l tag--naranja"><span>Tag de clasificación</span></span>
 <span class="tag tag--m tag--naranja"><span>Tag de clasificación</span></span>
 <span class="tag tag--s tag--naranja"><span>Tag de clasificación</span></span>
+
+<br><br>
+<!-- Tag: Clasificación amarillo -->
+<span class="tag tag--l tag--amarillo"><span>Tag de clasificación</span></span>
+<span class="tag tag--m tag--amarillo"><span>Tag de clasificación</span></span>
+<span class="tag tag--s tag--amarillo"><span>Tag de clasificación</span></span>
 
 <br><br>
 <!-- Tag: Clasificación verde -->
@@ -40,13 +40,13 @@
 <span class="tag tag--s tag--celeste"><span>Tag de clasificación</span></span>
 
 <br><br>
+<!-- Tag: Clasificación fucsia -->
+<span class="tag tag--l tag--fucsia"><span>Tag de clasificación</span></span>
+<span class="tag tag--m tag--fucsia"><span>Tag de clasificación</span></span>
+<span class="tag tag--s tag--fucsia"><span>Tag de clasificación</span></span>
+
+<br><br>
 <!-- Tag: Clasificación violeta -->
 <span class="tag tag--l tag--violeta"><span>Tag de clasificación</span></span>
 <span class="tag tag--m tag--violeta"><span>Tag de clasificación</span></span>
 <span class="tag tag--s tag--violeta"><span>Tag de clasificación</span></span>
-
-<br><br>
-<!-- Tag: Clasificación gris -->
-<span class="tag tag--l tag--gris"><span>Tag de clasificación</span></span>
-<span class="tag tag--m tag--gris"><span>Tag de clasificación</span></span>
-<span class="tag tag--s tag--gris"><span>Tag de clasificación</span></span>
