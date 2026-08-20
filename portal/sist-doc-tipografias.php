@@ -56,9 +56,9 @@
                     <li><strong>Open Sans:</strong> Es la tipografía principal del sistema. Se utiliza para títulos, párrafos y la mayoría de los textos de la interfaz por su alta legibilidad en entornos digitales.</li>
 
                      <iframe
-                  src="iframe-preview.php?comp=globales/tipografias-open-sans"
+                  src="iframe-preview.php?comp=globales/tipografia-open-sans"
                   class="component-preview"
-                  title="Escala tipográfica"
+                  title="Ejemplo de tipografía Open Sans"
                   scrolling="no"
                   style="width:100%;border:none;display:block;"
                 ></iframe>
@@ -67,9 +67,9 @@
                     <li><strong>Sora:</strong> Se utiliza exclusivamente para el texto identificatorio del organismo en el cabezal. El uso de Sora fuera de este contexto no está contemplado dentro del sistema.</li>
 
                      <iframe
-                  src="iframe-preview.php?comp=globales/tipografias-sora"
+                  src="iframe-preview.php?comp=globales/tipografia-sora"
                   class="component-preview"
-                  title="Escala tipográfica"
+                  title="Ejemplo de tipografía Sora"
                   scrolling="no"
                   style="width:100%;border:none;display:block;"
                 ></iframe>
