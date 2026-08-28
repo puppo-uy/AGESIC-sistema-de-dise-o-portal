@@ -78,44 +78,13 @@
 												</ul>
 											</div>
 										</li>
+										<li>
+											<a href="sist-recursos.php" id="item-4">Recursos</a>
+										</li>
 									</ul>
 								</nav>
 
-								<!-- Botón abrir buscador 
-								<div class="searchButtonWrap-md" id="searchButtonWrap-md">
-									<button class="Button Button--inverse Button--w-icon" aria-label="Abrir buscador y buscar">
-										<svg xmlns="http://www.w3.org/2000/svg" width="20.28" height="20.279" viewBox="0 0 20.28 20.279">
-											<path fill="#6D6E70" d="M8.361 16.722C3.75 16.722 0 12.971 0 8.361S3.75 0 8.361 0c4.611 0 8.363 3.75 8.363 8.361s-3.752 8.361-8.363 8.361zm0-15.222C4.578 1.5 1.5 4.578 1.5 8.361s3.078 6.861 6.861 6.861c3.784 0 6.863-3.078 6.863-6.861S12.145 1.5 8.361 1.5z"/>
-											<path fill="#6D6E70" d="M14.2 13.139l6.08 6.08-1.06 1.06-6.08-6.08z"/>
-										</svg><span class="u-hideVisually">Abrir buscador y</span> Buscar
-									</button>
-								</div>
-								-->
 
-								<!-- Buscador -->
-								<!--<div class="Header-search">
-									
-									Botón abrir menú 
-									<div class="navButtonWrap-md">
-										<button class="Button Button--primary Button--w-icon" id="navButtonWrap-md" aria-label="Abrir menú">
-											<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 21" xml:space="preserve">
-												<path d="M0,17.2v-1.7h20v1.7H0z M0,11.3V9.7h20v1.7H0z M0,5.5V3.8h20v1.7H0z"/>
-											</svg>Menú
-										</button>
-									</div>
-
-									<div class="search-form" id="search-form">
-										<div class="Search">
-											<form action="./">
-												<label for="search" class="u-hideVisually">Buscador:</label>
-												<input id="search" class="Search-input" type="search" placeholder="Buscar en MGAP">
-												<label for="Search-checkbox" class="Search-checkboxLabel"><input type="checkbox" id="Search-checkbox" value="MGAP" checked="">MGAP</label> 
-												<button class="Search-button" type="submit">Buscar</button>
-											</form>
-										</div>
-									</div>
-								</div>
-								 -->
 
 							</div>
 							

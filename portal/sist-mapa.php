@@ -114,6 +114,12 @@
                       </ul>
                     </li>
                     <li class="u-mt3">
+                      <strong>Recursos</strong>
+                      <ul>
+                        <li><a href="sist-recursos.php">Recursos</a></li>
+                      </ul>
+                    </li>
+                    <li class="u-mt3">
                       <strong>Sobre el sitio</strong>
                       <ul>
                         <li><a href="sist-mapa.php">Mapa del sitio</a></li>
