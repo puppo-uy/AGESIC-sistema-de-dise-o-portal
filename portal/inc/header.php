@@ -28,7 +28,7 @@
             <div class="Header-logo">
 
                 <!-- Logo -->
-                <a href="sist-que-es.php">
+                <a href="index.php">
 									<div class="Logo">
 										<img class="Logo-image" src="../recursos/assets/iso-agesic.png" alt=""><!---->
 										<div class="Logo-text">
