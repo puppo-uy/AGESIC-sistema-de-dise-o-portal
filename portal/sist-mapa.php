@@ -45,10 +45,10 @@
                       <strong>Estilos globales</strong>
                       <ul>
                         <li><a href="sist-doc-colores.php">Colores</a></li>
-                        <li><a href="sist-doc-espaciados.php">Espaciados</a></li>
-                        <li><a href="sist-doc-sombras.php">Sombras</a></li>
-                        <li><a href="sist-doc-bordes.php">Bordes</a></li>
                         <li><a href="sist-doc-tipografias.php">Tipografías</a></li>
+                        <li><a href="sist-doc-espaciados.php">Espaciados</a></li>
+                        <li><a href="sist-doc-bordes.php">Bordes</a></li>
+                        <li><a href="sist-doc-sombras.php">Sombras</a></li>
                         <li><a href="sist-doc-estructura.php">Grillas y módulo flex</a></li>
                       </ul>
                     </li>
