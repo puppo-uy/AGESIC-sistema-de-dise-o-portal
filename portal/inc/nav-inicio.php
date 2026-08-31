@@ -4,7 +4,6 @@
 	</div>
 	<ul id="nav-target" class="Page-navList collapse">
 		<li class="<?php if($activeItem == 'que-es') echo 'is-active'; ?>"><a href="sist-que-es.php">¿Qué es el Sistema de Diseño?</a></li>
-		<li class="<?php if($activeItem == 'objetivos') echo 'is-active'; ?>"><a href="sist-objetivos.php">Objetivos y alcance</a></li>
 		<li class="<?php if($activeItem == 'principios') echo 'is-active'; ?>"><a href="sist-principios.php">Principios rectores</a></li>
 		<li class="<?php if($activeItem == 'especificaciones') echo 'is-active'; ?>"><a href="sist-especificaciones.php">Especificaciones técnicas</a></li>
 	</ul>

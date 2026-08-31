@@ -54,6 +54,21 @@
 
 								<p>Es una estrategia transversal que promueve la calidad, coherencia y eficiencia en el diseño de servicios y productos digitales. Está pensado como un ecosistema vivo que articula herramientas, estándares y acompañamiento para fortalecer las capacidades de diseño centrado en las personas en los proyectos públicos.</p>
 								
+                <h3>Objetivos y alcance:</h3>
+                
+                <p>El objetivo principal del sistema es proveer a la ciudadanía un lenguaje de interacción unificado y coherente en los distintos puntos de contacto digital con el Estado, lo que se traduce en una experiencia más clara, accesible y predecible para las personas.</p>
+								
+								<p>Contar con un sistema de diseño permite que los servicios digitales sean más fáciles de entender y usar, independientemente del organismo que los provea. Favorece también la inclusión, al aplicar criterios comunes que contemplan las necesidades de distintos perfiles de usuarios.</p>
+
+								<p>Favorece al fortalecimiento de la confianza de la ciudadanía en los servicios digitales del Estado, la calidad de la atención y contribuye a una relación más simple, transparente y eficiente entre las personas y la administración pública.</p>
+
+								<h3>El sistema de diseño incluye:</h3>
+								
+								<ul class="List-text">
+                  <li><strong>Estilos:</strong> Lineamientos visuales de diseño como tipografía, paleta de colores, bordes, fondos, íconos y elementos decorativos, que hacen que los servicios se perciban como parte de un todo por parte de la ciudadanía.</li>
+                  <li><strong>Comportamientos:</strong> Definiciones de lenguaje de interacción orientadas a que los entornos digitales sean intuitivos, sencillos y sobre todo consistentes.</li>
+                  <li><strong>Componentes:</strong> Piezas reutilizables, creadas con una visión transversal que contempla las buenas prácticas y lineamientos sobre Diseño de interacción y Accesibilidad. Ahorran tiempo de diseño y desarrollo, reutilizando bloques pre creados como navegación, botones, campos, tablas, y tarjetas.</li>
+                </ul>
               </div>
             </div>
           </div>
