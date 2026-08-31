@@ -41,8 +41,11 @@
 								<p>El sistema de diseño tiene dos herramientas para su aplicación:</p>
 								
 								<ul class="List-text">
-									<li><b>Figma:</b> Estándar de la industria del diseño digital, que permite alinear de forma directa el diseño con su implementación real, facilita la colaboración, la exploración visual y el uso consistente de componentes por parte de perfiles no técnicos.</li>
-									<li><b>HTML/CSS:</b> asegura que los componentes estén fielmente representados en código, para acercar el diseño a las herramientas de desarrollo. Reduciendo fricciones entre diseño y desarrollo, mejora la coherencia entre lo diseñado y lo construido, y garantiza un sistema accesible, escalable y fácil de mantener.</li>
+									<li><b>Figma:</b> Estándar de la industria del diseño digital, que permite alinear de forma directa el diseño con su implementación real, facilita la colaboración, la exploración visual y el uso consistente de componentes por parte de perfiles no técnicos.
+                <a href="https://www.figma.com/design/uvnRB5uOO0OjjXboaPkZEb/Sistema-de-dise%C3%B1o-del-Estado-Uruguayo---V1.0?node-id=0-1&p=f&t=Uo9sVB33xgq1m0cc-0">Acceder a los archivos en Figma</a>
+              </li>
+									<li><b>HTML/CSS:</b> asegura que los componentes estén fielmente representados en código, para acercar el diseño a las herramientas de desarrollo. Reduciendo fricciones entre diseño y desarrollo, mejora la coherencia entre lo diseñado y lo construido, y garantiza un sistema accesible, escalable y fácil de mantener.
+                <a href="https://github.com/">Acceder al repositorio en GitHub</a></li>
 								</ul>
 							
 
