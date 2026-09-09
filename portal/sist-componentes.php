@@ -226,15 +226,6 @@
                       <?php echo htmlspecialchars($comp['description']); ?>
                     </p>
                   </div>
-                  <div class="ComponentCard-footer">
-                    <a href="<?php echo htmlspecialchars($comp['url']); ?>" class="ComponentCard-action" tabindex="-1" aria-hidden="true">
-                      <span>Ver documentación</span>
-                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="12 5 19 12 12 19"></polyline>
-                      </svg>
-                    </a>
-                  </div>
                 </article>
               <?php endforeach; ?>
             </div>
@@ -450,28 +441,8 @@
       font-size: 0.9375rem;
       line-height: 1.5;
       color: #555;
-      margin-bottom: 1rem;
+      margin-bottom: 0;
       flex-grow: 1;
-    }
-    .ComponentCard-footer {
-      border-top: 1px solid #f0f0f0;
-      padding-top: 0.75rem;
-      margin-top: auto;
-    }
-    .ComponentCard-action {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      font-size: 0.875rem;
-      font-weight: 600;
-      color: #25418e;
-      text-decoration: none;
-    }
-    .ComponentCard-action svg {
-      transition: transform 0.2s ease;
-    }
-    .ComponentCard:hover .ComponentCard-action svg {
-      transform: translateX(4px);
     }
 
     /* Estado Vacío */
