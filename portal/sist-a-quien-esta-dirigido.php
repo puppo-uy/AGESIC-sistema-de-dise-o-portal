@@ -55,33 +55,31 @@
 
                 <h3>¿Cuáles son algunos de los roles y equipos beneficiados por esta herramienta?   </h3>
                   <ul>
-                    <li>Equipos y profesionales de diseño UX/UI: para diseñar nuevas
+                    <li><strong>Equipos y profesionales de diseño UX/UI</strong> para diseñar nuevas
                   soluciones o evolucionar productos existentes a partir de estilos, patrones
                   y componentes compartidos, documentar usos y mantener la coherencia
                   visual y de interacción entre productos.</li>
-                    <li>Equipos y profesionales de desarrollo front-end: para implementar
+                    <li><strong>Equipos y profesionales de desarrollo front-end</strong> para implementar
                   componentes reutilizables, integrar los patrones de diseño al código y
                   asegurar su funcionamiento en distintos productos, dispositivos y
                   tamaños de pantalla.</li>
-                    <li>Especialistas de experiencia de usuario y accesibilidad: para revisar
+                    <li><strong>Especialistas de experiencia de usuario y accesibilidad</strong> para revisar
                   criterios de interacción, validar que los componentes sean comprensibles,
                   usables y accesibles, realizar evaluaciones y pruebas, e identificar
                   oportunidades de mejora.</li>
-                    <li>Equipos de producto: para planificar y priorizar soluciones a partir de
+                    <li>  <strong>Equipos de producto</strong> para planificar y priorizar soluciones a partir de
                   componentes y criterios ya definidos, coordinar el trabajo entre distintas
                   áreas, y evitar que cada producto vuelva a resolver de manera
                   independiente problemas comunes.</li>
-                    <li>Equipos de contenidos y comunicación: para aplicar criterios comunes de
+                    <li><strong>Equipos de contenidos y comunicación</strong> para aplicar criterios comunes de
                   identidad visual y comunicacional, mantener la consistencia de la marca
                   en distintos productos digitales y utilizar referencias compartidas para la
                   creación de contenidos.</li>
-                    <li>Personas responsables de la gestión o evaluación de proyectos digitales:
-                  para definir requisitos, orientar decisiones, evaluar propuestas y verificar
+                    <li><strong>Personas responsables de la gestión o evaluación de proyectos digitales</strong> para definir requisitos, orientar decisiones, evaluar propuestas y verificar
                   que los productos incorporen criterios comunes. También les permite
                   contar con una referencia compartida al momento de contratar,
                   supervisar o evolucionar soluciones digitales.</li>
-                    <li>Proveedores con diferentes especialidades: para trabajar desde el inicio
-                  con criterio y referencias compartidas, independientemente de su
+                    <li><strong>Proveedores con diferentes especialidades</strong> para trabajar desde el inicio con criterio y referencias compartidas, independientemente de su
                   disciplina. Este Sistema de Diseño les permite alinear su trabajo con los
                   estándares definidos, reducir decisiones y facilitar la coordinación y
                   validación con los equipos de la organización.</li>
@@ -99,7 +97,7 @@
                 <p>De esta manera, funciona como una herramienta compartida que ayuda a
                 establecer un lenguaje y criterios comunes entre las distintas personas y
                 organizaciones involucradas.</p>
-                
+
               </div>
             </div>
           </div>
