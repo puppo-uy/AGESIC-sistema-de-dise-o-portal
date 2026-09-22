@@ -37,6 +37,8 @@
                       <strong>Sobre este Sistema de diseño</strong>
                       <ul>
                         <li><a href="sist-que-es.php">¿Qué es el Sistema de Diseño?</a></li>
+                        <li><a href="sist-para-que-sirve.php">¿Para qué sirve el Sistema de Diseño?</a></li>
+                        <li><a href="sist-a-quien-esta-dirigido.php">¿A quién está dirigido el Sistema de Diseño del Estado Uruguayo?</a></li>
                         <li><a href="sist-principios.php">Principios rectores</a></li>
                         <li><a href="sist-especificaciones.php">Especificaciones técnicas</a></li>
                       </ul>

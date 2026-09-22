@@ -49,7 +49,16 @@
 								<nav class="Nav--flex js-navDropdown show" id="menu">
 									<ul>
 										<li>
-											<a href="sist-que-es.php" id="item-1">Sobre este Sistema de diseño</a>
+											<a href="#" id="item-1" class="NavToggle-item">Sobre este Sistema de diseño</a>
+											<div class="subnav">
+												<ul>
+													<li><a href="sist-que-es.php">¿Qué es el Sistema de Diseño?</a></li>
+													<li><a href="sist-para-que-sirve.php">¿Para qué sirve el Sistema de Diseño?</a></li>
+													<li><a href="sist-a-quien-esta-dirigido.php">¿A quién está dirigido el Sistema de Diseño?</a></li>
+													<li><a href="sist-principios.php">Principios rectores</a></li>
+													<li><a href="sist-especificaciones.php">Especificaciones técnicas</a></li>
+												</ul>
+											</div>
 										</li>
 										<li>
 											<a href="#" id="item-2" class="NavToggle-item">Estilos globales</a>
