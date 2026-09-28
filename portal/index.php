@@ -131,7 +131,7 @@
                           <a href="#">
                             <div class="Flag">
                               <div class="Flag-image">
-                                  <img src="./img/sdd/ia.png" alt="">
+                                  <img src="./img/sdd/recursos-ia.png" alt="">
                               </div>
                               <div class="Flag-body">
                                   <span class="Box-title">Recursos para desarrollo con IA</span>
