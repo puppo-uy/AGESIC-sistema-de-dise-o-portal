@@ -7,7 +7,7 @@
   <?php include "inc/header.php"; ?>
 
   <!-- Contenido -->
-  <div cl  <main class="u-main" id="contenido">
+  <main class="u-main" id="contenido">
     
     <div class="Container u-py2">
 
@@ -288,6 +288,5 @@
 
     
   </main>
- ?>
-
+  
 <?php include "inc/foot.php"; ?>
