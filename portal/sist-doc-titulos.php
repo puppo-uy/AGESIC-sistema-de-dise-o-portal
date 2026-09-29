@@ -74,7 +74,7 @@
                 <h3>Modos</h3>
                 <p class="u-mb2">Los títulos se organizan en seis niveles jerárquicos, que deben utilizarse de acuerdo con la estructura del contenido.</p>
                 <div class="table-responsive">
-                    <table class="Table">
+                    <table class="Table" title="Tabla de modos de títulos del sistemaS">
                         <thead>
                             <tr>
                                 <th>Componente</th>
