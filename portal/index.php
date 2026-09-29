@@ -288,5 +288,6 @@
 
     
   </main>
-  
+  <!-- Footer -->
+  <?php include "inc/footer.php"; ?>
 <?php include "inc/foot.php"; ?>
