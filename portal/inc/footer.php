@@ -25,7 +25,7 @@
                   <li><a href="https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/programa-accesibilidad-entornos-digitales">Programa de accesibilidad en entornos digitales</a></li>
                   <li><a href="https://portaltipo.agesic.gub.uy/">Portal tipo</a></li>
                   <li><a href="https://formulariotipo.agesic.gub.uy/">Formulario tipo</a></li>
-                  <li><a href="https://www.w3.org/TR/WCAG22/">Pautas WCAG 2.2</a></li>
+                  <li><a href="https://www.w3.org/TR/WCAG22/">Pautas WCAG 2.2 (en inglés)</a></li>
                 </ul>
               </nav>
             </div>
