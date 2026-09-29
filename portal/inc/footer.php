@@ -16,7 +16,20 @@
               <p>Contacto: accesibilidad.digital@agesic.gub.uy</p>
           </div>
         </div>
-        <div class="Grid-item u-md-size2of3">
+        <div class="Grid-item u-md-size1of3">
+              <nav aria-label="Menú Institucional" class="Footer-list" data-landmark-index="4">
+                <h3>Enlaces de interés</h3>
+
+                <ul class="u-bullet">
+                  <li><a href="https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/experiencia-usuario">Experiencia de Usuario</a></li>
+                  <li><a href="https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/programa-accesibilidad-entornos-digitales">Programa de accesibilidad en entornos digitales</a></li>
+                  <li><a href="https://portaltipo.agesic.gub.uy/">Portal tipo</a></li>
+                  <li><a href="https://formulariotipo.agesic.gub.uy/">Formulario tipo</a></li>
+                  <li><a href="https://www.w3.org/TR/WCAG22/">Pautas WCAG 2.2</a></li>
+                </ul>
+              </nav>
+            </div>
+        <div class="Grid-item u-md-size1of3">
 					<div class="Footer-logos u-md-right">
 						<div class="Footer-logo">
               <a href="https://agesic.gub.uy">
