@@ -7,7 +7,7 @@
   <?php include "inc/header.php"; ?>
 
   <!-- Contenido -->
-  <main class="u-main" id="contenido">
+  <div cl  <main class="u-main" id="contenido">
     
     <div class="Container u-py2">
 
@@ -245,7 +245,7 @@
                     <img src="./img/sdd/accesibilidad.png" height="60" width="60" alt="">
                   </div>
                   <h3 class="Box-title u-h5">Accesibilidad</h3>
-                  <p class="u-textMute u-mt2 u-mb1">Que la mayor cantidad de personas pueda usar el servicio, sin importar sus condiciones ni su entorno.</p>
+                  <p class="u-textMute u-mt2 u-mb1">Reducir las barreras de acceso a los servicios para todas las personas.</p>
                   <a href="https://www.impo.com.uy/bases/leyes/19924-2020/88" class="u-mt1 u-alternativeLink u-textSmall">Artículo 88 de la Ley N.º 19.924</a>
                 </div>
               </div>
@@ -272,7 +272,7 @@
                     <img src="./img/sdd/variantes.png" height="60" width="60" alt="">
                   </div>
                   <h3 class="Box-title u-h5">Variantes</h3>
-                  <p class="u-textMute u-mt2 u-mb0">Cada componente trae variantes definidas para adaptarse a distintos contextos sin romper la coherencia.</p>
+                  <p class="u-textMute u-mt2 u-mb0">Los componentes usan variantes para adaptarse a distintos contextos sin romper la coherencia.</p>
                 </div>
               </div>
             </div>
@@ -288,8 +288,6 @@
 
     
   </main>
-
-  <!-- Footer -->
-  <?php include "inc/footer.php"; ?>
+ ?>
 
 <?php include "inc/foot.php"; ?>
