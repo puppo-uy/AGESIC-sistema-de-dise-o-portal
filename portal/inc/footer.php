@@ -13,7 +13,7 @@
               <p><span>Teléfono:</span> (+598) 2901 2929</p>
               <!--<p><span>Correo electrónico:</span> contacto@agesic.gub.uy</p>-->
               <p><span>Horario de atención:</span><br>Lunes a viernes de 9:30 a 17:30 hs.</p>
-              <p>Contacto: accesibilidad.digital@agesic.gub.uy</p>
+              <p>Contacto: experiencia.usuario@agesic.gub.uy</p>
           </div>
         </div>
         <div class="Grid-item u-md-size1of3">
