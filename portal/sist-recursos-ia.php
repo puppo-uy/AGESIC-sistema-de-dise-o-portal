@@ -48,7 +48,7 @@
                     </div>
                   </div>
                 </div>
-                
+                <!--
                 <p class="Page-description">Guías, recomendaciones y recursos orientados al uso de Inteligencia Artificial como acelerador en el desarrollo e implementación de interfaces, asegurando la consistencia y el cumplimiento de los estándares del Sistema de Diseño.</p>
                 
                 <h3>Aceleración con IA en el Sistema de Diseño</h3>
@@ -63,7 +63,7 @@
 
                 <h3>Recursos y plantillas de configuración</h3>
                 <p>Próximamente se incorporarán archivos de reglas, perfiles de instrucciones (System Prompts) y configuraciones optimizadas para editores y herramientas asistidas por IA como Cursor, GitHub Copilot y otros entornos de desarrollo.</p>
-
+                -->
               </div>
             </div>
           </div>

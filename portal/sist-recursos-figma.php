@@ -48,7 +48,7 @@
                     </div>
                   </div>
                 </div>
-                
+                <!--
                 <p class="Page-description">Figma es el estándar de la industria del diseño digital, que permite alinear de forma directa el diseño con su implementación real, facilita la colaboración, la exploración visual y el uso consistente de componentes por parte de perfiles no técnicos.</p>
                 
                 <h3>Librería del Sistema de Diseño en Figma</h3>
@@ -57,7 +57,7 @@
                 <p class="u-mt3">
                   <a href="https://www.figma.com/design/uvnRB5uOO0OjjXboaPkZEb/Sistema-de-dise%C3%B1o-del-Estado-Uruguayo---V1.0?node-id=0-1&p=f&t=Uo9sVB33xgq1m0cc-0" target="_blank" rel="noopener noreferrer" class="Button Button--primary">Acceder a los archivos en Figma</a>
                 </p>
-
+-->
               </div>
             </div>
           </div>

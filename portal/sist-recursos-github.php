@@ -48,7 +48,7 @@
                     </div>
                   </div>
                 </div>
-                
+                <!--
                 <p class="Page-description">Asegura que los componentes estén fielmente representados en código (HTML/CSS), para acercar el diseño a las herramientas de desarrollo. Reduciendo fricciones entre diseño y desarrollo, mejora la coherencia entre lo diseñado y lo construido, y garantiza un sistema accesible, escalable y fácil de mantener.</p>
                 
                 <h3>Repositorio del Sistema de Diseño</h3>
@@ -57,7 +57,7 @@
                 <p class="u-mt3">
                   <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="Button Button--primary">Acceder al repositorio en GitHub</a>
                 </p>
-
+-->
               </div>
             </div>
           </div>
