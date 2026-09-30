@@ -104,7 +104,7 @@
                 <div class="Box-body">
                     <ul class="Box-gridList Grid">
                         <li class="Grid-item">
-                          <a href="#">
+                          <a href="sist-recursos-figma.php">
                             <div class="Flag">
                               <div class="Flag-image">
                                   <img src="./img/sdd/figma.png" alt="">
@@ -116,7 +116,7 @@
                           </a>
                         </li>
                         <li class="Grid-item">
-                          <a href="#">
+                          <a href="sist-recursos-github.php">
                             <div class="Flag">
                               <div class="Flag-image">
                                   <img src="./img/sdd/github.png" alt="">
@@ -128,7 +128,7 @@
                           </a>
                         </li>
                         <li class="Grid-item">
-                          <a href="#">
+                          <a href="sist-recursos-ia.php">
                             <div class="Flag">
                               <div class="Flag-image">
                                   <img src="./img/sdd/recursos-ia.png" alt="">
