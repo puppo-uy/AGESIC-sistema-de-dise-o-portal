@@ -116,7 +116,9 @@
                     <li class="u-mt3">
                       <strong>Recursos</strong>
                       <ul>
-                        <li><a href="sist-recursos.php">Recursos</a></li>
+                        <li><a href="https://www.figma.com/design/uvnRB5uOO0OjjXboaPkZEb/Sistema-de-dise%C3%B1o-del-Estado-Uruguayo---V1.0?node-id=0-1&p=f&t=Uo9sVB33xgq1m0cc-0" target="_blank" rel="noopener noreferrer">Figma</a></li>
+                        <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">Github</a></li>
+                        <li><a href="#">Herramientas para desarrollo con IA</a></li>
                       </ul>
                     </li>
                     <li class="u-mt3">

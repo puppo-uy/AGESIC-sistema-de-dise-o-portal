@@ -88,7 +88,14 @@
 											</div>
 										</li>
 										<li>
-											<a href="sist-recursos.php" id="item-4">Recursos</a>
+											<a href="#" id="item-4" class="NavToggle-item">Recursos</a>
+											<div class="subnav">
+												<ul>
+													<li><a href="https://www.figma.com/design/uvnRB5uOO0OjjXboaPkZEb/Sistema-de-dise%C3%B1o-del-Estado-Uruguayo---V1.0?node-id=0-1&p=f&t=Uo9sVB33xgq1m0cc-0" target="_blank" rel="noopener noreferrer">Figma</a></li>
+													<li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">Github</a></li>
+													<li><a href="#">Herramientas para desarrollo con IA</a></li>
+												</ul>
+											</div>
 										</li>
 									</ul>
 								</nav>
