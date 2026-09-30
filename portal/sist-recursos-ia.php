@@ -62,7 +62,7 @@
                 </ul>
 
                 <h3>Recursos y plantillas de configuración</h3>
-                <p>Próximamente se incorporarán archivos de reglas, perfiles de instrucciones (System Prompts) y configuraciones optimizadas para editores y herramientas asistidas por IA como Cursor, GitHub Copilot y otros entornos de desarrollo.</p>
+                <p>Próximamente se incorporarán archivos de reglas, perfiles de instrucciones y configuraciones optimizadas para editores y herramientas asistidas por IA.</p>
                 -->
               </div>
             </div>
