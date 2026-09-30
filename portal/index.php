@@ -25,7 +25,7 @@
                           <h2 class="Box-name u-h1 u-textBlack">Sistema de Diseño del Estado Uruguayo</h2>
                       </div>
                       <div class="Box-body">
-                        <p class="Box-text u-textMedium">Accedé a las herramientas para diseñar y construir interfaces digitales del Estado. Logrando servicios consistentes, con foco en la ciudadanía, accesibles y optimizados para dispositivos móviles.</p>
+                        <p class="Box-text" style="font-size: 1.125em;">Accedé a las herramientas para diseñar y construir interfaces digitales del Estado. Logrando servicios consistentes, con foco en la ciudadanía, accesibles y optimizados para dispositivos móviles.</p>
                         <ul class="Box-gridList Grid Grid--rowSize2">
                           <li class="Grid-item">
                             <a href="sist-que-es.php">	
