@@ -55,7 +55,7 @@
                 <p>En el repositorio oficial de GitHub se encuentra disponible el código fuente de los estilos y componentes del sistema. Incluye la estructura SCSS, tokens de diseño, hojas de estilos compiladas y ejemplos para su integración en proyectos web de la administración pública.</p>
 
                 <p class="u-mt3">
-                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="Button Button--primary">Acceder al repositorio en GitHub</a>
+                  <a href="https://github.com/AGESIC-UY/componentes-reutilizables-sistema-disenio" target="_blank" rel="noopener noreferrer" class="Button Button--primary">Acceder al repositorio en GitHub</a>
                 </p>
 -->
               </div>
