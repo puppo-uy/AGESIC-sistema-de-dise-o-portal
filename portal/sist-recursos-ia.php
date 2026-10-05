@@ -48,22 +48,36 @@
                     </div>
                   </div>
                 </div>
-                <!--
-                <p class="Page-description">Guías, recomendaciones y recursos orientados al uso de Inteligencia Artificial como acelerador en el desarrollo e implementación de interfaces, asegurando la consistencia y el cumplimiento de los estándares del Sistema de Diseño.</p>
                 
+                <p class="Page-description">Existen distintas herramientas de inteligencia artificial generativa que pueden utilizarse como apoyo para crear prototipos, interfaces y código a partir de instrucciones en lenguaje natural. El Sistema de Diseño del Estado Uruguayo pone a disposición orientaciones específicas para que las personas que utilicen estas herramientas puedan incorporar sus estilos, componentes y criterios desde el inicio de un desarrollo.</p>
+                <p>La idea es que, al trabajar con inteligencia artificial, el Sistema de Diseño funcione como referencia para la generación de soluciones basadas en criterios de diseño, componentes y patrones previamente definidos y validados.</p>
+
                 <h3>Aceleración con IA en el Sistema de Diseño</h3>
                 <p>Las herramientas de desarrollo asistidas por inteligencia artificial (asistentes de código, modelos de lenguaje y entornos integrados) permiten agilizar la construcción de prototipos, la generación de marcado HTML accesible y la integración de componentes del Estado.</p>
 
-                <h3>Buenas prácticas recomendadas</h3>
-                <ul class="List-text">
-                  <li><strong>Contexto del Sistema de Diseño:</strong> Proveer a los asistentes y modelos de lenguaje la documentación de los tokens, componentes y pautas del sistema para generar código consistente con los estilos oficiales.</li>
-                  <li><strong>Prioridad en Accesibilidad:</strong> Todo componente o estructura generada mediante IA debe verificarse manualmente contra las pautas WCAG 2.2 y los requisitos de accesibilidad digital de la normativa vigente.</li>
-                  <li><strong>Validación y revisión humana:</strong> La IA actúa como soporte y acelerador; el equipo de desarrollo y diseño es responsable de revisar y validar la calidad del código y la experiencia de usuario final.</li>
-                </ul>
+                <h3>¿Para qué sirve este recurso?</h3>
+                <p>Este recurso busca proporcionar a las herramientas de inteligencia artificial el contexto y las indicaciones necesarias para que, al generar una interfaz, un componente o código, puedan tomar como referencia el Sistema de Diseño.</p>
+                <p>Por ejemplo, una persona puede solicitar a una herramienta de inteligencia artificial que genere un componente específico y proporcionar, junto con esa solicitud, las instrucciones disponibles en este espacio. De esta manera, la herramienta contará con información sobre los estilos y criterios de interacción y otras definiciones que debería considerar.</p>
+                <p>Esto permite incorporar el Sistema de Diseño desde las primeras etapas de un desarrollo realizado con apoyo de inteligencia artificial y trabajar a partir de componentes y patrones previamente definidos, en lugar de dejar que cada herramienta proponga soluciones de interfaz.</p>
 
-                <h3>Recursos y plantillas de configuración</h3>
-                <p>Próximamente se incorporarán archivos de reglas, perfiles de instrucciones y configuraciones optimizadas para editores y herramientas asistidas por IA.</p>
-                -->
+
+                <h3>La inteligencia artificial como apoyo</h3>
+
+                <p>Estos recursos buscan facilitar el trabajo de las personas y equipos que utilizan inteligencia artificial para desarrollar productos digitales, pero no sustituyen la revisión profesional ni la validación de los resultados generados.</p>
+                <p>Las interfaces y el código producidos mediante estas herramientas deben revisarse antes de su implementación para verificar que los componentes se utilicen correctamente, que la solución responda a las necesidades del producto y que cumpla con los criterios de experiencia de usuario y con la normativa vigente en materia de accesibilidad digital.</p>
+                <p>Las herramientas de inteligencia artificial deben entenderse, por tanto, como un apoyo dentro del proceso de producto, y no como un reemplazo.</p>
+
+                <h3>Instrucciones para utilizar el Sistema de Diseño con IA</h3>
+                <p>Adjunto se encuentras las instrucciones preparadas para utilizar como contexto en
+herramientas de inteligencia artificial al momento de solicitar la generación de una
+solución digital.</p>
+                <p>A medida que el Sistema de Diseño del Estado Uruguayo evolucione, estas instrucciones también podrán actualizarse para incorporar nuevos componentes y criterios.</p>
+
+                  <h3>Descarga</h3>
+                  <a href="../recursos/SDU-instrucciones-para-ia.md" download="SDU-instrucciones-para-ia.md">SDU-instrucciones-para-ia.md</a>
+                  
+
+               
               </div>
             </div>
           </div>

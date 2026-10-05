@@ -48,16 +48,27 @@
                     </div>
                   </div>
                 </div>
-                <!--
-                <p class="Page-description">Asegura que los componentes estén fielmente representados en código (HTML/CSS), para acercar el diseño a las herramientas de desarrollo. Reduciendo fricciones entre diseño y desarrollo, mejora la coherencia entre lo diseñado y lo construido, y garantiza un sistema accesible, escalable y fácil de mantener.</p>
                 
-                <h3>Repositorio del Sistema de Diseño</h3>
-                <p>En el repositorio oficial de GitHub se encuentra disponible el código fuente de los estilos y componentes del sistema. Incluye la estructura SCSS, tokens de diseño, hojas de estilos compiladas y ejemplos para su integración en proyectos web de la administración pública.</p>
+                <p class="Page-description">GitHub es una plataforma para alojar y gestionar repositorios de código. Permite registrar los cambios realizados en el código, mantener un historial de versiones y facilitar el trabajo colaborativo entre equipos. También permite organizar distintas versiones de un proyecto y controlar cómo se incorporan las modificaciones.</p>
+                
+               
+                <p>El Sistema de Diseño del Estado Uruguayo pone a disposición un repositorio con el código necesario para implementar sus compone ntes en productos digitales. Mientras que Figma permite trabajar en el diseño, este repositorio proporciona los recursos necesarios para llevar esas definiciones a la etapa de desarrollo. De esta manera, diseño y código parten de una misma referencia.</p>
+                
+                <h3>¿Para qué sirve este recurso?</h3>
+                
+                <p>El repositorio permite a los equipos de desarrollo consultar y reutilizar los componentes disponibles en el Sistema de Diseño del Estado Uruguayo. De esta manera, se evita que en cada proyecto haya que desarrollar desde cero.</p>
 
-                <p class="u-mt3">
-                  <a href="https://github.com/AGESIC-UY/componentes-reutilizables-sistema-disenio" target="_blank" rel="noopener noreferrer" class="Button Button--primary">Acceder al repositorio en GitHub</a>
-                </p>
--->
+                <p>Además del código, este recurso funciona como un espacio de referencia para conocer cómo están implementados los componentes, sus variantes y las actualizaciones que se realizan a medida que el Sistema de Diseño evoluciona. La reutilización de componentes facilita el desarrollo de productos digitales y ayuda a mantener una mayor consistencia entre lo que se define en diseño y lo que finalmente se implementa.</p>
+                  
+                <p>El repositorio está dirigido a equipos y profesionales de desarrollo, tanto de las organizaciones, como de proveedores que trabajen en la creación o evolución de productos digitales.</p>
+
+                <h3>Un recurso que evoluciona</h3>  
+                <p>El código se actualizará a medida que se incorporen nuevos componentes, variantes y mejoras. El portal del Sistema de Diseño proporcionará la documentación necesaria para comprender cuándo y cómo utilizar cada recurso.</p>
+                
+                <p>GitHub permite conservar un historial de los cambios realizados, organizar versiones y dar seguimiento a la evolución de los componentes. Esto facilita que los equipos puedan identificar qué se modificó, trabajar sobre versiones actualizadas y mantener una referencia común para la implementación.</p>
+
+                <a href="https://github.com/AGESIC-UY/componentes-reutilizables-sistema-disenio" class="Button Button--secondary">Acceder a GitHub</a>
+
               </div>
             </div>
           </div>
