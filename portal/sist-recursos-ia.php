@@ -75,12 +75,12 @@ solución digital.</p>
 
                   <h3>Descarga</h3>
                  
-                  <a class="enlace enlace--l" href="../recursos/SDU-instrucciones-para-ia.md">
-                    <svg class="icono" aria-hidden="true">
-                      <use href="#icono-descargar--lineal"></use>
-                      </svg>
-                    <span>SDU-instrucciones-para-ia.md</span>
+                  <a class="u-h6" href="../recursos/SDU-instrucciones-para-ia.md">
+                     <span class="Download-icon">
+            <span class="Icon Icon--download"></span>
+          </span> <span>SDU-instrucciones-para-ia.md</span>
                   </a>
+                  
 
                
               </div>

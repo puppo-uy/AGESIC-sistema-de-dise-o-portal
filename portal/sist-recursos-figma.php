@@ -61,7 +61,7 @@
                 <p>El archivo de Figma se actualizará a medida que el Sistema de Diseño incorpore nuevos estilos, componentes o ajustes. Por eso, debe entenderse como un recurso en evolución y no como una biblioteca cerrada.</p>
                 <p>La documentación disponible en el portal complementa este recurso con información sobre el uso de los componentes y los criterios que deben considerarse al incorporarlos a un producto digital.</p>
                 
-                <a href="https://www.figma.com/community/" class="enlace enlace--l enlace--externo">Acceder a Figma</a>
+                <a href="https://www.figma.com/community/" class="u-outerLink u-h6">Acceder a Figma</a>
                
               </div>
             </div>
