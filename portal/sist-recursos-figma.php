@@ -48,16 +48,21 @@
                     </div>
                   </div>
                 </div>
-                <!--
-                <p class="Page-description">Figma es el estándar de la industria del diseño digital, que permite alinear de forma directa el diseño con su implementación real, facilita la colaboración, la exploración visual y el uso consistente de componentes por parte de perfiles no técnicos.</p>
-                
-                <h3>Librería del Sistema de Diseño en Figma</h3>
-                <p>En el archivo de Figma del Sistema de Diseño del Estado Uruguayo encontrarás todos los estilos globales (colores institucionales, tipografías, espaciados, bordes, sombras) y la biblioteca de componentes interactivos listos para diseñar interfaces de servicios digitales consistentes y accesibles.</p>
+              
+                <p>Figma es una herramienta colaborativa para el diseño de interfaces digitales. Permite crear y organizar estilos, componentes y otros elementos que pueden reutilizarse en diferentes pantallas y productos digitales. Por sus características, es la herramienta seleccionada para alojar y organizar los recursos de diseño del Sistema de Diseño del Estado Uruguayo.</p>
+                <p>La documentación del sitio complementa este recurso con información sobre el uso de los componentes, recomendaciones y criterios que deben considerarse al incorporarlos a un producto digital.</p>
 
-                <p class="u-mt3">
-                  <a href="https://www.figma.com/design/uvnRB5uOO0OjjXboaPkZEb/Sistema-de-dise%C3%B1o-del-Estado-Uruguayo---V1.0?node-id=0-1&p=f&t=Uo9sVB33xgq1m0cc-0" target="_blank" rel="noopener noreferrer" class="Button Button--primary">Acceder a los archivos en Figma</a>
-                </p>
--->
+                <h3>¿Para qué sirve este recurso?</h3>
+                <p>El archivo de Figma funciona como una referencia para diseñar nuevos productos digitales y para evolucionar productos existentes. Permite utilizar una base común de colores, tipografías, espaciados, íconos, componentes y otros elementos.</p>
+                <p>Trabajar con estos recursos facilita que diferentes equipos puedan tomar decisiones a partir de criterios compartidos y mantener una mayor consistencia entre productos. También permite concentrar el trabajo de diseño en las necesidades específicas de cada solución, evitando dedicar tiempo a resolver nuevamente elementos que ya fueron definidos.</p>
+                <p>El recurso está dirigido principalmente a equipos y profesionales de diseño UX/UI, aunque también puede ser consultado por otros profesionales que necesiten conocer cómo están definidos los componentes, sus variantes y sus comportamientos.</p>
+
+                <h3>Un recurso que evoluciona</h3>
+                <p>El archivo de Figma se actualizará a medida que el Sistema de Diseño incorpore nuevos estilos, componentes o ajustes. Por eso, debe entenderse como un recurso en evolución y no como una biblioteca cerrada.</p>
+                <p>La documentación disponible en el portal complementa este recurso con información sobre el uso de los componentes y los criterios que deben considerarse al incorporarlos a un producto digital.</p>
+                
+                <a href="https://www.figma.com/community/" class="Button Button--secondary">Acceder a Figma</a>
+               
               </div>
             </div>
           </div>
