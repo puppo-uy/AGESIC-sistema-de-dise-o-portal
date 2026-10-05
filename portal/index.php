@@ -155,9 +155,7 @@
                           <li class="Grid-item">
                             <a href="sist-doc-textos.php">	
                               <div class="Flag">
-                                <div class="Flag-image">
-                                    <img src="../recursos/img/60x60.png" alt="">
-                                </div>
+                                
                                 <div class="Flag-body">
                                     <span class="Box-title">Textos</span>
                                     <span class="Box-info">Títulos, párrafos y listas con la escala tipográfica del sistema y sus reglas de jerarquía.</span>
@@ -168,9 +166,7 @@
                           <li class="Grid-item">
                             <a href="sist-doc-iconos.php">
                               <div class="Flag">
-                                <div class="Flag-image">
-                                    <img src="../recursos/img/60x60.png" alt="">
-                                </div>
+                                
                                 <div class="Flag-body">
                                     <span class="Box-title">Íconos</span>
                                     <span class="Box-info">La biblioteca de íconos, con sus tamaños, su grilla y los criterios para elegir cada uno.</span>
@@ -181,9 +177,7 @@
                           <li class="Grid-item">
                             <a href="sist-doc-mensajes-dialogos.php">
                                 <div class="Flag">
-                                  <div class="Flag-image">
-                                      <img src="../recursos/img/60x60.png" alt="">
-                                  </div>
+                                
                                   <div class="Flag-body">
                                       <span class="Box-title">Mensajes y Diálogos</span>
                                       <span class="Box-info">Alertas, modales, tags y spinners para comunicar estados y pedir decisiones al usuario.</span>
@@ -194,9 +188,7 @@
                           <li class="Grid-item">
                             <a href="sist-doc-acciones.php">
                               <div class="Flag">
-                                <div class="Flag-image">
-                                    <img src="../recursos/img/60x60.png" alt="">
-                                </div>
+                                
                                 <div class="Flag-body">
                                     <span class="Box-title">Acciones</span>
                                     <span class="Box-info">Botones, botoneras y enlaces: todo lo que dispara una acción, con sus estados y variantes.</span>
