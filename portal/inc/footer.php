@@ -21,11 +21,11 @@
                 <h3>Enlaces de interés</h3>
 
                 <ul class="u-bullet">
-                  <li><a class="u-outerLink" href="https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/experiencia-usuario">Experiencia de Usuario</a></li>
-                  <li><a class="u-outerLink" href="https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/programa-accesibilidad-entornos-digitales">Programa de accesibilidad en entornos digitales</a></li>
-                  <li><a class="u-outerLink" href="https://portaltipo.agesic.gub.uy/">Portal tipo</a></li>
-                  <li><a class="u-outerLink" href="https://formulariotipo.agesic.gub.uy/">Formulario tipo</a></li>
-                  <li><a class="u-outerLink" href="https://www.w3.org/TR/WCAG22/">Pautas WCAG 2.2 (en inglés)</a></li>
+                  <li><a href="https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/experiencia-usuario">Experiencia de Usuario</a></li>
+                  <li><a href="https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/programa-accesibilidad-entornos-digitales">Programa de accesibilidad en entornos digitales</a></li>
+                  <li><a href="https://portaltipo.agesic.gub.uy/">Portal tipo</a></li>
+                  <li><a href="https://formulariotipo.agesic.gub.uy/">Formulario tipo</a></li>
+                  <li><a href="https://www.w3.org/TR/WCAG22/">Pautas WCAG 2.2 (en inglés)</a></li>
                 </ul>
               </nav>
             </div>
