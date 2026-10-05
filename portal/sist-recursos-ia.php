@@ -74,8 +74,13 @@ solución digital.</p>
                 <p>A medida que el Sistema de Diseño del Estado Uruguayo evolucione, estas instrucciones también podrán actualizarse para incorporar nuevos componentes y criterios.</p>
 
                   <h3>Descarga</h3>
-                  <a href="../recursos/SDU-instrucciones-para-ia.md" download="SDU-instrucciones-para-ia.md">SDU-instrucciones-para-ia.md</a>
-                  
+                 
+                  <a class="enlace enlace--l" href="../recursos/SDU-instrucciones-para-ia.md">
+                    <svg class="icono" aria-hidden="true">
+                      <use href="#icono-descargar--lineal"></use>
+                      </svg>
+                    <span>SDU-instrucciones-para-ia.md</span>
+                  </a>
 
                
               </div>
