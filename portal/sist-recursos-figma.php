@@ -49,7 +49,7 @@
                   </div>
                 </div>
               
-                <p>Figma es una herramienta colaborativa para el diseño de interfaces digitales. Permite crear y organizar estilos, componentes y otros elementos que pueden reutilizarse en diferentes pantallas y productos digitales. Por sus características, es la herramienta seleccionada para alojar y organizar los recursos de diseño del Sistema de Diseño del Estado Uruguayo.</p>
+                <p class="Page-description">Figma es una herramienta colaborativa para el diseño de interfaces digitales. Permite crear y organizar estilos, componentes y otros elementos que pueden reutilizarse en diferentes pantallas y productos digitales. Por sus características, es la herramienta seleccionada para alojar y organizar los recursos de diseño del Sistema de Diseño del Estado Uruguayo.</p>
                 <p>La documentación del sitio complementa este recurso con información sobre el uso de los componentes, recomendaciones y criterios que deben considerarse al incorporarlos a un producto digital.</p>
 
                 <h3>¿Para qué sirve este recurso?</h3>

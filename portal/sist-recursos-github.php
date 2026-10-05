@@ -67,7 +67,7 @@
                 
                 <p>GitHub permite conservar un historial de los cambios realizados, organizar versiones y dar seguimiento a la evolución de los componentes. Esto facilita que los equipos puedan identificar qué se modificó, trabajar sobre versiones actualizadas y mantener una referencia común para la implementación.</p>
 
-                <a href="https://github.com/AGESIC-UY/componentes-reutilizables-sistema-disenio" class="class="u-outerLink u-h6">Acceder a GitHub</a>
+                <a href="https://github.com/AGESIC-UY/componentes-reutilizables-sistema-disenio" class=" class="u-outerLink u-h6">Acceder a GitHub</a>
 
               </div>
             </div>
