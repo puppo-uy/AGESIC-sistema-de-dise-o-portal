@@ -103,6 +103,18 @@
                 </div>
                 <div class="Box-body">
                     <ul class="Box-gridList Grid">
+                      <li class="Grid-item">
+                          <a href="sist-recursos-ia.php">
+                            <div class="Flag">
+                              <div class="Flag-image">
+                                  <img src="./img/sdd/recursos-ia.png" alt="">
+                              </div>
+                              <div class="Flag-body">
+                                  <span class="Box-title">Recursos para desarrollo con IA</span>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
                         <li class="Grid-item">
                           <a href="sist-recursos-figma.php">
                             <div class="Flag">
@@ -127,18 +139,7 @@
                             </div>
                           </a>
                         </li>
-                        <li class="Grid-item">
-                          <a href="sist-recursos-ia.php">
-                            <div class="Flag">
-                              <div class="Flag-image">
-                                  <img src="./img/sdd/recursos-ia.png" alt="">
-                              </div>
-                              <div class="Flag-body">
-                                  <span class="Box-title">Recursos para desarrollo con IA</span>
-                              </div>
-                            </div>
-                          </a>
-                        </li>
+                        
                     </ul>
                 </div>
               </div>
