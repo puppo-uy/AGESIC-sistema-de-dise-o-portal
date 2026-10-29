@@ -80,7 +80,7 @@
                     </div>
                   </div>
 									<div class="Grid-item u-md-size1of3">
-										<img class="Hero-image" src="./img/sdd/hero-sdd.jpg" alt="">
+										<img class="Hero-image" src="./img/sdd/hero-sdd.png" alt="">
 									</div>
 								</div>
 							</div>
