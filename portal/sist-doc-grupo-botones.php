@@ -71,8 +71,8 @@
 
 <li>Para agrupar funciones similares o relacionadas (Ej: acciones de edición, descargas, vista de lista/cuadrícula). </li>
 
-En contextos donde la interfaz requiere ahorrar espacio y organizar opciones. </li>
-
+<li>En contextos donde la interfaz requiere ahorrar espacio y organizar opciones. </li>
+</ul>
 
 
 
@@ -97,7 +97,7 @@ En contextos donde la interfaz requiere ahorrar espacio y organizar opciones. </
 <li>Con texto: cada ítem incluye un label textual que explica la acción. Adecuado cuando el ícono no es suficiente o se busca mayor claridad. </li>
 
 <li>Mixta: texto acompañado de ícono para reforzar la acción. </li>
-
+</ul>
 
 
 
