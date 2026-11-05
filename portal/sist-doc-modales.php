@@ -1,4 +1,4 @@
-﻿<?php
+<?php
   $title = 'Modales';
 ?>
 <?php include "inc/head.php"; ?>
@@ -287,4 +287,4 @@
 <?php include "inc/foot.php"; ?>
 
 <!-- Modal — solo en esta página -->
-<script src="../biblioteca/scripts/components/modal.js"></script>
+<script src="scripts/plugins/modal-doc.js"></script>
