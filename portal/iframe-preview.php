@@ -13,9 +13,8 @@
             margin: 0;
             padding: 0;
             width: 100%;
-            height: auto;
-            min-height: 0;
-            overflow-x: hidden;
+            height: auto !important;
+            min-height: 0 !important;
         }
         /* Contenedor con borde sutil para visualizar el componente externo */
         .preview-container {
@@ -31,6 +30,7 @@
         .preview-content {
             padding: 28px 16px 16px 16px;
             overflow-x: auto;
+            overflow-y: hidden;
             -webkit-overflow-scrolling: touch;
             box-sizing: border-box;
             width: 100%;
@@ -92,6 +92,6 @@
     </div>
 
     <!-- Script para comunicar la altura al portal -->
-    <script src="../recursos/js/vendor/iframeResizer.contentWindow.min.js"></script>
+    <script src="../recursos/js/vendor/iframeResizer.contentWindow.min.js?v=2"></script>
 </body>
 </html>

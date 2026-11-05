@@ -287,4 +287,4 @@
 <?php include "inc/foot.php"; ?>
 
 <!-- Modal — solo en esta página -->
-<script src="scripts/plugins/modal-doc.js"></script>
+<script src="../biblioteca/scripts/components/modal.js"></script>
