@@ -134,7 +134,12 @@
   <script src="../recursos/js/vendor/iframeResizer.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-        iFrameResize({ log: false, checkOrigin: false }, '.component-preview');
+        iFrameResize({
+            log: false,
+            checkOrigin: false,
+            heightCalculationMethod: 'lowestElement',
+            heightOffset: 50
+        }, '.component-preview');
     });
   </script>
 

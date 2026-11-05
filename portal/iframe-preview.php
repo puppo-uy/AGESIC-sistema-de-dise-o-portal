@@ -12,22 +12,35 @@
             background: transparent;
             margin: 0;
             padding: 0;
-            overflow-x: auto;
+            width: 100%;
+            height: auto;
+            min-height: 0;
+            overflow-x: hidden;
         }
         /* Contenedor con borde sutil para visualizar el componente externo */
         .preview-container {
             position: relative;
             border: 2px solid #93c5fd;
             border-radius: 6px;
-            padding: 24px 16px 16px 16px;
             background-color: #ffffff;
             box-sizing: border-box;
+            width: 100%;
+            max-width: 100%;
+        }
+        /* Área interna desplazable horizontalmente en móvil */
+        .preview-content {
+            padding: 28px 16px 16px 16px;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            box-sizing: border-box;
+            width: 100%;
         }
         /* Etiqueta / Bloque en la esquina superior derecha */
         .preview-badge {
             position: absolute;
             top: -2px;
             right: -2px;
+            z-index: 10;
             background-color: #eff6ff;
             border: 2px solid #93c5fd;
             border-top-right-radius: 6px;
@@ -56,6 +69,7 @@
 
     <div class="preview-container">
         <span class="preview-badge">Componente de ejemplo</span>
+        <div class="preview-content">
     <?php
     $comp = isset($_GET['comp']) ? $_GET['comp'] : '';
     
@@ -74,6 +88,7 @@
         echo "<p>Componente no especificado o inválido.</p>";
     }
     ?>
+        </div>
     </div>
 
     <!-- Script para comunicar la altura al portal -->

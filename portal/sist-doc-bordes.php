@@ -87,6 +87,7 @@
 
                 <iframe
                   src="iframe-preview.php?comp=globales/bordes-radios"
+                  class="component-preview"
                   title="Radios de borde"
                   scrolling="no"
                   style="width:100%;border:none;display:block;"
