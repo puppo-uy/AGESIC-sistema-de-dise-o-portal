@@ -68,7 +68,7 @@
 
                      <iframe
                   src="iframe-preview.php?comp=globales/tipografia-sora"
-                  class="component-preview u-mt3"
+                  class="component-preview u-mt3 u-mb5"
                   title="Ejemplo de tipografía Sora"
                   scrolling="no"
                   style="width:100%;border:none;display:block;"
