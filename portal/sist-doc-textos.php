@@ -49,7 +49,7 @@
                 </div>
                 
                 <p class="Page-description">Los componentes de texto definen cómo se presenta y estructura la información escrita dentro de la interfaz, asegurando claridad, consistencia y la correcta jerarquía de contenidos.</p>
-                <p>Esta sección documenta los distintos tipos de texto utilizados en la interfaz desde una perspectiva de uso como componentes, complementando las definiciones de estilo establecidas en la sección de <a href="sist-estilos-globales.php">Estilos globales</a>.</p>
+                <p>Esta sección documenta los distintos tipos de texto utilizados en la interfaz desde una perspectiva de uso como componentes, complementando las definiciones de estilo establecidas en la sección de estilos globales</a>.</p>
 
                 <h3 class="u-mt4">Componentes</h3>
                 <ul class="List-text u-mt3">

@@ -83,10 +83,10 @@
                           <a href="sist-doc-mensajes-dialogos.php">Mensajes y diálogos</a>
                           <ul>
                             <li><a href="sist-doc-alertas.php">Alertas</a></li>
-                            <li><a href="sist-doc-modales.php">Modales</a></li>
-                            <li><a href="sist-doc-tooltips.php">Tooltips</a></li>
-                            <li><a href="sist-doc-indicadores.php">Indicadores de carga</a></li>
                             <li><a href="sist-doc-tags.php">Tags</a></li>
+                            <li><a href="sist-doc-modales.php">Modales</a></li>
+                            <li><a href="sist-doc-indicadores.php">Indicadores de carga</a></li>
+                            
                           </ul>
                         </li>
                         <!-- Formularios (oculto temporalmente)
