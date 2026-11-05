@@ -53,7 +53,7 @@
                 <h3 class="u-mt4">Familias tipográficas</h3>
                 <p class="u-mb3">El sistema utiliza dos familias tipográficas, cada una con un propósito específico:</p>
                 <ul class="List-text u-mb4">
-                    <li><strong>Open Sans:</strong> Es la tipografía principal del sistema. Se utiliza para títulos, párrafos y la mayoría de los textos de la interfaz por su alta legibilidad en entornos digitales.</li>
+                    <li><strong>Open Sans:</strong> Es la tipografía principal del sistema. Se utiliza para títulos, párrafos y la mayoría de los textos de la interfaz por su alta legibilidad en entornos digitales.
 
                      <iframe
                   src="iframe-preview.php?comp=globales/tipografia-open-sans"
@@ -62,7 +62,7 @@
                   scrolling="no"
                   style="width:100%;border:none;display:block;"
                 ></iframe>
-
+</li>
 
                     <li><strong>Sora:</strong> Se utiliza exclusivamente para el texto identificatorio del organismo en el cabezal. El uso de Sora fuera de este contexto no está contemplado dentro del sistema.</li>
 
