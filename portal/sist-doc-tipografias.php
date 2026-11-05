@@ -57,23 +57,23 @@
 
                      <iframe
                   src="iframe-preview.php?comp=globales/tipografia-open-sans"
-                  class="component-preview"
+                  class="component-preview u-mt3"
                   title="Ejemplo de tipografía Open Sans"
                   scrolling="no"
                   style="width:100%;border:none;display:block;"
                 ></iframe>
 </li>
 
-                    <li><strong>Sora:</strong> Se utiliza exclusivamente para el texto identificatorio del organismo en el cabezal. El uso de Sora fuera de este contexto no está contemplado dentro del sistema.</li>
+                    <li><strong>Sora:</strong> Se utiliza exclusivamente para el texto identificatorio del organismo en el cabezal. El uso de Sora fuera de este contexto no está contemplado dentro del sistema.
 
                      <iframe
                   src="iframe-preview.php?comp=globales/tipografia-sora"
-                  class="component-preview"
+                  class="component-preview u-mt3"
                   title="Ejemplo de tipografía Sora"
                   scrolling="no"
                   style="width:100%;border:none;display:block;"
                 ></iframe>
-
+</li>
 
                 </ul>
 
