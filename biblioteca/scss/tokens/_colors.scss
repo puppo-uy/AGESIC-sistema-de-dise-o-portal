@@ -94,7 +94,7 @@
 
     // Foco
 
-    --foco-acento : #{$colores-naranja-foco-500};
+    --foco-acento : #{$colores-naranja-foco-700};
 	  --foco-acento-claro: #{$colores-naranja-foco-50};
 
     // Decorativos: Celeste
@@ -116,8 +116,8 @@
     // Colores formularios
     --formulario-borde-fieldset: var(--neutro-700);
 
-    --fomulario-texto-label: var(--texto-principal);
-    --fomulario-texto-input: var(--texto-principal);
+    --formulario-texto-label: var(--texto-principal);
+    --formulario-texto-input: var(--texto-principal);
     --formulario-texto-ayuda_info: var(--texto-auxiliar);
     --formulario-texto-placeholder: var(--texto-placeholder);
     

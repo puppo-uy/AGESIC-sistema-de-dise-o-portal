@@ -75,8 +75,8 @@ solución digital.</p>
 
                   <h3>Descarga</h3>
                  
-                  <a class="u-h6" href="../recursos/SDU-instrucciones-para-ia.md">
-                    SDU-instrucciones-para-ia.md
+                  <a class="u-h6" href="../biblioteca/recursos/ia/SDU-instrucciones-generales-para-ia.md">
+                    SDU-instrucciones-generales-para-ia.md
                   </a>
                   
 

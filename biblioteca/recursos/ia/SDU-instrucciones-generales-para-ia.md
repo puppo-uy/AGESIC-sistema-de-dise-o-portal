@@ -1,42 +1,55 @@
 # Sistema de Diseño del Estado Uruguayo (AGESIC / SDD) — Guía Oficial para Desarrollo Asistido por IA
 
-> Este archivo es el recurso oficial de contexto y referencia para asistentes de IA y equipos de desarrollo que implementen el **Sistema de Diseño del Estado Uruguayo (AGESIC / SDD)**. Contiene exclusivamente las reglas, tokens CSS (`main.css`), componentes (`biblioteca/comp/`), comportamientos responsivos, lineamientos de accesibilidad WCAG 2.1 AA / AAA y convenciones obligatorias de código HTML/CSS/JS **establecidas en la fuente de verdad del sistema**.
+> Este archivo es la referencia oficial para asistentes de IA y equipos de desarrollo que implementen interfaces con el **Sistema de Diseño del Estado Uruguayo (AGESIC / SDD)**. Describe exclusivamente el marcado HTML semántico, las clases BEM, los tokens CSS disponibles en `main.css`, el comportamiento responsivo y los lineamientos de accesibilidad **WCAG 2.2 nivel AA**. Es agnóstico a lenguajes y frameworks.
+
+---
+
+## 0. Requisitos de Integración y Regla de Bloqueo (Leer primero)
+
+Las guías describen marcado HTML, clases y reglas de uso; **no reemplazan los archivos compilados del sistema**.
+
+### Archivos que deben estar cargados en el proyecto
+Antes de generar o modificar interfaz, verifica que el proyecto cuente con:
+- **`main.css`** y la carpeta hermana **`../fonts/`** (`opensans-web/` y `sora-web/`), conservando esa relación relativa para que carguen las tipografías.
+- **`sprites.svg`** (sprite oficial de íconos), servido desde el **mismo origen** del proyecto o inyectado inline en el HTML.
+- **`scripts/main.js`** *(opcional)*: necesario solo en proyectos HTML/JS vanilla que usen modales (`<dialog data-modal>`) o desplegables (`[data-menu]`). Si la interactividad se resuelve por otra vía, debe respetarse exactamente el mismo marcado, clases y atributos ARIA.
+
+### Regla obligatoria si faltan archivos
+- **Si `main.css` no está cargado en el proyecto**: **detente, avisa al usuario qué archivo falta y NO escribas CSS propio para reimplementar estilos, variables o utilidades de los componentes del sistema.**
+- **Si `sprites.svg` no está disponible**: avisa al usuario antes de asumir rutas de íconos.
+
+### Cómo referenciar íconos (`sprites.svg`)
+- **Por defecto (archivo estático en el mismo origen)**: usa la ruta donde el proyecto sirva `sprites.svg` (adaptando `<ruta>`):
+  ```html
+  <svg class="icono" aria-hidden="true">
+    <use href="<ruta>/sprites.svg#icono-descargar--lineal"></use>
+  </svg>
+  ```
+- **Excepción (sprite inline)**: usa `href="#icono-descargar--lineal"` **únicamente** si verificaste que el contenido completo de `sprites.svg` ya está inyectado dentro del `<body>`.
 
 ---
 
 ## 1. Contexto General y Principios de Diseño
 
-El sistema está construido bajo los siguientes principios rectores:
-- **Diseño Responsivo y Escalable**: Uso combinado de grillas CSS Grid (`.row` / `.col-*`), contenedores flexibles (`.mod-flex`) y tokens tipográficos que se adaptan automáticamente en pantallas móviles (`<= 768px`).
-- **Accesibilidad Universal**: Cumplimiento estricto del estándar **WCAG 2.1 nivel AA / AAA**, requerido legalmente por la Ley N° 19.924.
-- **Diseño Atómico**: Tokens de diseño (`:root`) → Elementos base y Tipografía → Componentes (`.boton`, `.grupo-botones`, `.boton-desplegable`, `.enlace`, `.icono`, `.tag`, `.alerta`, `.modal`) → Layouts (`.app`, `.header--app`, `.barra-lateral`, `.container`, `.row`, `.mod-flex`) → Utilidades (`.u-*`, `.divider`).
-- **Consistencia Absoluta**: Utilizar siempre las clases BEM en español y variables CSS (`var(--token)`) provistas en `main.css`. **Prohibido hardcodear valores de color, espaciado o tipografía**.
-- **Sin dependencias externas**: El sistema se implementa en HTML semántico + CSS nativo compilado desde SCSS. No utiliza frameworks externos (no Bootstrap, no Tailwind).
+- **Diseño Responsivo y Escalable**: Grillas CSS Grid (`.row` / `.col-*`), contenedores flexibles (`.mod-flex`) y tokens tipográficos adaptables entre móvil (`< 768px`) y escritorio (`>= 768px`).
+- **Accesibilidad Universal**: Cumplimiento estricto del estándar **WCAG 2.2 nivel AA**, requerido por la Ley N° 19.924.
+- **Diseño Atómico**: Tokens (`:root` en `main.css`) → Base y Tipografía → Componentes → Layouts → Utilidades (`.u-*`, `.divider`).
+- **Consistencia Absoluta**: Usar siempre las clases BEM en español y variables CSS (`var(--token)`) provistas en `main.css`. **Prohibido hardcodear valores de color, espaciado o tipografía para componentes del sistema**.
+- **Sin dependencias externas**: HTML semántico + CSS nativo. No utilizar Bootstrap, Tailwind ni librerías externas de íconos.
+- **Registro lingüístico consistente**: Mantener un único trato en toda la vista o producto. En los textos orientados a la persona usuaria (mensajes, confirmaciones, ayudas) usar **voseo** de forma consistente en estos ejemplos (ej. *"¿Querés continuar?"*, *"Confirmá los cambios"*), y en botones usar acciones directas que comiencen con verbo.
 
 ### Guías Específicas por Componente Disponibles
-Cuando se implemente o audite alguno de los siguientes componentes, consultar su archivo `.md` específico:
-- **Acciones e Iconografía**:
-  - **Botones (`.boton`)**: `botones.md`
-  - **Grupo de botones (`.grupo-botones`)**: `grupo-botones.md`
-  - **Botón con desplegable (`.boton-desplegable` / `.menubutton--split`)**: `boton-desplegable.md`
-  - **Enlaces (`.enlace` / `.enlace--externo`)**: `enlaces.md`
-  - **Íconos funcionales y Avatar (`.icono` / `.icono--iniciales`)**: `iconos.md`
-  - **Indicadores de notificación/estado (`.tag.tag--indicador`)**: `indicadores.md`
-- **Mensajes, Diálogos y Texto (`segunda tanda/`)**:
-  - **Alertas (`.alerta`)**: `segunda tanda/alertas.md`
-  - **Tags / Etiquetas (`.tag`)**: `segunda tanda/tags.md`
-  - **Modales (`<dialog>` / `.modal`)**: `segunda tanda/modales.md`
-  - **Títulos (`h1`–`h6` / `.titulo--*`)**: `segunda tanda/titulos.md`
-  - **Párrafos (`<p>` / `.parrafo--*`)**: `segunda tanda/parrafos.md`
-  - **Listados (`.lista`, `.lista--texto`, `.lista--numerada`)**: `segunda tanda/listados.md`
+- **Botones (`.boton`)**: `botones.md`
+
+*(El resto de los componentes se documentan en forma compacta en la Sección 3 hasta que se publiquen sus guías específicas).*
 
 ---
 
-## 2. Tokens de Diseño (`:root` en `main.css`)
+## 2. Tokens de Diseño disponibles en `main.css`
 
-Todas las propiedades visuales deben referenciarse mediante `var(--token)`. Nunca deben utilizarse valores literales en los archivos de componentes o layout.
+> **Advertencia**: Todos estos tokens **ya vienen definidos en `:root` dentro de `main.css`**. **No copies ni redeclares este bloque `:root` en tu proyecto.** Consúmelos únicamente mediante `var(--token)` si necesitás estilar contenedores o ajustes propios de una vista.
 
-### 2.1 Paleta de Colores (`_colors.scss`)
+### 2.1 Paleta de Colores
 
 #### Colores institucionales (Primarios y Secundarios)
 ```css
@@ -107,7 +120,7 @@ Todas las propiedades visuales deben referenciarse mediante `var(--token)`. Nunc
 ```
 
 #### Colores de Clasificación (Tags Categóricos)
-> **Nota técnica (`colores-decorativos.php`)**: Las escalas cromáticas primitivas (`rojo--25` a `950`, `naranja--25` a `950`, etc.) están en `scss/tokens/_primitives.scss` y **no existen como custom properties en `:root`**. En tiempo de ejecución solo deben consumirse los tokens semánticos `--clasificacion-*` y `--decorativo-*` listados abajo:
+> **Nota**: Solo deben consumirse los tokens semánticos `--clasificacion-*` y `--decorativo-*` listados abajo. **`--clasificacion-amarillo-oscuro` no existe** (`.tag--amarillo` utiliza el color de texto por defecto).
 ```css
 --clasificacion-rojo-claro: #ffe6e6;       --clasificacion-rojo-oscuro: #8c0000;
 --clasificacion-naranja-claro: #fff0e6;    --clasificacion-naranja-oscuro: #8c3a00;
@@ -131,16 +144,16 @@ Todas las propiedades visuales deben referenciarse mediante `var(--token)`. Nunc
 --texto-enlace-claro: var(--neutro-0);          /* #ffffff — Variante .enlace--claro */
 ```
 
-#### Foco Visible y Formularios
+#### Foco Visible y Tokens de Formularios
 ```css
---foco-acento: #ffa500;       /* Naranja para anillo de foco :focus-visible */
+--foco-acento: #b57500;       /* Naranja accesible para anillo de foco :focus-visible */
 --foco-acento-claro: #fff6e6; /* Halo exterior para sombra de foco en inputs */
 --sombra-foco: 0 0 0 4px var(--formulario-campo-sombra-foco);
 
-/* Tokens semánticos de formulario */
+/* Tokens semánticos de formulario disponibles en main.css */
 --formulario-borde-fieldset: var(--neutro-700);
---fomulario-texto-label: var(--texto-principal);
---fomulario-texto-input: var(--texto-principal);
+--formulario-texto-label: var(--texto-principal);
+--formulario-texto-input: var(--texto-principal);
 --formulario-texto-ayuda_info: var(--texto-auxiliar);
 --formulario-texto-placeholder: var(--texto-placeholder);
 --formulario-validacion-texto-error: var(--funcional-error-medio_oscuro);
@@ -156,11 +169,11 @@ Todas las propiedades visuales deben referenciarse mediante `var(--token)`. Nunc
 
 ---
 
-### 2.2 Tipografía (`_typography.scss`)
+### 2.2 Tipografía
 
-#### Regla de Oro de Familias Tipográficas (Estricta)
-- **Open Sans (`--tipo-familia-base`)**: Es la **tipografía principal del sistema** (disponible en pesos Light `300`, Regular `400`, Semibold `600` y Bold `700`). Se utiliza para **títulos (`h1`–`h6`, `.titulo--*`), párrafos (`p`, `.parrafo--*`), botones, tablas, formularios y la totalidad de la interfaz**.
-- **Sora (`--tipo-familia-marca`)**: Se utiliza **exclusivamente para el nombre identificatorio de la marca/organismo en el cabezal** (`header .Logo-nombre` / `.header--app .Logo-nombre`). Sora no posee archivo de fuente para el peso Light (`300`), solo Regular, Medium, Semibold, Bold y Extrabold. Está prohibido usar Sora fuera del logo del cabezal.
+#### Regla de Familias Tipográficas (Estricta)
+- **Open Sans (`--tipo-familia-base`)**: Es la **tipografía principal del sistema** (pesos Light `300`, Regular `400`, Semibold `600` y Bold `700`). Se utiliza para **títulos (`h1`–`h6`, `.titulo--*`), párrafos (`p`, `.parrafo--*`), botones, tablas y la totalidad de la interfaz**.
+- **Sora (`--tipo-familia-marca`)**: Se utiliza **exclusivamente para el nombre identificatorio de la marca/organismo en el cabezal** (`header .Logo-nombre` / `.header--app .Logo-nombre`). Está prohibido usar Sora fuera del logo del cabezal.
 
 ```css
 --tipo-familia-base: Open Sans, sans-serif;
@@ -174,12 +187,12 @@ Todas las propiedades visuales deben referenciarse mediante `var(--token)`. Nunc
 --tipo-peso-bold: 700;
 --tipo-peso-extrabold: 700;
 
-/* Tamaños de Título (Escritorio > 768px | Móvil <= 768px) */
---tipo-tamano-titulo-xxl: 2.5rem;  /* 40px en escritorio -> 2rem (32px) en <= 768px */
---tipo-tamano-titulo-xl: 2rem;     /* 32px en escritorio -> 1.75rem (28px) en <= 768px */
---tipo-tamano-titulo-l: 1.75rem;   /* 28px en escritorio -> 1.5rem (24px) en <= 768px */
---tipo-tamano-titulo-m: 1.5rem;    /* 24px en escritorio -> 1.25rem (20px) en <= 768px */
---tipo-tamano-titulo-s: 1.25rem;   /* 20px en escritorio -> 1.125rem (18px) en <= 768px */
+/* Tamaños de Título (Escritorio >= 768px | Móvil < 768px) */
+--tipo-tamano-titulo-xxl: 2.5rem;  /* 40px en escritorio -> 2rem (32px) en < 768px */
+--tipo-tamano-titulo-xl: 2rem;     /* 32px en escritorio -> 1.75rem (28px) en < 768px */
+--tipo-tamano-titulo-l: 1.75rem;   /* 28px en escritorio -> 1.5rem (24px) en < 768px */
+--tipo-tamano-titulo-m: 1.5rem;    /* 24px en escritorio -> 1.25rem (20px) en < 768px */
+--tipo-tamano-titulo-s: 1.25rem;   /* 20px en escritorio -> 1.125rem (18px) en < 768px */
 --tipo-tamano-titulo-xs: 1rem;     /* 16px (fijo en móvil y escritorio) */
 
 /* Tamaños de Párrafo (Fijos en móvil y escritorio) */
@@ -215,7 +228,7 @@ Todas las propiedades visuales deben referenciarse mediante `var(--token)`. Nunc
 
 ---
 
-### 2.3 Espaciados (`_spacing.scss`)
+### 2.3 Espaciados
 
 ```css
 --espaciado-0: 0px;
@@ -239,7 +252,7 @@ Todas las propiedades visuales deben referenciarse mediante `var(--token)`. Nunc
 
 ---
 
-### 2.4 Bordes (`_borders.scss`)
+### 2.4 Bordes
 
 ```css
 /* Grosores */
@@ -265,7 +278,7 @@ Todas las propiedades visuales deben referenciarse mediante `var(--token)`. Nunc
 
 ---
 
-### 2.5 Sombras, Animaciones y Capas Z-Index (`_shadows.scss`, `_animations.scss`, `_tools.scss`)
+### 2.5 Sombras, Animaciones, Íconos y Capas Z-Index
 
 ```css
 /* Sombras difuminadas */
@@ -288,6 +301,16 @@ Todas las propiedades visuales deben referenciarse mediante `var(--token)`. Nunc
 --animacion-fade: opacity 450ms ease-in-out;
 --animacion-slide: transform 450ms ease;
 
+/* Tamaños de ícono */
+--icono-tamano-xxs: 12px;
+--icono-tamano-xs: 16px;
+--icono-tamano-s: 20px;
+--icono-tamano-m: 24px;
+--icono-tamano-l: 32px;
+--icono-tamano-xl: 40px;
+--icono-tamano-xxl: 48px;
+--icono-tamano-xxxl: 56px;
+
 /* Capas Z-Index */
 --z-badge: 100;
 --z-header: 101;
@@ -303,170 +326,161 @@ Todas las propiedades visuales deben referenciarse mediante `var(--token)`. Nunc
 
 ### 3.1 Acciones
 
-#### A. Botones (`.boton`) → *Ver detalle completo en `botones.md`*
-Permiten al usuario ejecutar acciones o comandos.
-- **Jerarquías válidas (únicamente 3)**:
-  - **Primario (`.boton--primario`)**: Acción principal del contexto (fondo `--primario-principal`, texto blanco). **Máximo 1 por vista o bloque**.
-  - **Secundario (`.boton--secundario`)**: Acciones alternativas o complementarias (fondo blanco, borde y texto `--primario-principal`).
-  - **Terciario / Enlace (`.boton--enlace`)**: Acciones opcionales de bajo peso visual (fondo transparente, texto azul subrayado, sin sombra).
-  - *(Nota: No existe `.boton--peligro` ni `.Button` en `main.css`).*
-- **Estructura DOM obligatoria (`<span>`)**:
-  - El texto del botón **siempre debe envolverse en `<span>Texto</span>`**, ya que `main.css` estiliza `.boton > span:not(.icono)`.
-  - Solo texto: `<button type="button" class="boton boton--primario"><span>Guardar</span></button>`
-  - Con ícono: `<button type="button" class="boton boton--primario"><svg class="icono" aria-hidden="true"><use href="#icono-co-editor--lineal"></use></svg><span>Editar</span></button>`
-  - Solo ícono (`.boton--icono`): `<button type="button" class="boton boton--secundario boton--icono"><svg class="icono" aria-hidden="true"><use href="#icono-descargar--lineal"></use></svg><span>Descargar</span></button>`. El CSS de `.boton.boton--icono > span:not(.tag--indicador):not(.icono)` oculta visualmente el `<span>` de forma automática conservándolo accesible para lectores de pantalla.
-- **Tamaños**: Chico (`.boton--s`, `min-height: 39px`), Medio (por defecto o `.boton--m`, `min-height: 42px`), Grande (`.boton--l`, `min-height: 43px`).
+#### A. Botones (`.boton`) → *Ver guía completa de variantes, reglas UX y checklist en `botones.md`*
+- **Jerarquías válidas (únicamente 3)**: `.boton--primario` (máximo 1 por contexto: página, modal o *card* independiente), `.boton--secundario` (acciones alternativas o complementarias), `.boton--enlace` (acciones opcionales de bajo peso visual, incluido *"Cancelar"*). *(No existe `.boton--peligro` ni `.Button`).*
+- **Reglas mínimas de marcado**: usar `<button>` nativo con `type` explícito (`button`, `submit` o `reset`), y envolver siempre el texto en `<span>Texto</span>` hijo directo.
+- **Tamaños**: `.boton--s` (Chico), *(por defecto)* o `.boton--m` (Medio), `.boton--l` (Grande). Variante solo ícono: `.boton--icono` (mantiene su `<span>` accesible oculto automáticamente).
+```html
+<button type="button" class="boton boton--primario">
+  <span>Guardar cambios</span>
+</button>
+<button type="button" class="boton boton--secundario">
+  <svg class="icono" aria-hidden="true">
+    <use href="<ruta>/sprites.svg#icono-descargar--lineal"></use>
+  </svg>
+  <span>Descargar comprobante</span>
+</button>
+<button type="button" class="boton boton--enlace">
+  <span>Cancelar</span>
+</button>
+```
 
-#### B. Grupo de Botones (`.grupo-botones`) → *Ver detalle completo en `grupo-botones.md`*
+#### B. Grupo de Botones (`.grupo-botones`)
 Agrupa entre **2 y 5 botones de igual jerarquía y tamaño** dentro de una lista `<ul class="grupo-botones"><li>...</li></ul>`:
 - **Jerarquías del contenedor**: `.grupo-botones--secundaria`, `.grupo-botones--primaria`, `.grupo-botones--enlace`.
 - **Tamaños del contenedor**: `.grupo-botones--s`, *(defecto)*, `.grupo-botones--l`.
 - **Modos**: Iconográfico (botones `.boton--icono` con `<span>` accesible), Con texto, o Mixto.
 
-#### C. Botón con Desplegable (`.boton-desplegable`) → *Ver detalle completo en `boton-desplegable.md`*
+#### C. Botón con Desplegable (`.boton-desplegable`)
 Botón dividido (*split button*) con una acción principal directa a la izquierda y un segundo botón `.boton--icono` disparador a la derecha (`data-menu-trigger` + `<svg class="icono down">`) que abre un menú `.menubutton.menubutton--split` (`role="menu"`).
 - **Jerarquías**: Secundaria (`.boton-desplegable.desplegable-wrapper`) y Primaria (`.boton-desplegable.boton-desplegable--primario.desplegable-wrapper`).
 
-#### D. Enlaces (`.enlace`) → *Ver detalle completo en `enlaces.md`*
+#### D. Enlaces (`.enlace`)
 Para navegación hacia otras páginas, anclas o sitios externos:
 - **Tamaños**: `.enlace--s`, *(defecto)* o `.enlace--m`, `.enlace--l`.
 - **Variantes de color**: Por defecto (`--texto-enlace-primario`), `.enlace--oscuro` (`#000000`), `.enlace--claro` (`#ffffff`, exclusivo sobre fondos oscuros).
-- **Con ícono**: Al incluir `<svg class="icono" aria-hidden="true">` y `<span>Texto</span>`, el selector `.enlace:has(.icono)` activa automáticamente `display: inline-flex; gap: var(--espaciado-4);`.
-- **Enlace externo (`.enlace--externo`)**: Inyecta automáticamente por CSS `::after` (`mask-image`) el ícono de enlace externo (`12px`). Es obligatorio incluir `<span class="u-hideVisually"> (enlace externo)</span>` dentro del `<a>` y **no agregar un `<svg>` manual duplicado**.
+- **Con ícono**: Al incluir `<svg class="icono" aria-hidden="true">` y `<span>Texto</span>`, el enlace activa automáticamente `display: inline-flex; gap: var(--espaciado-4);`.
+- **Enlace externo (`.enlace--externo`)**: Inyecta automáticamente por CSS `::after` el ícono de enlace externo (`12px`). Es obligatorio incluir `<span class="u-hideVisually"> (enlace externo)</span>` dentro del `<a>` y **no agregar un `<svg>` manual duplicado**.
 
 ---
 
 ### 3.2 Mensajes, Etiquetas, Indicadores y Diálogos
 
 #### A. Alertas (`.alerta`)
-Comunican estados del sistema, resultados o advertencias.
-- **Estructura DOM oficial (`main.css`)**:
-  ```html
-  <div class="alerta alerta--informacion" role="status" aria-live="polite">
-    <svg class="icono" aria-hidden="true">
-      <use href="#icono-informacion--relleno"></use>
-    </svg>
-    <div class="contenido">
-      <p>Mensaje informativo del sistema.</p>
-    </div>
+Comunican estados del sistema, resultados o advertencias:
+```html
+<div class="alerta alerta--informacion" role="status" aria-live="polite">
+  <svg class="icono" aria-hidden="true">
+    <use href="<ruta>/sprites.svg#icono-informacion--relleno"></use>
+  </svg>
+  <div class="contenido">
+    <p>Revisá los datos antes de confirmar el envío.</p>
   </div>
-  ```
+</div>
+```
 - **Modificadores de estado**: `.alerta--exito`, `.alerta--error`, `.alerta--advertencia`, `.alerta--informacion`, `.alerta--notificacion`.
-- **Modificadores de formato**:
-  - Simple (por defecto): ícono de `24px` (`--icono-tamano-m`).
-  - Completa (`.alerta--completa`) y Emergente (`.alerta--emergente`, `max-width: 420px`): usan `<svg class="icono icono--alerta">` (`48px` en escritorio, `40px` en móvil), `<div class="contenido">` con título `.titulo--sm` y opcionalmente botón de cierre `<button type="button" class="boton boton--enlace boton--icono boton--cerrar">`.
+- **Modificadores de formato**: Simple (por defecto: ícono `24px`), Completa (`.alerta--completa`) y Emergente (`.alerta--emergente`, `max-width: 420px`), que usan `<svg class="icono icono--alerta" aria-hidden="true">`, `<div class="contenido">` con título `.titulo--sm` y opcionalmente botón de cierre `<button type="button" class="boton boton--enlace boton--icono boton--cerrar">`.
 
 #### B. Tags / Etiquetas (`.tag`)
 Etiquetas breves tipo pastilla (`border-radius: var(--borde-radio-full)`).
-- **Modificadores de tamaño**: `.tag--l` (`18px`), `.tag--m` (`16px`), `.tag--s` (`14px`).
+- **Modificadores de tamaño**: `.tag--l`, `.tag--m`, `.tag--s`.
 - **Modificadores de clasificación**: `.tag--rojo`, `.tag--naranja`, `.tag--amarillo`, `.tag--verde`, `.tag--verde-agua`, `.tag--celeste`, `.tag--fucsia`, `.tag--violeta`.
-- **Modificadores de estado (con `<span class="dot"></span>` interno)**:
-  - `.tag--activo`: Fondo `--funcional-exito-claro`, texto `--funcional-exito-oscuro`, punto `.dot` en `--funcional-exito-acento`.
-  - `.tag--inactivo`: Fondo `--funcional-informacion-claro`, texto `--funcional-informacion-oscuro`, punto `.dot` en `--funcional-informacion-acento`.
-  - `.tag--error`: Fondo `--funcional-error-claro`, texto `--funcional-error-oscuro`, punto `.dot` en `--funcional-error-acento`.
-  - `.tag--advertencia`: Fondo `--funcional-advertencia-claro`, texto `--funcional-advertencia-oscuro`, punto `.dot` en `--funcional-advertencia-acento`.
+- **Modificadores de estado (con `<span class="dot" aria-hidden="true"></span>` interno)**:
+  - `.tag--activo`, `.tag--inactivo`, `.tag--error`, `.tag--advertencia`.
   ```html
   <span class="tag tag--s tag--activo">
-    <span class="dot"></span>
+    <span class="dot" aria-hidden="true"></span>
     <span>Activo</span>
   </span>
   ```
 - **Modificadores en vivo**: `.tag--en-vivo` (con `.dot` rojo parpadeante animado) y `.tag--en-vivo-inactivo`.
 
-#### C. Indicadores (`.tag.tag--indicador`) → *Ver detalle completo en `indicadores.md`*
-Badges superpuestos (`position: absolute; top: 0; right: 0; z-index: var(--z-badge)`) acoplados dentro de `.boton` o `.icono--iniciales`:
-- **Indicador de punto**:
-  ```html
-  <span class="tag tag--advertencia tag--indicador">
+#### C. Indicadores (`.tag.tag--indicador`)
+Badges superpuestos acoplados dentro de `.boton` o `.icono--iniciales`. Para que lectores de pantalla anuncien el estado sin pegarlo al nombre del botón, marcar el badge visual con `aria-hidden="true"` y describirlo dentro del `<span>` de texto del botón usando `.u-hideVisually`:
+```html
+<!-- Indicador de punto -->
+<button type="button" class="boton boton--primario">
+  <span>Notificaciones<span class="u-hideVisually"> (con novedad)</span></span>
+  <span class="tag tag--advertencia tag--indicador" aria-hidden="true">
     <span class="dot"></span>
   </span>
-  ```
-- **Indicador numérico**:
-  ```html
-  <span class="tag tag--advertencia tag--indicador tag--indicador--numerico">
+</button>
+
+<!-- Indicador numérico -->
+<button type="button" class="boton boton--primario">
+  <span>Notificaciones<span class="u-hideVisually"> (99+ pendientes)</span></span>
+  <span class="tag tag--advertencia tag--indicador tag--indicador--numerico" aria-hidden="true">
     <span>99+</span>
   </span>
-  ```
+</button>
+```
 
-#### D. Modales (`dialog`, `.modal`)
-Ventanas de diálogo nativas `<dialog class="modal">` (`max-width: 690px`, `padding: var(--espaciado-48) var(--espaciado-56)` en escritorio y `var(--espaciado-32) var(--espaciado-24)` en móvil).
-- **Estructura DOM oficial (`main.css`)**:
-  ```html
-  <dialog class="modal" id="modal-ejemplo" aria-labelledby="modal-ejemplo-titulo">
-    <button type="button" class="boton boton--enlace boton--icono modal-cerrar" data-modal-close>
-      <svg class="icono" aria-hidden="true">
-        <use href="#icono-cerrar--lineal"></use>
-      </svg>
-      <span>Cerrar ventana</span>
-    </button>
-    <h2 id="modal-ejemplo-titulo" class="titulo--md modal-titulo">Título del modal</h2>
-    <p class="parrafo--md">Contenido descriptivo del modal.</p>
-    <div class="mod-flex flex-justify-end flex-items-center flex-gap-12 u-mt4">
-      <button type="button" class="boton boton--secundario" data-modal-close>
-        <span>Cancelar</span>
-      </button>
-      <button type="button" class="boton boton--primario">
-        <span>Confirmar</span>
-      </button>
+#### D. Modales (`<dialog>`, `.modal`)
+Ventanas de diálogo nativas `<dialog>` (`max-width: 690px`):
+```html
+<button type="button" class="boton boton--primario" data-modal-open data-modal-target="modal-ejemplo">
+  <span>Abrir modal</span>
+</button>
+
+<dialog data-modal="modal-ejemplo" aria-labelledby="modal-ejemplo-titulo">
+  <div class="modal-contenido">
+    <h2 id="modal-ejemplo-titulo" class="modal-titulo">Confirmar eliminación</h2>
+    <p class="parrafo--md">¿Querés eliminar este elemento de forma permanente? Esta acción no se puede deshacer.</p>
+    <div class="mod-flex u-mt6">
+      <div>
+        <button type="button" class="boton boton--enlace" data-modal-close>
+          <span>Cancelar</span>
+        </button>
+      </div>
+      <div class="mod-flex flex-items-end">
+        <button type="button" class="boton boton--secundario">
+          <span>Revisar detalle</span>
+        </button>
+        <button type="button" class="boton boton--primario">
+          <span>Confirmar</span>
+        </button>
+      </div>
     </div>
-  </dialog>
-  ```
+  </div>
+  <button type="button" class="modal-cerrar boton boton--enlace boton--icono" data-modal-close>
+    <svg class="icono" aria-hidden="true">
+      <use href="<ruta>/sprites.svg#icono-cerrar--lineal"></use>
+    </svg>
+    <span>Cerrar modal</span>
+  </button>
+</dialog>
+```
 - Cuando un modal está abierto, se agrega `.modal-open` a `<html>` y `<body>` (`overflow: hidden`).
 
 ---
 
-### 3.3 Textos y Tipografía (`_titles.scss`, `_paragraphs.scss`, `_list.scss`)
+### 3.3 Textos y Tipografía
 
 > **Atención a la nomenclatura de clases**: Mientras los tokens CSS usan `-l`, `-m`, `-s`, **las clases CSS de títulos y párrafos en `main.css` usan `--lg`, `--md`, `--sm`**.
 
-- **Títulos**:
-  - `.titulo--xxl` (`--tipo-tamano-titulo-xxl`)
-  - `.titulo--xl` (`--tipo-tamano-titulo-xl`)
-  - `.titulo--lg` (`--tipo-tamano-titulo-l`)
-  - `.titulo--md` (`--tipo-tamano-titulo-m`)
-  - `.titulo--sm` (`--tipo-tamano-titulo-s`)
-  - `.titulo--xs` (`--tipo-tamano-titulo-xs`)
-- **Párrafos**:
-  - `.parrafo--xl` (`--tipo-tamano-parrafo-xl`)
-  - `.parrafo--lg` (`--tipo-tamano-parrafo-l`)
-  - `.parrafo--md` (`--tipo-tamano-parrafo-m`)
-  - `.parrafo--sm` (`--tipo-tamano-parrafo-s`)
-  - `.parrafo--xs` (`--tipo-tamano-parrafo-xs`)
-- **Listas (`.lista`, `.lista--texto`, `.lista--numerada`)** → *Ver detalle completo en `segunda tanda/listados.md`*:
-  - Aplicar `<ul class="lista lista--texto">` para listas con viñetas u `<ol class="lista lista--numerada">` para listas ordenadas (`margin-top: var(--espaciado-8)` entre ítems de nivel 1 y `var(--espaciado-4)` en sublistas anidadas dentro de `<li>`).
+- **Títulos**: `.titulo--xxl`, `.titulo--xl`, `.titulo--lg`, `.titulo--md`, `.titulo--sm`, `.titulo--xs`.
+- **Párrafos**: `.parrafo--xl`, `.parrafo--lg`, `.parrafo--md`, `.parrafo--sm`, `.parrafo--xs`.
+- **Listas**: `<ul class="lista lista--texto">` para listas con viñetas u `<ol class="lista lista--numerada">` para listas ordenadas (`margin-top: var(--espaciado-8)` entre ítems de nivel 1 y `var(--espaciado-4)` en sublistas anidadas dentro de `<li>`).
 
 ---
 
-### 3.4 Íconos Funcionales (`.icono`) → *Ver detalle completo en `iconos.md`*
+### 3.4 Íconos Funcionales (`.icono`)
 
-- **Origen exclusivo**: Los 48 íconos oficiales del sprite (`biblioteca/recursos/dist/sprites.svg`) con sufijo obligatorio `--lineal` o `--relleno` (`#icono-<nombre>--lineal` / `#icono-<nombre>--relleno`).
+- **Origen exclusivo**: Los 48 íconos oficiales del sprite `sprites.svg` con sufijo obligatorio `--lineal` o `--relleno` (`<ruta>/sprites.svg#icono-<nombre>--lineal` / `--relleno`, o `#icono-...` si el sprite está inline en `<body>`).
 - **Catálogo completo (48 íconos)**:
   - **Acciones e interacción (18)**: `abrir-detalle`, `cerrar-detalle`, `borrar`, `buscar`, `cambiar`, `cerrar`, `check`, `descargar`, `duplicar`, `edicion-rapida`, `editar`, `co-editor`, `enlace-externo`, `filtrar`, `mas`, `mas-opciones`, `mostrar`, `ordenar`.
   - **Navegación y dirección (11)**: `home`, `chevron-derecha`, `chevron-izquierda`, `colapsable-abajo`, `colapsable-arriba`, `flecha-doble`, `flecha-larga-abajo`, `flecha-larga-arriba`, `flecha-larga-derecha`, `flecha-larga-izquierda`, `menu-hamburguesa`.
   - **Estados, alertas y ayuda (7)**: `advertencia`, `alerta-notificacion`, `ayuda`, `error`, `exito`, `informacion`, `notificacion`.
   - **Estructura, datos y usuario (12)**: `chat`, `comentario`, `configuracion`, `contrasena`, `doc-validado`, `fecha`, `historial`, `hora`, `logout`, `tabla`, `tareas`, `usuario`.
-- **Escala de tamaños (`.icono--*`)**:
-  - `.icono--xxs` (`12px`), `.icono--xs` (`16px`), `.icono--s` (`20px`), `.icono--m` (`24px`, por defecto), `.icono--l` (`32px`), `.icono--xl` (`40px`), `.icono--xxl` (`48px`), `.icono--xxxl` (`56px`).
-  - Dentro de `.boton`, `.enlace` y `.tag`, el componente padre dimensiona automáticamente al `.icono` hijo (ej. `.boton` M asigna `20px`, `.boton--s` asigna `16px`, `.boton--l` asigna `24px`).
+- **Escala de tamaños (`.icono--*`)**: `.icono--xxs` (`12px`), `.icono--xs` (`16px`), `.icono--s` (`20px`), `.icono--m` (`24px`, por defecto), `.icono--l` (`32px`), `.icono--xl` (`40px`), `.icono--xxl` (`48px`), `.icono--xxxl` (`56px`). Dentro de `.boton`, el botón asigna automáticamente el tamaño del ícono hijo; **no agregar `.icono--*` dentro de `.boton`**.
 - **Modificadores de color**: `.icono--principal`, `.icono--texto-principal`, `.icono--negativo`, `.icono--exito`, `.icono--error`, `.icono--advertencia`, `.icono--informacion`, `.icono--notificacion`.
 - **Avatar de usuario (`.icono--iniciales`)**: `<span class="icono icono--iniciales icono--principal"><span>AB</span></span>`.
 
 ---
 
-### 3.5 Formularios
-
-#### A. Regla de Disposición: Columna Única Centrada
-- Salvo para pares de datos fuertemente acoplados (ej. `Mes / Año`, código de área y teléfono) o barras de filtrado horizontal sobre tablas, los formularios de carga deben disponerse en **una única columna vertical** dentro de un contenedor de ancho controlado (`max-width: 690px`) para preservar el flujo de lectura y el orden de tabulación accesible.
-
-#### B. Accesibilidad y Tokens de Campos
-- Todo `<input>`, `<select>` o `<textarea>` debe tener su `<label for="...">` visible asociado. Prohibido reemplazar `<label>` por `placeholder`.
-- Utilizar los tokens `--formulario-campo-*` para bordes (`var(--formulario-campo-borde-default)`), foco (`border-color: var(--formulario-campo-borde-foco); box-shadow: var(--sombra-foco)`) y estados de validación (`--formulario-campo-borde-error`, `--formulario-validacion-texto-error`).
-
----
-
 ## 4. Layout, Grilla (`.row` / `.col-*`) y Flexbox (`.mod-flex`)
 
-### 4.1 Estructura de Aplicación y Cabezal (`_app.scss`, `_header-app.scss`)
+### 4.1 Estructura de Aplicación y Cabezal
 ```html
 <div class="app">
   <a class="SkipLink" href="#contenido-principal">Saltar al contenido principal</a>
@@ -489,29 +503,29 @@ Ventanas de diálogo nativas `<dialog class="modal">` (`max-width: 690px`, `padd
 </div>
 ```
 
-### 4.2 Sistema de Grilla de 12 Columnas (`_grids.scss`)
-El contenedor `.row` define un CSS Grid de 1 columna en móvil (`< 768px`) y **12 columnas** a partir de `768px` (`gap: 16px; margin-bottom: var(--espaciado-32)`).
+### 4.2 Sistema de Grilla de 12 Columnas
+El contenedor `.row` define un CSS Grid de 1 columna en móvil (`< 768px`) y **12 columnas** en escritorio (`>= 768px`, `gap: 16px; margin-bottom: var(--espaciado-32)`).
 
 ```html
 <div class="container">
   <div class="row">
-    <div class="col-12 col-md-6"><!-- 100% en móvil/tablet, 50% en >= 992px --></div>
-    <div class="col-12 col-md-6"><!-- 100% en móvil/tablet, 50% en >= 992px --></div>
+    <div class="col-12 col-md-6"><!-- 100% en < 992px, 50% en >= 992px --></div>
+    <div class="col-12 col-md-6"><!-- 100% en < 992px, 50% en >= 992px --></div>
   </div>
 </div>
 ```
 
 - **Breakpoints y clases de columna**:
   - Móvil (`< 768px`): 1 columna por defecto (o usar `.row--no-stack` + `.col-m-1` a `.col-m-12` para mantener columnas en móvil).
-  - `>= 768px` (`sm` / base desktop): `.col-1` a `.col-12` y `.col-sm-1` a `.col-sm-12`.
+  - `>= 768px` (`sm` / base escritorio): `.col-1` a `.col-12` y `.col-sm-1` a `.col-sm-12`.
   - `>= 992px` (`md`): `.col-md-1` a `.col-md-12`.
   - `>= 1367px` (`lg`): `.col-lg-1` a `.col-lg-12`.
 - **Filas de columnas automáticas (`row-cols-*`)**:
   - `.row.row-cols-1` a `.row.row-cols-12` (y variantes `.row-cols-sm-*`, `.row-cols-md-*`, `.row-cols-lg-*`).
   - `.row-cols-auto`: `grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))`.
 
-### 4.3 Módulo Flexbox (`.mod-flex` en `_flex.scss`)
-Por defecto `.mod-flex` es `flex-direction: column` en móvil (`< 768px`) y pasa a `flex-direction: row; justify-content: space-between; align-items: flex-start;` en `>= 768px`, con `gap: 16px`.
+### 4.3 Módulo Flexbox (`.mod-flex`)
+Por defecto `.mod-flex` es `flex-direction: column` en móvil (`< 768px`) y pasa a `flex-direction: row; justify-content: space-between; align-items: flex-start;` en escritorio (`>= 768px`), con `gap: 16px`.
 
 - **Dirección**: `.flex-dir-row`, `.flex-dir-column`, `.sm-flex-dir-row`, `.sm-flex-dir-column`, `.sm-stack`.
 - **Justificación horizontal**: `.flex-justify-start`, `.flex-justify-center`, `.flex-justify-end`, `.flex-justify-between`, `.flex-justify-around`, `.flex-justify-evenly` (y variantes `.sm-flex-justify-*`).
@@ -520,7 +534,7 @@ Por defecto `.mod-flex` es `flex-direction: column` en móvil (`< 768px`) y pasa
 
 ---
 
-## 5. Clases de Utilidad y Divisores (`_margin.scss`, `_accessibility.scss`, `_text.scss`, `_dividers.scss`)
+## 5. Clases de Utilidad y Divisores
 
 ```css
 /* Accesibilidad (oculto visualmente, legible por lector de pantalla) */
@@ -556,20 +570,12 @@ Por defecto `.mod-flex` es `flex-direction: column` en móvil (`< 768px`) y pasa
 
 ---
 
-## 6. Reglas Generales de Accesibilidad (WCAG 2.1 AA / AAA)
+## 6. Reglas Generales de Accesibilidad (WCAG 2.2 Nivel AA)
 
-1. **Contraste mínimo**: Ratio mínimo de 4.5:1 para texto normal y 3:1 para texto grande e íconos funcionales.
-2. **Foco visible global (`:focus-visible`)**: Definido en `main.css` como:
-   ```css
-   :focus-visible {
-     outline: 3px solid var(--foco-acento);
-     outline-offset: 2px;
-     border-radius: inherit;
-   }
-   ```
-   Prohibido anular `:focus-visible` con `outline: none`.
+1. **Contraste mínimo**: Ratio mínimo de **4.5:1** para texto normal y **3:1** para texto grande, íconos funcionales e indicadores de foco.
+2. **Foco visible global (`:focus-visible`)**: Definido en `main.css` con `outline: 3px solid var(--foco-acento); outline-offset: 2px; border-radius: inherit;`. Prohibido anular `:focus-visible` con `outline: none`.
 3. **Jerarquía de títulos**: Estructura secuencial sin saltar niveles (`h1` → `h2` → `h3`).
-4. **Íconos y elementos de solo ícono**: Todo `<svg class="icono">` lleva `aria-hidden="true"`. En `.boton--icono` incluir siempre su `<span>Descripción accesible</span>` hijo directo; en enlaces externos incluir `<span class="u-hideVisually"> (enlace externo)</span>`.
+4. **Íconos y elementos de solo ícono**: Todo `<svg class="icono">` decorativo lleva `aria-hidden="true"`. En `.boton--icono` incluir siempre su `<span>Descripción accesible</span>` hijo directo; en enlaces externos incluir `<span class="u-hideVisually"> (enlace externo)</span>`.
 5. **Semántica HTML**: Usar elementos nativos (`<button>`, `<a>`, `<nav>`, `<dialog>`, `<table>` con `<caption>` y `<th scope="col|row">`).
 6. **Idioma**: Atributo `lang="es"` en la etiqueta `<html>`.
 
@@ -577,13 +583,14 @@ Por defecto `.mod-flex` es `flex-direction: column` en móvil (`< 768px`) y pasa
 
 ## 7. Lo que NO se debe hacer (Prohibiciones Estrictas)
 
+- ❌ **No reimplementar componentes ni copiar `:root` si falta `main.css`**: Si `main.css` no está cargado en el proyecto, detenerse y avisar al usuario.
 - ❌ **No usar Sora fuera de `.Logo-nombre`**: Sora (`--tipo-familia-marca`) es de uso exclusivo para el nombre del organismo en el cabezal. `Open Sans` (`--tipo-familia-base`) es la fuente para todos los títulos, párrafos y componentes.
 - ❌ **No alucinar clases inexistentes**:
   - No existen `.boton--peligro`, `.Button`, `.Enlace`, `.Grupo-botones`, `.Alert`, `.Tag`, `.Modal`.
   - No existen `.Container`, `.Grid`, `.Grid-item`, `.u-md-size*`, `.u-flex`, `.u-flexBetween`, `.u-textRight`, `.u-sr-only`. Usar `.container`, `.row`/`.col-*`, `.mod-flex`, `.u-text-right` y `.u-hideVisually`.
   - No existen `.titulo--l/m/s` ni `.parrafo--l/m/s`: usar `.titulo--lg/md/sm` y `.parrafo--lg/md/sm`.
 - ❌ **No omitir `<span>Texto</span>` dentro de `.boton`**: Tanto en botones con texto visible como en `.boton--icono`, el texto va dentro de un `<span>` hijo directo.
-- ❌ **No hardcodear colores o medidas**: Usar siempre variables `--primario-*`, `--funcional-*`, `--neutro-*`, `--espaciado-*`.
-- ❌ **No usar Bootstrap, Tailwind ni librerías externas de íconos**: Los íconos provienen únicamente del sprite oficial `#icono-<nombre>--<lineal|relleno>`.
+- ❌ **No hardcodear colores o medidas para componentes del sistema**: Usar siempre las clases del sistema o variables `--primario-*`, `--funcional-*`, `--neutro-*`, `--espaciado-*`.
+- ❌ **No usar Bootstrap, Tailwind ni librerías externas de íconos**: Los íconos provienen únicamente del sprite oficial `sprites.svg`.
 - ❌ **No escribir textos de botones, enlaces o etiquetas en MAYÚSCULAS SOSTENIDAS**.
 - ❌ **No abrir un modal encima de otro modal**.

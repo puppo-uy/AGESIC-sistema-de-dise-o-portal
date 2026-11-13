@@ -18,7 +18,7 @@ $breakpoints: (
   }
 
   @if $direction == down {
-    @media screen and (max-width: $size) {
+    @media screen and (max-width: #{$size - 1px}) {
       @content;
     }
   } @else {

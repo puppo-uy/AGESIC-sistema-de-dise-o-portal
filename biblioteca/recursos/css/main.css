@@ -167,7 +167,7 @@ Ejemplos de uso:
   --parrafo-spacing-xs: var(--espaciado-8);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   :root {
     --tipo-tamano-titulo-xxl: 2rem;
     --tipo-tamano-titulo-xl: 1.75rem;
@@ -238,7 +238,7 @@ Ejemplos de uso:
   --clasificacion-fucsia-oscuro: #510945;
   --clasificacion-violeta-claro: #ede7f0;
   --clasificacion-violeta-oscuro: #270639;
-  --foco-acento: #ffa500;
+  --foco-acento: #b57500;
   --foco-acento-claro: #fff6e6;
   --decorativo-celeste-claro: #e6f5ff;
   --texto-principal: var(--neutro-1000);
@@ -249,8 +249,8 @@ Ejemplos de uso:
   --texto-enlace-oscuro: var(--neutro-1000);
   --texto-enlace-claro: var(--neutro-0);
   --formulario-borde-fieldset: var(--neutro-700);
-  --fomulario-texto-label: var(--texto-principal);
-  --fomulario-texto-input: var(--texto-principal);
+  --formulario-texto-label: var(--texto-principal);
+  --formulario-texto-input: var(--texto-principal);
   --formulario-texto-ayuda_info: var(--texto-auxiliar);
   --formulario-texto-placeholder: var(--texto-placeholder);
   --formulario-validacion-texto-error: var(--funcional-error-medio_oscuro);
@@ -926,7 +926,7 @@ dd {
 :root {
   --padding-main-app: var(--espaciado-32) var(--espaciado-64) var(--espaciado-40) var(--espaciado-64);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   :root {
     --padding-main-app: var(--espaciado-24) var(--espaciado-16);
   }
@@ -947,7 +947,7 @@ dd {
   background-color: var(--neutro-25);
   padding: var(--padding-main-app);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .app .layout--app {
     position: relative;
     top: 0;
@@ -2821,7 +2821,7 @@ p {
   width: var(--icono-tamano-xxl);
   height: var(--icono-tamano-xxl);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .alerta.alerta--completa .icono--alerta {
     width: var(--icono-tamano-xl);
     height: var(--icono-tamano-xl);
@@ -2839,7 +2839,7 @@ p {
   width: var(--icono-tamano-xxl);
   height: var(--icono-tamano-xxl);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .alerta.alerta--emergente .icono--alerta {
     width: var(--icono-tamano-xl);
     height: var(--icono-tamano-xl);
@@ -2966,7 +2966,7 @@ p {
   --menu-lateral-enlace-color: var(--texto-principal);
   --menu-lateral-submenu-item-activo-fondo: var(--decorativo-celeste-claro);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   :root {
     --menu-lateral-gap: var(--espaciado-12);
     --menu-lateral-item-gap: var(--espaciado-8);
@@ -2992,7 +2992,7 @@ p {
     z-index: var(--z-dropdown);
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .navegacion-lateral {
     z-index: var(--z-drawer);
   }
@@ -3014,7 +3014,7 @@ p {
   width: var(--menu-lateral-menu-ancho);
   height: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .barra-lateral {
     position: fixed;
     top: 74px;
@@ -3043,7 +3043,7 @@ p {
   align-items: flex-end;
   gap: var(--menu-lateral-gap);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .barra-lateral .barra-lateral-lista {
     align-items: stretch;
     padding-inline: 0;
@@ -3053,7 +3053,7 @@ p {
   width: 100%;
   border-right: 2px solid transparent;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .barra-lateral .barra-lateral-item {
     border-right: none;
   }
@@ -3082,7 +3082,7 @@ p {
   width: var(--icono-tamano-l);
   height: var(--icono-tamano-l);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .barra-lateral .barra-lateral-item .barra-lateral-enlace {
     flex-direction: row;
     justify-content: flex-start;
@@ -3153,7 +3153,7 @@ p {
           mask-size: contain;
   transition: var(--animacion-rapida);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .barra-lateral .barra-lateral-item.tiene-submenu .barra-lateral-enlace::after {
     background-color: var(--menu-lateral-item-color);
     right: var(--espaciado-16);
@@ -3163,7 +3163,7 @@ p {
 .barra-lateral .barra-lateral-item.tiene-submenu .barra-lateral-enlace:hover::after {
   background-color: var(--menu-lateral-item-activo-color);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .barra-lateral .barra-lateral-item.tiene-submenu .barra-lateral-enlace:hover::after {
     background-color: var(--menu-lateral-item-color);
   }
@@ -3178,7 +3178,7 @@ p {
   min-height: -moz-fit-content;
   min-height: fit-content;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .barra-lateral .barra-lateral-item.tiene-submenu.item-activo {
     border-radius: var(--borde-radio-0);
   }
@@ -3190,7 +3190,7 @@ p {
   background-color: var(--menu-lateral-item-activo-color);
   transform: rotate(-180deg);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .barra-lateral .barra-lateral-item.tiene-submenu.item-activo .activo[aria-expanded=true]::after {
     transform: rotate(-90deg);
   }
@@ -3207,7 +3207,7 @@ p {
   color: var(--menu-lateral-item-activo-color);
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .barra-lateral .barra-lateral-item:not(.item-activo) button:hover,
   .barra-lateral .barra-lateral-item:not(.item-activo) a:hover {
     background-color: inherit;
@@ -3234,7 +3234,7 @@ p {
   transform: translateX(-100%);
   transition: var(--animacion-base);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .barra-lateral .barra-lateral-submenu {
     height: -moz-fit-content;
     height: fit-content;
@@ -3263,7 +3263,7 @@ p {
   font-weight: var(--tipo-peso-bold);
   margin-bottom: var(--espaciado-40);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .barra-lateral .barra-lateral-submenu:before {
     display: none;
   }
@@ -3286,7 +3286,7 @@ p {
   cursor: pointer;
   background-color: var(--menu-lateral-item-fondo-hover);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .barra-lateral .barra-lateral-submenu li a:not(.subseccion-activa):hover {
     background-color: transparent;
   }
@@ -3317,7 +3317,7 @@ p {
   pointer-events: auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .app {
     /* ajusta grid si tenés layout grid */
     grid-template-columns: 1fr;
@@ -3490,7 +3490,7 @@ dialog button.modal-cerrar[data-modal-close],
   top: var(--espaciado-8);
   right: var(--espaciado-8);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   dialog,
   .modal {
     padding: var(--modal-padding-sm);
@@ -3754,7 +3754,7 @@ header .Header-usuario,
   display: flex;
   gap: var(--espaciado-8);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   header,
   .header--app {
     flex-direction: column;
