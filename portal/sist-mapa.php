@@ -1,5 +1,5 @@
 <?php
-  $title = 'Mapa del sitio - Sistema de Diseño';
+  $title = 'Mapa del sitio';
 ?>
 <?php include "inc/head.php"; ?>
 

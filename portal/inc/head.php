@@ -19,11 +19,11 @@
 
   <!-- meta -->
   <meta name="theme-color" content="#003da5">
-  <meta name="description" content="[Resumen de la página/contenido o información cargada al momento de crear página]">
+  <meta name="description" content="Herramientas para diseñar y construir interfaces digitales del Estado Uruguayo consistentes, accesibles y centradas en las personas.">
 
-  <meta property="og:title" content="[Titulo de la página/contenido]">
-  <meta property="og:description" content="[Resumen de la página/contenido o información cargada al momento de crear página]">
-  <meta property="og:image" content="[Logo de gubuy por defecto en todas las páginas o imagen cargada al momento de crear página]">
+  <meta property="og:title" content="<?php echo htmlspecialchars((!empty($title) ? $title . ' | ' : '') . 'Sistema de Diseño del Estado Uruguayo', ENT_QUOTES, 'UTF-8'); ?>">
+  <meta property="og:description" content="Herramientas para diseñar y construir interfaces digitales del Estado Uruguayo consistentes, accesibles y centradas en las personas.">
+  <meta property="og:image" content="https://sistemadiseno.agesic.gub.uy/portal/img/sdd/hero-sdd.png">
 
   <!--[if lt IE 9]>
     <script src="../recursos/js/vendor/polyfills.js"></script>

@@ -71,7 +71,7 @@
                   <li><strong>Estilos:</strong>Lineamientos visuales de diseño como tipografía, paleta de colores, bordes, fondos, íconos y elementos decorativos, que hacen que los servicios se perciban como parte de un todo por parte de la ciudadanía.</li>
                   <li><strong>Comportamientos:</strong> Definiciones de lenguaje de interacción orientadas a que los entornos digitales sean intuitivos, sencillos y sobre todo consistentes.</li>
                   <li><strong>Componentes:</strong> Piezas reutilizables, creadas con una visión transversal que contempla las buenas prácticas y lineamientos sobre Diseño de interacción y Accesibilidad. Ahorran tiempo de diseño y desarrollo, reutilizando bloques pre creados como navegación, botones, campos, tablas, y tarjetas.</li>
-                  <li><strong>Recursos para inteligencia artificial:</strong>Instrucciones preparadas para que herramientas de IA puedan utilizar como referencia los estilos, componentes y criterios del Sistema de Diseño. Esto permite acelerar la creación de productos digitales alineados con las definiciones del sistema. </li>
+                  <li><strong>Recursos para inteligencia artificial:</strong> Instrucciones preparadas para que herramientas de IA puedan utilizar como referencia los estilos, componentes y criterios del Sistema de Diseño. Esto permite acelerar la creación de productos digitales alineados con las definiciones del sistema. </li>
                 </ul>
               </div>
             </div>

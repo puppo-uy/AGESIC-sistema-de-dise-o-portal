@@ -1,5 +1,5 @@
 <?php
-  $title = 'Declaración de accesibilidad - Sistema de Diseño';
+  $title = 'Declaración de accesibilidad';
 ?>
 <?php include "inc/head.php"; ?>
 

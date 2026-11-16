@@ -1,5 +1,5 @@
 <?php
-  $title = 'Sistema de Diseño del Estado Uruguayo';
+  $title = 'Inicio';
 ?>
 <?php include "inc/head.php"; ?>
 
